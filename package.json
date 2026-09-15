@@ -1,0 +1,26 @@
+{
+  "name": "word-master",
+  "productName": "背单词 WordMaster",
+  "version": "1.0.0",
+  "description": "多词库背单词桌面应用：小学/初中/高中/四六级/雅思/托福，中英双向选择题，明暗主题，对错音效，次日自动复习。",
+  "main": "main.js",
+  "author": "WordMaster",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "verify": "node tools/verify-words.js",
+    "test": "node tools/test-scheduling.js",
+    "selfcheck": "node tools/selfcheck.js",
+    "build:data": "node tools/build-data.js",
+    "build:icon": "node tools/make-icon.js",
+    "build:portable": "node tools/build-portable.js",
+    "build:installer": "electron-builder --win --x64",
+    "capture": "electron tools/capture.js",
+    "check": "npm run verify && npm run build:data && npm run selfcheck && npm test"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

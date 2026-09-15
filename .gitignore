@@ -1,0 +1,48 @@
+# ============================================================
+#  背单词 WordMaster
+# ============================================================
+
+# ---------- 依赖 ----------
+node_modules/
+
+# ---------- 打包输出 ----------
+# 绿色版 320MB+、安装包 90MB，都不该进仓库
+release/
+dist/
+
+# ---------- 构建与截图产物 ----------
+# 图标要保留：electron-builder.yml 和 main.js 都直接引用 build/icon.*
+build/*
+!build/icon.png
+!build/icon.ico
+
+# ---------- 日志与临时文件 ----------
+*.log
+npm-debug.log*
+yarn-error.log*
+*.tmp
+*.bak
+
+# ---------- 编辑器 / IDE ----------
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*~
+
+# ---------- 操作系统 ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ============================================================
+#  以下文件是「故意提交」的，请勿加入忽略：
+#
+#  · src/data/*.json    —— 7 份词库源文件，手工维护的内容
+#  · src/data/words.js  —— 由 build:data 从上面的 JSON 汇总生成，
+#                          但它是应用运行时真正加载的数据。
+#                          提交它，clone 下来直接 npm start 就能跑，
+#                          不必先构建。改完 JSON 记得跑 npm run build:data
+#  · package-lock.json  —— 锁定依赖版本，保证任何机器上装出来都一样
+# ============================================================

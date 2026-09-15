@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'" />
+  <title>背单词 WordMaster</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============================ 图标精灵 ============================ -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M9.75 20v-5.5h4.5V20"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.8v14.4L19.5 12 7 4.8Z"/></symbol>
+    <symbol id="i-review" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 1 1-2.6-6.1"/><path d="M20.6 4.2v4.6h-4.6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4.5h5.5a3 3 0 0 1 2.5 1.4 3 3 0 0 1 2.5-1.4H20v13h-5.5a3 3 0 0 0-2.5 1.4 3 3 0 0 0-2.5-1.4H4v-13Z"/><path d="M12 5.9v12.6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4"/><path d="M4 20h16"/><path d="M8.5 20v-6"/><path d="M13 20V9"/><path d="M17.5 20v-9.5"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 14.5a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-2.87 1.2V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-2.93-1.15l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.5 14.5H4a2 2 0 1 1 0-4h.13a1.7 1.7 0 0 0 1.17-2.9l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 11 3.6V3a2 2 0 1 1 4 0v.13a1.7 1.7 0 0 0 2.9 1.17l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 20.4 10H21a2 2 0 1 1 0 4h-.13a1.7 1.7 0 0 0-1.47.5Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.6 8.6 0 1 0 10.2 10.2Z"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5h3.2L12 5.4v13.2L7.2 14.5H4Z"/><path d="M15.6 9.2a4 4 0 0 1 0 5.6"/><path d="M18.2 6.6a7.7 7.7 0 0 1 0 10.8"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5h3.2L12 5.4v13.2L7.2 14.5H4Z"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></symbol>
+    <symbol id="i-speaker" viewBox="0 0 24 24"><path d="M4 9.5h3.2L12 5.4v13.2L7.2 14.5H4Z"/><path d="M15.6 9.2a4 4 0 0 1 0 5.6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.8 4.6 4.6L19.4 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.4"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17.4 6.8 20l1-5.8-4.3-4.1 5.9-.9Z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15"/><path d="M9.5 7V4.8h5V7"/><path d="M6.5 7l1 12.2h9L17.5 7"/><path d="M10.5 11v5M13.5 11v5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5v11"/><path d="m7.5 10.2 4.5 4.4 4.5-4.4"/><path d="M4.5 19.5h15"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 20.5v-11"/><path d="m7.5 13.8 4.5-4.4 4.5 4.4"/><path d="M4.5 4.5h15"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.4 2.5 5.5 13.4h5.3l-.9 8.1 8.6-11.2h-5.4Z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2.8s5.3 4.1 5.3 9.3a5.3 5.3 0 0 1-10.6 0c0-1.8.8-3 .8-3s.6 1.3 1.7 1.7C9.1 7.6 12 2.8 12 2.8Z"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></symbol>
+  </svg>
+
+  <div class="app">
+    <!-- ============================ 自定义标题栏 ============================ -->
+    <header class="titlebar">
+      <div class="brand">
+        <div class="brand-mark">W</div>
+        <div class="brand-text">
+          <strong>背单词</strong>
+          <span>WordMaster</span>
+        </div>
+      </div>
+
+      <div class="titlebar-center" id="titlebar-center"></div>
+
+      <div class="titlebar-actions">
+        <button class="icon-btn" id="btn-sound" type="button" title="开关音效">
+          <svg class="ico"><use href="#i-volume" /></svg>
+        </button>
+        <button class="icon-btn" id="btn-theme" type="button" title="切换黑白主题">
+          <svg class="ico"><use href="#i-moon" /></svg>
+        </button>
+        <button class="icon-btn" id="btn-settings" type="button" title="设置">
+          <svg class="ico"><use href="#i-gear" /></svg>
+        </button>
+        <div class="winctrl-space"></div>
+      </div>
+    </header>
+
+    <div class="shell">
+      <!-- ============================ 侧边导航 ============================ -->
+      <nav class="sidebar">
+        <ul class="nav" id="nav">
+          <li><button class="nav-item" data-route="home" type="button"><svg class="ico"><use href="#i-home" /></svg><span>首页</span></button></li>
+          <li><button class="nav-item" data-route="study" type="button"><svg class="ico"><use href="#i-play" /></svg><span>今日学习</span><em class="nav-badge" id="badge-new"></em></button></li>
+          <li><button class="nav-item" data-route="review" type="button"><svg class="ico"><use href="#i-review" /></svg><span>今日复习</span><em class="nav-badge warn" id="badge-review"></em></button></li>
+          <li><button class="nav-item" data-route="wordbook" type="button"><svg class="ico"><use href="#i-book" /></svg><span>生词本</span></button></li>
+          <li><button class="nav-item" data-route="stats" type="button"><svg class="ico"><use href="#i-chart" /></svg><span>数据统计</span></button></li>
+          <li><button class="nav-item" data-route="settings" type="button"><svg class="ico"><use href="#i-gear" /></svg><span>设置</span></button></li>
+        </ul>
+
+        <div class="sidebar-foot">
+          <div class="streak-card">
+            <svg class="ico flame"><use href="#i-flame" /></svg>
+            <div>
+              <b id="streak-days">0</b>
+              <span>天连续打卡</span>
+            </div>
+          </div>
+          <div class="scopebox">
+            <span class="scopebox-label">当前词库范围</span>
+            <div class="chip-row" id="scope-chips"></div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ============================ 主内容区 ============================ -->
+      <main class="view" id="view" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="toast-host" id="toast-host" aria-live="polite"></div>
+  <div class="modal-host" id="modal-host" hidden></div>
+
+  <script src="data/words.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/bank.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/study.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

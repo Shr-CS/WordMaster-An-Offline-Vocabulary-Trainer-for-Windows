@@ -1,0 +1,23 @@
+# 换行符规范化
+#   仓库里统一存 LF；Windows 专用脚本检出时用 CRLF，否则 cmd 解析可能出错
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 二进制文件：Git 不要做任何文本转换，也不要显示差异
+*.png binary
+*.ico binary
+*.exe binary
+*.dll binary
+*.node binary
+
+# 让 GitHub / 各类 diff 工具正确识别语言
+*.js   text
+*.json text
+*.css  text
+*.html text
+*.md   text
+
+# package-lock.json 是自动生成的，折叠到 diff 里减少噪音
+package-lock.json -diff linguist-generated

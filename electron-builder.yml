@@ -1,0 +1,43 @@
+# electron-builder 配置：生成 Windows 安装包（NSIS）
+# 用法：npx electron-builder --win --x64
+appId: com.wordmaster.desktop
+productName: 背单词 WordMaster
+copyright: Copyright © 2025 WordMaster
+
+directories:
+  output: release/installer
+  buildResources: build
+
+# 只打包运行必需的文件，开发用的截图与脚本不进去
+files:
+  - main.js
+  - preload.js
+  - package.json
+  - src/**/*
+  - build/icon.png
+  - '!**/*.map'
+  - '!src/data/*.json'
+
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: WordMaster-Setup-${version}.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 背单词 WordMaster
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  installerHeaderIcon: build/icon.ico
+  deleteAppDataOnUninstall: false
+
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/
