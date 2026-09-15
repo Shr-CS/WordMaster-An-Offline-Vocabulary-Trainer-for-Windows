@@ -6,6 +6,29 @@
 
 ---
 
+## 界面预览
+
+![首页（黑色主题）](docs/screenshots/01-home-dark.png)
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/02-study-question.png" alt="答题界面"><br><sub>中译英选择题 · 四选一</sub></td>
+<td width="50%"><img src="docs/screenshots/03-answer-correct.png" alt="答对反馈"><br><sub>答对：绿色高亮 + 上行音效</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/04-answer-wrong.png" alt="答错反馈"><br><sub>答错：标出正确答案，并稍后重考</sub></td>
+<td><img src="docs/screenshots/06-stats.png" alt="数据统计"><br><sub>学习曲线与正确率统计</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/05-wordbook.png" alt="生词本"><br><sub>生词本：可搜索、标记、移除</sub></td>
+<td><img src="docs/screenshots/07-home-light.png" alt="白色主题"><br><sub>白色主题（一键切换）</sub></td>
+</tr>
+</table>
+
+![设置页](docs/screenshots/08-settings-light.png)
+
+---
+
 ## 一、需求对照
 
 | 你的要求 | 实现方式 |
@@ -75,8 +98,10 @@ WordMaster/
 │  ├─ make-icon.js            用纯 Node 生成 PNG/ICO 图标
 │  ├─ capture.js              自动截图各页面（视觉验证用）
 │  └─ build-portable.js       生成免安装绿色版
-├─ build/                     图标与截图产物
-└─ release/                   打包输出
+├─ docs/screenshots/          README 用的界面截图
+├─ build/                     图标与截图产物（截图不入版本库，图标入）
+├─ release/                   打包输出（体积大，不入版本库）
+└─ LICENSE                    MIT 许可证
 ```
 
 ---
