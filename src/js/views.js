@@ -695,6 +695,23 @@ window.WM = window.WM || {};
             type: 'button',
             'aria-label': '自动下一题开关',
             onclick: () => { applySettings({ autoNext: !s.autoNext }); renderSettings(view); },
+          }))),
+
+      h('div', { class: 'row row-showdetail' },
+        h('div', { class: 'row-main' },
+          h('div', { class: 'row-title', text: '答对后展开详细词条' }),
+          h('div', {
+            class: 'row-desc',
+            text: s.showDetail
+              ? '答对后显示单词的音标、词性、释义、例句与复习进度（此时自动跳题会延后到至少 3.2 秒）'
+              : '答对后只显示一条精简反馈，节奏更快',
+          })),
+        h('div', { class: 'row-ctl' },
+          h('button', {
+            class: `switch ${s.showDetail ? 'on' : ''}`,
+            type: 'button',
+            'aria-label': '详细词条开关',
+            onclick: () => { applySettings({ showDetail: !s.showDetail }); renderSettings(view); },
           }))));
 
     /* ---------- 数据管理 ---------- */

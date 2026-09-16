@@ -1,0 +1,562 @@
+[
+  {
+    "en": "abate",
+    "zh": "减弱",
+    "pos": "v.",
+    "ipa": "/əˈbeɪt/",
+    "ex": "The storm finally abated towards midnight.",
+    "exZh": "暴风雨临近午夜时终于减弱了。"
+  },
+  {
+    "en": "adept",
+    "zh": "熟练的",
+    "pos": "adj.",
+    "ipa": "/əˈdept/",
+    "ex": "She is adept at handling difficult customers.",
+    "exZh": "她善于应付难缠的顾客。"
+  },
+  {
+    "en": "admonish",
+    "zh": "告诫",
+    "pos": "v.",
+    "ipa": "/ədˈmɒnɪʃ/",
+    "ex": "The teacher admonished him for being late again.",
+    "exZh": "老师告诫他不要再迟到了。"
+  },
+  {
+    "en": "benevolent",
+    "zh": "仁慈的",
+    "pos": "adj.",
+    "ipa": "/bəˈnevələnt/",
+    "ex": "The benevolent old man donated his fortune to charity.",
+    "exZh": "那位仁慈的老人把财产捐给了慈善事业。"
+  },
+  {
+    "en": "blatant",
+    "zh": "公然的",
+    "pos": "adj.",
+    "ipa": "/ˈbleɪtnt/",
+    "ex": "That was a blatant lie and everyone knew it.",
+    "exZh": "那是公然的谎言，人人都看得出来。"
+  },
+  {
+    "en": "brevity",
+    "zh": "简洁",
+    "pos": "n.",
+    "ipa": "/ˈbrevəti/",
+    "ex": "The brevity of his speech surprised us all.",
+    "exZh": "他讲话之简洁让我们都很惊讶。"
+  },
+  {
+    "en": "candid",
+    "zh": "坦率的",
+    "pos": "adj.",
+    "ipa": "/ˈkændɪd/",
+    "ex": "She gave a candid account of her failures.",
+    "exZh": "她坦率地讲述了自己的失败经历。"
+  },
+  {
+    "en": "captivate",
+    "zh": "迷住",
+    "pos": "v.",
+    "ipa": "/ˈkæptɪveɪt/",
+    "ex": "The singer managed to captivate the entire audience.",
+    "exZh": "那位歌手成功地迷住了全场观众。"
+  },
+  {
+    "en": "coerce",
+    "zh": "强迫",
+    "pos": "v.",
+    "ipa": "/kəʊˈɜːs/",
+    "ex": "They tried to coerce him into signing the contract.",
+    "exZh": "他们试图强迫他签下合同。"
+  },
+  {
+    "en": "dearth",
+    "zh": "缺乏",
+    "pos": "n.",
+    "ipa": "/dɜːθ/",
+    "ex": "There is a dearth of qualified teachers in the region.",
+    "exZh": "该地区缺乏合格的教师。"
+  },
+  {
+    "en": "deplete",
+    "zh": "耗尽",
+    "pos": "v.",
+    "ipa": "/dɪˈpliːt/",
+    "ex": "Overfishing has severely depleted fish stocks.",
+    "exZh": "过度捕捞已使鱼类资源严重耗尽。"
+  },
+  {
+    "en": "dubious",
+    "zh": "可疑的",
+    "pos": "adj.",
+    "ipa": "/ˈdjuːbiəs/",
+    "ex": "I am dubious about the accuracy of these figures.",
+    "exZh": "我对这些数字的准确性表示怀疑。"
+  },
+  {
+    "en": "elucidate",
+    "zh": "阐明",
+    "pos": "v.",
+    "ipa": "/ɪˈluːsɪdeɪt/",
+    "ex": "The professor elucidated the theory with simple diagrams.",
+    "exZh": "教授用简单的图表阐明了这一理论。"
+  },
+  {
+    "en": "eminent",
+    "zh": "杰出的",
+    "pos": "adj.",
+    "ipa": "/ˈemɪnənt/",
+    "ex": "He is an eminent scholar in the field of genetics.",
+    "exZh": "他是遗传学领域杰出的学者。"
+  },
+  {
+    "en": "eradicate",
+    "zh": "根除",
+    "pos": "v.",
+    "ipa": "/ɪˈrædɪkeɪt/",
+    "ex": "The government hopes to eradicate poverty by 2030.",
+    "exZh": "政府希望在2030年前根除贫困。"
+  },
+  {
+    "en": "fallacy",
+    "zh": "谬论",
+    "pos": "n.",
+    "ipa": "/ˈfæləsi/",
+    "ex": "It is a common fallacy that money brings happiness.",
+    "exZh": "认为金钱带来幸福是一种常见的谬论。"
+  },
+  {
+    "en": "fastidious",
+    "zh": "挑剔的",
+    "pos": "adj.",
+    "ipa": "/fæˈstɪdiəs/",
+    "ex": "He is fastidious about the cleanliness of his kitchen.",
+    "exZh": "他对厨房的清洁十分挑剔。"
+  },
+  {
+    "en": "frugal",
+    "zh": "节俭的",
+    "pos": "adj.",
+    "ipa": "/ˈfruːɡl/",
+    "ex": "My grandmother lived a frugal life and wasted nothing.",
+    "exZh": "我祖母过着节俭的生活，什么也不浪费。"
+  },
+  {
+    "en": "grandeur",
+    "zh": "宏伟",
+    "pos": "n.",
+    "ipa": "/ˈɡrændʒə(r)/",
+    "ex": "We stood in silence, admiring the grandeur of the mountains.",
+    "exZh": "我们静静地站着，赞叹群山的宏伟。"
+  },
+  {
+    "en": "gregarious",
+    "zh": "爱交际的",
+    "pos": "adj.",
+    "ipa": "/ɡrɪˈɡeəriəs/",
+    "ex": "She is a gregarious person who loves parties.",
+    "exZh": "她是个爱交际的人，喜欢参加聚会。"
+  },
+  {
+    "en": "gullible",
+    "zh": "轻信的",
+    "pos": "adj.",
+    "ipa": "/ˈɡʌləbl/",
+    "ex": "He was too gullible to see through the trick.",
+    "exZh": "他太轻信了，看不穿这个把戏。"
+  },
+  {
+    "en": "haughty",
+    "zh": "傲慢的",
+    "pos": "adj.",
+    "ipa": "/ˈhɔːti/",
+    "ex": "His haughty manner offended his colleagues.",
+    "exZh": "他傲慢的态度得罪了同事们。"
+  },
+  {
+    "en": "hinder",
+    "zh": "阻碍",
+    "pos": "v.",
+    "ipa": "/ˈhɪndə(r)/",
+    "ex": "Heavy snow hindered the rescue team's progress.",
+    "exZh": "大雪阻碍了救援队的行进。"
+  },
+  {
+    "en": "humility",
+    "zh": "谦逊",
+    "pos": "n.",
+    "ipa": "/hjuːˈmɪləti/",
+    "ex": "Despite his fame, he showed remarkable humility.",
+    "exZh": "尽管声名显赫，他仍表现得十分谦逊。"
+  },
+  {
+    "en": "illicit",
+    "zh": "非法的",
+    "pos": "adj.",
+    "ipa": "/ɪˈlɪsɪt/",
+    "ex": "The police seized a large amount of illicit goods.",
+    "exZh": "警方查获了大量非法货物。"
+  },
+  {
+    "en": "incessant",
+    "zh": "不断的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈsesnt/",
+    "ex": "The incessant noise from the street kept me awake.",
+    "exZh": "街上不断的噪音让我无法入睡。"
+  },
+  {
+    "en": "insidious",
+    "zh": "阴险的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈsɪdiəs/",
+    "ex": "The disease has an insidious onset with few symptoms.",
+    "exZh": "这种疾病起病阴险，几乎没有什么症状。"
+  },
+  {
+    "en": "jubilant",
+    "zh": "欢欣的",
+    "pos": "adj.",
+    "ipa": "/ˈdʒuːbɪlənt/",
+    "ex": "The jubilant crowd celebrated in the streets all night.",
+    "exZh": "欢欣的人群在街上庆祝了一整夜。"
+  },
+  {
+    "en": "judicious",
+    "zh": "明智的",
+    "pos": "adj.",
+    "ipa": "/dʒuˈdɪʃəs/",
+    "ex": "A judicious use of resources saved the project.",
+    "exZh": "明智地使用资源挽救了这个项目。"
+  },
+  {
+    "en": "kindle",
+    "zh": "点燃",
+    "pos": "v.",
+    "ipa": "/ˈkɪndl/",
+    "ex": "The lecture kindled my interest in ancient history.",
+    "exZh": "那场讲座点燃了我对古代史的兴趣。"
+  },
+  {
+    "en": "knack",
+    "zh": "诀窍",
+    "pos": "n.",
+    "ipa": "/næk/",
+    "ex": "She has a knack for making people feel at ease.",
+    "exZh": "她有让人感到自在的诀窍。"
+  },
+  {
+    "en": "lament",
+    "zh": "哀悼",
+    "pos": "v.",
+    "ipa": "/ləˈment/",
+    "ex": "Critics lamented the decline of traditional crafts.",
+    "exZh": "评论家们为传统手工艺的衰落而哀叹。"
+  },
+  {
+    "en": "lenient",
+    "zh": "宽容的",
+    "pos": "adj.",
+    "ipa": "/ˈliːniənt/",
+    "ex": "The judge was lenient with the young offender.",
+    "exZh": "法官对那名年轻罪犯很宽容。"
+  },
+  {
+    "en": "lucrative",
+    "zh": "赚钱的",
+    "pos": "adj.",
+    "ipa": "/ˈluːkrətɪv/",
+    "ex": "Consulting proved to be a lucrative business for her.",
+    "exZh": "事实证明咨询对她来说是一门赚钱的生意。"
+  },
+  {
+    "en": "malicious",
+    "zh": "恶意的",
+    "pos": "adj.",
+    "ipa": "/məˈlɪʃəs/",
+    "ex": "He spread malicious rumours about his rival.",
+    "exZh": "他散布关于对手的恶意谣言。"
+  },
+  {
+    "en": "mediocre",
+    "zh": "平庸的",
+    "pos": "adj.",
+    "ipa": "/ˌmiːdiˈəʊkə(r)/",
+    "ex": "The film received mediocre reviews from critics.",
+    "exZh": "这部影片得到了影评人平庸的评价。"
+  },
+  {
+    "en": "mitigate",
+    "zh": "缓和",
+    "pos": "v.",
+    "ipa": "/ˈmɪtɪɡeɪt/",
+    "ex": "Planting trees can help mitigate air pollution.",
+    "exZh": "植树有助于缓和空气污染。"
+  },
+  {
+    "en": "nascent",
+    "zh": "新生的",
+    "pos": "adj.",
+    "ipa": "/ˈnæsnt/",
+    "ex": "The nascent industry needs government support.",
+    "exZh": "这个新生的产业需要政府的支持。"
+  },
+  {
+    "en": "negligence",
+    "zh": "疏忽",
+    "pos": "n.",
+    "ipa": "/ˈneɡlɪdʒəns/",
+    "ex": "The accident was caused by the driver's negligence.",
+    "exZh": "这起事故是由司机的疏忽造成的。"
+  },
+  {
+    "en": "nostalgia",
+    "zh": "怀旧",
+    "pos": "n.",
+    "ipa": "/nɒˈstældʒə/",
+    "ex": "Old photographs filled her with nostalgia.",
+    "exZh": "旧照片让她满怀怀旧之情。"
+  },
+  {
+    "en": "oblivious",
+    "zh": "未察觉的",
+    "pos": "adj.",
+    "ipa": "/əˈblɪviəs/",
+    "ex": "He walked on, oblivious to the danger ahead.",
+    "exZh": "他继续往前走，未察觉前方的危险。"
+  },
+  {
+    "en": "obstinate",
+    "zh": "固执的",
+    "pos": "adj.",
+    "ipa": "/ˈɒbstɪnət/",
+    "ex": "He was too obstinate to admit his mistake.",
+    "exZh": "他太固执了，不肯承认错误。"
+  },
+  {
+    "en": "ominous",
+    "zh": "不祥的",
+    "pos": "adj.",
+    "ipa": "/ˈɒmɪnəs/",
+    "ex": "Dark clouds gathered and an ominous silence fell.",
+    "exZh": "乌云聚集，一片不祥的寂静降临了。"
+  },
+  {
+    "en": "palpable",
+    "zh": "明显的",
+    "pos": "adj.",
+    "ipa": "/ˈpælpəbl/",
+    "ex": "There was a palpable sense of relief in the room.",
+    "exZh": "房间里有一种明显的宽慰感。"
+  },
+  {
+    "en": "precarious",
+    "zh": "不稳定的",
+    "pos": "adj.",
+    "ipa": "/prɪˈkeəriəs/",
+    "ex": "Many workers are in a precarious financial position.",
+    "exZh": "许多工人的财务状况很不稳定。"
+  },
+  {
+    "en": "prolific",
+    "zh": "多产的",
+    "pos": "adj.",
+    "ipa": "/prəˈlɪfɪk/",
+    "ex": "She is a prolific writer with over thirty novels.",
+    "exZh": "她是位多产的作家，写有三十多部小说。"
+  },
+  {
+    "en": "quell",
+    "zh": "镇压",
+    "pos": "v.",
+    "ipa": "/kwel/",
+    "ex": "The police quickly quelled the disturbance.",
+    "exZh": "警方迅速镇压了这场骚乱。"
+  },
+  {
+    "en": "quirk",
+    "zh": "怪癖",
+    "pos": "n.",
+    "ipa": "/kwɜːk/",
+    "ex": "Wearing gloves indoors is one of his quirks.",
+    "exZh": "在室内戴手套是他的怪癖之一。"
+  },
+  {
+    "en": "rebuke",
+    "zh": "斥责",
+    "pos": "v.",
+    "ipa": "/rɪˈbjuːk/",
+    "ex": "The manager rebuked him for missing the deadline.",
+    "exZh": "经理斥责他没能赶上截止日期。"
+  },
+  {
+    "en": "reconcile",
+    "zh": "调和",
+    "pos": "v.",
+    "ipa": "/ˈrekənsaɪl/",
+    "ex": "It took years for the two brothers to reconcile.",
+    "exZh": "两兄弟花了很多年才和解。"
+  },
+  {
+    "en": "robust",
+    "zh": "强健的",
+    "pos": "adj.",
+    "ipa": "/rəʊˈbʌst/",
+    "ex": "The economy remains robust despite the crisis.",
+    "exZh": "尽管发生危机，经济依然强健。"
+  },
+  {
+    "en": "solicit",
+    "zh": "请求",
+    "pos": "v.",
+    "ipa": "/səˈlɪsɪt/",
+    "ex": "The charity solicited donations from local businesses.",
+    "exZh": "该慈善机构向当地企业请求捐款。"
+  },
+  {
+    "en": "sporadic",
+    "zh": "零星的",
+    "pos": "adj.",
+    "ipa": "/spəˈrædɪk/",
+    "ex": "Sporadic gunfire could be heard throughout the night.",
+    "exZh": "整个夜里都能听到零星的枪声。"
+  },
+  {
+    "en": "succinct",
+    "zh": "简明的",
+    "pos": "adj.",
+    "ipa": "/səkˈsɪŋkt/",
+    "ex": "Please give a succinct summary of your findings.",
+    "exZh": "请对研究结果作一个简明的总结。"
+  },
+  {
+    "en": "tacit",
+    "zh": "心照不宣的",
+    "pos": "adj.",
+    "ipa": "/ˈtæsɪt/",
+    "ex": "They had a tacit agreement never to mention it.",
+    "exZh": "他们有一种心照不宣的默契，绝口不提此事。"
+  },
+  {
+    "en": "tenuous",
+    "zh": "薄弱的",
+    "pos": "adj.",
+    "ipa": "/ˈtenjuəs/",
+    "ex": "The evidence for his theory is rather tenuous.",
+    "exZh": "他理论的证据相当薄弱。"
+  },
+  {
+    "en": "turbulent",
+    "zh": "动荡的",
+    "pos": "adj.",
+    "ipa": "/ˈtɜːbjələnt/",
+    "ex": "He grew up during a turbulent period of history.",
+    "exZh": "他成长于历史上一个动荡的时期。"
+  },
+  {
+    "en": "uncanny",
+    "zh": "不可思议的",
+    "pos": "adj.",
+    "ipa": "/ʌnˈkæni/",
+    "ex": "She has an uncanny ability to predict the weather.",
+    "exZh": "她有不可思议的预测天气的能力。"
+  },
+  {
+    "en": "unearth",
+    "zh": "发掘",
+    "pos": "v.",
+    "ipa": "/ʌnˈɜːθ/",
+    "ex": "Archaeologists unearthed a Roman villa near the river.",
+    "exZh": "考古学家在河边发掘出一座古罗马别墅。"
+  },
+  {
+    "en": "usurp",
+    "zh": "篡夺",
+    "pos": "v.",
+    "ipa": "/juːˈzɜːp/",
+    "ex": "The general plotted to usurp the king's power.",
+    "exZh": "这位将军密谋篡夺国王的权力。"
+  },
+  {
+    "en": "venerate",
+    "zh": "尊敬",
+    "pos": "v.",
+    "ipa": "/ˈvenəreɪt/",
+    "ex": "In many cultures people venerate their ancestors.",
+    "exZh": "在许多文化中，人们都尊敬自己的祖先。"
+  },
+  {
+    "en": "viable",
+    "zh": "可行的",
+    "pos": "adj.",
+    "ipa": "/ˈvaɪəbl/",
+    "ex": "Solar power is now a viable option for households.",
+    "exZh": "太阳能现在是家庭可行的选择。"
+  },
+  {
+    "en": "volatile",
+    "zh": "易变的",
+    "pos": "adj.",
+    "ipa": "/ˈvɒlətaɪl/",
+    "ex": "Oil prices have been extremely volatile this year.",
+    "exZh": "今年油价一直极不稳定。"
+  },
+  {
+    "en": "wary",
+    "zh": "警惕的",
+    "pos": "adj.",
+    "ipa": "/ˈweəri/",
+    "ex": "Investors are wary of putting money into new startups.",
+    "exZh": "投资者对投资新兴初创企业持警惕态度。"
+  },
+  {
+    "en": "whimsical",
+    "zh": "异想天开的",
+    "pos": "adj.",
+    "ipa": "/ˈwɪmzɪkl/",
+    "ex": "The garden is full of whimsical sculptures.",
+    "exZh": "花园里满是异想天开的雕塑。"
+  },
+  {
+    "en": "wretched",
+    "zh": "悲惨的",
+    "pos": "adj.",
+    "ipa": "/ˈretʃɪd/",
+    "ex": "The refugees lived in wretched conditions.",
+    "exZh": "难民们生活在悲惨的环境中。"
+  },
+  {
+    "en": "yonder",
+    "zh": "在那边",
+    "pos": "adv.",
+    "ipa": "/ˈjɒndə(r)/",
+    "ex": "The village lies yonder, beyond the hills.",
+    "exZh": "那个村庄在那边，就在山后。"
+  },
+  {
+    "en": "zealous",
+    "zh": "狂热的",
+    "pos": "adj.",
+    "ipa": "/ˈzeləs/",
+    "ex": "He is a zealous defender of free speech.",
+    "exZh": "他是言论自由的狂热捍卫者。"
+  },
+  {
+    "en": "zenith",
+    "zh": "顶点",
+    "pos": "n.",
+    "ipa": "/ˈzenɪθ/",
+    "ex": "Her career reached its zenith in the late nineties.",
+    "exZh": "她的事业在九十年代末达到了顶点。"
+  },
+  {
+    "en": "zest",
+    "zh": "热情",
+    "pos": "n.",
+    "ipa": "/zest/",
+    "ex": "She tackled every task with great zest.",
+    "exZh": "她以极大的热情对待每一项任务。"
+  }
+]

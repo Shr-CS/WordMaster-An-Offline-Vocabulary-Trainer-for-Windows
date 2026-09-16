@@ -52,6 +52,9 @@ window.WM = window.WM || {};
           zh: String(row.zh),
           pos: String(row.pos || ''),
           ipa: String(row.ipa || ''),
+          // 例句用于答对后的详细词条卡；老词库没有这两个字段时留空
+          ex: String(row.ex || ''),
+          exZh: String(row.exZh || ''),
         };
         if (byId.has(entry.id)) continue;
         byId.set(entry.id, entry);
@@ -265,6 +268,8 @@ window.WM = window.WM || {};
       zh: entry.zh,
       pos: entry.pos,
       ipa: entry.ipa,
+      ex: entry.ex || '',
+      exZh: entry.exZh || '',
       box: 0,
       learnedAt: day,
       lastSeen: day,

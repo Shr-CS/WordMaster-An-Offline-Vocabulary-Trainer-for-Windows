@@ -1,0 +1,2002 @@
+[
+  {
+    "en": "await",
+    "zh": "等待",
+    "pos": "v.",
+    "ipa": "/əˈweɪt/",
+    "ex": "Thousands of applicants await the final decision of the admission committee.",
+    "exZh": "数千名申请者等待着招生委员会的最终决定。"
+  },
+  {
+    "en": "brisk",
+    "zh": "轻快的",
+    "pos": "adj.",
+    "ipa": "/brɪsk/",
+    "ex": "A brisk walk before breakfast helps him stay alert throughout the morning.",
+    "exZh": "早餐前轻快的散步使他一整个上午都保持警觉。"
+  },
+  {
+    "en": "carve",
+    "zh": "雕刻",
+    "pos": "v.",
+    "ipa": "/kɑːv/",
+    "ex": "The craftsman carved a delicate pattern into the wooden panel by hand.",
+    "exZh": "工匠手工在木板上雕刻出精美的图案。"
+  },
+  {
+    "en": "comprise",
+    "zh": "包含",
+    "pos": "v.",
+    "ipa": "/kəmˈpraɪz/",
+    "ex": "The committee comprises twelve scholars drawn from six different universities.",
+    "exZh": "该委员会包含来自六所不同大学的十二位学者。"
+  },
+  {
+    "en": "crumble",
+    "zh": "崩塌",
+    "pos": "v.",
+    "ipa": "/ˈkrʌmbl/",
+    "ex": "Without regular maintenance, the ancient stone bridge would slowly crumble.",
+    "exZh": "没有定期维护，这座古老的石桥会慢慢崩塌。"
+  },
+  {
+    "en": "dismantle",
+    "zh": "拆卸",
+    "pos": "v.",
+    "ipa": "/dɪsˈmæntl/",
+    "ex": "Workers had to dismantle the old machinery before shipping it abroad.",
+    "exZh": "工人们不得不拆卸旧机器，然后才能将其运往国外。"
+  },
+  {
+    "en": "divert",
+    "zh": "转移",
+    "pos": "v.",
+    "ipa": "/daɪˈvɜːt/",
+    "ex": "Heavy flooding forced the authorities to divert traffic away from the highway.",
+    "exZh": "严重的洪灾迫使当局将车流从高速公路上转移开。"
+  },
+  {
+    "en": "eager",
+    "zh": "热切的",
+    "pos": "adj.",
+    "ipa": "/ˈiːɡə(r)/",
+    "ex": "Students were eager to hear the results of the national competition.",
+    "exZh": "学生们热切地想知道全国比赛的结果。"
+  },
+  {
+    "en": "earnest",
+    "zh": "认真的",
+    "pos": "adj.",
+    "ipa": "/ˈɜːnɪst/",
+    "ex": "She made an earnest appeal for donations to rebuild the village school.",
+    "exZh": "她认真地呼吁人们捐款重建村小学。"
+  },
+  {
+    "en": "earthquake",
+    "zh": "地震",
+    "pos": "n.",
+    "ipa": "/ˈɜːθkweɪk/",
+    "ex": "A powerful earthquake destroyed hundreds of houses in the mountain villages.",
+    "exZh": "一场强烈的地震摧毁了山村中数百座房屋。"
+  },
+  {
+    "en": "ease",
+    "zh": "缓解",
+    "pos": "v.",
+    "ipa": "/iːz/",
+    "ex": "The new medicine helped ease the pain in his injured shoulder.",
+    "exZh": "这种新药帮助缓解了他受伤肩膀的疼痛。"
+  },
+  {
+    "en": "echo",
+    "zh": "回响",
+    "pos": "v.",
+    "ipa": "/ˈekəʊ/",
+    "ex": "Her words echoed through the empty hall long after the meeting.",
+    "exZh": "会议结束很久后，她的话仍在空荡的大厅里回响。"
+  },
+  {
+    "en": "eclipse",
+    "zh": "日食",
+    "pos": "n.",
+    "ipa": "/ɪˈklɪps/",
+    "ex": "Thousands gathered on the beach to watch the rare solar eclipse.",
+    "exZh": "数千人聚集在海滩上观看罕见的日食。"
+  },
+  {
+    "en": "ecology",
+    "zh": "生态",
+    "pos": "n.",
+    "ipa": "/iˈkɒlədʒi/",
+    "ex": "The dam has seriously changed the ecology of the entire river valley.",
+    "exZh": "这座大坝严重改变了整个河谷的生态。"
+  },
+  {
+    "en": "economical",
+    "zh": "节约的",
+    "pos": "adj.",
+    "ipa": "/ˌiːkəˈnɒmɪkl/",
+    "ex": "This small car is remarkably economical on long journeys.",
+    "exZh": "这辆小车在长途行驶中非常节约。"
+  },
+  {
+    "en": "ecosystem",
+    "zh": "生态系统",
+    "pos": "n.",
+    "ipa": "/ˈiːkəʊsɪstəm/",
+    "ex": "Polluted rivers can destroy the entire ecosystem on which local farmers depend.",
+    "exZh": "被污染的河流会摧毁当地农民赖以生存的整个生态系统。"
+  },
+  {
+    "en": "edible",
+    "zh": "可食用的",
+    "pos": "adj.",
+    "ipa": "/ˈedəbl/",
+    "ex": "Only a small portion of the plant is actually edible for humans.",
+    "exZh": "这种植物中只有一小部分实际上可供人类食用。"
+  },
+  {
+    "en": "eject",
+    "zh": "弹出",
+    "pos": "v.",
+    "ipa": "/iˈdʒekt/",
+    "ex": "The machine ejects a fresh ticket whenever a customer pays in cash.",
+    "exZh": "顾客付现金时，这台机器就会弹出一张新票据。"
+  },
+  {
+    "en": "elaborate",
+    "zh": "详尽阐述",
+    "pos": "v.",
+    "ipa": "/ɪˈlæbəreɪt/",
+    "ex": "The professor asked him to elaborate on the second point of his argument.",
+    "exZh": "教授要求他详尽阐述其论点的第二点。"
+  },
+  {
+    "en": "elapse",
+    "zh": "消逝",
+    "pos": "v.",
+    "ipa": "/ɪˈlæps/",
+    "ex": "Only a few minutes elapsed before the lights went out completely.",
+    "exZh": "仅仅几分钟消逝之后，灯就完全熄灭了。"
+  },
+  {
+    "en": "elicit",
+    "zh": "引出",
+    "pos": "v.",
+    "ipa": "/iˈlɪsɪt/",
+    "ex": "The teacher used simple questions to elicit honest answers from the students.",
+    "exZh": "老师用简单的问题引出学生们诚实的回答。"
+  },
+  {
+    "en": "eloquence",
+    "zh": "口才",
+    "pos": "n.",
+    "ipa": "/ˈeləkwəns/",
+    "ex": "Her eloquence convinced even those who had opposed the plan.",
+    "exZh": "她的口才说服了连曾反对该计划的人。"
+  },
+  {
+    "en": "eloquent",
+    "zh": "雄辩的",
+    "pos": "adj.",
+    "ipa": "/ˈeləkwənt/",
+    "ex": "Her eloquent speech moved the audience to reconsider their long-held assumptions.",
+    "exZh": "她雄辩的演讲使听众重新思考他们长期持有的假设。"
+  },
+  {
+    "en": "embargo",
+    "zh": "禁运",
+    "pos": "n.",
+    "ipa": "/ɪmˈbɑːɡəʊ/",
+    "ex": "The government imposed an embargo on the export of rare metals.",
+    "exZh": "政府对稀有金属的出口实施禁运。"
+  },
+  {
+    "en": "embarrass",
+    "zh": "使尴尬",
+    "pos": "v.",
+    "ipa": "/ɪmˈbærəs/",
+    "ex": "He did not want to embarrass his friend in front of the class.",
+    "exZh": "他不想在同学面前让朋友尴尬。"
+  },
+  {
+    "en": "empower",
+    "zh": "授权与",
+    "pos": "v.",
+    "ipa": "/ɪmˈpaʊə(r)/",
+    "ex": "Better education can empower women to make independent economic choices.",
+    "exZh": "更好的教育能够授权与女性做出独立的经济选择。"
+  },
+  {
+    "en": "enact",
+    "zh": "通过法案",
+    "pos": "v.",
+    "ipa": "/ɪˈnækt/",
+    "ex": "Lawmakers finally agreed to enact stricter controls on online advertising.",
+    "exZh": "立法者最终同意通过更严格的网络广告管控法案。"
+  },
+  {
+    "en": "enchant",
+    "zh": "使陶醉",
+    "pos": "v.",
+    "ipa": "/ɪnˈtʃɑːnt/",
+    "ex": "The ancient melodies enchanted everyone sitting in the quiet courtyard.",
+    "exZh": "古老的旋律使坐在安静庭院里的每个人都陶醉了。"
+  },
+  {
+    "en": "encompass",
+    "zh": "涵盖",
+    "pos": "v.",
+    "ipa": "/ɪnˈkʌmpəs/",
+    "ex": "The survey encompasses nearly every aspect of campus life at the university.",
+    "exZh": "这项调查涵盖该大学校园生活的几乎每个方面。"
+  },
+  {
+    "en": "encroach",
+    "zh": "侵占",
+    "pos": "v.",
+    "ipa": "/ɪnˈkrəʊtʃ/",
+    "ex": "New housing projects continue to encroach on the remaining wetlands.",
+    "exZh": "新的住宅项目不断侵占剩余的湿地。"
+  },
+  {
+    "en": "endanger",
+    "zh": "威胁生存",
+    "pos": "v.",
+    "ipa": "/ɪnˈdeɪndʒə(r)/",
+    "ex": "Illegal hunting continues to endanger several species of wild cats.",
+    "exZh": "非法狩猎持续威胁着几种野生猫科动物的生存。"
+  },
+  {
+    "en": "enforce",
+    "zh": "执行",
+    "pos": "v.",
+    "ipa": "/ɪnˈfɔːs/",
+    "ex": "Local police find it hard to enforce the new parking regulations.",
+    "exZh": "当地警方发现难以执行新的停车规定。"
+  },
+  {
+    "en": "enlarge",
+    "zh": "扩大",
+    "pos": "v.",
+    "ipa": "/ɪnˈlɑːdʒ/",
+    "ex": "The company plans to enlarge its factory to meet growing demand.",
+    "exZh": "公司计划扩大工厂以满足不断增长的需求。"
+  },
+  {
+    "en": "enmity",
+    "zh": "仇恨",
+    "pos": "n.",
+    "ipa": "/ˈenməti/",
+    "ex": "Years of enmity between the two villages ended with a public apology.",
+    "exZh": "两村之间多年的仇恨以一次公开道歉告终。"
+  },
+  {
+    "en": "enrich",
+    "zh": "丰富",
+    "pos": "v.",
+    "ipa": "/ɪnˈrɪtʃ/",
+    "ex": "Reading widely will enrich your vocabulary and broaden your horizons.",
+    "exZh": "广泛阅读会丰富你的词汇并开阔你的视野。"
+  },
+  {
+    "en": "enroll",
+    "zh": "注册入学",
+    "pos": "v.",
+    "ipa": "/ɪnˈrəʊl/",
+    "ex": "More than five hundred students enrolled in the online course last term.",
+    "exZh": "上学期有五百多名学生注册了这门在线课程。"
+  },
+  {
+    "en": "enthusiasm",
+    "zh": "热忱",
+    "pos": "n.",
+    "ipa": "/ɪnˈθjuːziæzəm/",
+    "ex": "Her enthusiasm for volunteer work inspired many of her classmates.",
+    "exZh": "她对志愿工作的热忱激励了许多同学。"
+  },
+  {
+    "en": "entitle",
+    "zh": "使有权利",
+    "pos": "v.",
+    "ipa": "/ɪnˈtaɪtl/",
+    "ex": "This membership card entitles you to a discount at every branch store.",
+    "exZh": "这张会员卡使你有权在每家分店享受折扣。"
+  },
+  {
+    "en": "envisage",
+    "zh": "设想",
+    "pos": "v.",
+    "ipa": "/ɪnˈvɪzɪdʒ/",
+    "ex": "Few planners envisaged such rapid growth in the city's population.",
+    "exZh": "很少有规划者设想过该市人口如此快速的增长。"
+  },
+  {
+    "en": "epoch",
+    "zh": "时代",
+    "pos": "n.",
+    "ipa": "/ˈiːpɒk/",
+    "ex": "The invention of the printing press marked a new epoch in human history.",
+    "exZh": "印刷机的发明标志着人类历史上一个新时代。"
+  },
+  {
+    "en": "equate",
+    "zh": "等同",
+    "pos": "v.",
+    "ipa": "/iˈkweɪt/",
+    "ex": "We should not equate higher prices with better quality in every case.",
+    "exZh": "我们不应在任何情况下都把更高的价格等同于更好的质量。"
+  },
+  {
+    "en": "equation",
+    "zh": "方程式",
+    "pos": "n.",
+    "ipa": "/ɪˈkweɪʒn/",
+    "ex": "The students solved the difficult equation in less than five minutes.",
+    "exZh": "学生们在不到五分钟内解出了这道难方程式。"
+  },
+  {
+    "en": "erect",
+    "zh": "竖立",
+    "pos": "v.",
+    "ipa": "/ɪˈrekt/",
+    "ex": "Workers erected a temporary stage in the middle of the square.",
+    "exZh": "工人们在广场中央竖立了一个临时舞台。"
+  },
+  {
+    "en": "erupt",
+    "zh": "喷发",
+    "pos": "v.",
+    "ipa": "/ɪˈrʌpt/",
+    "ex": "The volcano erupted without warning and forced thousands to evacuate.",
+    "exZh": "这座火山毫无预警地喷发，迫使数千人撤离。"
+  },
+  {
+    "en": "espionage",
+    "zh": "间谍活动",
+    "pos": "n.",
+    "ipa": "/ˈespiənɑːʒ/",
+    "ex": "The novel describes industrial espionage inside a large chemical company.",
+    "exZh": "这部小说描写了一家大型化工公司内部的工业间谍活动。"
+  },
+  {
+    "en": "esteem",
+    "zh": "尊重",
+    "pos": "n.",
+    "ipa": "/ɪˈstiːm/",
+    "ex": "The old teacher is held in high esteem by all his former students.",
+    "exZh": "这位老教师受到他所有旧日学生的高度尊重。"
+  },
+  {
+    "en": "evacuate",
+    "zh": "疏散",
+    "pos": "v.",
+    "ipa": "/ɪˈvækjueɪt/",
+    "ex": "Authorities moved quickly to evacuate residents living near the chemical plant.",
+    "exZh": "当局迅速行动，疏散住在化工厂附近的居民。"
+  },
+  {
+    "en": "evade",
+    "zh": "逃避",
+    "pos": "v.",
+    "ipa": "/ɪˈveɪd/",
+    "ex": "The company was fined for trying to evade its tax obligations.",
+    "exZh": "该公司因试图逃避纳税义务而被罚款。"
+  },
+  {
+    "en": "evaporate",
+    "zh": "蒸发",
+    "pos": "v.",
+    "ipa": "/ɪˈvæpəreɪt/",
+    "ex": "Most of the water in the shallow pond evaporated during the hot summer.",
+    "exZh": "炎热的夏季里，浅池塘中的大部分水都蒸发了。"
+  },
+  {
+    "en": "exasperate",
+    "zh": "使恼火",
+    "pos": "v.",
+    "ipa": "/ɪɡˈzæspəreɪt/",
+    "ex": "Constant interruptions exasperated the writer working on his final chapter.",
+    "exZh": "不断的打扰使正在写最后一章的作家恼火。"
+  },
+  {
+    "en": "exclaim",
+    "zh": "惊呼",
+    "pos": "v.",
+    "ipa": "/ɪkˈskleɪm/",
+    "ex": "The children exclaimed with delight when the magician appeared on stage.",
+    "exZh": "魔术师登台时，孩子们高兴地惊呼起来。"
+  },
+  {
+    "en": "exclusive",
+    "zh": "独有的",
+    "pos": "adj.",
+    "ipa": "/ɪkˈskluːsɪv/",
+    "ex": "The magazine published an exclusive interview with the retiring prime minister.",
+    "exZh": "该杂志刊登了对即将退休的首相的独家专访。"
+  },
+  {
+    "en": "exemplify",
+    "zh": "举例说明",
+    "pos": "v.",
+    "ipa": "/ɪɡˈzemplɪfaɪ/",
+    "ex": "These two cases exemplify the difficulties faced by small rural hospitals.",
+    "exZh": "这两个案例举例说明了农村小医院面临的困难。"
+  },
+  {
+    "en": "exempt",
+    "zh": "免除",
+    "pos": "v.",
+    "ipa": "/ɪɡˈzempt/",
+    "ex": "Students with medical certificates are exempted from the physical training class.",
+    "exZh": "持有医疗证明的学生可免除体育训练课。"
+  },
+  {
+    "en": "exert",
+    "zh": "施加",
+    "pos": "v.",
+    "ipa": "/ɪɡˈzɜːt/",
+    "ex": "Parents still exert considerable influence on their children's career choices.",
+    "exZh": "父母对子女的职业选择仍施加着相当大的影响。"
+  },
+  {
+    "en": "exhaust",
+    "zh": "耗尽",
+    "pos": "v.",
+    "ipa": "/ɪɡˈzɔːst/",
+    "ex": "Long negotiations exhausted the patience of both delegations.",
+    "exZh": "漫长的谈判耗尽了双方代表团的耐心。"
+  },
+  {
+    "en": "expanse",
+    "zh": "广阔区域",
+    "pos": "n.",
+    "ipa": "/ɪkˈspæns/",
+    "ex": "An endless expanse of grassland stretched away towards the horizon.",
+    "exZh": "一片无尽的广阔区域向地平线延伸。"
+  },
+  {
+    "en": "expire",
+    "zh": "到期失效",
+    "pos": "v.",
+    "ipa": "/ɪkˈspaɪə(r)/",
+    "ex": "His passport will expire before the end of the exchange programme.",
+    "exZh": "他的护照将在交换项目结束前到期失效。"
+  },
+  {
+    "en": "exquisite",
+    "zh": "精美的",
+    "pos": "adj.",
+    "ipa": "/ɪkˈskwɪzɪt/",
+    "ex": "The museum displays exquisite porcelain produced during the Ming dynasty.",
+    "exZh": "博物馆展出明代生产的精美瓷器。"
+  },
+  {
+    "en": "extinguish",
+    "zh": "扑灭",
+    "pos": "v.",
+    "ipa": "/ɪkˈstɪŋɡwɪʃ/",
+    "ex": "Firefighters managed to extinguish the blaze before it spread.",
+    "exZh": "消防员设法在火势蔓延前扑灭了大火。"
+  },
+  {
+    "en": "fabricate",
+    "zh": "捏造",
+    "pos": "v.",
+    "ipa": "/ˈfæbrɪkeɪt/",
+    "ex": "The witness was accused of fabricating the whole story to protect himself.",
+    "exZh": "这名证人被指控捏造了整个故事以保护自己。"
+  },
+  {
+    "en": "facet",
+    "zh": "方面",
+    "pos": "n.",
+    "ipa": "/ˈfæsɪt/",
+    "ex": "Online privacy is only one facet of the broader digital security problem.",
+    "exZh": "网络隐私只是更广泛的数字安全问题的一个方面。"
+  },
+  {
+    "en": "faint",
+    "zh": "微弱的",
+    "pos": "adj.",
+    "ipa": "/feɪnt/",
+    "ex": "A faint light could still be seen through the curtains.",
+    "exZh": "透过窗帘仍能看到一片微弱的光。"
+  },
+  {
+    "en": "falter",
+    "zh": "动摇",
+    "pos": "v.",
+    "ipa": "/ˈfɔːltə(r)/",
+    "ex": "Economic growth began to falter after the sudden fall in exports.",
+    "exZh": "出口骤降之后，经济增长开始动摇。"
+  },
+  {
+    "en": "fatigue",
+    "zh": "疲惫",
+    "pos": "n.",
+    "ipa": "/fəˈtiːɡ/",
+    "ex": "Long working hours often produce mental fatigue that reduces overall efficiency.",
+    "exZh": "长时间工作往往产生精神疲惫，从而降低整体效率。"
+  },
+  {
+    "en": "feeble",
+    "zh": "虚弱的",
+    "pos": "adj.",
+    "ipa": "/ˈfiːbl/",
+    "ex": "The patient's voice was so feeble that we could hardly hear him.",
+    "exZh": "病人的声音如此虚弱，我们几乎听不见他说话。"
+  },
+  {
+    "en": "finite",
+    "zh": "有限的",
+    "pos": "adj.",
+    "ipa": "/ˈfaɪnaɪt/",
+    "ex": "Fossil fuels are finite resources that will eventually run out.",
+    "exZh": "化石燃料是有限的资源，最终会耗尽。"
+  },
+  {
+    "en": "flaw",
+    "zh": "瑕疵",
+    "pos": "n.",
+    "ipa": "/flɔː/",
+    "ex": "A design flaw in the bridge was discovered during the safety inspection.",
+    "exZh": "安全检查期间发现了这座桥的一处设计瑕疵。"
+  },
+  {
+    "en": "flee",
+    "zh": "逃离",
+    "pos": "v.",
+    "ipa": "/fliː/",
+    "ex": "Thousands were forced to flee their homes when the fighting began.",
+    "exZh": "战斗开始时，数千人被迫逃离家园。"
+  },
+  {
+    "en": "flip",
+    "zh": "翻转",
+    "pos": "v.",
+    "ipa": "/flɪp/",
+    "ex": "She flipped through the report quickly before the meeting began.",
+    "exZh": "会议开始前她快速地翻转翻阅了这份报告。"
+  },
+  {
+    "en": "flock",
+    "zh": "聚集",
+    "pos": "v.",
+    "ipa": "/flɒk/",
+    "ex": "Tourists flock to the ancient town whenever the cherry trees bloom.",
+    "exZh": "每当樱花盛开，游客们便聚集到这座古镇。"
+  },
+  {
+    "en": "flourish",
+    "zh": "繁荣",
+    "pos": "v.",
+    "ipa": "/ˈflʌrɪʃ/",
+    "ex": "Local crafts began to flourish once the new railway was opened.",
+    "exZh": "新铁路开通后，当地手工业开始繁荣。"
+  },
+  {
+    "en": "fluent",
+    "zh": "流利的",
+    "pos": "adj.",
+    "ipa": "/ˈfluːənt/",
+    "ex": "She is fluent in three languages and studies a fourth at university.",
+    "exZh": "她能流利地说三种语言，并在大学学习第四种。"
+  },
+  {
+    "en": "foresee",
+    "zh": "预见",
+    "pos": "v.",
+    "ipa": "/fɔːˈsiː/",
+    "ex": "Nobody could foresee how quickly the technology would change daily life.",
+    "exZh": "没有人能预见这项技术会多快改变日常生活。"
+  },
+  {
+    "en": "forfeit",
+    "zh": "丧失",
+    "pos": "v.",
+    "ipa": "/ˈfɔːfɪt/",
+    "ex": "Drivers who ignore the rule may forfeit their right to park here.",
+    "exZh": "忽视该规定的司机可能丧失在此停车的权利。"
+  },
+  {
+    "en": "formulate",
+    "zh": "制定",
+    "pos": "v.",
+    "ipa": "/ˈfɔːmjuleɪt/",
+    "ex": "The team spent months formulating a strategy to enter the overseas market.",
+    "exZh": "团队花了几个月制定进入海外市场的策略。"
+  },
+  {
+    "en": "foster",
+    "zh": "培养",
+    "pos": "v.",
+    "ipa": "/ˈfɒstə(r)/",
+    "ex": "Group projects help foster cooperation among students from different backgrounds.",
+    "exZh": "小组项目有助于培养来自不同背景的学生之间的合作。"
+  },
+  {
+    "en": "fraction",
+    "zh": "小部分",
+    "pos": "n.",
+    "ipa": "/ˈfrækʃn/",
+    "ex": "Only a small fraction of the population reads scientific journals regularly.",
+    "exZh": "只有一小部分人会定期阅读科学期刊。"
+  },
+  {
+    "en": "fraud",
+    "zh": "欺诈",
+    "pos": "n.",
+    "ipa": "/frɔːd/",
+    "ex": "He was arrested for fraud involving millions of dollars in fake investments.",
+    "exZh": "他因涉及数百万美元虚假投资的欺诈被捕。"
+  },
+  {
+    "en": "friction",
+    "zh": "摩擦",
+    "pos": "n.",
+    "ipa": "/ˈfrɪkʃn/",
+    "ex": "Constant friction between the two departments slowed down the whole project.",
+    "exZh": "两个部门之间不断的摩擦拖慢了整个项目。"
+  },
+  {
+    "en": "furnish",
+    "zh": "配备家具",
+    "pos": "v.",
+    "ipa": "/ˈfɜːnɪʃ/",
+    "ex": "They furnished the small flat with second-hand tables and chairs.",
+    "exZh": "他们用二手桌椅为小公寓配备了家具。"
+  },
+  {
+    "en": "gaze",
+    "zh": "注视",
+    "pos": "v.",
+    "ipa": "/ɡeɪz/",
+    "ex": "The children gazed at the stars through the telescope for nearly an hour.",
+    "exZh": "孩子们透过望远镜注视星空近一个小时。"
+  },
+  {
+    "en": "generosity",
+    "zh": "慷慨",
+    "pos": "n.",
+    "ipa": "/ˌdʒenəˈrɒsəti/",
+    "ex": "Thanks to the generosity of local donors, the shelter stayed open.",
+    "exZh": "多亏当地捐赠者的慷慨，收容所得以继续开放。"
+  },
+  {
+    "en": "genetic",
+    "zh": "遗传的",
+    "pos": "adj.",
+    "ipa": "/dʒəˈnetɪk/",
+    "ex": "Scientists identified a genetic factor linked to the rare disease.",
+    "exZh": "科学家发现了与这种罕见疾病相关的遗传因素。"
+  },
+  {
+    "en": "germ",
+    "zh": "病菌",
+    "pos": "n.",
+    "ipa": "/dʒɜːm/",
+    "ex": "Washing your hands properly removes most germs from the skin.",
+    "exZh": "正确洗手能除去皮肤上的大部分病菌。"
+  },
+  {
+    "en": "glacier",
+    "zh": "冰川",
+    "pos": "n.",
+    "ipa": "/ˈɡlæsiə(r)/",
+    "ex": "The glacier has retreated several kilometres over the past century.",
+    "exZh": "过去一个世纪里，这条冰川后退了好几公里。"
+  },
+  {
+    "en": "glare",
+    "zh": "怒目而视",
+    "pos": "v.",
+    "ipa": "/ɡleə(r)/",
+    "ex": "The two drivers glared at each other after the minor accident.",
+    "exZh": "那起小事故后，两位司机互相怒目而视。"
+  },
+  {
+    "en": "glimpse",
+    "zh": "一瞥",
+    "pos": "n.",
+    "ipa": "/ɡlɪmps/",
+    "ex": "We caught a brief glimpse of the president as his car passed by.",
+    "exZh": "总统的车经过时，我们匆匆一瞥看见了他。"
+  },
+  {
+    "en": "glossary",
+    "zh": "词汇表",
+    "pos": "n.",
+    "ipa": "/ˈɡlɒsəri/",
+    "ex": "A short glossary at the back explains the technical terms used.",
+    "exZh": "书后有一份简短的词汇表解释所用的技术术语。"
+  },
+  {
+    "en": "glow",
+    "zh": "发光",
+    "pos": "v.",
+    "ipa": "/ɡləʊ/",
+    "ex": "The embers continued to glow softly in the fireplace all night.",
+    "exZh": "余烬整夜在壁炉里柔和地发光。"
+  },
+  {
+    "en": "grasp",
+    "zh": "领会",
+    "pos": "v.",
+    "ipa": "/ɡrɑːsp/",
+    "ex": "Few students grasp the full meaning of the theory at first reading.",
+    "exZh": "很少有学生在初读时就能领会这个理论的全部含义。"
+  },
+  {
+    "en": "gratitude",
+    "zh": "感激",
+    "pos": "n.",
+    "ipa": "/ˈɡrætɪtjuːd/",
+    "ex": "He expressed his gratitude to everyone who supported the project.",
+    "exZh": "他向所有支持该项目的人表达了感激。"
+  },
+  {
+    "en": "grave",
+    "zh": "严重的",
+    "pos": "adj.",
+    "ipa": "/ɡreɪv/",
+    "ex": "The drought poses a grave threat to food supplies in the region.",
+    "exZh": "这场干旱对该地区的粮食供应构成严重威胁。"
+  },
+  {
+    "en": "graze",
+    "zh": "放牧",
+    "pos": "v.",
+    "ipa": "/ɡreɪz/",
+    "ex": "Herds of sheep graze freely on the grassland throughout the summer.",
+    "exZh": "整个夏天，成群的羊在草原上自由放牧。"
+  },
+  {
+    "en": "grief",
+    "zh": "悲痛",
+    "pos": "n.",
+    "ipa": "/ɡriːf/",
+    "ex": "Her grief at the loss of her brother lasted for many years.",
+    "exZh": "她失去兄弟的悲痛持续了许多年。"
+  },
+  {
+    "en": "grim",
+    "zh": "严峻",
+    "pos": "adj.",
+    "ipa": "/ɡrɪm/",
+    "ex": "The report paints a grim picture of the city's air quality.",
+    "exZh": "这份报告为该市的空气质量描绘了一幅严峻的图景。"
+  },
+  {
+    "en": "grin",
+    "zh": "露齿笑",
+    "pos": "v.",
+    "ipa": "/ɡrɪn/",
+    "ex": "The boy grinned proudly when his teacher praised his composition.",
+    "exZh": "老师表扬他的作文时，男孩自豪地露齿笑了。"
+  },
+  {
+    "en": "grope",
+    "zh": "摸索",
+    "pos": "v.",
+    "ipa": "/ɡrəʊp/",
+    "ex": "He had to grope for the light switch in the dark corridor.",
+    "exZh": "他不得不在黑暗的走廊里摸索着找电灯开关。"
+  },
+  {
+    "en": "gross",
+    "zh": "总的",
+    "pos": "adj.",
+    "ipa": "/ɡrəʊs/",
+    "ex": "The company's gross income rose by twelve percent last year.",
+    "exZh": "该公司去年的总收入增长了百分之十二。"
+  },
+  {
+    "en": "grumble",
+    "zh": "抱怨",
+    "pos": "v.",
+    "ipa": "/ˈɡrʌmbl/",
+    "ex": "Passengers began to grumble about the repeated delays of the train.",
+    "exZh": "乘客们开始抱怨火车一再延误。"
+  },
+  {
+    "en": "haunt",
+    "zh": "萦绕心头",
+    "pos": "v.",
+    "ipa": "/hɔːnt/",
+    "ex": "Memories of the accident still haunt the survivors many years later.",
+    "exZh": "多年以后，那场事故的记忆仍萦绕在幸存者心头。"
+  },
+  {
+    "en": "heighten",
+    "zh": "提高",
+    "pos": "v.",
+    "ipa": "/ˈhaɪtn/",
+    "ex": "Bright stage lighting can heighten the dramatic effect of a scene.",
+    "exZh": "明亮的舞台灯光能提高一场戏的戏剧效果。"
+  },
+  {
+    "en": "hemisphere",
+    "zh": "半球",
+    "pos": "n.",
+    "ipa": "/ˈhemɪsfɪə(r)/",
+    "ex": "Seasons in the southern hemisphere are opposite to those in the north.",
+    "exZh": "南半球的季节与北半球相反。"
+  },
+  {
+    "en": "herd",
+    "zh": "兽群",
+    "pos": "n.",
+    "ipa": "/hɜːd/",
+    "ex": "A herd of wild horses crossed the road just before sunset.",
+    "exZh": "日落前一群野马穿过了公路。"
+  },
+  {
+    "en": "hinge",
+    "zh": "取决于",
+    "pos": "v.",
+    "ipa": "/hɪndʒ/",
+    "ex": "The whole plan hinges on whether the funding is approved.",
+    "exZh": "整个计划取决于资金是否获批。"
+  },
+  {
+    "en": "hollow",
+    "zh": "空洞的",
+    "pos": "adj.",
+    "ipa": "/ˈhɒləʊ/",
+    "ex": "His promise sounded hollow because he had broken it twice before.",
+    "exZh": "他的承诺听起来很空洞，因为他此前已两次违背。"
+  },
+  {
+    "en": "hostility",
+    "zh": "敌对态度",
+    "pos": "n.",
+    "ipa": "/hɒˈstɪləti/",
+    "ex": "The proposal met with hostility from several members of the board.",
+    "exZh": "该提议遭到董事会几名成员的敌对态度。"
+  },
+  {
+    "en": "hover",
+    "zh": "盘旋",
+    "pos": "v.",
+    "ipa": "/ˈhɒvə(r)/",
+    "ex": "A helicopter hovered above the stadium during the whole ceremony.",
+    "exZh": "整个仪式期间，一架直升机在体育场上方盘旋。"
+  },
+  {
+    "en": "humble",
+    "zh": "谦逊的",
+    "pos": "adj.",
+    "ipa": "/ˈhʌmbl/",
+    "ex": "Despite his fame, the scientist remained humble about his own achievements.",
+    "exZh": "尽管名声在外，这位科学家对自己的成就仍保持谦逊。"
+  },
+  {
+    "en": "hurl",
+    "zh": "猛投",
+    "pos": "v.",
+    "ipa": "/hɜːl/",
+    "ex": "Angry fans began to hurl bottles onto the field after the final whistle.",
+    "exZh": "终场哨响后，愤怒的球迷开始向场内猛投瓶子。"
+  },
+  {
+    "en": "hybrid",
+    "zh": "混合的",
+    "pos": "adj.",
+    "ipa": "/ˈhaɪbrɪd/",
+    "ex": "The school adopted a hybrid model combining online and classroom teaching.",
+    "exZh": "该校采用了线上与课堂相结合的混合教学模式。"
+  },
+  {
+    "en": "idle",
+    "zh": "无所事事的",
+    "pos": "adj.",
+    "ipa": "/ˈaɪdl/",
+    "ex": "Idle workers were retrained instead of being dismissed by the firm.",
+    "exZh": "公司没有解雇无所事事的工人，而是对他们进行再培训。"
+  },
+  {
+    "en": "illiterate",
+    "zh": "不识字的",
+    "pos": "adj.",
+    "ipa": "/ɪˈlɪtərət/",
+    "ex": "Many adults in the region remain illiterate and cannot read road signs.",
+    "exZh": "该地区许多成年人仍不识字，看不懂路标。"
+  },
+  {
+    "en": "imitate",
+    "zh": "模仿",
+    "pos": "v.",
+    "ipa": "/ˈɪmɪteɪt/",
+    "ex": "Young parrots quickly imitate the sounds made by their owners.",
+    "exZh": "小鹦鹉很快模仿主人的声音。"
+  },
+  {
+    "en": "immense",
+    "zh": "极大的",
+    "pos": "adj.",
+    "ipa": "/ɪˈmens/",
+    "ex": "The project required an immense amount of time and careful planning.",
+    "exZh": "这个项目需要极大的时间和细致的规划。"
+  },
+  {
+    "en": "immerse",
+    "zh": "沉浸",
+    "pos": "v.",
+    "ipa": "/ɪˈmɜːs/",
+    "ex": "Students who immerse themselves in a foreign language learn it faster.",
+    "exZh": "沉浸于外语学习中的学生掌握得更快。"
+  },
+  {
+    "en": "impending",
+    "zh": "逼近的",
+    "pos": "adj.",
+    "ipa": "/ɪmˈpendɪŋ/",
+    "ex": "Farmers hurried to harvest the crops before the impending storm.",
+    "exZh": "农民们赶在逼近的暴风雨前抢收庄稼。"
+  },
+  {
+    "en": "implication",
+    "zh": "含义",
+    "pos": "n.",
+    "ipa": "/ˌɪmplɪˈkeɪʃn/",
+    "ex": "The implications of the discovery for medical research are enormous.",
+    "exZh": "这一发现对医学研究的含义极为重大。"
+  },
+  {
+    "en": "inclusive",
+    "zh": "包容的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈkluːsɪv/",
+    "ex": "The school has developed an inclusive policy for students with disabilities.",
+    "exZh": "该校为残障学生制定了包容的政策。"
+  },
+  {
+    "en": "incur",
+    "zh": "招致",
+    "pos": "v.",
+    "ipa": "/ɪnˈkɜː(r)/",
+    "ex": "Late payment of the fee will incur an additional service charge.",
+    "exZh": "逾期缴纳费用将招致额外的服务费。"
+  },
+  {
+    "en": "indebted",
+    "zh": "感激的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈdetɪd/",
+    "ex": "I am deeply indebted to my tutor for her patient guidance.",
+    "exZh": "我非常感激导师耐心的指导。"
+  },
+  {
+    "en": "indignant",
+    "zh": "愤慨的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈdɪɡnənt/",
+    "ex": "Residents were indignant about the sudden closure of the local clinic.",
+    "exZh": "居民们对当地诊所突然关闭感到愤慨。"
+  },
+  {
+    "en": "inertia",
+    "zh": "惰性",
+    "pos": "n.",
+    "ipa": "/ɪˈnɜːʃə/",
+    "ex": "Bureaucratic inertia prevented the reform from being carried out quickly.",
+    "exZh": "官僚惰性使这项改革无法迅速推行。"
+  },
+  {
+    "en": "infer",
+    "zh": "推断",
+    "pos": "v.",
+    "ipa": "/ɪnˈfɜː(r)/",
+    "ex": "From these figures we can infer that demand is slowly recovering.",
+    "exZh": "从这些数字我们可以推断需求正在缓慢恢复。"
+  },
+  {
+    "en": "inferior",
+    "zh": "较差的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈfɪəriə(r)/",
+    "ex": "Cheaper materials often produce goods of clearly inferior quality.",
+    "exZh": "更便宜的材料往往生产出质量明显较差的商品。"
+  },
+  {
+    "en": "inflate",
+    "zh": "使膨胀",
+    "pos": "v.",
+    "ipa": "/ɪnˈfleɪt/",
+    "ex": "Rising demand may inflate prices far beyond the official limit.",
+    "exZh": "需求上升可能使价格膨胀远超官方上限。"
+  },
+  {
+    "en": "influential",
+    "zh": "有影响力的",
+    "pos": "adj.",
+    "ipa": "/ˌɪnfluˈenʃl/",
+    "ex": "She became one of the most influential journalists of her generation.",
+    "exZh": "她成为她那一代最有影响力的记者之一。"
+  },
+  {
+    "en": "informative",
+    "zh": "信息丰富的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈfɔːmətɪv/",
+    "ex": "The lecture was highly informative and answered most of our questions.",
+    "exZh": "这场讲座信息丰富，解答了我们大部分问题。"
+  },
+  {
+    "en": "infringe",
+    "zh": "侵犯",
+    "pos": "v.",
+    "ipa": "/ɪnˈfrɪndʒ/",
+    "ex": "The new rules may infringe the rights of small business owners.",
+    "exZh": "新规定可能侵犯小企业主的权利。"
+  },
+  {
+    "en": "ingenious",
+    "zh": "巧妙的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈdʒiːniəs/",
+    "ex": "The engineer devised an ingenious device for purifying water cheaply.",
+    "exZh": "这位工程师设计出一种巧妙廉价的净水装置。"
+  },
+  {
+    "en": "ingredient",
+    "zh": "成分",
+    "pos": "n.",
+    "ipa": "/ɪnˈɡriːdiənt/",
+    "ex": "Water is the main ingredient in almost every soft drink.",
+    "exZh": "水是几乎所有软饮料的主要成分。"
+  },
+  {
+    "en": "inhabit",
+    "zh": "栖息于",
+    "pos": "v.",
+    "ipa": "/ɪnˈhæbɪt/",
+    "ex": "Rare birds inhabit the marshes along this stretch of the coast.",
+    "exZh": "珍稀鸟类栖息于这段海岸的沼泽地。"
+  },
+  {
+    "en": "inject",
+    "zh": "注射",
+    "pos": "v.",
+    "ipa": "/ɪnˈdʒekt/",
+    "ex": "Nurses must inject the vaccine into the upper arm of each patient.",
+    "exZh": "护士必须将疫苗注射到每位患者的上臂。"
+  },
+  {
+    "en": "inland",
+    "zh": "内陆的",
+    "pos": "adj.",
+    "ipa": "/ˈɪnlənd/",
+    "ex": "Goods are transported from the port to inland cities by rail.",
+    "exZh": "货物通过铁路从港口运往内陆城市。"
+  },
+  {
+    "en": "innate",
+    "zh": "天生的",
+    "pos": "adj.",
+    "ipa": "/ɪˈneɪt/",
+    "ex": "Some scholars believe that language ability is largely innate in humans.",
+    "exZh": "一些学者认为语言能力在人类中很大程度上是天生的。"
+  },
+  {
+    "en": "innovation",
+    "zh": "创新",
+    "pos": "n.",
+    "ipa": "/ˌɪnəˈveɪʃn/",
+    "ex": "Technological innovation has reshaped the way people communicate with each other.",
+    "exZh": "技术创新重塑了人们相互交流的方式。"
+  },
+  {
+    "en": "innumerable",
+    "zh": "数不清的",
+    "pos": "adj.",
+    "ipa": "/ɪˈnjuːmərəbl/",
+    "ex": "Innumerable stars became visible once we left the city lights.",
+    "exZh": "我们离开城市灯光后，数不清的星星变得可见。"
+  },
+  {
+    "en": "insight",
+    "zh": "洞察",
+    "pos": "n.",
+    "ipa": "/ˈɪnsaɪt/",
+    "ex": "Her book offers valuable insight into the workings of modern finance.",
+    "exZh": "她的书对现代金融的运作提供了宝贵的洞察。"
+  },
+  {
+    "en": "integrate",
+    "zh": "融入",
+    "pos": "v.",
+    "ipa": "/ˈɪntɪɡreɪt/",
+    "ex": "Newcomers need time to integrate into the local community.",
+    "exZh": "新来者需要时间融入当地社区。"
+  },
+  {
+    "en": "intercept",
+    "zh": "拦截",
+    "pos": "v.",
+    "ipa": "/ˌɪntəˈsept/",
+    "ex": "Police managed to intercept the stolen lorry near the border.",
+    "exZh": "警方设法在边境附近拦截了被盗的卡车。"
+  },
+  {
+    "en": "intervene",
+    "zh": "干预",
+    "pos": "v.",
+    "ipa": "/ˌɪntəˈviːn/",
+    "ex": "The government chose not to intervene in the dispute between the firms.",
+    "exZh": "政府选择不干预两家公司之间的争端。"
+  },
+  {
+    "en": "intricate",
+    "zh": "错综复杂的",
+    "pos": "adj.",
+    "ipa": "/ˈɪntrɪkət/",
+    "ex": "The clock contains an intricate mechanism of more than three hundred parts.",
+    "exZh": "这只钟包含一个由三百多个零件组成的错综复杂的装置。"
+  },
+  {
+    "en": "intrigue",
+    "zh": "激起兴趣",
+    "pos": "v.",
+    "ipa": "/ɪnˈtriːɡ/",
+    "ex": "The unusual results intrigued the researchers and prompted further experiments.",
+    "exZh": "这些不寻常的结果激起了研究者的兴趣，促使他们进行更多实验。"
+  },
+  {
+    "en": "intuition",
+    "zh": "直觉",
+    "pos": "n.",
+    "ipa": "/ˌɪntjuˈɪʃn/",
+    "ex": "Experienced doctors often rely on intuition as well as test results.",
+    "exZh": "有经验的医生往往既依赖直觉也依赖检验结果。"
+  },
+  {
+    "en": "invaluable",
+    "zh": "无价的",
+    "pos": "adj.",
+    "ipa": "/ɪnˈvæljuəbl/",
+    "ex": "Her advice proved invaluable when we were setting up the charity.",
+    "exZh": "我们筹办慈善机构时，她的建议被证明是无价的。"
+  },
+  {
+    "en": "invasion",
+    "zh": "入侵",
+    "pos": "n.",
+    "ipa": "/ɪnˈveɪʒn/",
+    "ex": "The invasion of weeds has damaged many native plant species here.",
+    "exZh": "杂草的入侵损害了这里许多本地植物物种。"
+  },
+  {
+    "en": "irrigate",
+    "zh": "灌溉",
+    "pos": "v.",
+    "ipa": "/ˈɪrɪɡeɪt/",
+    "ex": "Farmers use canal water to irrigate the fields during the dry season.",
+    "exZh": "旱季农民用渠水灌溉农田。"
+  },
+  {
+    "en": "landscape",
+    "zh": "风景",
+    "pos": "n.",
+    "ipa": "/ˈlændskeɪp/",
+    "ex": "The landscape changes dramatically as you travel north through the province.",
+    "exZh": "当你向北穿越该省时，风景发生剧烈变化。"
+  },
+  {
+    "en": "lapse",
+    "zh": "失误",
+    "pos": "n.",
+    "ipa": "/læps/",
+    "ex": "A brief lapse in attention caused the driver to miss the exit.",
+    "exZh": "注意力的一次短暂失误使司机错过了出口。"
+  },
+  {
+    "en": "latent",
+    "zh": "潜伏的",
+    "pos": "adj.",
+    "ipa": "/ˈleɪtnt/",
+    "ex": "The training aims to develop the latent talents of every child.",
+    "exZh": "该培训旨在开发每个孩子潜伏的才能。"
+  },
+  {
+    "en": "latitude",
+    "zh": "纬度",
+    "pos": "n.",
+    "ipa": "/ˈlætɪtjuːd/",
+    "ex": "Temperature varies greatly with latitude across this vast continent.",
+    "exZh": "在这片广阔的大陆上，气温随纬度变化很大。"
+  },
+  {
+    "en": "lavish",
+    "zh": "奢华的",
+    "pos": "adj.",
+    "ipa": "/ˈlævɪʃ/",
+    "ex": "The hotel is famous for its lavish decoration and attentive service.",
+    "exZh": "这家酒店以奢华的装饰和周到的服务闻名。"
+  },
+  {
+    "en": "layout",
+    "zh": "布局",
+    "pos": "n.",
+    "ipa": "/ˈleɪaʊt/",
+    "ex": "The layout of the new library makes finding books much easier.",
+    "exZh": "新图书馆的布局使找书容易得多。"
+  },
+  {
+    "en": "legend",
+    "zh": "传说",
+    "pos": "n.",
+    "ipa": "/ˈledʒənd/",
+    "ex": "An old legend says a treasure lies buried beneath the hill.",
+    "exZh": "一个古老的传说称山下埋藏着宝藏。"
+  },
+  {
+    "en": "longevity",
+    "zh": "长寿",
+    "pos": "n.",
+    "ipa": "/lɒnˈdʒevəti/",
+    "ex": "Regular exercise and a balanced diet contribute greatly to longevity.",
+    "exZh": "规律锻炼和均衡饮食对长寿贡献很大。"
+  },
+  {
+    "en": "loyal",
+    "zh": "忠诚的",
+    "pos": "adj.",
+    "ipa": "/ˈlɔɪəl/",
+    "ex": "The shop has a loyal group of customers who come every week.",
+    "exZh": "这家店有一群每周都来的忠诚顾客。"
+  },
+  {
+    "en": "magnet",
+    "zh": "磁铁",
+    "pos": "n.",
+    "ipa": "/ˈmæɡnət/",
+    "ex": "The old town acts like a magnet for photographers in autumn.",
+    "exZh": "秋天时这座老城就像磁铁一样吸引着摄影师。"
+  },
+  {
+    "en": "magnify",
+    "zh": "放大",
+    "pos": "v.",
+    "ipa": "/ˈmæɡnɪfaɪ/",
+    "ex": "A powerful lens can magnify these tiny cells more than a thousand times.",
+    "exZh": "高倍镜能把这些微小细胞放大上千倍。"
+  },
+  {
+    "en": "magnitude",
+    "zh": "重要性",
+    "pos": "n.",
+    "ipa": "/ˈmæɡnɪtjuːd/",
+    "ex": "Few people realise the magnitude of the problem facing coastal cities.",
+    "exZh": "很少有人意识到沿海城市所面临问题的重要性。"
+  },
+  {
+    "en": "mainstream",
+    "zh": "主流",
+    "pos": "n.",
+    "ipa": "/ˈmeɪnstriːm/",
+    "ex": "Electric vehicles have finally entered the mainstream of the auto market.",
+    "exZh": "电动汽车终于进入了汽车市场的主流。"
+  },
+  {
+    "en": "marginal",
+    "zh": "边缘的",
+    "pos": "adj.",
+    "ipa": "/ˈmɑːdʒɪnl/",
+    "ex": "The changes brought only marginal improvements to the overall results.",
+    "exZh": "这些改动对总体结果只带来边缘的改善。"
+  },
+  {
+    "en": "mature",
+    "zh": "成熟的",
+    "pos": "adj.",
+    "ipa": "/məˈtʃʊə(r)/",
+    "ex": "She handled the criticism in a surprisingly mature and patient way.",
+    "exZh": "她以惊人的成熟和耐心处理了这些批评。"
+  },
+  {
+    "en": "meanwhile",
+    "zh": "与此同时",
+    "pos": "adv.",
+    "ipa": "/ˈmiːnwaɪl/",
+    "ex": "The bridge is closed; meanwhile, drivers should use the northern route.",
+    "exZh": "大桥封闭；与此同时，司机应走北线。"
+  },
+  {
+    "en": "melody",
+    "zh": "旋律",
+    "pos": "n.",
+    "ipa": "/ˈmelədi/",
+    "ex": "The simple melody stayed in my mind for the rest of the day.",
+    "exZh": "这简单的旋律在那天余下的时间里一直留在我脑中。"
+  },
+  {
+    "en": "menace",
+    "zh": "危险的人或物",
+    "pos": "n.",
+    "ipa": "/ˈmenəs/",
+    "ex": "Drunk driving remains a serious menace to pedestrians at night.",
+    "exZh": "酒后驾车在夜间仍是对行人的危险之物。"
+  },
+  {
+    "en": "metaphor",
+    "zh": "隐喻",
+    "pos": "n.",
+    "ipa": "/ˈmetəfə(r)/",
+    "ex": "The poet uses the sea as a metaphor for human loneliness.",
+    "exZh": "诗人用大海作为人类孤独的隐喻。"
+  },
+  {
+    "en": "midst",
+    "zh": "中间",
+    "pos": "n.",
+    "ipa": "/mɪdst/",
+    "ex": "In the midst of the celebration, the electricity suddenly failed.",
+    "exZh": "庆祝活动的中间，电力突然中断。"
+  },
+  {
+    "en": "mingle",
+    "zh": "交往",
+    "pos": "v.",
+    "ipa": "/ˈmɪŋɡl/",
+    "ex": "Guests began to mingle freely once the formal speeches were over.",
+    "exZh": "正式致辞结束后，宾客们开始自由交往。"
+  },
+  {
+    "en": "momentum",
+    "zh": "动力",
+    "pos": "n.",
+    "ipa": "/məˈmentəm/",
+    "ex": "The campaign for cleaner energy has gained momentum in recent years.",
+    "exZh": "近年来清洁能源运动获得了动力。"
+  },
+  {
+    "en": "monetary",
+    "zh": "金融的",
+    "pos": "adj.",
+    "ipa": "/ˈmʌnɪtri/",
+    "ex": "The central bank tightened monetary policy to control rising prices.",
+    "exZh": "央行收紧金融政策以控制物价上涨。"
+  },
+  {
+    "en": "motive",
+    "zh": "动机",
+    "pos": "n.",
+    "ipa": "/ˈməʊtɪv/",
+    "ex": "Police could not determine the motive behind the sudden attack.",
+    "exZh": "警方无法确定这次突然袭击背后的动机。"
+  },
+  {
+    "en": "mould",
+    "zh": "模子",
+    "pos": "n.",
+    "ipa": "/məʊld/",
+    "ex": "The jelly was poured into a metal mould and left to set.",
+    "exZh": "果冻被倒进金属模子里放着凝固。"
+  },
+  {
+    "en": "multitude",
+    "zh": "众多",
+    "pos": "n.",
+    "ipa": "/ˈmʌltɪtjuːd/",
+    "ex": "A multitude of small factors together produced this surprising result.",
+    "exZh": "众多细小因素共同造成了这一令人惊讶的结果。"
+  },
+  {
+    "en": "municipal",
+    "zh": "市政的",
+    "pos": "adj.",
+    "ipa": "/mjuːˈnɪsɪpl/",
+    "ex": "The municipal government invested heavily in upgrading the water network.",
+    "exZh": "市政府投入巨资升级供水管网。"
+  },
+  {
+    "en": "mutter",
+    "zh": "嘟哝",
+    "pos": "v.",
+    "ipa": "/ˈmʌtə(r)/",
+    "ex": "He muttered something under his breath and left the room angrily.",
+    "exZh": "他低声嘟哝了几句，然后愤怒地离开了房间。"
+  },
+  {
+    "en": "nominal",
+    "zh": "名义上的",
+    "pos": "adj.",
+    "ipa": "/ˈnɒmɪnl/",
+    "ex": "He remains the nominal head of the firm, though others make decisions.",
+    "exZh": "尽管别人做决定，他仍是公司名义上的负责人。"
+  },
+  {
+    "en": "nominate",
+    "zh": "提名",
+    "pos": "v.",
+    "ipa": "/ˈnɒmɪneɪt/",
+    "ex": "The committee decided to nominate her for the annual teaching award.",
+    "exZh": "委员会决定提名她参评年度教学奖。"
+  },
+  {
+    "en": "notable",
+    "zh": "显著的",
+    "pos": "adj.",
+    "ipa": "/ˈnəʊtəbl/",
+    "ex": "The most notable feature of the design is its use of natural light.",
+    "exZh": "这一设计最显著的特点是自然光的运用。"
+  },
+  {
+    "en": "notify",
+    "zh": "告知",
+    "pos": "v.",
+    "ipa": "/ˈnəʊtɪfaɪ/",
+    "ex": "Please notify the office in advance if you cannot attend the interview.",
+    "exZh": "如果无法参加面试，请提前告知办公室。"
+  },
+  {
+    "en": "notion",
+    "zh": "观念",
+    "pos": "n.",
+    "ipa": "/ˈnəʊʃn/",
+    "ex": "Many people still hold the mistaken notion that talent matters more than practice.",
+    "exZh": "许多人仍抱有这样的错误观念：天赋比练习更重要。"
+  },
+  {
+    "en": "nourish",
+    "zh": "滋养",
+    "pos": "v.",
+    "ipa": "/ˈnʌrɪʃ/",
+    "ex": "A balanced diet will nourish the body and strengthen the immune system.",
+    "exZh": "均衡的饮食将滋养身体并增强免疫系统。"
+  },
+  {
+    "en": "novelty",
+    "zh": "新奇",
+    "pos": "n.",
+    "ipa": "/ˈnɒvlti/",
+    "ex": "The novelty of city life wore off after a few busy months.",
+    "exZh": "几个月忙碌之后，城市生活的新奇感消退了。"
+  },
+  {
+    "en": "nurture",
+    "zh": "培育",
+    "pos": "v.",
+    "ipa": "/ˈnɜːtʃə(r)/",
+    "ex": "Good schools nurture curiosity rather than simply transmitting knowledge.",
+    "exZh": "好的学校培育好奇心，而不仅仅是传授知识。"
+  },
+  {
+    "en": "obedient",
+    "zh": "顺从的",
+    "pos": "adj.",
+    "ipa": "/əˈbiːdiənt/",
+    "ex": "The obedient dog waited quietly outside the shop for its owner.",
+    "exZh": "那只顺从的狗安静地在店外等着主人。"
+  },
+  {
+    "en": "obesity",
+    "zh": "肥胖",
+    "pos": "n.",
+    "ipa": "/əʊˈbiːsəti/",
+    "ex": "Childhood obesity has become a growing concern in many developed countries.",
+    "exZh": "儿童肥胖在许多发达国家已成为日益严重的隐忧。"
+  },
+  {
+    "en": "oblige",
+    "zh": "使负有义务",
+    "pos": "v.",
+    "ipa": "/əˈblaɪdʒ/",
+    "ex": "The contract obliges the supplier to deliver the goods within ten days.",
+    "exZh": "合同使供应商负有十天内交货的义务。"
+  },
+  {
+    "en": "opponent",
+    "zh": "对手",
+    "pos": "n.",
+    "ipa": "/əˈpəʊnənt/",
+    "ex": "She defeated a much more experienced opponent in the semi-final.",
+    "exZh": "她在半决赛中击败了一位经验丰富得多的对手。"
+  },
+  {
+    "en": "oppress",
+    "zh": "使压抑",
+    "pos": "v.",
+    "ipa": "/əˈpres/",
+    "ex": "The humid heat oppressed everyone working in the unventilated workshop.",
+    "exZh": "潮湿的炎热使在无通风车间里工作的每个人都感到压抑。"
+  },
+  {
+    "en": "optimism",
+    "zh": "乐观态度",
+    "pos": "n.",
+    "ipa": "/ˈɒptɪmɪzəm/",
+    "ex": "Despite the setbacks, there is cautious optimism about the new vaccine.",
+    "exZh": "尽管遭遇挫折，人们对新疫苗仍持谨慎的乐观态度。"
+  },
+  {
+    "en": "orbit",
+    "zh": "轨道",
+    "pos": "n.",
+    "ipa": "/ˈɔːbɪt/",
+    "ex": "The satellite completed another orbit around the earth in ninety minutes.",
+    "exZh": "这颗卫星九十分钟内又绕地球完成一圈轨道。"
+  },
+  {
+    "en": "ordeal",
+    "zh": "磨难",
+    "pos": "n.",
+    "ipa": "/ɔːˈdiːl/",
+    "ex": "The survivors described their long ordeal in the desert.",
+    "exZh": "幸存者描述了他们在沙漠中漫长的磨难。"
+  },
+  {
+    "en": "orient",
+    "zh": "确定方向",
+    "pos": "v.",
+    "ipa": "/ˈɔːrient/",
+    "ex": "It took him a week to orient himself in the new city.",
+    "exZh": "他花了一周时间在新城市里确定自己的方向。"
+  },
+  {
+    "en": "outbreak",
+    "zh": "爆发",
+    "pos": "n.",
+    "ipa": "/ˈaʊtbreɪk/",
+    "ex": "The sudden outbreak of influenza closed several schools in the district.",
+    "exZh": "流感的突然爆发使该区几所学校停课。"
+  },
+  {
+    "en": "outburst",
+    "zh": "迸发",
+    "pos": "n.",
+    "ipa": "/ˈaʊtbɜːst/",
+    "ex": "His angry outburst surprised everyone at the otherwise calm meeting.",
+    "exZh": "他在原本平静的会议上愤怒的迸发让所有人吃惊。"
+  },
+  {
+    "en": "outcry",
+    "zh": "强烈抗议",
+    "pos": "n.",
+    "ipa": "/ˈaʊtkraɪ/",
+    "ex": "The planned closure of the library provoked a public outcry.",
+    "exZh": "图书馆的关闭计划激起了公众的强烈抗议。"
+  },
+  {
+    "en": "outlaw",
+    "zh": "宣布非法",
+    "pos": "v.",
+    "ipa": "/ˈaʊtlɔː/",
+    "ex": "Several countries have moved to outlaw the trade in ivory.",
+    "exZh": "几个国家已采取行动宣布象牙贸易非法。"
+  },
+  {
+    "en": "outlet",
+    "zh": "出口渠道",
+    "pos": "n.",
+    "ipa": "/ˈaʊtlet/",
+    "ex": "The factory sells its products through an outlet in the city centre.",
+    "exZh": "这家工厂通过市中心的出口渠道销售产品。"
+  },
+  {
+    "en": "outnumber",
+    "zh": "数量上超过",
+    "pos": "v.",
+    "ipa": "/ˌaʊtˈnʌmbə(r)/",
+    "ex": "Female students now outnumber male students in most medical schools.",
+    "exZh": "在大多数医学院，女生数量上已超过男生。"
+  },
+  {
+    "en": "outrage",
+    "zh": "暴行",
+    "pos": "n.",
+    "ipa": "/ˈaʊtreɪdʒ/",
+    "ex": "The newspaper described the attack as an outrage against innocent civilians.",
+    "exZh": "该报将这次袭击描述为对无辜平民的暴行。"
+  },
+  {
+    "en": "outset",
+    "zh": "开端",
+    "pos": "n.",
+    "ipa": "/ˈaʊtset/",
+    "ex": "The risks were made clear to investors at the very outset.",
+    "exZh": "投资风险从一开始就向投资者说明清楚。"
+  },
+  {
+    "en": "outweigh",
+    "zh": "胜过",
+    "pos": "v.",
+    "ipa": "/ˌaʊtˈweɪ/",
+    "ex": "The benefits of regular exercise outweigh the risk of minor injury.",
+    "exZh": "规律锻炼的益处胜过受轻伤的风险。"
+  },
+  {
+    "en": "overdue",
+    "zh": "早该发生的",
+    "pos": "adj.",
+    "ipa": "/ˌəʊvəˈdjuː/",
+    "ex": "A reform of the examination system is long overdue.",
+    "exZh": "考试制度的改革早就该发生了。"
+  },
+  {
+    "en": "overhear",
+    "zh": "无意听到",
+    "pos": "v.",
+    "ipa": "/ˌəʊvəˈhɪə(r)/",
+    "ex": "She happened to overhear two colleagues discussing the new manager.",
+    "exZh": "她碰巧无意听到两位同事在谈论新经理。"
+  },
+  {
+    "en": "overlap",
+    "zh": "部分重合",
+    "pos": "v.",
+    "ipa": "/ˌəʊvəˈlæp/",
+    "ex": "The two research projects overlap in several important areas of study.",
+    "exZh": "这两个研究项目在几个重要研究领域部分重合。"
+  },
+  {
+    "en": "override",
+    "zh": "优先于",
+    "pos": "v.",
+    "ipa": "/ˌəʊvəˈraɪd/",
+    "ex": "Safety considerations should override any desire to cut costs quickly.",
+    "exZh": "安全考虑应优先于任何迅速削减成本的意愿。"
+  },
+  {
+    "en": "owe",
+    "zh": "欠债",
+    "pos": "v.",
+    "ipa": "/əʊ/",
+    "ex": "He still owes the bank a large sum from his student loan.",
+    "exZh": "他仍欠银行一大笔学生贷款。"
+  },
+  {
+    "en": "pragmatic",
+    "zh": "务实的",
+    "pos": "adj.",
+    "ipa": "/præɡˈmætɪk/",
+    "ex": "The manager took a pragmatic approach to solving the financial crisis.",
+    "exZh": "经理采取了务实的方法解决这场财务危机。"
+  },
+  {
+    "en": "precaution",
+    "zh": "预防措施",
+    "pos": "n.",
+    "ipa": "/prɪˈkɔːʃn/",
+    "ex": "Wearing a helmet is a sensible precaution when riding a motorcycle.",
+    "exZh": "骑摩托车时戴头盔是明智的预防措施。"
+  },
+  {
+    "en": "predecessor",
+    "zh": "前任",
+    "pos": "n.",
+    "ipa": "/ˈpriːdɪsesə(r)/",
+    "ex": "The new director continued most policies introduced by her predecessor.",
+    "exZh": "新主任延续了前任推出的大部分政策。"
+  },
+  {
+    "en": "prescribe",
+    "zh": "开处方",
+    "pos": "v.",
+    "ipa": "/prɪˈskraɪb/",
+    "ex": "Doctors should not prescribe antibiotics for a simple common cold.",
+    "exZh": "医生不应为普通感冒开抗生素处方。"
+  },
+  {
+    "en": "prone",
+    "zh": "易于发生",
+    "pos": "adj.",
+    "ipa": "/prəʊn/",
+    "ex": "Coastal areas are particularly prone to flooding during the rainy season.",
+    "exZh": "沿海地区在雨季尤其易于发生洪灾。"
+  },
+  {
+    "en": "radiate",
+    "zh": "散发",
+    "pos": "v.",
+    "ipa": "/ˈreɪdieɪt/",
+    "ex": "The old stove radiated a comfortable warmth throughout the small room.",
+    "exZh": "旧火炉向小房间散发着舒适的暖意。"
+  },
+  {
+    "en": "reap",
+    "zh": "获得回报",
+    "pos": "v.",
+    "ipa": "/riːp/",
+    "ex": "Those who invest early will reap the greatest benefits later.",
+    "exZh": "那些早早投资的人日后将获得最大回报。"
+  },
+  {
+    "en": "reckon",
+    "zh": "估计",
+    "pos": "v.",
+    "ipa": "/ˈrekən/",
+    "ex": "Experts reckon that the repairs will take at least six months.",
+    "exZh": "专家估计维修至少需要六个月。"
+  },
+  {
+    "en": "reside",
+    "zh": "居住",
+    "pos": "v.",
+    "ipa": "/rɪˈzaɪd/",
+    "ex": "Nearly half the students reside on campus during their first year.",
+    "exZh": "近一半学生第一年居住在校内。"
+  },
+  {
+    "en": "sane",
+    "zh": "明智的",
+    "pos": "adj.",
+    "ipa": "/seɪn/",
+    "ex": "It seems the only sane policy is to reduce carbon emissions.",
+    "exZh": "似乎唯一明智的政策就是减少碳排放。"
+  },
+  {
+    "en": "scatter",
+    "zh": "散开",
+    "pos": "v.",
+    "ipa": "/ˈskætə(r)/",
+    "ex": "The crowd began to scatter as soon as the rain started.",
+    "exZh": "雨一下起来人群就开始散开。"
+  },
+  {
+    "en": "scent",
+    "zh": "香气",
+    "pos": "n.",
+    "ipa": "/sent/",
+    "ex": "The scent of pine trees filled the mountain path after the rain.",
+    "exZh": "雨后山间小路上充满了松树的香气。"
+  },
+  {
+    "en": "seemingly",
+    "zh": "看似",
+    "pos": "adv.",
+    "ipa": "/ˈsiːmɪŋli/",
+    "ex": "The seemingly simple question turned out to have no clear answer.",
+    "exZh": "这个看似简单的问题结果却没有明确答案。"
+  },
+  {
+    "en": "sentiment",
+    "zh": "情感",
+    "pos": "n.",
+    "ipa": "/ˈsentɪmənt/",
+    "ex": "Public sentiment turned against the plan after the report was published.",
+    "exZh": "报告发表后，公众情感转而反对该计划。"
+  },
+  {
+    "en": "shrewd",
+    "zh": "精明的",
+    "pos": "adj.",
+    "ipa": "/ʃruːd/",
+    "ex": "The shrewd investor sold his shares just before the market fell.",
+    "exZh": "这位精明的投资者在市场下跌前卖出了股票。"
+  },
+  {
+    "en": "signify",
+    "zh": "表示",
+    "pos": "v.",
+    "ipa": "/ˈsɪɡnɪfaɪ/",
+    "ex": "A red light signifies danger on roads throughout most countries.",
+    "exZh": "在大多数国家的道路上，红灯表示危险。"
+  },
+  {
+    "en": "spectator",
+    "zh": "观众",
+    "pos": "n.",
+    "ipa": "/spekˈteɪtə(r)/",
+    "ex": "Every spectator stood up and applauded the players at the end.",
+    "exZh": "最后每位观众都站起来为球员们鼓掌。"
+  },
+  {
+    "en": "startle",
+    "zh": "使惊吓",
+    "pos": "v.",
+    "ipa": "/ˈstɑːtl/",
+    "ex": "The sudden noise startled the birds and they flew away instantly.",
+    "exZh": "突然的响声使鸟儿受惊，它们立刻飞走了。"
+  },
+  {
+    "en": "static",
+    "zh": "静态的",
+    "pos": "adj.",
+    "ipa": "/ˈstætɪk/",
+    "ex": "The population of the village has remained static for a decade.",
+    "exZh": "这个村庄的人口十年来一直保持静态。"
+  },
+  {
+    "en": "stifle",
+    "zh": "扼制",
+    "pos": "v.",
+    "ipa": "/ˈstaɪfl/",
+    "ex": "Excessive rules may stifle creativity in young children at school.",
+    "exZh": "过多的规定可能会扼制在校幼儿的创造力。"
+  },
+  {
+    "en": "stumble",
+    "zh": "绊倒",
+    "pos": "v.",
+    "ipa": "/ˈstʌmbl/",
+    "ex": "She stumbled over a loose stone while walking along the path.",
+    "exZh": "沿小路走时，她被一块松动的石头绊倒了。"
+  },
+  {
+    "en": "subdue",
+    "zh": "制服",
+    "pos": "v.",
+    "ipa": "/səbˈdjuː/",
+    "ex": "Firefighters worked all night to subdue the flames in the warehouse.",
+    "exZh": "消防员整夜工作以制服仓库里的火焰。"
+  },
+  {
+    "en": "subtle",
+    "zh": "微妙的",
+    "pos": "adj.",
+    "ipa": "/ˈsʌtl/",
+    "ex": "There is a subtle difference between the two translations of that sentence.",
+    "exZh": "那句话的两种译文之间存在微妙的差别。"
+  },
+  {
+    "en": "suppress",
+    "zh": "压制",
+    "pos": "v.",
+    "ipa": "/səˈpres/",
+    "ex": "The government tried to suppress reports of the growing protest.",
+    "exZh": "政府试图压制关于抗议不断扩大的报道。"
+  },
+  {
+    "en": "surveillance",
+    "zh": "监视",
+    "pos": "n.",
+    "ipa": "/səˈveɪləns/",
+    "ex": "Constant surveillance in public places has raised concerns about privacy.",
+    "exZh": "公共场所的持续监视引发了关于隐私的担忧。"
+  },
+  {
+    "en": "susceptible",
+    "zh": "易受影响的",
+    "pos": "adj.",
+    "ipa": "/səˈseptəbl/",
+    "ex": "Young children are especially susceptible to infections in crowded places.",
+    "exZh": "幼儿在拥挤场所尤其易受感染影响。"
+  },
+  {
+    "en": "tame",
+    "zh": "驯服的",
+    "pos": "adj.",
+    "ipa": "/teɪm/",
+    "ex": "The tame elephant allowed visitors to feed it without any fear.",
+    "exZh": "那头驯服的大象毫不畏惧地让游客喂食。"
+  },
+  {
+    "en": "tangle",
+    "zh": "纠缠",
+    "pos": "v.",
+    "ipa": "/ˈtæŋɡl/",
+    "ex": "The fishing lines had tangled together and took an hour to separate.",
+    "exZh": "钓鱼线纠缠在一起，花了一个小时才分开。"
+  },
+  {
+    "en": "testify",
+    "zh": "作证",
+    "pos": "v.",
+    "ipa": "/ˈtestɪfaɪ/",
+    "ex": "Three witnesses agreed to testify against the driver in court.",
+    "exZh": "三名证人同意在法庭上指证那名司机。"
+  },
+  {
+    "en": "thwart",
+    "zh": "阻挠",
+    "pos": "v.",
+    "ipa": "/θwɔːt/",
+    "ex": "Heavy rain thwarted their plan to hold the concert outdoors.",
+    "exZh": "大雨阻挠了他们举办户外音乐会的计划。"
+  },
+  {
+    "en": "ubiquitous",
+    "zh": "无处不在的",
+    "pos": "adj.",
+    "ipa": "/juːˈbɪkwɪtəs/",
+    "ex": "Smartphones have become ubiquitous in classrooms, offices and public transport.",
+    "exZh": "智能手机在教室、办公室和公共交通中已无处不在。"
+  },
+  {
+    "en": "unfold",
+    "zh": "展开",
+    "pos": "v.",
+    "ipa": "/ʌnˈfəʊld/",
+    "ex": "The story unfolds slowly, revealing the hero's hidden motives.",
+    "exZh": "故事慢慢展开，揭示了主人公隐藏的动机。"
+  },
+  {
+    "en": "unravel",
+    "zh": "解开",
+    "pos": "v.",
+    "ipa": "/ʌnˈrævl/",
+    "ex": "Detectives worked for months to unravel the mystery of the theft.",
+    "exZh": "侦探们花了几个月解开这起盗窃案的谜团。"
+  },
+  {
+    "en": "uphold",
+    "zh": "维护",
+    "pos": "v.",
+    "ipa": "/ʌpˈhəʊld/",
+    "ex": "Judges are expected to uphold the law without fearing public opinion.",
+    "exZh": "法官应维护法律而不畏惧公众舆论。"
+  },
+  {
+    "en": "urge",
+    "zh": "催促",
+    "pos": "v.",
+    "ipa": "/ɜːdʒ/",
+    "ex": "Doctors urge patients to exercise regularly and reduce salt intake.",
+    "exZh": "医生催促患者规律锻炼并减少盐的摄入。"
+  },
+  {
+    "en": "utter",
+    "zh": "完全的",
+    "pos": "adj.",
+    "ipa": "/ˈʌtə(r)/",
+    "ex": "The exhibition was an utter failure and closed within a week.",
+    "exZh": "这次展览完全失败，一周内就关闭了。"
+  },
+  {
+    "en": "vain",
+    "zh": "徒劳的",
+    "pos": "adj.",
+    "ipa": "/veɪn/",
+    "ex": "All their efforts to save the company proved completely vain.",
+    "exZh": "他们挽救公司的所有努力完全徒劳。"
+  },
+  {
+    "en": "vex",
+    "zh": "使烦恼",
+    "pos": "v.",
+    "ipa": "/veks/",
+    "ex": "The constant delays at the airport vexed even the calmest passengers.",
+    "exZh": "机场不断的延误使连最冷静的乘客都感到烦恼。"
+  },
+  {
+    "en": "vigilant",
+    "zh": "警惕的",
+    "pos": "adj.",
+    "ipa": "/ˈvɪdʒɪlənt/",
+    "ex": "Teachers must remain vigilant about signs of bullying in class.",
+    "exZh": "教师必须对班级中的欺凌迹象保持警惕。"
+  },
+  {
+    "en": "violate",
+    "zh": "违反",
+    "pos": "v.",
+    "ipa": "/ˈvaɪəleɪt/",
+    "ex": "Companies that violate environmental rules will face heavy fines.",
+    "exZh": "违反环保规定的公司将面临重罚。"
+  },
+  {
+    "en": "vivid",
+    "zh": "生动的",
+    "pos": "adj.",
+    "ipa": "/ˈvɪvɪd/",
+    "ex": "The witness gave a vivid account of what happened that night.",
+    "exZh": "证人生动地描述了那晚发生的事。"
+  },
+  {
+    "en": "vow",
+    "zh": "发誓",
+    "pos": "v.",
+    "ipa": "/vaʊ/",
+    "ex": "The two friends vowed to keep in touch after graduation.",
+    "exZh": "两位朋友发誓毕业后保持联系。"
+  },
+  {
+    "en": "wield",
+    "zh": "行使",
+    "pos": "v.",
+    "ipa": "/wiːld/",
+    "ex": "Large corporations wield enormous influence over government policy today.",
+    "exZh": "如今大公司对政府政策行使着巨大的影响力。"
+  },
+  {
+    "en": "zeal",
+    "zh": "热情",
+    "pos": "n.",
+    "ipa": "/ziːl/",
+    "ex": "She pursued her research with the zeal of a young scientist.",
+    "exZh": "她以年轻科学家的热情投身于研究。"
+  }
+]

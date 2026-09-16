@@ -281,6 +281,38 @@ async function main() {
   }
   await shot('settings-levels-dark', 700);
 
+  /* ------------- 3b. 「答对后展开详细词条」开关 ------------- */
+  await realClick('.nav-item[data-route="settings"]', '侧栏 → 设置');
+  await sleep(300);
+  const detailRowExists = await js(`!!document.querySelector('.row-showdetail')`);
+  if (!detailRowExists) {
+    problems.push('[ui] 设置页缺少「答对后展开详细词条」开关');
+  } else {
+    await js(`
+      (() => {
+        const el = document.querySelector('.row-showdetail');
+        if (el && el.scrollIntoView) el.scrollIntoView({ block: 'center' });
+        return true;
+      })()
+    `);
+    await sleep(400);
+    await shot('settings-detail-toggle-dark');
+    await shotRegion('detail-toggle', '.row-showdetail');
+
+    const before = await js(`window.WM.store.get().settings.showDetail`);
+    await realClick('.row-showdetail .switch', '设置 → 详细词条开关');
+    await sleep(350);
+    const after = await js(`window.WM.store.get().settings.showDetail`);
+    console.log(`  详细词条开关: ${before} -> ${after}`);
+    if (before === after) problems.push('[interactive] 真实点击「详细词条」开关没有改变设置');
+
+    // 拨回原状，后面的答题截图要用到详细词条卡
+    await realClick('.row-showdetail .switch', '设置 → 详细词条开关（复位）');
+    await sleep(350);
+    const restored = await js(`window.WM.store.get().settings.showDetail`);
+    if (restored !== before) problems.push('[interactive] 「详细词条」开关无法复位');
+  }
+
   /* -------------------- 4. 开始学习 -------------------- */
   await guard('study', `window.WM.app.startStudy('mixed'); true`);
   await sleep(700);
@@ -307,6 +339,39 @@ async function main() {
   }
   await shot('study-correct-dark');
   await shotRegion('feedback-correct', '.qcard');
+
+  /* 详细词条卡必须真的带出音标、词性、释义、例句与复习进度 */
+  const detailCheck = await js(`
+    (() => {
+      const card = document.querySelector('.feedback.detail');
+      if (!card) return { ok: false, why: '答对后没有出现详细词条卡' };
+      const text = card.textContent || '';
+      return {
+        ok: true,
+        en: (card.querySelector('.dw-en') || {}).textContent || '',
+        ipa: (card.querySelector('.dw-ipa') || {}).textContent || '',
+        pos: (card.querySelector('.dw-pos') || {}).textContent || '',
+        zh: (card.querySelector('.detail-zh') || {}).textContent || '',
+        ex: (card.querySelector('.ex-en') || {}).textContent || '',
+        exZh: (card.querySelector('.ex-zh') || {}).textContent || '',
+        review: (card.querySelector('.detail-review') || {}).textContent || '',
+        level: (card.querySelector('.tag:not(.ok-tag)') || {}).textContent || '',
+        hasExample: !!card.querySelector('.detail-ex .ex-en'),
+      };
+    })()
+  `);
+  console.log('  详细词条卡: ' + JSON.stringify(detailCheck));
+  if (!detailCheck || !detailCheck.ok) {
+    problems.push('[ui] 详细词条卡没有出现：' + ((detailCheck && detailCheck.why) || '未知'));
+  } else {
+    if (!detailCheck.ipa) problems.push('[ui] 详细词条卡缺音标');
+    if (!detailCheck.pos) problems.push('[ui] 详细词条卡缺词性');
+    if (!detailCheck.zh) problems.push('[ui] 详细词条卡缺释义');
+    if (!detailCheck.hasExample) problems.push('[ui] 详细词条卡缺例句（词库或 words.js 里没有 ex 字段？）');
+    if (!detailCheck.exZh) problems.push('[ui] 详细词条卡缺例句中文翻译');
+    if (!detailCheck.review) problems.push('[ui] 详细词条卡缺复习进度');
+    if (!detailCheck.level) problems.push('[ui] 详细词条卡缺所属词库');
+  }
 
   /* -------------------- 6. 连续答题推进进度 -------------------- */
   for (let i = 0; i < 6; i++) {

@@ -1,222 +1,1762 @@
 [
-{"en":"accident","zh":"事故","pos":"n.","ipa":"/ˈæksɪdənt/"},
-{"en":"achieve","zh":"实现","pos":"v.","ipa":"/əˈtʃiːv/"},
-{"en":"across","zh":"横过","pos":"prep.","ipa":"/əˈkrɒs/"},
-{"en":"active","zh":"活跃的","pos":"adj.","ipa":"/ˈæktɪv/"},
-{"en":"afford","zh":"买得起","pos":"v.","ipa":"/əˈfɔːd/"},
-{"en":"afraid","zh":"害怕的","pos":"adj.","ipa":"/əˈfreɪd/"},
-{"en":"against","zh":"反对","pos":"prep.","ipa":"/əˈɡenst/"},
-{"en":"agree","zh":"同意","pos":"v.","ipa":"/əˈɡriː/"},
-{"en":"allow","zh":"允许","pos":"v.","ipa":"/əˈlaʊ/"},
-{"en":"almost","zh":"几乎","pos":"adv.","ipa":"/ˈɔːlməʊst/"},
-{"en":"alone","zh":"独自","pos":"adv.","ipa":"/əˈləʊn/"},
-{"en":"already","zh":"已经","pos":"adv.","ipa":"/ɔːlˈredi/"},
-{"en":"always","zh":"总是","pos":"adv.","ipa":"/ˈɔːlweɪz/"},
-{"en":"among","zh":"在…之中","pos":"prep.","ipa":"/əˈmʌŋ/"},
-{"en":"ancient","zh":"古代的","pos":"adj.","ipa":"/ˈeɪnʃənt/"},
-{"en":"angry","zh":"生气的","pos":"adj.","ipa":"/ˈæŋɡri/"},
-{"en":"answer","zh":"答案","pos":"n.","ipa":"/ˈɑːnsə(r)/"},
-{"en":"appear","zh":"出现","pos":"v.","ipa":"/əˈpɪə(r)/"},
-{"en":"arrive","zh":"到达","pos":"v.","ipa":"/əˈraɪv/"},
-{"en":"attention","zh":"注意力","pos":"n.","ipa":"/əˈtenʃn/"},
-{"en":"awake","zh":"醒着的","pos":"adj.","ipa":"/əˈweɪk/"},
-{"en":"balance","zh":"平衡","pos":"n.","ipa":"/ˈbæləns/"},
-{"en":"believe","zh":"相信","pos":"v.","ipa":"/bɪˈliːv/"},
-{"en":"belong","zh":"属于","pos":"v.","ipa":"/bɪˈlɒŋ/"},
-{"en":"below","zh":"在下面","pos":"prep.","ipa":"/bɪˈləʊ/"},
-{"en":"beside","zh":"在…旁边","pos":"prep.","ipa":"/bɪˈsaɪd/"},
-{"en":"birthday","zh":"生日","pos":"n.","ipa":"/ˈbɜːθdeɪ/"},
-{"en":"borrow","zh":"借入","pos":"v.","ipa":"/ˈbɒrəʊ/"},
-{"en":"brave","zh":"勇敢的","pos":"adj.","ipa":"/breɪv/"},
-{"en":"bridge","zh":"桥梁","pos":"n.","ipa":"/brɪdʒ/"},
-{"en":"bright","zh":"明亮的","pos":"adj.","ipa":"/braɪt/"},
-{"en":"bring","zh":"带来","pos":"v.","ipa":"/brɪŋ/"},
-{"en":"build","zh":"建造","pos":"v.","ipa":"/bɪld/"},
-{"en":"business","zh":"生意","pos":"n.","ipa":"/ˈbɪznəs/"},
-{"en":"busy","zh":"忙碌的","pos":"adj.","ipa":"/ˈbɪzi/"},
-{"en":"camera","zh":"照相机","pos":"n.","ipa":"/ˈkæmərə/"},
-{"en":"careful","zh":"细心的","pos":"adj.","ipa":"/ˈkeəfl/"},
-{"en":"carry","zh":"搬运","pos":"v.","ipa":"/ˈkæri/"},
-{"en":"catch","zh":"接住","pos":"v.","ipa":"/kætʃ/"},
-{"en":"cause","zh":"引起","pos":"v.","ipa":"/kɔːz/"},
-{"en":"celebrate","zh":"庆祝","pos":"v.","ipa":"/ˈselɪbreɪt/"},
-{"en":"century","zh":"世纪","pos":"n.","ipa":"/ˈsentʃəri/"},
-{"en":"certain","zh":"确定的","pos":"adj.","ipa":"/ˈsɜːtn/"},
-{"en":"challenge","zh":"挑战","pos":"n.","ipa":"/ˈtʃælɪndʒ/"},
-{"en":"chance","zh":"机会","pos":"n.","ipa":"/tʃɑːns/"},
-{"en":"change","zh":"改变","pos":"v.","ipa":"/tʃeɪndʒ/"},
-{"en":"cheap","zh":"便宜的","pos":"adj.","ipa":"/tʃiːp/"},
-{"en":"choose","zh":"选择","pos":"v.","ipa":"/tʃuːz/"},
-{"en":"clever","zh":"聪明的","pos":"adj.","ipa":"/ˈklevə(r)/"},
-{"en":"climb","zh":"攀爬","pos":"v.","ipa":"/klaɪm/"},
-{"en":"clothes","zh":"衣服","pos":"n.","ipa":"/kləʊðz/"},
-{"en":"collect","zh":"收集","pos":"v.","ipa":"/kəˈlekt/"},
-{"en":"college","zh":"大学","pos":"n.","ipa":"/ˈkɒlɪdʒ/"},
-{"en":"comfortable","zh":"舒适的","pos":"adj.","ipa":"/ˈkʌmftəbl/"},
-{"en":"common","zh":"共同的","pos":"adj.","ipa":"/ˈkɒmən/"},
-{"en":"complete","zh":"完成","pos":"v.","ipa":"/kəmˈpliːt/"},
-{"en":"computer","zh":"电脑","pos":"n.","ipa":"/kəmˈpjuːtə(r)/"},
-{"en":"consider","zh":"考虑","pos":"v.","ipa":"/kənˈsɪdə(r)/"},
-{"en":"continue","zh":"继续","pos":"v.","ipa":"/kənˈtɪnjuː/"},
-{"en":"control","zh":"控制","pos":"v.","ipa":"/kənˈtrəʊl/"},
-{"en":"cook","zh":"烹饪","pos":"v.","ipa":"/kʊk/"},
-{"en":"corner","zh":"拐角","pos":"n.","ipa":"/ˈkɔːnə(r)/"},
-{"en":"countryside","zh":"乡村","pos":"n.","ipa":"/ˈkʌntrisaɪd/"},
-{"en":"dangerous","zh":"危险的","pos":"adj.","ipa":"/ˈdeɪndʒərəs/"},
-{"en":"decide","zh":"决定","pos":"v.","ipa":"/dɪˈsaɪd/"},
-{"en":"delicious","zh":"美味的","pos":"adj.","ipa":"/dɪˈlɪʃəs/"},
-{"en":"desk","zh":"书桌","pos":"n.","ipa":"/desk/"},
-{"en":"develop","zh":"发展","pos":"v.","ipa":"/dɪˈveləp/"},
-{"en":"dictionary","zh":"词典","pos":"n.","ipa":"/ˈdɪkʃənri/"},
-{"en":"difference","zh":"差别","pos":"n.","ipa":"/ˈdɪfrəns/"},
-{"en":"difficult","zh":"困难的","pos":"adj.","ipa":"/ˈdɪfɪkəlt/"},
-{"en":"direction","zh":"方向","pos":"n.","ipa":"/dəˈrekʃn/"},
-{"en":"discover","zh":"发现","pos":"v.","ipa":"/dɪˈskʌvə(r)/"},
-{"en":"discuss","zh":"讨论","pos":"v.","ipa":"/dɪˈskʌs/"},
-{"en":"doctor","zh":"医生","pos":"n.","ipa":"/ˈdɒktə(r)/"},
-{"en":"draw","zh":"画画","pos":"v.","ipa":"/drɔː/"},
-{"en":"dream","zh":"梦想","pos":"n.","ipa":"/driːm/"},
-{"en":"during","zh":"在…期间","pos":"prep.","ipa":"/ˈdjʊərɪŋ/"},
-{"en":"education","zh":"教育","pos":"n.","ipa":"/ˌedʒuˈkeɪʃn/"},
-{"en":"effort","zh":"努力","pos":"n.","ipa":"/ˈefət/"},
-{"en":"empty","zh":"空的","pos":"adj.","ipa":"/ˈempti/"},
-{"en":"encourage","zh":"鼓励","pos":"v.","ipa":"/ɪnˈkʌrɪdʒ/"},
-{"en":"energy","zh":"能量","pos":"n.","ipa":"/ˈenədʒi/"},
-{"en":"enough","zh":"足够的","pos":"adj.","ipa":"/ɪˈnʌf/"},
-{"en":"environment","zh":"环境","pos":"n.","ipa":"/ɪnˈvaɪrənmənt/"},
-{"en":"excited","zh":"激动的","pos":"adj.","ipa":"/ɪkˈsaɪtɪd/"},
-{"en":"exercise","zh":"锻炼","pos":"v.","ipa":"/ˈeksəsaɪz/"},
-{"en":"expect","zh":"期待","pos":"v.","ipa":"/ɪkˈspekt/"},
-{"en":"experience","zh":"经验","pos":"n.","ipa":"/ɪkˈspɪəriəns/"},
-{"en":"explain","zh":"解释","pos":"v.","ipa":"/ɪkˈspleɪn/"},
-{"en":"fail","zh":"失败","pos":"v.","ipa":"/feɪl/"},
-{"en":"famous","zh":"著名的","pos":"adj.","ipa":"/ˈfeɪməs/"},
-{"en":"festival","zh":"节日","pos":"n.","ipa":"/ˈfestɪvl/"},
-{"en":"finish","zh":"结束","pos":"v.","ipa":"/ˈfɪnɪʃ/"},
-{"en":"follow","zh":"跟随","pos":"v.","ipa":"/ˈfɒləʊ/"},
-{"en":"foreign","zh":"外国的","pos":"adj.","ipa":"/ˈfɒrən/"},
-{"en":"forget","zh":"忘记","pos":"v.","ipa":"/fəˈɡet/"},
-{"en":"friendly","zh":"友好的","pos":"adj.","ipa":"/ˈfrendli/"},
-{"en":"funny","zh":"滑稽的","pos":"adj.","ipa":"/ˈfʌni/"},
-{"en":"future","zh":"未来","pos":"n.","ipa":"/ˈfjuːtʃə(r)/"},
-{"en":"garden","zh":"花园","pos":"n.","ipa":"/ˈɡɑːdn/"},
-{"en":"gift","zh":"礼物","pos":"n.","ipa":"/ɡɪft/"},
-{"en":"government","zh":"政府","pos":"n.","ipa":"/ˈɡʌvənmənt/"},
-{"en":"grade","zh":"年级","pos":"n.","ipa":"/ɡreɪd/"},
-{"en":"ground","zh":"地面","pos":"n.","ipa":"/ɡraʊnd/"},
-{"en":"guess","zh":"猜测","pos":"v.","ipa":"/ɡes/"},
-{"en":"habit","zh":"习惯","pos":"n.","ipa":"/ˈhæbɪt/"},
-{"en":"happen","zh":"发生","pos":"v.","ipa":"/ˈhæpən/"},
-{"en":"health","zh":"身体状况","pos":"n.","ipa":"/helθ/"},
-{"en":"healthy","zh":"健康的","pos":"adj.","ipa":"/ˈhelθi/"},
-{"en":"hear","zh":"听见","pos":"v.","ipa":"/hɪə(r)/"},
-{"en":"history","zh":"历史","pos":"n.","ipa":"/ˈhɪstri/"},
-{"en":"honest","zh":"诚实的","pos":"adj.","ipa":"/ˈɒnɪst/"},
-{"en":"hope","zh":"希望","pos":"v.","ipa":"/həʊp/"},
-{"en":"hungry","zh":"饥饿的","pos":"adj.","ipa":"/ˈhʌŋɡri/"},
-{"en":"hurry","zh":"匆忙","pos":"v.","ipa":"/ˈhʌri/"},
-{"en":"hurt","zh":"受伤","pos":"v.","ipa":"/hɜːt/"},
-{"en":"husband","zh":"丈夫","pos":"n.","ipa":"/ˈhʌzbənd/"},
-{"en":"imagine","zh":"想象","pos":"v.","ipa":"/ɪˈmædʒɪn/"},
-{"en":"immediately","zh":"立刻","pos":"adv.","ipa":"/ɪˈmiːdiətli/"},
-{"en":"important","zh":"重要的","pos":"adj.","ipa":"/ɪmˈpɔːtnt/"},
-{"en":"improve","zh":"改进","pos":"v.","ipa":"/ɪmˈpruːv/"},
-{"en":"information","zh":"信息","pos":"n.","ipa":"/ˌɪnfəˈmeɪʃn/"},
-{"en":"instead","zh":"代替","pos":"adv.","ipa":"/ɪnˈsted/"},
-{"en":"interest","zh":"兴趣","pos":"n.","ipa":"/ˈɪntrəst/"},
-{"en":"introduce","zh":"介绍","pos":"v.","ipa":"/ˌɪntrəˈdjuːs/"},
-{"en":"jacket","zh":"夹克","pos":"n.","ipa":"/ˈdʒækɪt/"},
-{"en":"journey","zh":"旅程","pos":"n.","ipa":"/ˈdʒɜːni/"},
-{"en":"juice","zh":"果汁","pos":"n.","ipa":"/dʒuːs/"},
-{"en":"knowledge","zh":"知识","pos":"n.","ipa":"/ˈnɒlɪdʒ/"},
-{"en":"language","zh":"语言","pos":"n.","ipa":"/ˈlæŋɡwɪdʒ/"},
-{"en":"laugh","zh":"大笑","pos":"v.","ipa":"/lɑːf/"},
-{"en":"lazy","zh":"懒惰的","pos":"adj.","ipa":"/ˈleɪzi/"},
-{"en":"leave","zh":"离开","pos":"v.","ipa":"/liːv/"},
-{"en":"library","zh":"图书馆","pos":"n.","ipa":"/ˈlaɪbrəri/"},
-{"en":"lucky","zh":"幸运的","pos":"adj.","ipa":"/ˈlʌki/"},
-{"en":"main","zh":"主要的","pos":"adj.","ipa":"/meɪn/"},
-{"en":"market","zh":"市场","pos":"n.","ipa":"/ˈmɑːkɪt/"},
-{"en":"marry","zh":"结婚","pos":"v.","ipa":"/ˈmæri/"},
-{"en":"matter","zh":"要紧","pos":"v.","ipa":"/ˈmætə(r)/"},
-{"en":"meaning","zh":"意思","pos":"n.","ipa":"/ˈmiːnɪŋ/"},
-{"en":"memory","zh":"记忆","pos":"n.","ipa":"/ˈmeməri/"},
-{"en":"message","zh":"消息","pos":"n.","ipa":"/ˈmesɪdʒ/"},
-{"en":"mind","zh":"头脑","pos":"n.","ipa":"/maɪnd/"},
-{"en":"modern","zh":"现代的","pos":"adj.","ipa":"/ˈmɒdn/"},
-{"en":"moment","zh":"片刻","pos":"n.","ipa":"/ˈməʊmənt/"},
-{"en":"mountain","zh":"高山","pos":"n.","ipa":"/ˈmaʊntən/"},
-{"en":"move","zh":"移动","pos":"v.","ipa":"/muːv/"},
-{"en":"nature","zh":"大自然","pos":"n.","ipa":"/ˈneɪtʃə(r)/"},
-{"en":"neighbour","zh":"邻居","pos":"n.","ipa":"/ˈneɪbə(r)/"},
-{"en":"nervous","zh":"紧张的","pos":"adj.","ipa":"/ˈnɜːvəs/"},
-{"en":"noise","zh":"噪音","pos":"n.","ipa":"/nɔɪz/"},
-{"en":"offer","zh":"主动提供","pos":"v.","ipa":"/ˈɒfə(r)/"},
-{"en":"often","zh":"经常","pos":"adv.","ipa":"/ˈɒfn/"},
-{"en":"paint","zh":"涂颜料","pos":"v.","ipa":"/peɪnt/"},
-{"en":"physics","zh":"物理学","pos":"n.","ipa":"/ˈfɪzɪks/"},
-{"en":"plan","zh":"计划","pos":"n.","ipa":"/plæn/"},
-{"en":"polite","zh":"礼貌的","pos":"adj.","ipa":"/pəˈlaɪt/"},
-{"en":"popular","zh":"受欢迎的","pos":"adj.","ipa":"/ˈpɒpjələ(r)/"},
-{"en":"possible","zh":"可能的","pos":"adj.","ipa":"/ˈpɒsəbl/"},
-{"en":"practice","zh":"练习","pos":"n.","ipa":"/ˈpræktɪs/"},
-{"en":"prepare","zh":"准备","pos":"v.","ipa":"/prɪˈpeə(r)/"},
-{"en":"problem","zh":"难题","pos":"n.","ipa":"/ˈprɒbləm/"},
-{"en":"protect","zh":"保护","pos":"v.","ipa":"/prəˈtekt/"},
-{"en":"proud","zh":"骄傲的","pos":"adj.","ipa":"/praʊd/"},
-{"en":"public","zh":"公共的","pos":"adj.","ipa":"/ˈpʌblɪk/"},
-{"en":"question","zh":"疑问","pos":"n.","ipa":"/ˈkwestʃən/"},
-{"en":"quick","zh":"快速的","pos":"adj.","ipa":"/kwɪk/"},
-{"en":"quiet","zh":"安静的","pos":"adj.","ipa":"/ˈkwaɪət/"},
-{"en":"reach","zh":"够到","pos":"v.","ipa":"/riːtʃ/"},
-{"en":"receive","zh":"收到","pos":"v.","ipa":"/rɪˈsiːv/"},
-{"en":"refuse","zh":"拒绝","pos":"v.","ipa":"/rɪˈfjuːz/"},
-{"en":"remember","zh":"记得","pos":"v.","ipa":"/rɪˈmembə(r)/"},
-{"en":"reply","zh":"答复","pos":"v.","ipa":"/rɪˈplaɪ/"},
-{"en":"report","zh":"报道","pos":"v.","ipa":"/rɪˈpɔːt/"},
-{"en":"rich","zh":"富有的","pos":"adj.","ipa":"/rɪtʃ/"},
-{"en":"sad","zh":"悲伤的","pos":"adj.","ipa":"/sæd/"},
-{"en":"safe","zh":"安全的","pos":"adj.","ipa":"/seɪf/"},
-{"en":"serious","zh":"严肃的","pos":"adj.","ipa":"/ˈsɪəriəs/"},
-{"en":"sharp","zh":"锋利的","pos":"adj.","ipa":"/ʃɑːp/"},
-{"en":"simple","zh":"简单的","pos":"adj.","ipa":"/ˈsɪmpl/"},
-{"en":"soft","zh":"柔软的","pos":"adj.","ipa":"/sɒft/"},
-{"en":"sometimes","zh":"有时","pos":"adv.","ipa":"/ˈsʌmtaɪmz/"},
-{"en":"sound","zh":"声响","pos":"n.","ipa":"/saʊnd/"},
-{"en":"space","zh":"太空","pos":"n.","ipa":"/speɪs/"},
-{"en":"speak","zh":"说话","pos":"v.","ipa":"/spiːk/"},
-{"en":"stranger","zh":"陌生人","pos":"n.","ipa":"/ˈstreɪndʒə(r)/"},
-{"en":"succeed","zh":"成功","pos":"v.","ipa":"/səkˈsiːd/"},
-{"en":"suddenly","zh":"突然","pos":"adv.","ipa":"/ˈsʌdənli/"},
-{"en":"suggest","zh":"建议","pos":"v.","ipa":"/səˈdʒest/"},
-{"en":"support","zh":"支持","pos":"v.","ipa":"/səˈpɔːt/"},
-{"en":"sweater","zh":"毛衣","pos":"n.","ipa":"/ˈswetə(r)/"},
-{"en":"table","zh":"桌子","pos":"n.","ipa":"/ˈteɪbl/"},
-{"en":"taste","zh":"品尝","pos":"v.","ipa":"/teɪst/"},
-{"en":"terrible","zh":"糟糕的","pos":"adj.","ipa":"/ˈterəbl/"},
-{"en":"though","zh":"虽然","pos":"conj.","ipa":"/ðəʊ/"},
-{"en":"throw","zh":"抛掷","pos":"v.","ipa":"/θrəʊ/"},
-{"en":"tired","zh":"疲倦的","pos":"adj.","ipa":"/ˈtaɪəd/"},
-{"en":"together","zh":"一起","pos":"adv.","ipa":"/təˈɡeðə(r)/"},
-{"en":"traffic","zh":"交通","pos":"n.","ipa":"/ˈtræfɪk/"},
-{"en":"travel","zh":"旅行","pos":"v.","ipa":"/ˈtrævl/"},
-{"en":"trouble","zh":"麻烦","pos":"n.","ipa":"/ˈtrʌbl/"},
-{"en":"truth","zh":"真相","pos":"n.","ipa":"/truːθ/"},
-{"en":"unusual","zh":"不寻常的","pos":"adj.","ipa":"/ʌnˈjuːʒuəl/"},
-{"en":"useful","zh":"有用的","pos":"adj.","ipa":"/ˈjuːsfl/"},
-{"en":"usually","zh":"通常","pos":"adv.","ipa":"/ˈjuːʒuəli/"},
-{"en":"vacation","zh":"假期","pos":"n.","ipa":"/vəˈkeɪʃn/"},
-{"en":"vegetable","zh":"蔬菜","pos":"n.","ipa":"/ˈvedʒtəbl/"},
-{"en":"victory","zh":"胜利","pos":"n.","ipa":"/ˈvɪktəri/"},
-{"en":"village","zh":"村庄","pos":"n.","ipa":"/ˈvɪlɪdʒ/"},
-{"en":"voice","zh":"嗓音","pos":"n.","ipa":"/vɔɪs/"},
-{"en":"waste","zh":"浪费","pos":"v.","ipa":"/weɪst/"},
-{"en":"weather","zh":"天气","pos":"n.","ipa":"/ˈweðə(r)/"},
-{"en":"weekend","zh":"周末","pos":"n.","ipa":"/ˌwiːkˈend/"},
-{"en":"welcome","zh":"欢迎","pos":"v.","ipa":"/ˈwelkəm/"},
-{"en":"wonderful","zh":"极好的","pos":"adj.","ipa":"/ˈwʌndəfl/"},
-{"en":"worry","zh":"担忧","pos":"v.","ipa":"/ˈwʌri/"},
-{"en":"young","zh":"年轻的","pos":"adj.","ipa":"/jʌŋ/"},
-{"en":"Christmas","zh":"圣诞节","pos":"n.","ipa":"/ˈkrɪsməs/"},
-{"en":"Chinese","zh":"中文","pos":"n.","ipa":"/ˌtʃaɪˈniːz/"}
+  {
+    "en": "accident",
+    "zh": "事故",
+    "pos": "n.",
+    "ipa": "/ˈæksɪdənt/",
+    "ex": "He broke his leg in a traffic accident last week.",
+    "exZh": "上周他在一场交通事故中摔断了腿。"
+  },
+  {
+    "en": "achieve",
+    "zh": "实现",
+    "pos": "v.",
+    "ipa": "/əˈtʃiːv/",
+    "ex": "She worked hard to achieve her goal.",
+    "exZh": "她努力工作以实现自己的目标。"
+  },
+  {
+    "en": "across",
+    "zh": "横过",
+    "pos": "prep.",
+    "ipa": "/əˈkrɒs/",
+    "ex": "We walked across the bridge to the other side.",
+    "exZh": "我们走过桥到另一边去。"
+  },
+  {
+    "en": "active",
+    "zh": "活跃的",
+    "pos": "adj.",
+    "ipa": "/ˈæktɪv/",
+    "ex": "My grandfather is still active and plays sports every day.",
+    "exZh": "我爷爷仍然很活跃，每天都运动。"
+  },
+  {
+    "en": "afford",
+    "zh": "买得起",
+    "pos": "v.",
+    "ipa": "/əˈfɔːd/",
+    "ex": "We cannot afford a new car this year.",
+    "exZh": "我们今年买不起一辆新车。"
+  },
+  {
+    "en": "afraid",
+    "zh": "害怕的",
+    "pos": "adj.",
+    "ipa": "/əˈfreɪd/",
+    "ex": "My little sister is afraid of big dogs.",
+    "exZh": "我妹妹害怕大狗。"
+  },
+  {
+    "en": "against",
+    "zh": "反对",
+    "pos": "prep.",
+    "ipa": "/əˈɡenst/",
+    "ex": "Many students were against the new school rule.",
+    "exZh": "许多学生反对这条新校规。"
+  },
+  {
+    "en": "agree",
+    "zh": "同意",
+    "pos": "v.",
+    "ipa": "/əˈɡriː/",
+    "ex": "I agree with you about this difficult question.",
+    "exZh": "关于这个难题我同意你的看法。"
+  },
+  {
+    "en": "allow",
+    "zh": "允许",
+    "pos": "v.",
+    "ipa": "/əˈlaʊ/",
+    "ex": "My parents allow me to play football after school.",
+    "exZh": "我父母允许我放学后踢足球。"
+  },
+  {
+    "en": "almost",
+    "zh": "几乎",
+    "pos": "adv.",
+    "ipa": "/ˈɔːlməʊst/",
+    "ex": "We have almost finished our homework today.",
+    "exZh": "我们今天几乎完成作业了。"
+  },
+  {
+    "en": "alone",
+    "zh": "独自",
+    "pos": "adv.",
+    "ipa": "/əˈləʊn/",
+    "ex": "She lives alone in a small village.",
+    "exZh": "她独自住在一个小村庄里。"
+  },
+  {
+    "en": "already",
+    "zh": "已经",
+    "pos": "adv.",
+    "ipa": "/ɔːlˈredi/",
+    "ex": "The train has already left the station.",
+    "exZh": "火车已经离站了。"
+  },
+  {
+    "en": "always",
+    "zh": "总是",
+    "pos": "adv.",
+    "ipa": "/ˈɔːlweɪz/",
+    "ex": "He is always late for morning classes.",
+    "exZh": "他上早课总是迟到。"
+  },
+  {
+    "en": "among",
+    "zh": "在…之中",
+    "pos": "prep.",
+    "ipa": "/əˈmʌŋ/",
+    "ex": "The little house stands among tall green trees.",
+    "exZh": "那座小房子坐落在高大的绿树之间。"
+  },
+  {
+    "en": "ancient",
+    "zh": "古代的",
+    "pos": "adj.",
+    "ipa": "/ˈeɪnʃənt/",
+    "ex": "We visited an ancient city with long walls.",
+    "exZh": "我们参观了一座有长长城墙的古城。"
+  },
+  {
+    "en": "angry",
+    "zh": "生气的",
+    "pos": "adj.",
+    "ipa": "/ˈæŋɡri/",
+    "ex": "My father was angry when I broke the window.",
+    "exZh": "我打破窗户时爸爸很生气。"
+  },
+  {
+    "en": "answer",
+    "zh": "答案",
+    "pos": "n.",
+    "ipa": "/ˈɑːnsə(r)/",
+    "ex": "I do not know the answer to this question.",
+    "exZh": "我不知道这个问题的答案。"
+  },
+  {
+    "en": "appear",
+    "zh": "出现",
+    "pos": "v.",
+    "ipa": "/əˈpɪə(r)/",
+    "ex": "A rainbow began to appear after the rain.",
+    "exZh": "雨后开始出现彩虹。"
+  },
+  {
+    "en": "arrive",
+    "zh": "到达",
+    "pos": "v.",
+    "ipa": "/əˈraɪv/",
+    "ex": "We will arrive at the airport at six.",
+    "exZh": "我们将在六点到达机场。"
+  },
+  {
+    "en": "attention",
+    "zh": "注意力",
+    "pos": "n.",
+    "ipa": "/əˈtenʃn/",
+    "ex": "Please pay attention to the teacher's words carefully.",
+    "exZh": "请仔细注意老师说的话。"
+  },
+  {
+    "en": "awake",
+    "zh": "醒着的",
+    "pos": "adj.",
+    "ipa": "/əˈweɪk/",
+    "ex": "The baby was still awake at midnight.",
+    "exZh": "午夜时宝宝还醒着。"
+  },
+  {
+    "en": "balance",
+    "zh": "平衡",
+    "pos": "n.",
+    "ipa": "/ˈbæləns/",
+    "ex": "It is hard to keep your balance on ice.",
+    "exZh": "在冰上很难保持平衡。"
+  },
+  {
+    "en": "believe",
+    "zh": "相信",
+    "pos": "v.",
+    "ipa": "/bɪˈliːv/",
+    "ex": "I believe that hard work brings good results.",
+    "exZh": "我相信努力会带来好结果。"
+  },
+  {
+    "en": "belong",
+    "zh": "属于",
+    "pos": "v.",
+    "ipa": "/bɪˈlɒŋ/",
+    "ex": "These books belong to my older brother.",
+    "exZh": "这些书属于我哥哥。"
+  },
+  {
+    "en": "below",
+    "zh": "在下面",
+    "pos": "prep.",
+    "ipa": "/bɪˈləʊ/",
+    "ex": "The small kitchen is below our bedroom.",
+    "exZh": "那间小厨房在我们的卧室下面。"
+  },
+  {
+    "en": "beside",
+    "zh": "在…旁边",
+    "pos": "prep.",
+    "ipa": "/bɪˈsaɪd/",
+    "ex": "She sat beside me during the whole film.",
+    "exZh": "整部电影期间她一直坐在我旁边。"
+  },
+  {
+    "en": "birthday",
+    "zh": "生日",
+    "pos": "n.",
+    "ipa": "/ˈbɜːθdeɪ/",
+    "ex": "My birthday is on the tenth of May.",
+    "exZh": "我的生日是五月十日。"
+  },
+  {
+    "en": "borrow",
+    "zh": "借入",
+    "pos": "v.",
+    "ipa": "/ˈbɒrəʊ/",
+    "ex": "May I borrow your dictionary for a moment?",
+    "exZh": "我可以借你的词典用一会儿吗？"
+  },
+  {
+    "en": "brave",
+    "zh": "勇敢的",
+    "pos": "adj.",
+    "ipa": "/breɪv/",
+    "ex": "The brave boy saved a cat from the river.",
+    "exZh": "那个勇敢的男孩从河里救了一只猫。"
+  },
+  {
+    "en": "bridge",
+    "zh": "桥梁",
+    "pos": "n.",
+    "ipa": "/brɪdʒ/",
+    "ex": "There is an old bridge over the river.",
+    "exZh": "河上有一座老桥。"
+  },
+  {
+    "en": "bright",
+    "zh": "明亮的",
+    "pos": "adj.",
+    "ipa": "/braɪt/",
+    "ex": "The sun is very bright this morning.",
+    "exZh": "今天早上阳光很明亮。"
+  },
+  {
+    "en": "bring",
+    "zh": "带来",
+    "pos": "v.",
+    "ipa": "/brɪŋ/",
+    "ex": "Please bring your homework to class tomorrow.",
+    "exZh": "请明天把作业带到课堂上来。"
+  },
+  {
+    "en": "build",
+    "zh": "建造",
+    "pos": "v.",
+    "ipa": "/bɪld/",
+    "ex": "They plan to build a new library here.",
+    "exZh": "他们计划在这里建一座新图书馆。"
+  },
+  {
+    "en": "business",
+    "zh": "生意",
+    "pos": "n.",
+    "ipa": "/ˈbɪznəs/",
+    "ex": "My uncle runs a small business in town.",
+    "exZh": "我叔叔在城里做小生意。"
+  },
+  {
+    "en": "busy",
+    "zh": "忙碌的",
+    "pos": "adj.",
+    "ipa": "/ˈbɪzi/",
+    "ex": "My mother is busy cooking in the kitchen.",
+    "exZh": "妈妈正忙着在厨房做饭。"
+  },
+  {
+    "en": "camera",
+    "zh": "照相机",
+    "pos": "n.",
+    "ipa": "/ˈkæmərə/",
+    "ex": "He took many photos with his new camera.",
+    "exZh": "他用新相机拍了很多照片。"
+  },
+  {
+    "en": "careful",
+    "zh": "细心的",
+    "pos": "adj.",
+    "ipa": "/ˈkeəfl/",
+    "ex": "Be careful when you cross the busy road.",
+    "exZh": "过繁忙的马路时要小心。"
+  },
+  {
+    "en": "carry",
+    "zh": "搬运",
+    "pos": "v.",
+    "ipa": "/ˈkæri/",
+    "ex": "The box is too heavy for me to carry.",
+    "exZh": "这个箱子太重了，我搬不动。"
+  },
+  {
+    "en": "catch",
+    "zh": "接住",
+    "pos": "v.",
+    "ipa": "/kætʃ/",
+    "ex": "Can you catch the ball with one hand?",
+    "exZh": "你能用一只手接住球吗？"
+  },
+  {
+    "en": "cause",
+    "zh": "引起",
+    "pos": "v.",
+    "ipa": "/kɔːz/",
+    "ex": "Heavy rain may cause trouble on the roads.",
+    "exZh": "大雨可能会给道路带来麻烦。"
+  },
+  {
+    "en": "celebrate",
+    "zh": "庆祝",
+    "pos": "v.",
+    "ipa": "/ˈselɪbreɪt/",
+    "ex": "We celebrate the Spring Festival with our family.",
+    "exZh": "我们和家人一起庆祝春节。"
+  },
+  {
+    "en": "century",
+    "zh": "世纪",
+    "pos": "n.",
+    "ipa": "/ˈsentʃəri/",
+    "ex": "This old church is over a century old.",
+    "exZh": "这座老教堂已有一百多年历史。"
+  },
+  {
+    "en": "certain",
+    "zh": "确定的",
+    "pos": "adj.",
+    "ipa": "/ˈsɜːtn/",
+    "ex": "I am certain that he told us the truth.",
+    "exZh": "我确定他告诉了我们真相。"
+  },
+  {
+    "en": "challenge",
+    "zh": "挑战",
+    "pos": "n.",
+    "ipa": "/ˈtʃælɪndʒ/",
+    "ex": "Learning a new language is a big challenge.",
+    "exZh": "学一门新语言是很大的挑战。"
+  },
+  {
+    "en": "chance",
+    "zh": "机会",
+    "pos": "n.",
+    "ipa": "/tʃɑːns/",
+    "ex": "Give me one more chance to try again.",
+    "exZh": "再给我一次机会试试。"
+  },
+  {
+    "en": "change",
+    "zh": "改变",
+    "pos": "v.",
+    "ipa": "/tʃeɪndʒ/",
+    "ex": "You should change your wet clothes right now.",
+    "exZh": "你应该马上换掉湿衣服。"
+  },
+  {
+    "en": "cheap",
+    "zh": "便宜的",
+    "pos": "adj.",
+    "ipa": "/tʃiːp/",
+    "ex": "These shoes are cheap and quite comfortable.",
+    "exZh": "这双鞋便宜而且相当舒适。"
+  },
+  {
+    "en": "choose",
+    "zh": "选择",
+    "pos": "v.",
+    "ipa": "/tʃuːz/",
+    "ex": "You can choose any book from the shelf.",
+    "exZh": "你可以从书架上选任何一本书。"
+  },
+  {
+    "en": "clever",
+    "zh": "聪明的",
+    "pos": "adj.",
+    "ipa": "/ˈklevə(r)/",
+    "ex": "The clever girl answered all the questions quickly.",
+    "exZh": "那个聪明的女孩很快回答了所有问题。"
+  },
+  {
+    "en": "climb",
+    "zh": "攀爬",
+    "pos": "v.",
+    "ipa": "/klaɪm/",
+    "ex": "They climbed the mountain and saw the sunrise.",
+    "exZh": "他们爬上山看到了日出。"
+  },
+  {
+    "en": "clothes",
+    "zh": "衣服",
+    "pos": "n.",
+    "ipa": "/kləʊðz/",
+    "ex": "She washed her clothes on Sunday morning.",
+    "exZh": "她星期天早上洗了衣服。"
+  },
+  {
+    "en": "collect",
+    "zh": "收集",
+    "pos": "v.",
+    "ipa": "/kəˈlekt/",
+    "ex": "My brother likes to collect old Chinese stamps.",
+    "exZh": "我哥哥喜欢收集旧中国邮票。"
+  },
+  {
+    "en": "college",
+    "zh": "大学",
+    "pos": "n.",
+    "ipa": "/ˈkɒlɪdʒ/",
+    "ex": "My sister studies music at a college.",
+    "exZh": "我姐姐在一所大学学音乐。"
+  },
+  {
+    "en": "comfortable",
+    "zh": "舒适的",
+    "pos": "adj.",
+    "ipa": "/ˈkʌmftəbl/",
+    "ex": "This chair is soft and very comfortable.",
+    "exZh": "这把椅子柔软而且很舒适。"
+  },
+  {
+    "en": "common",
+    "zh": "共同的",
+    "pos": "adj.",
+    "ipa": "/ˈkɒmən/",
+    "ex": "Colds are common among children in winter.",
+    "exZh": "冬天孩子们常感冒。"
+  },
+  {
+    "en": "complete",
+    "zh": "完成",
+    "pos": "v.",
+    "ipa": "/kəmˈpliːt/",
+    "ex": "We must complete the work before Friday.",
+    "exZh": "我们必须在星期五前完成这项工作。"
+  },
+  {
+    "en": "computer",
+    "zh": "电脑",
+    "pos": "n.",
+    "ipa": "/kəmˈpjuːtə(r)/",
+    "ex": "He plays games on the computer every evening.",
+    "exZh": "他每天晚上在电脑上玩游戏。"
+  },
+  {
+    "en": "consider",
+    "zh": "考虑",
+    "pos": "v.",
+    "ipa": "/kənˈsɪdə(r)/",
+    "ex": "Please consider my idea before you decide.",
+    "exZh": "在做决定前请考虑我的想法。"
+  },
+  {
+    "en": "continue",
+    "zh": "继续",
+    "pos": "v.",
+    "ipa": "/kənˈtɪnjuː/",
+    "ex": "The rain will continue until tomorrow morning.",
+    "exZh": "雨会一直下到明天早上。"
+  },
+  {
+    "en": "control",
+    "zh": "控制",
+    "pos": "v.",
+    "ipa": "/kənˈtrəʊl/",
+    "ex": "It is hard to control a big dog.",
+    "exZh": "要控制住一只大狗很难。"
+  },
+  {
+    "en": "cook",
+    "zh": "烹饪",
+    "pos": "v.",
+    "ipa": "/kʊk/",
+    "ex": "My father can cook delicious noodles for us.",
+    "exZh": "我爸爸能给我们做美味的面条。"
+  },
+  {
+    "en": "corner",
+    "zh": "拐角",
+    "pos": "n.",
+    "ipa": "/ˈkɔːnə(r)/",
+    "ex": "The shop is at the corner of the street.",
+    "exZh": "那家商店在街道的拐角处。"
+  },
+  {
+    "en": "countryside",
+    "zh": "乡村",
+    "pos": "n.",
+    "ipa": "/ˈkʌntrisaɪd/",
+    "ex": "We spent the summer in the quiet countryside.",
+    "exZh": "我们在安静的乡村度过了夏天。"
+  },
+  {
+    "en": "dangerous",
+    "zh": "危险的",
+    "pos": "adj.",
+    "ipa": "/ˈdeɪndʒərəs/",
+    "ex": "It is dangerous to swim in this river.",
+    "exZh": "在这条河里游泳很危险。"
+  },
+  {
+    "en": "decide",
+    "zh": "决定",
+    "pos": "v.",
+    "ipa": "/dɪˈsaɪd/",
+    "ex": "We must decide where to go this weekend.",
+    "exZh": "我们必须决定这个周末去哪里。"
+  },
+  {
+    "en": "delicious",
+    "zh": "美味的",
+    "pos": "adj.",
+    "ipa": "/dɪˈlɪʃəs/",
+    "ex": "The soup my mother made was really delicious.",
+    "exZh": "我妈妈做的汤真的很好喝。"
+  },
+  {
+    "en": "desk",
+    "zh": "书桌",
+    "pos": "n.",
+    "ipa": "/desk/",
+    "ex": "There are many books on my desk.",
+    "exZh": "我的书桌上有许多书。"
+  },
+  {
+    "en": "develop",
+    "zh": "发展",
+    "pos": "v.",
+    "ipa": "/dɪˈveləp/",
+    "ex": "Reading good books can develop your mind.",
+    "exZh": "读好书可以发展你的思维。"
+  },
+  {
+    "en": "dictionary",
+    "zh": "词典",
+    "pos": "n.",
+    "ipa": "/ˈdɪkʃənri/",
+    "ex": "Look up the new word in your dictionary.",
+    "exZh": "在你的词典里查这个生词。"
+  },
+  {
+    "en": "difference",
+    "zh": "差别",
+    "pos": "n.",
+    "ipa": "/ˈdɪfrəns/",
+    "ex": "Can you see the difference between these two pictures?",
+    "exZh": "你能看出这两幅图画的区别吗？"
+  },
+  {
+    "en": "difficult",
+    "zh": "困难的",
+    "pos": "adj.",
+    "ipa": "/ˈdɪfɪkəlt/",
+    "ex": "This math problem is too difficult for me.",
+    "exZh": "这道数学题对我来说太难了。"
+  },
+  {
+    "en": "direction",
+    "zh": "方向",
+    "pos": "n.",
+    "ipa": "/dəˈrekʃn/",
+    "ex": "He walked in the wrong direction and got lost.",
+    "exZh": "他走错了方向，迷了路。"
+  },
+  {
+    "en": "discover",
+    "zh": "发现",
+    "pos": "v.",
+    "ipa": "/dɪˈskʌvə(r)/",
+    "ex": "Scientists discover new things about space every year.",
+    "exZh": "科学家每年都发现关于太空的新东西。"
+  },
+  {
+    "en": "discuss",
+    "zh": "讨论",
+    "pos": "v.",
+    "ipa": "/dɪˈskʌs/",
+    "ex": "We often discuss our plans after dinner.",
+    "exZh": "我们常在晚饭后讨论计划。"
+  },
+  {
+    "en": "doctor",
+    "zh": "医生",
+    "pos": "n.",
+    "ipa": "/ˈdɒktə(r)/",
+    "ex": "The doctor told me to drink more water.",
+    "exZh": "医生叫我多喝水。"
+  },
+  {
+    "en": "draw",
+    "zh": "画画",
+    "pos": "v.",
+    "ipa": "/drɔː/",
+    "ex": "She likes to draw pictures of cute animals.",
+    "exZh": "她喜欢画可爱动物的图画。"
+  },
+  {
+    "en": "dream",
+    "zh": "梦想",
+    "pos": "n.",
+    "ipa": "/driːm/",
+    "ex": "My dream is to become a teacher.",
+    "exZh": "我的梦想是成为一名老师。"
+  },
+  {
+    "en": "during",
+    "zh": "在…期间",
+    "pos": "prep.",
+    "ipa": "/ˈdjʊərɪŋ/",
+    "ex": "We visited many places during the summer vacation.",
+    "exZh": "暑假期间我们参观了许多地方。"
+  },
+  {
+    "en": "education",
+    "zh": "教育",
+    "pos": "n.",
+    "ipa": "/ˌedʒuˈkeɪʃn/",
+    "ex": "Every child should get a good education.",
+    "exZh": "每个孩子都应该接受良好的教育。"
+  },
+  {
+    "en": "effort",
+    "zh": "努力",
+    "pos": "n.",
+    "ipa": "/ˈefət/",
+    "ex": "He made a great effort to pass the exam.",
+    "exZh": "他为通过考试付出了很大努力。"
+  },
+  {
+    "en": "empty",
+    "zh": "空的",
+    "pos": "adj.",
+    "ipa": "/ˈempti/",
+    "ex": "The classroom was empty after the last class.",
+    "exZh": "最后一节课后教室空无一人。"
+  },
+  {
+    "en": "encourage",
+    "zh": "鼓励",
+    "pos": "v.",
+    "ipa": "/ɪnˈkʌrɪdʒ/",
+    "ex": "My teacher always encourages me to speak English.",
+    "exZh": "我的老师总是鼓励我说英语。"
+  },
+  {
+    "en": "energy",
+    "zh": "能量",
+    "pos": "n.",
+    "ipa": "/ˈenədʒi/",
+    "ex": "Young children have a lot of energy.",
+    "exZh": "小孩子有很多精力。"
+  },
+  {
+    "en": "enough",
+    "zh": "足够的",
+    "pos": "adj.",
+    "ipa": "/ɪˈnʌf/",
+    "ex": "We do not have enough time to finish.",
+    "exZh": "我们没有足够的时间完成。"
+  },
+  {
+    "en": "environment",
+    "zh": "环境",
+    "pos": "n.",
+    "ipa": "/ɪnˈvaɪrənmənt/",
+    "ex": "We should protect the environment around us.",
+    "exZh": "我们应该保护周围的环境。"
+  },
+  {
+    "en": "excited",
+    "zh": "激动的",
+    "pos": "adj.",
+    "ipa": "/ɪkˈsaɪtɪd/",
+    "ex": "The children were excited about the school trip.",
+    "exZh": "孩子们对学校旅行感到很兴奋。"
+  },
+  {
+    "en": "exercise",
+    "zh": "锻炼",
+    "pos": "v.",
+    "ipa": "/ˈeksəsaɪz/",
+    "ex": "I exercise in the park every morning.",
+    "exZh": "我每天早上在公园锻炼。"
+  },
+  {
+    "en": "expect",
+    "zh": "期待",
+    "pos": "v.",
+    "ipa": "/ɪkˈspekt/",
+    "ex": "I expect to see you at the party.",
+    "exZh": "我期待在聚会上见到你。"
+  },
+  {
+    "en": "experience",
+    "zh": "经验",
+    "pos": "n.",
+    "ipa": "/ɪkˈspɪəriəns/",
+    "ex": "Travelling alone was a new experience for me.",
+    "exZh": "独自旅行对我来说是一次新体验。"
+  },
+  {
+    "en": "explain",
+    "zh": "解释",
+    "pos": "v.",
+    "ipa": "/ɪkˈspleɪn/",
+    "ex": "Could you explain this rule to me again?",
+    "exZh": "你能再给我解释一下这条规则吗？"
+  },
+  {
+    "en": "fail",
+    "zh": "失败",
+    "pos": "v.",
+    "ipa": "/feɪl/",
+    "ex": "Do not be afraid to fail sometimes.",
+    "exZh": "不要害怕有时会失败。"
+  },
+  {
+    "en": "famous",
+    "zh": "著名的",
+    "pos": "adj.",
+    "ipa": "/ˈfeɪməs/",
+    "ex": "This city is famous for its beautiful gardens.",
+    "exZh": "这座城市以美丽的园林而闻名。"
+  },
+  {
+    "en": "festival",
+    "zh": "节日",
+    "pos": "n.",
+    "ipa": "/ˈfestɪvl/",
+    "ex": "The whole town celebrates the music festival together.",
+    "exZh": "全镇人一起庆祝这个音乐节。"
+  },
+  {
+    "en": "finish",
+    "zh": "结束",
+    "pos": "v.",
+    "ipa": "/ˈfɪnɪʃ/",
+    "ex": "I will finish my homework before dinner.",
+    "exZh": "我会在晚饭前完成作业。"
+  },
+  {
+    "en": "follow",
+    "zh": "跟随",
+    "pos": "v.",
+    "ipa": "/ˈfɒləʊ/",
+    "ex": "Please follow me to the reading room.",
+    "exZh": "请跟我去阅览室。"
+  },
+  {
+    "en": "foreign",
+    "zh": "外国的",
+    "pos": "adj.",
+    "ipa": "/ˈfɒrən/",
+    "ex": "She can speak two foreign languages well.",
+    "exZh": "她能说好两门外语。"
+  },
+  {
+    "en": "forget",
+    "zh": "忘记",
+    "pos": "v.",
+    "ipa": "/fəˈɡet/",
+    "ex": "Do not forget to bring your umbrella tomorrow.",
+    "exZh": "别忘了明天带伞。"
+  },
+  {
+    "en": "friendly",
+    "zh": "友好的",
+    "pos": "adj.",
+    "ipa": "/ˈfrendli/",
+    "ex": "Our new neighbour is very friendly to everyone.",
+    "exZh": "我们的新邻居对每个人都很友好。"
+  },
+  {
+    "en": "funny",
+    "zh": "滑稽的",
+    "pos": "adj.",
+    "ipa": "/ˈfʌni/",
+    "ex": "He told us a funny story after lunch.",
+    "exZh": "午饭后他给我们讲了一个有趣的故事。"
+  },
+  {
+    "en": "future",
+    "zh": "未来",
+    "pos": "n.",
+    "ipa": "/ˈfjuːtʃə(r)/",
+    "ex": "We should work hard for a bright future.",
+    "exZh": "我们应该为美好的未来而努力。"
+  },
+  {
+    "en": "garden",
+    "zh": "花园",
+    "pos": "n.",
+    "ipa": "/ˈɡɑːdn/",
+    "ex": "There are roses and trees in our garden.",
+    "exZh": "我们的花园里有玫瑰和树。"
+  },
+  {
+    "en": "gift",
+    "zh": "礼物",
+    "pos": "n.",
+    "ipa": "/ɡɪft/",
+    "ex": "I bought a small gift for my mother.",
+    "exZh": "我给妈妈买了一份小礼物。"
+  },
+  {
+    "en": "government",
+    "zh": "政府",
+    "pos": "n.",
+    "ipa": "/ˈɡʌvənmənt/",
+    "ex": "The government built a new road in our town.",
+    "exZh": "政府在我们镇上修了一条新路。"
+  },
+  {
+    "en": "grade",
+    "zh": "年级",
+    "pos": "n.",
+    "ipa": "/ɡreɪd/",
+    "ex": "My brother is in the ninth grade now.",
+    "exZh": "我弟弟现在上九年级。"
+  },
+  {
+    "en": "ground",
+    "zh": "地面",
+    "pos": "n.",
+    "ipa": "/ɡraʊnd/",
+    "ex": "The children sat on the ground and talked.",
+    "exZh": "孩子们坐在地上聊天。"
+  },
+  {
+    "en": "guess",
+    "zh": "猜测",
+    "pos": "v.",
+    "ipa": "/ɡes/",
+    "ex": "Can you guess what is in my bag?",
+    "exZh": "你能猜出我包里是什么吗？"
+  },
+  {
+    "en": "habit",
+    "zh": "习惯",
+    "pos": "n.",
+    "ipa": "/ˈhæbɪt/",
+    "ex": "Reading before bed is a good habit.",
+    "exZh": "睡前阅读是个好习惯。"
+  },
+  {
+    "en": "happen",
+    "zh": "发生",
+    "pos": "v.",
+    "ipa": "/ˈhæpən/",
+    "ex": "What will happen if it rains tomorrow?",
+    "exZh": "如果明天下雨会发生什么？"
+  },
+  {
+    "en": "health",
+    "zh": "身体状况",
+    "pos": "n.",
+    "ipa": "/helθ/",
+    "ex": "Eating vegetables is good for your health.",
+    "exZh": "吃蔬菜对你的健康有好处。"
+  },
+  {
+    "en": "healthy",
+    "zh": "健康的",
+    "pos": "adj.",
+    "ipa": "/ˈhelθi/",
+    "ex": "We should eat healthy food every day.",
+    "exZh": "我们每天应该吃健康的食物。"
+  },
+  {
+    "en": "hear",
+    "zh": "听见",
+    "pos": "v.",
+    "ipa": "/hɪə(r)/",
+    "ex": "I can hear birds singing outside the window.",
+    "exZh": "我能听见窗外鸟儿在唱歌。"
+  },
+  {
+    "en": "history",
+    "zh": "历史",
+    "pos": "n.",
+    "ipa": "/ˈhɪstri/",
+    "ex": "We learned about Chinese history in class today.",
+    "exZh": "我们今天在课上学习了中国历史。"
+  },
+  {
+    "en": "honest",
+    "zh": "诚实的",
+    "pos": "adj.",
+    "ipa": "/ˈɒnɪst/",
+    "ex": "An honest person always tells the truth.",
+    "exZh": "诚实的人总是说真话。"
+  },
+  {
+    "en": "hope",
+    "zh": "希望",
+    "pos": "v.",
+    "ipa": "/həʊp/",
+    "ex": "I hope you can come to my birthday party.",
+    "exZh": "我希望你能来参加我的生日聚会。"
+  },
+  {
+    "en": "hungry",
+    "zh": "饥饿的",
+    "pos": "adj.",
+    "ipa": "/ˈhʌŋɡri/",
+    "ex": "I am hungry after the long football game.",
+    "exZh": "长时间的足球赛后我饿了。"
+  },
+  {
+    "en": "hurry",
+    "zh": "匆忙",
+    "pos": "v.",
+    "ipa": "/ˈhʌri/",
+    "ex": "You must hurry or you will miss the bus.",
+    "exZh": "你必须快点，否则会错过公交车。"
+  },
+  {
+    "en": "hurt",
+    "zh": "受伤",
+    "pos": "v.",
+    "ipa": "/hɜːt/",
+    "ex": "He hurt his knee while playing basketball.",
+    "exZh": "他打篮球时伤了膝盖。"
+  },
+  {
+    "en": "husband",
+    "zh": "丈夫",
+    "pos": "n.",
+    "ipa": "/ˈhʌzbənd/",
+    "ex": "Her husband works in a big hospital.",
+    "exZh": "她丈夫在一家大医院工作。"
+  },
+  {
+    "en": "imagine",
+    "zh": "想象",
+    "pos": "v.",
+    "ipa": "/ɪˈmædʒɪn/",
+    "ex": "Can you imagine life without mobile phones?",
+    "exZh": "你能想象没有手机的生活吗？"
+  },
+  {
+    "en": "immediately",
+    "zh": "立刻",
+    "pos": "adv.",
+    "ipa": "/ɪˈmiːdiətli/",
+    "ex": "He left the room immediately after the phone call.",
+    "exZh": "接完电话后他立刻离开了房间。"
+  },
+  {
+    "en": "important",
+    "zh": "重要的",
+    "pos": "adj.",
+    "ipa": "/ɪmˈpɔːtnt/",
+    "ex": "It is important to keep our city clean.",
+    "exZh": "保持我们的城市干净很重要。"
+  },
+  {
+    "en": "improve",
+    "zh": "改进",
+    "pos": "v.",
+    "ipa": "/ɪmˈpruːv/",
+    "ex": "Reading every day can improve your English quickly.",
+    "exZh": "每天阅读能很快提高你的英语。"
+  },
+  {
+    "en": "information",
+    "zh": "信息",
+    "pos": "n.",
+    "ipa": "/ˌɪnfəˈmeɪʃn/",
+    "ex": "I found some useful information on the website.",
+    "exZh": "我在网站上找到了一些有用的信息。"
+  },
+  {
+    "en": "instead",
+    "zh": "代替",
+    "pos": "adv.",
+    "ipa": "/ɪnˈsted/",
+    "ex": "I had no milk, so I drank water instead.",
+    "exZh": "我没有牛奶，所以改喝水了。"
+  },
+  {
+    "en": "interest",
+    "zh": "兴趣",
+    "pos": "n.",
+    "ipa": "/ˈɪntrəst/",
+    "ex": "She has a great interest in Chinese painting.",
+    "exZh": "她对中国画有浓厚的兴趣。"
+  },
+  {
+    "en": "introduce",
+    "zh": "介绍",
+    "pos": "v.",
+    "ipa": "/ˌɪntrəˈdjuːs/",
+    "ex": "Let me introduce my new classmate to you.",
+    "exZh": "让我把我的新同学介绍给你。"
+  },
+  {
+    "en": "jacket",
+    "zh": "夹克",
+    "pos": "n.",
+    "ipa": "/ˈdʒækɪt/",
+    "ex": "Put on your jacket before you go out.",
+    "exZh": "出去之前穿上你的夹克。"
+  },
+  {
+    "en": "journey",
+    "zh": "旅程",
+    "pos": "n.",
+    "ipa": "/ˈdʒɜːni/",
+    "ex": "The journey to the mountain took three hours.",
+    "exZh": "去山里的旅程花了三个小时。"
+  },
+  {
+    "en": "juice",
+    "zh": "果汁",
+    "pos": "n.",
+    "ipa": "/dʒuːs/",
+    "ex": "I would like a glass of orange juice.",
+    "exZh": "我想要一杯橙汁。"
+  },
+  {
+    "en": "knowledge",
+    "zh": "知识",
+    "pos": "n.",
+    "ipa": "/ˈnɒlɪdʒ/",
+    "ex": "Books give us knowledge about the world.",
+    "exZh": "书籍给我们关于世界的知识。"
+  },
+  {
+    "en": "language",
+    "zh": "语言",
+    "pos": "n.",
+    "ipa": "/ˈlæŋɡwɪdʒ/",
+    "ex": "English is an important language for us.",
+    "exZh": "英语对我们来说是一门重要的语言。"
+  },
+  {
+    "en": "laugh",
+    "zh": "大笑",
+    "pos": "v.",
+    "ipa": "/lɑːf/",
+    "ex": "We often laugh at his funny stories.",
+    "exZh": "我们常被他有趣的故事逗笑。"
+  },
+  {
+    "en": "lazy",
+    "zh": "懒惰的",
+    "pos": "adj.",
+    "ipa": "/ˈleɪzi/",
+    "ex": "A lazy student seldom finishes his homework.",
+    "exZh": "懒惰的学生很少完成作业。"
+  },
+  {
+    "en": "leave",
+    "zh": "离开",
+    "pos": "v.",
+    "ipa": "/liːv/",
+    "ex": "We must leave home before seven o'clock.",
+    "exZh": "我们必须在七点前离开家。"
+  },
+  {
+    "en": "library",
+    "zh": "图书馆",
+    "pos": "n.",
+    "ipa": "/ˈlaɪbrəri/",
+    "ex": "I borrowed three books from the library.",
+    "exZh": "我从图书馆借了三本书。"
+  },
+  {
+    "en": "lucky",
+    "zh": "幸运的",
+    "pos": "adj.",
+    "ipa": "/ˈlʌki/",
+    "ex": "You are lucky to have such good friends.",
+    "exZh": "你很幸运有这么好的朋友。"
+  },
+  {
+    "en": "main",
+    "zh": "主要的",
+    "pos": "adj.",
+    "ipa": "/meɪn/",
+    "ex": "The main problem is that we have little time.",
+    "exZh": "主要问题是我们时间很少。"
+  },
+  {
+    "en": "market",
+    "zh": "市场",
+    "pos": "n.",
+    "ipa": "/ˈmɑːkɪt/",
+    "ex": "My mother buys fresh vegetables at the market.",
+    "exZh": "我妈妈在市场买新鲜蔬菜。"
+  },
+  {
+    "en": "marry",
+    "zh": "结婚",
+    "pos": "v.",
+    "ipa": "/ˈmæri/",
+    "ex": "They will marry next spring in a small church.",
+    "exZh": "他们明年春天将在一座小教堂结婚。"
+  },
+  {
+    "en": "matter",
+    "zh": "要紧",
+    "pos": "v.",
+    "ipa": "/ˈmætə(r)/",
+    "ex": "It does not matter if you are a little late.",
+    "exZh": "你稍微迟到一点没关系。"
+  },
+  {
+    "en": "meaning",
+    "zh": "意思",
+    "pos": "n.",
+    "ipa": "/ˈmiːnɪŋ/",
+    "ex": "I do not know the meaning of this word.",
+    "exZh": "我不知道这个词的意思。"
+  },
+  {
+    "en": "memory",
+    "zh": "记忆",
+    "pos": "n.",
+    "ipa": "/ˈmeməri/",
+    "ex": "My grandmother has a very good memory.",
+    "exZh": "我奶奶的记忆力很好。"
+  },
+  {
+    "en": "message",
+    "zh": "消息",
+    "pos": "n.",
+    "ipa": "/ˈmesɪdʒ/",
+    "ex": "He sent me a short message this morning.",
+    "exZh": "他今天早上给我发了一条短信。"
+  },
+  {
+    "en": "mind",
+    "zh": "头脑",
+    "pos": "n.",
+    "ipa": "/maɪnd/",
+    "ex": "A healthy body keeps a clear mind.",
+    "exZh": "健康的身体能保持清醒的头脑。"
+  },
+  {
+    "en": "modern",
+    "zh": "现代的",
+    "pos": "adj.",
+    "ipa": "/ˈmɒdn/",
+    "ex": "This modern building has more than twenty floors.",
+    "exZh": "这座现代建筑有二十多层。"
+  },
+  {
+    "en": "moment",
+    "zh": "片刻",
+    "pos": "n.",
+    "ipa": "/ˈməʊmənt/",
+    "ex": "Please wait a moment, I am coming.",
+    "exZh": "请稍等片刻，我就来。"
+  },
+  {
+    "en": "mountain",
+    "zh": "高山",
+    "pos": "n.",
+    "ipa": "/ˈmaʊntən/",
+    "ex": "We climbed a high mountain last summer.",
+    "exZh": "去年夏天我们爬了一座高山。"
+  },
+  {
+    "en": "move",
+    "zh": "移动",
+    "pos": "v.",
+    "ipa": "/muːv/",
+    "ex": "Please move your chair a little closer.",
+    "exZh": "请把你的椅子挪近一点。"
+  },
+  {
+    "en": "nature",
+    "zh": "大自然",
+    "pos": "n.",
+    "ipa": "/ˈneɪtʃə(r)/",
+    "ex": "We should live in peace with nature.",
+    "exZh": "我们应该与大自然和谐相处。"
+  },
+  {
+    "en": "neighbour",
+    "zh": "邻居",
+    "pos": "n.",
+    "ipa": "/ˈneɪbə(r)/",
+    "ex": "My neighbour helped me water the flowers.",
+    "exZh": "我的邻居帮我浇了花。"
+  },
+  {
+    "en": "nervous",
+    "zh": "紧张的",
+    "pos": "adj.",
+    "ipa": "/ˈnɜːvəs/",
+    "ex": "She felt nervous before the English speech contest.",
+    "exZh": "英语演讲比赛前她感到紧张。"
+  },
+  {
+    "en": "noise",
+    "zh": "噪音",
+    "pos": "n.",
+    "ipa": "/nɔɪz/",
+    "ex": "The noise from the street kept me awake.",
+    "exZh": "街上的噪音让我一直醒着。"
+  },
+  {
+    "en": "offer",
+    "zh": "主动提供",
+    "pos": "v.",
+    "ipa": "/ˈɒfə(r)/",
+    "ex": "He offered to carry my heavy bag.",
+    "exZh": "他主动提出帮我拿那个很重的包。"
+  },
+  {
+    "en": "often",
+    "zh": "经常",
+    "pos": "adv.",
+    "ipa": "/ˈɒfn/",
+    "ex": "We often play basketball together after school.",
+    "exZh": "我们放学后经常一起打篮球。"
+  },
+  {
+    "en": "paint",
+    "zh": "涂颜料",
+    "pos": "v.",
+    "ipa": "/peɪnt/",
+    "ex": "He painted the wall a bright yellow colour.",
+    "exZh": "他把墙刷成了明亮的黄色。"
+  },
+  {
+    "en": "physics",
+    "zh": "物理学",
+    "pos": "n.",
+    "ipa": "/ˈfɪzɪks/",
+    "ex": "Physics is my favourite subject at school.",
+    "exZh": "物理是我在学校最喜欢的科目。"
+  },
+  {
+    "en": "plan",
+    "zh": "计划",
+    "pos": "n.",
+    "ipa": "/plæn/",
+    "ex": "Our plan for the weekend is a picnic.",
+    "exZh": "我们周末的计划是野餐。"
+  },
+  {
+    "en": "polite",
+    "zh": "礼貌的",
+    "pos": "adj.",
+    "ipa": "/pəˈlaɪt/",
+    "ex": "It is polite to say thank you.",
+    "exZh": "说声谢谢是有礼貌的。"
+  },
+  {
+    "en": "popular",
+    "zh": "受欢迎的",
+    "pos": "adj.",
+    "ipa": "/ˈpɒpjələ(r)/",
+    "ex": "This song is very popular among young people.",
+    "exZh": "这首歌在年轻人中很受欢迎。"
+  },
+  {
+    "en": "possible",
+    "zh": "可能的",
+    "pos": "adj.",
+    "ipa": "/ˈpɒsəbl/",
+    "ex": "It is possible to finish the work today.",
+    "exZh": "今天完成这项工作是可能的。"
+  },
+  {
+    "en": "practice",
+    "zh": "练习",
+    "pos": "n.",
+    "ipa": "/ˈpræktɪs/",
+    "ex": "Practice makes perfect, so keep on trying.",
+    "exZh": "熟能生巧，所以继续努力吧。"
+  },
+  {
+    "en": "prepare",
+    "zh": "准备",
+    "pos": "v.",
+    "ipa": "/prɪˈpeə(r)/",
+    "ex": "We must prepare for the exam carefully.",
+    "exZh": "我们必须认真地准备考试。"
+  },
+  {
+    "en": "problem",
+    "zh": "难题",
+    "pos": "n.",
+    "ipa": "/ˈprɒbləm/",
+    "ex": "Let us talk about the problem together.",
+    "exZh": "让我们一起谈谈这个问题。"
+  },
+  {
+    "en": "protect",
+    "zh": "保护",
+    "pos": "v.",
+    "ipa": "/prəˈtekt/",
+    "ex": "We must protect the animals in the forest.",
+    "exZh": "我们必须保护森林里的动物。"
+  },
+  {
+    "en": "proud",
+    "zh": "骄傲的",
+    "pos": "adj.",
+    "ipa": "/praʊd/",
+    "ex": "My parents are proud of my progress.",
+    "exZh": "我父母为我的进步感到骄傲。"
+  },
+  {
+    "en": "public",
+    "zh": "公共的",
+    "pos": "adj.",
+    "ipa": "/ˈpʌblɪk/",
+    "ex": "Please keep quiet in all public places.",
+    "exZh": "请在所有的公共场所保持安静。"
+  },
+  {
+    "en": "question",
+    "zh": "疑问",
+    "pos": "n.",
+    "ipa": "/ˈkwestʃən/",
+    "ex": "May I ask you a question about it?",
+    "exZh": "我可以就这件事问你一个问题吗？"
+  },
+  {
+    "en": "quick",
+    "zh": "快速的",
+    "pos": "adj.",
+    "ipa": "/kwɪk/",
+    "ex": "He gave a quick answer to the teacher.",
+    "exZh": "他很快地回答了老师。"
+  },
+  {
+    "en": "quiet",
+    "zh": "安静的",
+    "pos": "adj.",
+    "ipa": "/ˈkwaɪət/",
+    "ex": "The small village is very quiet at night.",
+    "exZh": "这个小村庄晚上很安静。"
+  },
+  {
+    "en": "reach",
+    "zh": "够到",
+    "pos": "v.",
+    "ipa": "/riːtʃ/",
+    "ex": "I cannot reach the book on the shelf.",
+    "exZh": "我够不到书架上的那本书。"
+  },
+  {
+    "en": "receive",
+    "zh": "收到",
+    "pos": "v.",
+    "ipa": "/rɪˈsiːv/",
+    "ex": "I received a letter from my friend yesterday.",
+    "exZh": "昨天我收到了朋友的一封信。"
+  },
+  {
+    "en": "refuse",
+    "zh": "拒绝",
+    "pos": "v.",
+    "ipa": "/rɪˈfjuːz/",
+    "ex": "She refused to answer that difficult question.",
+    "exZh": "她拒绝回答那个难题。"
+  },
+  {
+    "en": "remember",
+    "zh": "记得",
+    "pos": "v.",
+    "ipa": "/rɪˈmembə(r)/",
+    "ex": "Remember to close the windows before you leave.",
+    "exZh": "记得离开前关上窗户。"
+  },
+  {
+    "en": "reply",
+    "zh": "答复",
+    "pos": "v.",
+    "ipa": "/rɪˈplaɪ/",
+    "ex": "He did not reply to my message yesterday.",
+    "exZh": "他昨天没有回复我的消息。"
+  },
+  {
+    "en": "report",
+    "zh": "报道",
+    "pos": "v.",
+    "ipa": "/rɪˈpɔːt/",
+    "ex": "The newspaper reported the news this morning.",
+    "exZh": "报纸今天早上报道了这条新闻。"
+  },
+  {
+    "en": "rich",
+    "zh": "富有的",
+    "pos": "adj.",
+    "ipa": "/rɪtʃ/",
+    "ex": "He is rich, but he lives simply.",
+    "exZh": "他很富有，但生活简朴。"
+  },
+  {
+    "en": "sad",
+    "zh": "悲伤的",
+    "pos": "adj.",
+    "ipa": "/sæd/",
+    "ex": "She felt sad when her cat ran away.",
+    "exZh": "她的猫跑丢时她很难过。"
+  },
+  {
+    "en": "safe",
+    "zh": "安全的",
+    "pos": "adj.",
+    "ipa": "/seɪf/",
+    "ex": "It is safe to walk here at night.",
+    "exZh": "晚上在这里走路很安全。"
+  },
+  {
+    "en": "serious",
+    "zh": "严肃的",
+    "pos": "adj.",
+    "ipa": "/ˈsɪəriəs/",
+    "ex": "He looked serious when he heard the news.",
+    "exZh": "听到这个消息时他看起来很严肃。"
+  },
+  {
+    "en": "sharp",
+    "zh": "锋利的",
+    "pos": "adj.",
+    "ipa": "/ʃɑːp/",
+    "ex": "Be careful, this knife is very sharp.",
+    "exZh": "小心，这把刀很锋利。"
+  },
+  {
+    "en": "simple",
+    "zh": "简单的",
+    "pos": "adj.",
+    "ipa": "/ˈsɪmpl/",
+    "ex": "The teacher explained it in a simple way.",
+    "exZh": "老师用简单的方式解释了它。"
+  },
+  {
+    "en": "soft",
+    "zh": "柔软的",
+    "pos": "adj.",
+    "ipa": "/sɒft/",
+    "ex": "The little rabbit has soft white fur.",
+    "exZh": "小兔子有柔软的白毛。"
+  },
+  {
+    "en": "sometimes",
+    "zh": "有时",
+    "pos": "adv.",
+    "ipa": "/ˈsʌmtaɪmz/",
+    "ex": "Sometimes I walk to school with my friends.",
+    "exZh": "有时我和朋友们一起走路去学校。"
+  },
+  {
+    "en": "sound",
+    "zh": "声响",
+    "pos": "n.",
+    "ipa": "/saʊnd/",
+    "ex": "I heard a strange sound outside the door.",
+    "exZh": "我听到门外有奇怪的声音。"
+  },
+  {
+    "en": "space",
+    "zh": "太空",
+    "pos": "n.",
+    "ipa": "/speɪs/",
+    "ex": "He dreams of travelling into space one day.",
+    "exZh": "他梦想有一天去太空旅行。"
+  },
+  {
+    "en": "speak",
+    "zh": "说话",
+    "pos": "v.",
+    "ipa": "/spiːk/",
+    "ex": "Please speak more slowly so I can understand.",
+    "exZh": "请说慢一点，这样我能听懂。"
+  },
+  {
+    "en": "stranger",
+    "zh": "陌生人",
+    "pos": "n.",
+    "ipa": "/ˈstreɪndʒə(r)/",
+    "ex": "A stranger asked me the way to the station.",
+    "exZh": "一个陌生人问我去车站的路。"
+  },
+  {
+    "en": "succeed",
+    "zh": "成功",
+    "pos": "v.",
+    "ipa": "/səkˈsiːd/",
+    "ex": "If you keep trying, you will succeed.",
+    "exZh": "如果你一直努力，你就会成功。"
+  },
+  {
+    "en": "suddenly",
+    "zh": "突然",
+    "pos": "adv.",
+    "ipa": "/ˈsʌdənli/",
+    "ex": "Suddenly the lights went out in the room.",
+    "exZh": "房间里的灯突然灭了。"
+  },
+  {
+    "en": "suggest",
+    "zh": "建议",
+    "pos": "v.",
+    "ipa": "/səˈdʒest/",
+    "ex": "I suggest we start the meeting right now.",
+    "exZh": "我建议我们现在就开始开会。"
+  },
+  {
+    "en": "support",
+    "zh": "支持",
+    "pos": "v.",
+    "ipa": "/səˈpɔːt/",
+    "ex": "My family always supports my important decisions.",
+    "exZh": "我的家人总是支持我的重要决定。"
+  },
+  {
+    "en": "sweater",
+    "zh": "毛衣",
+    "pos": "n.",
+    "ipa": "/ˈswetə(r)/",
+    "ex": "She wore a warm sweater in winter.",
+    "exZh": "冬天她穿着一件暖和的毛衣。"
+  },
+  {
+    "en": "table",
+    "zh": "桌子",
+    "pos": "n.",
+    "ipa": "/ˈteɪbl/",
+    "ex": "Dinner is ready on the kitchen table.",
+    "exZh": "晚饭已经在厨房的桌子上准备好了。"
+  },
+  {
+    "en": "taste",
+    "zh": "品尝",
+    "pos": "v.",
+    "ipa": "/teɪst/",
+    "ex": "Please taste the soup and tell me.",
+    "exZh": "请尝尝这汤，然后告诉我。"
+  },
+  {
+    "en": "terrible",
+    "zh": "糟糕的",
+    "pos": "adj.",
+    "ipa": "/ˈterəbl/",
+    "ex": "The weather was terrible during our trip.",
+    "exZh": "我们旅行期间天气很糟糕。"
+  },
+  {
+    "en": "though",
+    "zh": "虽然",
+    "pos": "conj.",
+    "ipa": "/ðəʊ/",
+    "ex": "Though it was raining, we went out.",
+    "exZh": "虽然下着雨，我们还是出去了。"
+  },
+  {
+    "en": "throw",
+    "zh": "抛掷",
+    "pos": "v.",
+    "ipa": "/θrəʊ/",
+    "ex": "Do not throw rubbish on the ground.",
+    "exZh": "不要把垃圾扔在地上。"
+  },
+  {
+    "en": "tired",
+    "zh": "疲倦的",
+    "pos": "adj.",
+    "ipa": "/ˈtaɪəd/",
+    "ex": "I felt tired after the long walk.",
+    "exZh": "走了很长的路后我感到疲倦。"
+  },
+  {
+    "en": "together",
+    "zh": "一起",
+    "pos": "adv.",
+    "ipa": "/təˈɡeðə(r)/",
+    "ex": "We often study together in the library.",
+    "exZh": "我们经常一起在图书馆学习。"
+  },
+  {
+    "en": "traffic",
+    "zh": "交通",
+    "pos": "n.",
+    "ipa": "/ˈtræfɪk/",
+    "ex": "The traffic is very heavy in the morning.",
+    "exZh": "早上交通非常拥挤。"
+  },
+  {
+    "en": "travel",
+    "zh": "旅行",
+    "pos": "v.",
+    "ipa": "/ˈtrævl/",
+    "ex": "They will travel to Beijing by train.",
+    "exZh": "他们将乘火车去北京旅行。"
+  },
+  {
+    "en": "trouble",
+    "zh": "麻烦",
+    "pos": "n.",
+    "ipa": "/ˈtrʌbl/",
+    "ex": "He is in trouble with his teacher.",
+    "exZh": "他和老师之间有了麻烦。"
+  },
+  {
+    "en": "truth",
+    "zh": "真相",
+    "pos": "n.",
+    "ipa": "/truːθ/",
+    "ex": "You should always tell your parents the truth.",
+    "exZh": "你应该总是对父母说真话。"
+  },
+  {
+    "en": "unusual",
+    "zh": "不寻常的",
+    "pos": "adj.",
+    "ipa": "/ʌnˈjuːʒuəl/",
+    "ex": "It is unusual to see snow here.",
+    "exZh": "在这里看到雪是不寻常的。"
+  },
+  {
+    "en": "useful",
+    "zh": "有用的",
+    "pos": "adj.",
+    "ipa": "/ˈjuːsfl/",
+    "ex": "A dictionary is useful for learning English.",
+    "exZh": "词典对学英语很有用。"
+  },
+  {
+    "en": "usually",
+    "zh": "通常",
+    "pos": "adv.",
+    "ipa": "/ˈjuːʒuəli/",
+    "ex": "I usually get up at six o'clock.",
+    "exZh": "我通常六点起床。"
+  },
+  {
+    "en": "vacation",
+    "zh": "假期",
+    "pos": "n.",
+    "ipa": "/vəˈkeɪʃn/",
+    "ex": "We had a wonderful vacation by the sea.",
+    "exZh": "我们在海边度过了一个美妙的假期。"
+  },
+  {
+    "en": "vegetable",
+    "zh": "蔬菜",
+    "pos": "n.",
+    "ipa": "/ˈvedʒtəbl/",
+    "ex": "My mother cooked a vegetable soup for us.",
+    "exZh": "妈妈给我们做了一锅蔬菜汤。"
+  },
+  {
+    "en": "victory",
+    "zh": "胜利",
+    "pos": "n.",
+    "ipa": "/ˈvɪktəri/",
+    "ex": "The whole team celebrated their victory happily.",
+    "exZh": "整个队伍高兴地庆祝胜利。"
+  },
+  {
+    "en": "village",
+    "zh": "村庄",
+    "pos": "n.",
+    "ipa": "/ˈvɪlɪdʒ/",
+    "ex": "My grandparents live in a small village.",
+    "exZh": "我的祖父母住在一个小村庄里。"
+  },
+  {
+    "en": "voice",
+    "zh": "嗓音",
+    "pos": "n.",
+    "ipa": "/vɔɪs/",
+    "ex": "She has a sweet and clear voice.",
+    "exZh": "她的嗓音甜美又清晰。"
+  },
+  {
+    "en": "waste",
+    "zh": "浪费",
+    "pos": "v.",
+    "ipa": "/weɪst/",
+    "ex": "Do not waste water when you wash hands.",
+    "exZh": "洗手时不要浪费水。"
+  },
+  {
+    "en": "weather",
+    "zh": "天气",
+    "pos": "n.",
+    "ipa": "/ˈweðə(r)/",
+    "ex": "The weather is fine for a picnic today.",
+    "exZh": "今天天气很好，适合野餐。"
+  },
+  {
+    "en": "weekend",
+    "zh": "周末",
+    "pos": "n.",
+    "ipa": "/ˌwiːkˈend/",
+    "ex": "We will visit the museum this weekend.",
+    "exZh": "这个周末我们将参观博物馆。"
+  },
+  {
+    "en": "welcome",
+    "zh": "欢迎",
+    "pos": "v.",
+    "ipa": "/ˈwelkəm/",
+    "ex": "We welcome visitors from all over the world.",
+    "exZh": "我们欢迎来自世界各地的游客。"
+  },
+  {
+    "en": "wonderful",
+    "zh": "极好的",
+    "pos": "adj.",
+    "ipa": "/ˈwʌndəfl/",
+    "ex": "We had a wonderful time at the party.",
+    "exZh": "我们在聚会上玩得很开心。"
+  },
+  {
+    "en": "worry",
+    "zh": "担忧",
+    "pos": "v.",
+    "ipa": "/ˈwʌri/",
+    "ex": "Do not worry about the test too much.",
+    "exZh": "不要太担心这次考试。"
+  },
+  {
+    "en": "young",
+    "zh": "年轻的",
+    "pos": "adj.",
+    "ipa": "/jʌŋ/",
+    "ex": "The young man helped an old lady.",
+    "exZh": "那个年轻人帮助了一位老太太。"
+  },
+  {
+    "en": "Christmas",
+    "zh": "圣诞节",
+    "pos": "n.",
+    "ipa": "/ˈkrɪsməs/",
+    "ex": "We give presents to each other at Christmas.",
+    "exZh": "圣诞节我们互相送礼物。"
+  },
+  {
+    "en": "Chinese",
+    "zh": "中文",
+    "pos": "n.",
+    "ipa": "/ˌtʃaɪˈniːz/",
+    "ex": "Chinese is spoken by many people in the world.",
+    "exZh": "世界上有许多人说中文。"
+  }
 ]

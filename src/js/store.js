@@ -26,6 +26,7 @@ window.WM = window.WM || {};
     autoPronounce: true,       // 出现英文题面时自动朗读
     autoNext: true,            // 答对后自动进入下一题
     autoNextDelay: 1100,       // 自动下一题延迟(ms)，留足看清释义的时间
+    showDetail: true,          // 答对后展开详细词条（音标/词性/例句/复习进度）
     reviewLimit: 60,           // 每天复习上限
   };
 
@@ -62,6 +63,7 @@ window.WM = window.WM || {};
     s.autoPronounce = src.autoPronounce !== false;
     s.autoNext = src.autoNext !== false;
     s.autoNextDelay = WM.util.clamp(Math.round(Number(src.autoNextDelay)) || DEFAULT_SETTINGS.autoNextDelay, 300, 3000);
+    s.showDetail = src.showDetail !== false;
     s.reviewLimit = WM.util.clamp(Math.round(Number(src.reviewLimit)) || DEFAULT_SETTINGS.reviewLimit, 10, 300);
 
     // 单词档案

@@ -278,11 +278,73 @@ window.WM = window.WM || {};
 
     // 7) 答对自动进入下一题；答错停下来看清楚
     if (ok && state.settings.autoNext) {
-      scheduleNext(state.settings.autoNextDelay || 850);
+      const base = state.settings.autoNextDelay || 1100;
+      // 展开详细词条时留更长时间——卡片上有例句和翻译两行要读
+      const delay = state.settings.showDetail ? Math.max(base, 3200) : base;
+      scheduleNext(delay);
     }
   }
 
+  /**
+   * 答对后的「详细词条卡」。
+   *
+   * 只在设置里打开 showDetail 且**答对**时用它。答错时不展开：
+   * 那时用户更需要尽快看清正确答案，一屏信息反而碍事。
+   */
+  function buildDetailCard(q) {
+    const entry = q.entry;
+    const level = bank.levelMeta(entry.level);
+    const state = store.get();
+    const record = state.words[entry.id] || null;
+
+    const reviewText = record
+      ? `复习等级 ${(record.box || 0) + 1} · 下次复习 ${record.nextReview} · 累计对 ${record.correct} / 错 ${record.wrong}`
+      : '首次学习 · 明天进入复习';
+
+    const speakBtn = (text, title, cls = 'speak-btn') => h('button', {
+      class: cls,
+      type: 'button',
+      title,
+      onclick: (e) => {
+        e.stopPropagation();
+        sound.speak(text);
+      },
+    }, icon('i-speaker'));
+
+    return h('div', { class: 'feedback ok detail' },
+      h('div', { class: 'detail-head' },
+        h('div', { class: 'detail-word' },
+          h('span', { class: 'dw-en', text: entry.en }),
+          entry.ipa ? h('span', { class: 'dw-ipa', text: entry.ipa }) : null,
+          entry.pos ? h('span', { class: 'dw-pos', text: entry.pos }) : null,
+          speakBtn(entry.en, '朗读单词')),
+        h('div', { class: 'detail-zh', text: entry.zh })),
+
+      entry.ex
+        ? h('div', { class: 'detail-ex' },
+          h('div', { class: 'ex-en' },
+            h('span', { text: entry.ex }),
+            speakBtn(entry.ex, '朗读例句', 'speak-btn sm')),
+          entry.exZh ? h('div', { class: 'ex-zh', text: entry.exZh }) : null)
+        : null,
+
+      h('div', { class: 'detail-foot' },
+        h('span', { class: 'tag ok-tag' }, icon('i-check'), '答对了'),
+        h('span', { class: 'tag' },
+          h('span', { style: { width: '8px', height: '8px', borderRadius: '50%', background: level.color, display: 'inline-block' } }),
+          level.name),
+        h('span', { class: 'detail-review', text: reviewText }),
+        h('button', {
+          class: 'btn primary sm',
+          type: 'button',
+          onclick: () => next(),
+        }, '继续')));
+  }
+
   function buildFeedback(ok, q, isRetry) {
+    // 答对 + 开关打开 → 用详细词条卡（其余情况走下面的精简反馈条）
+    if (ok && store.get().settings.showDetail) return buildDetailCard(q);
+
     const entry = q.entry;
     const level = bank.levelMeta(entry.level);
     const isEn = q.direction === 'en2zh';

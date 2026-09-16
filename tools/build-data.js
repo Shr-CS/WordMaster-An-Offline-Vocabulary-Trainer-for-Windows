@@ -37,12 +37,22 @@ function readLevel(id) {
     const key = en.toLowerCase();
     if (seenEn.has(key)) continue; // 同等级内英文重复，保留第一条
     seenEn.add(key);
-    rows.push({
+
+    // 例句是可选的：老版词库没有这两个字段，有就带上（答对后的详细词条卡要用）
+    const ex = String(item.ex || '').trim();
+    const row = {
       en,
       zh,
       pos: String(item.pos || '').trim(),
       ipa: String(item.ipa || '').trim(),
-    });
+    };
+    if (ex) {
+      row.ex = ex;
+      const exZh = String(item.exZh || '').trim();
+      if (exZh) row.exZh = exZh;
+    }
+
+    rows.push(row);
   }
   return { id, rows, missing: false, rawCount: raw.length };
 }
@@ -56,10 +66,11 @@ function main() {
     const { rows, missing, rawCount } = readLevel(id);
     banks[id] = rows;
     total += rows.length;
+    const withEx = rows.filter((r) => r.ex).length;
     report.push(
       missing
         ? `  ${id.padEnd(8)} 缺失（跳过）`
-        : `  ${id.padEnd(8)} ${String(rows.length).padStart(4)} 词` +
+        : `  ${id.padEnd(8)} ${String(rows.length).padStart(4)} 词  带例句 ${String(withEx).padStart(4)}` +
           (rawCount !== rows.length ? `  （源数据 ${rawCount}，去重后 ${rows.length}）` : ''),
     );
   }

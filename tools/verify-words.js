@@ -13,11 +13,11 @@ const path = require('node:path');
 const LEVELS = [
   { id: 'primary', name: '小学', min: 150 },
   { id: 'junior', name: '初中', min: 150 },
-  { id: 'senior', name: '高中', min: 150 },
-  { id: 'cet4', name: '四级', min: 150 },
-  { id: 'cet6', name: '六级', min: 150 },
-  { id: 'ielts', name: '雅思', min: 150 },
-  { id: 'toefl', name: '托福', min: 150 },
+  { id: 'senior', name: '高中', min: 950 },
+  { id: 'cet4', name: '四级', min: 950 },
+  { id: 'cet6', name: '六级', min: 950 },
+  { id: 'ielts', name: '雅思', min: 950 },
+  { id: 'toefl', name: '托福', min: 950 },
 ];
 
 const POS_OK = new Set(['n.', 'v.', 'adj.', 'adv.', 'prep.', 'conj.', 'pron.', 'num.', 'phr.', 'art.', 'int.']);

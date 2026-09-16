@@ -1,0 +1,882 @@
+[
+  {
+    "en": "absence",
+    "zh": "缺席",
+    "pos": "n.",
+    "ipa": "/ˈæbsəns/",
+    "ex": "His absence from the meeting surprised everyone.",
+    "exZh": "他缺席会议让所有人都很意外。"
+  },
+  {
+    "en": "abuse",
+    "zh": "滥用",
+    "pos": "n.",
+    "ipa": "/əˈbjuːs/",
+    "ex": "The abuse of power led to his resignation.",
+    "exZh": "滥用职权导致了他的辞职。"
+  },
+  {
+    "en": "accent",
+    "zh": "口音",
+    "pos": "n.",
+    "ipa": "/ˈæksent/",
+    "ex": "She speaks English with a slight French accent.",
+    "exZh": "她说英语带一点法国口音。"
+  },
+  {
+    "en": "acknowledge",
+    "zh": "承认",
+    "pos": "v.",
+    "ipa": "/əkˈnɒlɪdʒ/",
+    "ex": "He acknowledged his mistake in front of the whole class.",
+    "exZh": "他在全班面前承认了自己的错误。"
+  },
+  {
+    "en": "ancestor",
+    "zh": "祖先",
+    "pos": "n.",
+    "ipa": "/ˈænsestə/",
+    "ex": "My ancestors came from a small fishing village.",
+    "exZh": "我的祖先来自一个小渔村。"
+  },
+  {
+    "en": "bacteria",
+    "zh": "细菌",
+    "pos": "n.",
+    "ipa": "/bækˈtɪəriə/",
+    "ex": "Bacteria can multiply quickly in warm food.",
+    "exZh": "细菌在温热的食物中会迅速繁殖。"
+  },
+  {
+    "en": "baggage",
+    "zh": "行李",
+    "pos": "n.",
+    "ipa": "/ˈbæɡɪdʒ/",
+    "ex": "Please keep your baggage with you at all times.",
+    "exZh": "请随时携带您的行李。"
+  },
+  {
+    "en": "bare",
+    "zh": "赤裸的",
+    "pos": "adj.",
+    "ipa": "/beə/",
+    "ex": "He walked on the sand with bare feet.",
+    "exZh": "他光着脚在沙滩上走。"
+  },
+  {
+    "en": "beneficial",
+    "zh": "有益的",
+    "pos": "adj.",
+    "ipa": "/ˌbenɪˈfɪʃl/",
+    "ex": "Regular exercise is beneficial to your health.",
+    "exZh": "规律运动对你的健康有益。"
+  },
+  {
+    "en": "boundary",
+    "zh": "边界",
+    "pos": "n.",
+    "ipa": "/ˈbaʊndri/",
+    "ex": "The river forms the boundary between the two countries.",
+    "exZh": "这条河构成两国之间的边界。"
+  },
+  {
+    "en": "breeze",
+    "zh": "微风",
+    "pos": "n.",
+    "ipa": "/briːz/",
+    "ex": "A cool breeze came through the open window.",
+    "exZh": "一阵凉风从开着的窗户吹进来。"
+  },
+  {
+    "en": "calendar",
+    "zh": "日历",
+    "pos": "n.",
+    "ipa": "/ˈkælɪndə/",
+    "ex": "She marked the exam date on her calendar.",
+    "exZh": "她在日历上标出了考试日期。"
+  },
+  {
+    "en": "capsule",
+    "zh": "胶囊",
+    "pos": "n.",
+    "ipa": "/ˈkæpsjuːl/",
+    "ex": "Take one capsule after each meal.",
+    "exZh": "每餐后服用一粒胶囊。"
+  },
+  {
+    "en": "champion",
+    "zh": "冠军",
+    "pos": "n.",
+    "ipa": "/ˈtʃæmpiən/",
+    "ex": "She became the national champion at the age of nineteen.",
+    "exZh": "她十九岁时成为全国冠军。"
+  },
+  {
+    "en": "chaos",
+    "zh": "混乱",
+    "pos": "n.",
+    "ipa": "/ˈkeɪɒs/",
+    "ex": "The sudden storm caused chaos at the airport.",
+    "exZh": "突如其来的暴风雨在机场造成了混乱。"
+  },
+  {
+    "en": "chapter",
+    "zh": "章节",
+    "pos": "n.",
+    "ipa": "/ˈtʃæptə/",
+    "ex": "The first chapter of the book is the most interesting.",
+    "exZh": "这本书的第一章最有趣。"
+  },
+  {
+    "en": "civilization",
+    "zh": "文明",
+    "pos": "n.",
+    "ipa": "/ˌsɪvəlaɪˈzeɪʃn/",
+    "ex": "Ancient civilizations built cities along the great rivers.",
+    "exZh": "古代文明沿着大河修建城市。"
+  },
+  {
+    "en": "coincidence",
+    "zh": "巧合",
+    "pos": "n.",
+    "ipa": "/kəʊˈɪnsɪdəns/",
+    "ex": "It was a coincidence that we took the same train.",
+    "exZh": "我们搭同一班火车纯属巧合。"
+  },
+  {
+    "en": "dawn",
+    "zh": "黎明",
+    "pos": "n.",
+    "ipa": "/dɔːn/",
+    "ex": "We set off at dawn to avoid the traffic.",
+    "exZh": "我们黎明出发以避开交通拥堵。"
+  },
+  {
+    "en": "decay",
+    "zh": "腐烂",
+    "pos": "v.",
+    "ipa": "/dɪˈkeɪ/",
+    "ex": "Too much sugar can make your teeth decay.",
+    "exZh": "糖分过多会使你的牙齿腐烂。"
+  },
+  {
+    "en": "deceive",
+    "zh": "欺骗",
+    "pos": "v.",
+    "ipa": "/dɪˈsiːv/",
+    "ex": "He tried to deceive the customers with false ads.",
+    "exZh": "他试图用虚假广告欺骗顾客。"
+  },
+  {
+    "en": "decent",
+    "zh": "体面的",
+    "pos": "adj.",
+    "ipa": "/ˈdiːsnt/",
+    "ex": "She earns a decent salary at the bank.",
+    "exZh": "她在银行挣着不错的薪水。"
+  },
+  {
+    "en": "deliberate",
+    "zh": "故意的",
+    "pos": "adj.",
+    "ipa": "/dɪˈlɪbərət/",
+    "ex": "The fire was not an accident but a deliberate act.",
+    "exZh": "这场火不是意外，而是故意的行为。"
+  },
+  {
+    "en": "departure",
+    "zh": "离开",
+    "pos": "n.",
+    "ipa": "/dɪˈpɑːtʃə/",
+    "ex": "His departure left a big gap in the team.",
+    "exZh": "他的离开给团队留下了一个很大的空缺。"
+  },
+  {
+    "en": "eager",
+    "zh": "渴望的",
+    "pos": "adj.",
+    "ipa": "/ˈiːɡə/",
+    "ex": "The children were eager to open their presents.",
+    "exZh": "孩子们急切地想要打开礼物。"
+  },
+  {
+    "en": "earnest",
+    "zh": "认真的",
+    "pos": "adj.",
+    "ipa": "/ˈɜːnɪst/",
+    "ex": "She made an earnest effort to improve her English.",
+    "exZh": "她认真努力地提高英语水平。"
+  },
+  {
+    "en": "echo",
+    "zh": "回声",
+    "pos": "n.",
+    "ipa": "/ˈekəʊ/",
+    "ex": "We heard the echo of our own voices in the cave.",
+    "exZh": "我们在洞穴里听到了自己声音的回声。"
+  },
+  {
+    "en": "edition",
+    "zh": "版本",
+    "pos": "n.",
+    "ipa": "/ɪˈdɪʃn/",
+    "ex": "The new edition of the dictionary came out last month.",
+    "exZh": "这本词典的新版本上个月出版了。"
+  },
+  {
+    "en": "envy",
+    "zh": "羡慕",
+    "pos": "v.",
+    "ipa": "/ˈenvi/",
+    "ex": "I envy her ability to stay calm under pressure.",
+    "exZh": "我羡慕她在压力下保持冷静的能力。"
+  },
+  {
+    "en": "faint",
+    "zh": "微弱的",
+    "pos": "adj.",
+    "ipa": "/feɪnt/",
+    "ex": "We heard a faint sound from the next room.",
+    "exZh": "我们听到隔壁房间传来微弱的声音。"
+  },
+  {
+    "en": "famine",
+    "zh": "饥荒",
+    "pos": "n.",
+    "ipa": "/ˈfæmɪn/",
+    "ex": "The long drought led to a serious famine.",
+    "exZh": "长期干旱导致了严重的饥荒。"
+  },
+  {
+    "en": "fantasy",
+    "zh": "幻想",
+    "pos": "n.",
+    "ipa": "/ˈfæntəsi/",
+    "ex": "He lives in a fantasy world of his own.",
+    "exZh": "他生活在自己幻想的世界里。"
+  },
+  {
+    "en": "fault",
+    "zh": "过错",
+    "pos": "n.",
+    "ipa": "/fɔːlt/",
+    "ex": "It was my fault that we missed the bus.",
+    "exZh": "我们错过公交车是我的过错。"
+  },
+  {
+    "en": "gallery",
+    "zh": "画廊",
+    "pos": "n.",
+    "ipa": "/ˈɡæləri/",
+    "ex": "We spent the whole afternoon in the art gallery.",
+    "exZh": "我们在画廊里待了整整一个下午。"
+  },
+  {
+    "en": "gamble",
+    "zh": "赌博",
+    "pos": "v.",
+    "ipa": "/ˈɡæmbl/",
+    "ex": "He gambled away all his savings in one night.",
+    "exZh": "他一夜之间把所有积蓄都赌光了。"
+  },
+  {
+    "en": "garment",
+    "zh": "衣服",
+    "pos": "n.",
+    "ipa": "/ˈɡɑːmənt/",
+    "ex": "This garment must be washed by hand.",
+    "exZh": "这件衣服必须手洗。"
+  },
+  {
+    "en": "gratitude",
+    "zh": "感激",
+    "pos": "n.",
+    "ipa": "/ˈɡrætɪtjuːd/",
+    "ex": "She expressed her gratitude to the doctors.",
+    "exZh": "她向医生们表达了感激之情。"
+  },
+  {
+    "en": "handful",
+    "zh": "少量",
+    "pos": "n.",
+    "ipa": "/ˈhændfʊl/",
+    "ex": "Only a handful of people came to the lecture.",
+    "exZh": "只有少数几个人来听讲座。"
+  },
+  {
+    "en": "harvest",
+    "zh": "收获",
+    "pos": "n.",
+    "ipa": "/ˈhɑːvɪst/",
+    "ex": "The farmers expect a good harvest this year.",
+    "exZh": "农民们期望今年有个好收成。"
+  },
+  {
+    "en": "hatred",
+    "zh": "憎恨",
+    "pos": "n.",
+    "ipa": "/ˈheɪtrɪd/",
+    "ex": "His speech was full of hatred and anger.",
+    "exZh": "他的演讲充满了憎恨和愤怒。"
+  },
+  {
+    "en": "hollow",
+    "zh": "空的",
+    "pos": "adj.",
+    "ipa": "/ˈhɒləʊ/",
+    "ex": "The old tree is completely hollow inside.",
+    "exZh": "这棵老树里面完全是空的。"
+  },
+  {
+    "en": "handy",
+    "zh": "便利的",
+    "pos": "adj.",
+    "ipa": "/ˈhændi/",
+    "ex": "A small torch is handy when the power goes out.",
+    "exZh": "停电时小手电很方便。"
+  },
+  {
+    "en": "idle",
+    "zh": "空闲的",
+    "pos": "adj.",
+    "ipa": "/ˈaɪdl/",
+    "ex": "The machines stood idle for three weeks.",
+    "exZh": "这些机器闲置了三个星期。"
+  },
+  {
+    "en": "imitate",
+    "zh": "模仿",
+    "pos": "v.",
+    "ipa": "/ˈɪmɪteɪt/",
+    "ex": "Children often imitate what they see on TV.",
+    "exZh": "孩子们常常模仿在电视上看到的东西。"
+  },
+  {
+    "en": "immigrant",
+    "zh": "移民",
+    "pos": "n.",
+    "ipa": "/ˈɪmɪɡrənt/",
+    "ex": "Many immigrants settled in this part of the city.",
+    "exZh": "许多移民在这片城区定居下来。"
+  },
+  {
+    "en": "impulse",
+    "zh": "冲动",
+    "pos": "n.",
+    "ipa": "/ˈɪmpʌls/",
+    "ex": "She bought the dress on impulse.",
+    "exZh": "她一时冲动买下了那条裙子。"
+  },
+  {
+    "en": "journal",
+    "zh": "期刊",
+    "pos": "n.",
+    "ipa": "/ˈdʒɜːnl/",
+    "ex": "He published his research in a medical journal.",
+    "exZh": "他把自己的研究发表在一本医学期刊上。"
+  },
+  {
+    "en": "journalist",
+    "zh": "记者",
+    "pos": "n.",
+    "ipa": "/ˈdʒɜːnəlɪst/",
+    "ex": "The journalist interviewed several local farmers.",
+    "exZh": "那位记者采访了几位当地农民。"
+  },
+  {
+    "en": "jury",
+    "zh": "陪审团",
+    "pos": "n.",
+    "ipa": "/ˈdʒʊəri/",
+    "ex": "The jury found him not guilty.",
+    "exZh": "陪审团认定他无罪。"
+  },
+  {
+    "en": "keyboard",
+    "zh": "键盘",
+    "pos": "n.",
+    "ipa": "/ˈkiːbɔːd/",
+    "ex": "My keyboard stopped working after the coffee spilled.",
+    "exZh": "咖啡洒了以后我的键盘就坏了。"
+  },
+  {
+    "en": "kneel",
+    "zh": "跪下",
+    "pos": "v.",
+    "ipa": "/niːl/",
+    "ex": "She had to kneel on the floor to reach the plug.",
+    "exZh": "她不得不跪在地上才能够到插头。"
+  },
+  {
+    "en": "ladder",
+    "zh": "梯子",
+    "pos": "n.",
+    "ipa": "/ˈlædə/",
+    "ex": "He climbed the ladder to fix the roof.",
+    "exZh": "他爬上梯子修屋顶。"
+  },
+  {
+    "en": "landlord",
+    "zh": "房东",
+    "pos": "n.",
+    "ipa": "/ˈlændlɔːd/",
+    "ex": "The landlord raised the rent again this year.",
+    "exZh": "房东今年又涨了房租。"
+  },
+  {
+    "en": "lane",
+    "zh": "小巷",
+    "pos": "n.",
+    "ipa": "/leɪn/",
+    "ex": "They live in a quiet lane near the park.",
+    "exZh": "他们住在公园附近一条安静的小巷里。"
+  },
+  {
+    "en": "laughter",
+    "zh": "笑声",
+    "pos": "n.",
+    "ipa": "/ˈlɑːftə/",
+    "ex": "Her joke was met with loud laughter.",
+    "exZh": "她的笑话引来一阵大笑。"
+  },
+  {
+    "en": "liberty",
+    "zh": "自由",
+    "pos": "n.",
+    "ipa": "/ˈlɪbəti/",
+    "ex": "People fought hard for their liberty.",
+    "exZh": "人们为自由而奋力斗争。"
+  },
+  {
+    "en": "magazine",
+    "zh": "杂志",
+    "pos": "n.",
+    "ipa": "/ˌmæɡəˈziːn/",
+    "ex": "I read a science magazine on the train.",
+    "exZh": "我在火车上读了一本科学杂志。"
+  },
+  {
+    "en": "maintenance",
+    "zh": "维护",
+    "pos": "n.",
+    "ipa": "/ˈmeɪntənəns/",
+    "ex": "The road is closed for maintenance this week.",
+    "exZh": "这条路本周因维护而封闭。"
+  },
+  {
+    "en": "mankind",
+    "zh": "人类",
+    "pos": "n.",
+    "ipa": "/mænˈkaɪnd/",
+    "ex": "This discovery will benefit all mankind.",
+    "exZh": "这项发现将造福全人类。"
+  },
+  {
+    "en": "manner",
+    "zh": "方式",
+    "pos": "n.",
+    "ipa": "/ˈmænə/",
+    "ex": "She answered all the questions in a polite manner.",
+    "exZh": "她礼貌地回答了所有问题。"
+  },
+  {
+    "en": "mayor",
+    "zh": "市长",
+    "pos": "n.",
+    "ipa": "/meə/",
+    "ex": "The mayor opened the new library yesterday.",
+    "exZh": "市长昨天为新图书馆揭幕。"
+  },
+  {
+    "en": "naked",
+    "zh": "裸体的",
+    "pos": "adj.",
+    "ipa": "/ˈneɪkɪd/",
+    "ex": "The stars were visible to the naked eye.",
+    "exZh": "肉眼就能看见那些星星。"
+  },
+  {
+    "en": "napkin",
+    "zh": "餐巾",
+    "pos": "n.",
+    "ipa": "/ˈnæpkɪn/",
+    "ex": "She wiped her hands with a paper napkin.",
+    "exZh": "她用纸餐巾擦了擦手。"
+  },
+  {
+    "en": "nephew",
+    "zh": "侄子",
+    "pos": "n.",
+    "ipa": "/ˈnefjuː/",
+    "ex": "My nephew is learning to play the piano.",
+    "exZh": "我侄子正在学弹钢琴。"
+  },
+  {
+    "en": "occupation",
+    "zh": "职业",
+    "pos": "n.",
+    "ipa": "/ˌɒkjuˈpeɪʃn/",
+    "ex": "Please write your name, age and occupation here.",
+    "exZh": "请在此写下你的姓名、年龄和职业。"
+  },
+  {
+    "en": "oral",
+    "zh": "口头的",
+    "pos": "adj.",
+    "ipa": "/ˈɔːrəl/",
+    "ex": "The students will have an oral exam next week.",
+    "exZh": "学生们下周将有一场口语考试。"
+  },
+  {
+    "en": "orbit",
+    "zh": "轨道",
+    "pos": "n.",
+    "ipa": "/ˈɔːbɪt/",
+    "ex": "The satellite is now in orbit around the earth.",
+    "exZh": "这颗卫星现在位于环绕地球的轨道上。"
+  },
+  {
+    "en": "orphan",
+    "zh": "孤儿",
+    "pos": "n.",
+    "ipa": "/ˈɔːfn/",
+    "ex": "The orphan was adopted by a kind couple.",
+    "exZh": "那个孤儿被一对善良的夫妇收养了。"
+  },
+  {
+    "en": "palace",
+    "zh": "宫殿",
+    "pos": "n.",
+    "ipa": "/ˈpæləs/",
+    "ex": "Thousands of tourists visit the old palace every day.",
+    "exZh": "每天有成千上万的游客参观这座古老的宫殿。"
+  },
+  {
+    "en": "paragraph",
+    "zh": "段落",
+    "pos": "n.",
+    "ipa": "/ˈpærəɡrɑːf/",
+    "ex": "Please read the first paragraph again.",
+    "exZh": "请再读一遍第一段。"
+  },
+  {
+    "en": "parliament",
+    "zh": "议会",
+    "pos": "n.",
+    "ipa": "/ˈpɑːləmənt/",
+    "ex": "The new law was passed by parliament last week.",
+    "exZh": "这项新法律上周由议会通过。"
+  },
+  {
+    "en": "passport",
+    "zh": "护照",
+    "pos": "n.",
+    "ipa": "/ˈpɑːspɔːt/",
+    "ex": "Don't forget to bring your passport to the airport.",
+    "exZh": "别忘了带护照去机场。"
+  },
+  {
+    "en": "pattern",
+    "zh": "模式",
+    "pos": "n.",
+    "ipa": "/ˈpætn/",
+    "ex": "The dress has a lovely flower pattern.",
+    "exZh": "这条裙子有可爱的花朵图案。"
+  },
+  {
+    "en": "pension",
+    "zh": "养老金",
+    "pos": "n.",
+    "ipa": "/ˈpenʃn/",
+    "ex": "He lives on a small pension from the government.",
+    "exZh": "他靠政府发的少量养老金生活。"
+  },
+  {
+    "en": "portrait",
+    "zh": "肖像",
+    "pos": "n.",
+    "ipa": "/ˈpɔːtrət/",
+    "ex": "The artist painted a portrait of the old farmer.",
+    "exZh": "那位艺术家为老农画了一幅肖像。"
+  },
+  {
+    "en": "queue",
+    "zh": "队列",
+    "pos": "n.",
+    "ipa": "/kjuː/",
+    "ex": "There was a long queue outside the ticket office.",
+    "exZh": "售票处外面排着长队。"
+  },
+  {
+    "en": "quiz",
+    "zh": "测验",
+    "pos": "n.",
+    "ipa": "/kwɪz/",
+    "ex": "We had a short quiz on irregular verbs today.",
+    "exZh": "我们今天进行了一次不规则动词小测验。"
+  },
+  {
+    "en": "rainbow",
+    "zh": "彩虹",
+    "pos": "n.",
+    "ipa": "/ˈreɪnbəʊ/",
+    "ex": "A beautiful rainbow appeared after the rain.",
+    "exZh": "雨后出现了一道美丽的彩虹。"
+  },
+  {
+    "en": "reasonable",
+    "zh": "合理的",
+    "pos": "adj.",
+    "ipa": "/ˈriːznəbl/",
+    "ex": "The hotel charges a reasonable price for a single room.",
+    "exZh": "这家酒店单人间的收费很合理。"
+  },
+  {
+    "en": "receipt",
+    "zh": "收据",
+    "pos": "n.",
+    "ipa": "/rɪˈsiːt/",
+    "ex": "Please keep the receipt in case you want a refund.",
+    "exZh": "请保留收据，以备退款所需。"
+  },
+  {
+    "en": "recipe",
+    "zh": "食谱",
+    "pos": "n.",
+    "ipa": "/ˈresəpi/",
+    "ex": "This recipe needs only four simple ingredients.",
+    "exZh": "这个食谱只需要四种简单的食材。"
+  },
+  {
+    "en": "reduction",
+    "zh": "减少",
+    "pos": "n.",
+    "ipa": "/rɪˈdʌkʃn/",
+    "ex": "The company announced a big reduction in prices.",
+    "exZh": "公司宣布大幅降价。"
+  },
+  {
+    "en": "refresh",
+    "zh": "使恢复精神",
+    "pos": "v.",
+    "ipa": "/rɪˈfreʃ/",
+    "ex": "A cold drink will refresh you after the long walk.",
+    "exZh": "走了那么久，喝杯冷饮会让你恢复精神。"
+  },
+  {
+    "en": "residence",
+    "zh": "住所",
+    "pos": "n.",
+    "ipa": "/ˈrezɪdəns/",
+    "ex": "The prime minister's official residence is heavily guarded.",
+    "exZh": "首相的官邸戒备森严。"
+  },
+  {
+    "en": "scan",
+    "zh": "扫描",
+    "pos": "v.",
+    "ipa": "/skæn/",
+    "ex": "The nurse scanned the patient's ID card.",
+    "exZh": "护士扫描了病人的身份证。"
+  },
+  {
+    "en": "scenery",
+    "zh": "风景",
+    "pos": "n.",
+    "ipa": "/ˈsiːnəri/",
+    "ex": "The mountain scenery here is truly wonderful.",
+    "exZh": "这里的山间风景真是美妙。"
+  },
+  {
+    "en": "schedule",
+    "zh": "日程",
+    "pos": "n.",
+    "ipa": "/ˈʃedjuːl/",
+    "ex": "The train arrived ahead of schedule.",
+    "exZh": "火车提前到达。"
+  },
+  {
+    "en": "scholar",
+    "zh": "学者",
+    "pos": "n.",
+    "ipa": "/ˈskɒlə/",
+    "ex": "He is a famous scholar of ancient Chinese history.",
+    "exZh": "他是一位研究中国古代史的著名学者。"
+  },
+  {
+    "en": "scissors",
+    "zh": "剪刀",
+    "pos": "n.",
+    "ipa": "/ˈsɪzəz/",
+    "ex": "Cut the paper with a pair of scissors.",
+    "exZh": "用剪刀把纸剪开。"
+  },
+  {
+    "en": "sculpture",
+    "zh": "雕塑",
+    "pos": "n.",
+    "ipa": "/ˈskʌlptʃə/",
+    "ex": "The museum bought a marble sculpture last year.",
+    "exZh": "博物馆去年买了一座大理石雕塑。"
+  },
+  {
+    "en": "secretary",
+    "zh": "秘书",
+    "pos": "n.",
+    "ipa": "/ˈsekrətri/",
+    "ex": "The secretary arranged all the meetings for him.",
+    "exZh": "秘书为他安排了所有会议。"
+  },
+  {
+    "en": "tackle",
+    "zh": "处理",
+    "pos": "v.",
+    "ipa": "/ˈtækl/",
+    "ex": "We must tackle this problem before it gets worse.",
+    "exZh": "我们必须在问题恶化之前处理它。"
+  },
+  {
+    "en": "tailor",
+    "zh": "裁缝",
+    "pos": "n.",
+    "ipa": "/ˈteɪlə/",
+    "ex": "The tailor made him a new suit.",
+    "exZh": "裁缝为他做了一套新西装。"
+  },
+  {
+    "en": "telescope",
+    "zh": "望远镜",
+    "pos": "n.",
+    "ipa": "/ˈtelɪskəʊp/",
+    "ex": "We watched the moon through a small telescope.",
+    "exZh": "我们用小望远镜观察月亮。"
+  },
+  {
+    "en": "tender",
+    "zh": "温柔的",
+    "pos": "adj.",
+    "ipa": "/ˈtendə/",
+    "ex": "She gave the baby a tender smile.",
+    "exZh": "她对婴儿温柔地一笑。"
+  },
+  {
+    "en": "theft",
+    "zh": "偷窃",
+    "pos": "n.",
+    "ipa": "/θeft/",
+    "ex": "He was arrested for the theft of a bicycle.",
+    "exZh": "他因偷窃一辆自行车被捕。"
+  },
+  {
+    "en": "therapy",
+    "zh": "治疗",
+    "pos": "n.",
+    "ipa": "/ˈθerəpi/",
+    "ex": "She is receiving therapy for her back injury.",
+    "exZh": "她正在接受背部损伤的治疗。"
+  },
+  {
+    "en": "unemployment",
+    "zh": "失业",
+    "pos": "n.",
+    "ipa": "/ˌʌnɪmˈplɔɪmənt/",
+    "ex": "Unemployment rose sharply during the economic crisis.",
+    "exZh": "经济危机期间失业率急剧上升。"
+  },
+  {
+    "en": "unity",
+    "zh": "团结",
+    "pos": "n.",
+    "ipa": "/ˈjuːnəti/",
+    "ex": "The team showed great unity in the final match.",
+    "exZh": "球队在决赛中表现出高度的团结。"
+  },
+  {
+    "en": "usage",
+    "zh": "用法",
+    "pos": "n.",
+    "ipa": "/ˈjuːsɪdʒ/",
+    "ex": "This dictionary explains the usage of each word.",
+    "exZh": "这本词典解释了每个词的用法。"
+  },
+  {
+    "en": "vacuum",
+    "zh": "真空",
+    "pos": "n.",
+    "ipa": "/ˈvækjuːm/",
+    "ex": "Sound cannot travel through a vacuum.",
+    "exZh": "声音无法在真空中传播。"
+  },
+  {
+    "en": "variable",
+    "zh": "可变的",
+    "pos": "adj.",
+    "ipa": "/ˈveəriəbl/",
+    "ex": "The weather here is highly variable in spring.",
+    "exZh": "这里春天的天气变化很大。"
+  },
+  {
+    "en": "verify",
+    "zh": "核实",
+    "pos": "v.",
+    "ipa": "/ˈverɪfaɪ/",
+    "ex": "Please verify your address before sending the form.",
+    "exZh": "寄出表格前请核实你的地址。"
+  },
+  {
+    "en": "veteran",
+    "zh": "老兵",
+    "pos": "n.",
+    "ipa": "/ˈvetərən/",
+    "ex": "The veteran told us stories about the war.",
+    "exZh": "那位老兵给我们讲了战争的故事。"
+  },
+  {
+    "en": "warehouse",
+    "zh": "仓库",
+    "pos": "n.",
+    "ipa": "/ˈweəhaʊs/",
+    "ex": "The goods are stored in a large warehouse.",
+    "exZh": "货物存放在一个大仓库里。"
+  },
+  {
+    "en": "weakness",
+    "zh": "弱点",
+    "pos": "n.",
+    "ipa": "/ˈwiːknəs/",
+    "ex": "Everyone has his own strengths and weaknesses.",
+    "exZh": "每个人都有自己的长处和弱点。"
+  },
+  {
+    "en": "wealthy",
+    "zh": "富有的",
+    "pos": "adj.",
+    "ipa": "/ˈwelθi/",
+    "ex": "He grew wealthy by selling farm machines.",
+    "exZh": "他靠卖农机变得富有。"
+  },
+  {
+    "en": "wedding",
+    "zh": "婚礼",
+    "pos": "n.",
+    "ipa": "/ˈwedɪŋ/",
+    "ex": "Their wedding will take place in a small church.",
+    "exZh": "他们的婚礼将在一座小教堂举行。"
+  },
+  {
+    "en": "yawn",
+    "zh": "打哈欠",
+    "pos": "v.",
+    "ipa": "/jɔːn/",
+    "ex": "He could not stop yawning during the lecture.",
+    "exZh": "讲座期间他止不住地打哈欠。"
+  },
+  {
+    "en": "zebra",
+    "zh": "斑马",
+    "pos": "n.",
+    "ipa": "/ˈzebrə/",
+    "ex": "A zebra has black and white stripes.",
+    "exZh": "斑马有黑白相间的条纹。"
+  }
+]

@@ -255,7 +255,7 @@ for (const lv of bank.levels()) {
     }
   }
 }
-check('全部 1660 词 × 2 方向都能出 4 个互不相同的选项', broken === 0, `异常 ${broken} 处`);
+check(`全部 ${bank.totalWords()} 词 × 2 方向都能出 4 个互不相同的选项`, broken === 0, `异常 ${broken} 处`);
 check('选项去重后最小值 = 4', worst === 4, String(worst));
 
 /* ------------------------------- 汇总 ------------------------------- */

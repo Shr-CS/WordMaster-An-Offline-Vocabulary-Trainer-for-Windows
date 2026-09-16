@@ -1,0 +1,962 @@
+[
+  {
+    "en": "adequate",
+    "zh": "足够的",
+    "pos": "adj.",
+    "ipa": "/ˈædɪkwət/",
+    "ex": "The room is adequate for two people.",
+    "exZh": "这个房间够两个人住。"
+  },
+  {
+    "en": "apparent",
+    "zh": "明显的",
+    "pos": "adj.",
+    "ipa": "/əˈpærənt/",
+    "ex": "It soon became apparent that he was lying.",
+    "exZh": "很快就能明显看出他在撒谎。"
+  },
+  {
+    "en": "artificial",
+    "zh": "人造的",
+    "pos": "adj.",
+    "ipa": "/ˌɑːtɪˈfɪʃl/",
+    "ex": "This lake is artificial, not natural.",
+    "exZh": "这个湖是人造的，不是天然的。"
+  },
+  {
+    "en": "assemble",
+    "zh": "集合",
+    "pos": "v.",
+    "ipa": "/əˈsembl/",
+    "ex": "The students assembled in the school hall.",
+    "exZh": "学生们在学校礼堂集合。"
+  },
+  {
+    "en": "assess",
+    "zh": "评估",
+    "pos": "v.",
+    "ipa": "/əˈses/",
+    "ex": "Teachers assess students' progress every term.",
+    "exZh": "老师每学期评估学生的进步。"
+  },
+  {
+    "en": "beneficial",
+    "zh": "有益的",
+    "pos": "adj.",
+    "ipa": "/ˌbenɪˈfɪʃl/",
+    "ex": "Regular exercise is beneficial to our health.",
+    "exZh": "经常锻炼对我们的健康有益。"
+  },
+  {
+    "en": "boost",
+    "zh": "促进",
+    "pos": "v.",
+    "ipa": "/buːst/",
+    "ex": "The new policy will boost local tourism.",
+    "exZh": "这项新政策将促进当地旅游业。"
+  },
+  {
+    "en": "brilliant",
+    "zh": "杰出的",
+    "pos": "adj.",
+    "ipa": "/ˈbrɪliənt/",
+    "ex": "She is a brilliant young scientist.",
+    "exZh": "她是一位杰出的年轻科学家。"
+  },
+  {
+    "en": "budget",
+    "zh": "预算",
+    "pos": "n.",
+    "ipa": "/ˈbʌdʒɪt/",
+    "ex": "The government cut the education budget.",
+    "exZh": "政府削减了教育预算。"
+  },
+  {
+    "en": "bulletin",
+    "zh": "公告",
+    "pos": "n.",
+    "ipa": "/ˈbʊlətɪn/",
+    "ex": "The school posted a bulletin about the exam.",
+    "exZh": "学校发布了一则关于考试的公告。"
+  },
+  {
+    "en": "breed",
+    "zh": "繁殖",
+    "pos": "v.",
+    "ipa": "/briːd/",
+    "ex": "These birds breed in the warm south.",
+    "exZh": "这些鸟在温暖的南方繁殖。"
+  },
+  {
+    "en": "capture",
+    "zh": "俘获",
+    "pos": "v.",
+    "ipa": "/ˈkæptʃə/",
+    "ex": "The police captured the escaped prisoner.",
+    "exZh": "警察俘获了那名逃犯。"
+  },
+  {
+    "en": "category",
+    "zh": "类别",
+    "pos": "n.",
+    "ipa": "/ˈkætəɡəri/",
+    "ex": "These books are divided into several categories.",
+    "exZh": "这些书被分成几个类别。"
+  },
+  {
+    "en": "cherish",
+    "zh": "珍惜",
+    "pos": "v.",
+    "ipa": "/ˈtʃerɪʃ/",
+    "ex": "I cherish the memories of my childhood.",
+    "exZh": "我珍惜童年的回忆。"
+  },
+  {
+    "en": "civilian",
+    "zh": "平民",
+    "pos": "n.",
+    "ipa": "/səˈvɪliən/",
+    "ex": "Many civilians were hurt in the war.",
+    "exZh": "许多平民在战争中受伤。"
+  },
+  {
+    "en": "clarify",
+    "zh": "阐明",
+    "pos": "v.",
+    "ipa": "/ˈklærəfaɪ/",
+    "ex": "Could you clarify what you mean?",
+    "exZh": "你能阐明你的意思吗？"
+  },
+  {
+    "en": "decay",
+    "zh": "腐烂",
+    "pos": "v.",
+    "ipa": "/dɪˈkeɪ/",
+    "ex": "The fallen leaves slowly decayed.",
+    "exZh": "落叶慢慢腐烂了。"
+  },
+  {
+    "en": "deceive",
+    "zh": "欺骗",
+    "pos": "v.",
+    "ipa": "/dɪˈsiːv/",
+    "ex": "He tried to deceive us with a fake story.",
+    "exZh": "他试图用编造的故事欺骗我们。"
+  },
+  {
+    "en": "definite",
+    "zh": "明确的",
+    "pos": "adj.",
+    "ipa": "/ˈdefɪnət/",
+    "ex": "We need a definite answer by Friday.",
+    "exZh": "我们周五前需要一个明确的答复。"
+  },
+  {
+    "en": "deliberate",
+    "zh": "故意的",
+    "pos": "adj.",
+    "ipa": "/dɪˈlɪbərət/",
+    "ex": "It was a deliberate act of cruelty.",
+    "exZh": "那是故意的残忍行为。"
+  },
+  {
+    "en": "deposit",
+    "zh": "存款",
+    "pos": "n.",
+    "ipa": "/dɪˈpɒzɪt/",
+    "ex": "She made a deposit at the bank.",
+    "exZh": "她在银行存了一笔款。"
+  },
+  {
+    "en": "destiny",
+    "zh": "命运",
+    "pos": "n.",
+    "ipa": "/ˈdestəni/",
+    "ex": "He believed it was his destiny to be a doctor.",
+    "exZh": "他相信成为医生是他的命运。"
+  },
+  {
+    "en": "echo",
+    "zh": "回声",
+    "pos": "n.",
+    "ipa": "/ˈekəʊ/",
+    "ex": "Our voices echoed in the empty hall.",
+    "exZh": "我们的声音在空荡的大厅里回荡。"
+  },
+  {
+    "en": "eligible",
+    "zh": "合格的",
+    "pos": "adj.",
+    "ipa": "/ˈelɪdʒəbl/",
+    "ex": "Only students over eighteen are eligible to vote.",
+    "exZh": "只有十八岁以上的学生才有资格投票。"
+  },
+  {
+    "en": "entitle",
+    "zh": "使有权",
+    "pos": "v.",
+    "ipa": "/ɪnˈtaɪtl/",
+    "ex": "This ticket entitles you to a free drink.",
+    "exZh": "这张票使你有权免费喝一杯。"
+  },
+  {
+    "en": "envy",
+    "zh": "羡慕",
+    "pos": "v.",
+    "ipa": "/ˈenvi/",
+    "ex": "I envy her ability to speak French.",
+    "exZh": "我羡慕她说法语的能力。"
+  },
+  {
+    "en": "epidemic",
+    "zh": "流行病",
+    "pos": "n.",
+    "ipa": "/ˌepɪˈdemɪk/",
+    "ex": "The flu epidemic spread across the country.",
+    "exZh": "流感流行病蔓延全国。"
+  },
+  {
+    "en": "fabric",
+    "zh": "织物",
+    "pos": "n.",
+    "ipa": "/ˈfæbrɪk/",
+    "ex": "This fabric feels soft and warm.",
+    "exZh": "这种织物摸起来柔软温暖。"
+  },
+  {
+    "en": "facilitate",
+    "zh": "使便利",
+    "pos": "v.",
+    "ipa": "/fəˈsɪlɪteɪt/",
+    "ex": "The new road will facilitate trade between the two towns.",
+    "exZh": "这条新路将给两个城镇之间的贸易带来便利。"
+  },
+  {
+    "en": "fatigue",
+    "zh": "疲劳",
+    "pos": "n.",
+    "ipa": "/fəˈtiːɡ/",
+    "ex": "He was overcome by fatigue after the long walk.",
+    "exZh": "长途步行后他疲劳不堪。"
+  },
+  {
+    "en": "fierce",
+    "zh": "凶猛的",
+    "pos": "adj.",
+    "ipa": "/fɪəs/",
+    "ex": "A fierce dog guarded the gate.",
+    "exZh": "一只凶猛的狗守着大门。"
+  },
+  {
+    "en": "fluent",
+    "zh": "流利的",
+    "pos": "adj.",
+    "ipa": "/ˈfluːənt/",
+    "ex": "She is fluent in both English and Chinese.",
+    "exZh": "她英语和汉语都很流利。"
+  },
+  {
+    "en": "fragile",
+    "zh": "易碎的",
+    "pos": "adj.",
+    "ipa": "/ˈfrædʒaɪl/",
+    "ex": "Be careful with the fragile glass.",
+    "exZh": "小心那些易碎的玻璃。"
+  },
+  {
+    "en": "garment",
+    "zh": "衣服",
+    "pos": "n.",
+    "ipa": "/ˈɡɑːmənt/",
+    "ex": "She wore a beautiful silk garment.",
+    "exZh": "她穿着一件漂亮的丝绸衣服。"
+  },
+  {
+    "en": "gasp",
+    "zh": "喘气",
+    "pos": "v.",
+    "ipa": "/ɡɑːsp/",
+    "ex": "The audience gasped at the magician's trick.",
+    "exZh": "观众对魔术师的表演惊讶得直喘气。"
+  },
+  {
+    "en": "gloomy",
+    "zh": "忧郁的",
+    "pos": "adj.",
+    "ipa": "/ˈɡluːmi/",
+    "ex": "He looked gloomy after hearing the news.",
+    "exZh": "听到这个消息后他看起来很忧郁。"
+  },
+  {
+    "en": "glorious",
+    "zh": "光荣的",
+    "pos": "adj.",
+    "ipa": "/ˈɡlɔːriəs/",
+    "ex": "The team won a glorious victory.",
+    "exZh": "这支队伍赢得了光荣的胜利。"
+  },
+  {
+    "en": "gossip",
+    "zh": "闲话",
+    "pos": "n.",
+    "ipa": "/ˈɡɒsɪp/",
+    "ex": "They spent the afternoon exchanging gossip.",
+    "exZh": "他们一下午都在交换闲话。"
+  },
+  {
+    "en": "gravity",
+    "zh": "重力",
+    "pos": "n.",
+    "ipa": "/ˈɡrævəti/",
+    "ex": "Gravity makes the apple fall to the ground.",
+    "exZh": "重力使苹果落到地上。"
+  },
+  {
+    "en": "habitat",
+    "zh": "栖息地",
+    "pos": "n.",
+    "ipa": "/ˈhæbɪtæt/",
+    "ex": "These animals are losing their natural habitat.",
+    "exZh": "这些动物正在失去天然的栖息地。"
+  },
+  {
+    "en": "harsh",
+    "zh": "严厉的",
+    "pos": "adj.",
+    "ipa": "/hɑːʃ/",
+    "ex": "The teacher was harsh with the lazy students.",
+    "exZh": "老师对懒惰的学生很严厉。"
+  },
+  {
+    "en": "haste",
+    "zh": "匆忙",
+    "pos": "n.",
+    "ipa": "/heɪst/",
+    "ex": "In his haste he forgot his keys.",
+    "exZh": "匆忙之中他忘了钥匙。"
+  },
+  {
+    "en": "hazard",
+    "zh": "危险",
+    "pos": "n.",
+    "ipa": "/ˈhæzəd/",
+    "ex": "Smoking is a serious hazard to health.",
+    "exZh": "吸烟对健康是严重的危险。"
+  },
+  {
+    "en": "heritage",
+    "zh": "遗产",
+    "pos": "n.",
+    "ipa": "/ˈherɪtɪdʒ/",
+    "ex": "We should protect our cultural heritage.",
+    "exZh": "我们应当保护我们的文化遗产。"
+  },
+  {
+    "en": "ignorance",
+    "zh": "无知",
+    "pos": "n.",
+    "ipa": "/ˈɪɡnərəns/",
+    "ex": "His failure came from ignorance, not laziness.",
+    "exZh": "他的失败源于无知，而不是懒惰。"
+  },
+  {
+    "en": "immune",
+    "zh": "免疫的",
+    "pos": "adj.",
+    "ipa": "/ɪˈmjuːn/",
+    "ex": "Once you have had the disease, you are immune.",
+    "exZh": "一旦得过这种病，你就免疫了。"
+  },
+  {
+    "en": "implement",
+    "zh": "实施",
+    "pos": "v.",
+    "ipa": "/ˈɪmplɪment/",
+    "ex": "The school will implement the new plan next term.",
+    "exZh": "学校下学期将实施这项新计划。"
+  },
+  {
+    "en": "impulse",
+    "zh": "冲动",
+    "pos": "n.",
+    "ipa": "/ˈɪmpʌls/",
+    "ex": "She bought the hat on impulse.",
+    "exZh": "她一时冲动买下了这顶帽子。"
+  },
+  {
+    "en": "incident",
+    "zh": "事件",
+    "pos": "n.",
+    "ipa": "/ˈɪnsɪdənt/",
+    "ex": "The incident was reported to the police.",
+    "exZh": "这起事件已向警方报告。"
+  },
+  {
+    "en": "inevitable",
+    "zh": "不可避免",
+    "pos": "adj.",
+    "ipa": "/ɪnˈevɪtəbl/",
+    "ex": "Some conflict is inevitable in a team.",
+    "exZh": "团队中出现一些冲突是不可避免的。"
+  },
+  {
+    "en": "jaw",
+    "zh": "下巴",
+    "pos": "n.",
+    "ipa": "/dʒɔː/",
+    "ex": "He broke his jaw in the accident.",
+    "exZh": "他在事故中摔断了下巴。"
+  },
+  {
+    "en": "jungle",
+    "zh": "丛林",
+    "pos": "n.",
+    "ipa": "/ˈdʒʌŋɡl/",
+    "ex": "Many rare plants grow in the jungle.",
+    "exZh": "丛林里生长着许多珍稀植物。"
+  },
+  {
+    "en": "jury",
+    "zh": "陪审团",
+    "pos": "n.",
+    "ipa": "/ˈdʒʊəri/",
+    "ex": "The jury found him not guilty.",
+    "exZh": "陪审团裁定他无罪。"
+  },
+  {
+    "en": "justify",
+    "zh": "证明正当",
+    "pos": "v.",
+    "ipa": "/ˈdʒʌstɪfaɪ/",
+    "ex": "Nothing can justify such rude behaviour.",
+    "exZh": "没有什么能证明这种粗鲁行为是正当的。"
+  },
+  {
+    "en": "kettle",
+    "zh": "水壶",
+    "pos": "n.",
+    "ipa": "/ˈketl/",
+    "ex": "She put the kettle on to make tea.",
+    "exZh": "她把水壶放上去烧水泡茶。"
+  },
+  {
+    "en": "keyboard",
+    "zh": "键盘",
+    "pos": "n.",
+    "ipa": "/ˈkiːbɔːd/",
+    "ex": "He types quickly on the new keyboard.",
+    "exZh": "他在新键盘上打字很快。"
+  },
+  {
+    "en": "kidnap",
+    "zh": "绑架",
+    "pos": "v.",
+    "ipa": "/ˈkɪdnæp/",
+    "ex": "The gang tried to kidnap the rich man's son.",
+    "exZh": "那伙人试图绑架那位富人的儿子。"
+  },
+  {
+    "en": "kneel",
+    "zh": "跪下",
+    "pos": "v.",
+    "ipa": "/niːl/",
+    "ex": "She had to kneel down to tie her shoelace.",
+    "exZh": "她不得不跪下系鞋带。"
+  },
+  {
+    "en": "laboratory",
+    "zh": "实验室",
+    "pos": "n.",
+    "ipa": "/ləˈbɒrətri/",
+    "ex": "The students did the test in the laboratory.",
+    "exZh": "学生们在实验室做实验。"
+  },
+  {
+    "en": "ladder",
+    "zh": "梯子",
+    "pos": "n.",
+    "ipa": "/ˈlædə/",
+    "ex": "He climbed the ladder to paint the wall.",
+    "exZh": "他爬上梯子刷墙。"
+  },
+  {
+    "en": "laser",
+    "zh": "激光",
+    "pos": "n.",
+    "ipa": "/ˈleɪzə/",
+    "ex": "Doctors use a laser to repair the eye.",
+    "exZh": "医生用激光修复眼睛。"
+  },
+  {
+    "en": "liberty",
+    "zh": "自由",
+    "pos": "n.",
+    "ipa": "/ˈlɪbəti/",
+    "ex": "People fought for freedom and liberty.",
+    "exZh": "人们为自由而战。"
+  },
+  {
+    "en": "machinery",
+    "zh": "机械",
+    "pos": "n.",
+    "ipa": "/məˈʃiːnəri/",
+    "ex": "The factory bought new machinery last year.",
+    "exZh": "这家工厂去年购买了新机械。"
+  },
+  {
+    "en": "magnificent",
+    "zh": "壮丽的",
+    "pos": "adj.",
+    "ipa": "/mæɡˈnɪfɪsnt/",
+    "ex": "We saw a magnificent view from the top of the hill.",
+    "exZh": "我们从山顶看到了壮丽的景色。"
+  },
+  {
+    "en": "mammal",
+    "zh": "哺乳动物",
+    "pos": "n.",
+    "ipa": "/ˈmæml/",
+    "ex": "The whale is the largest mammal on earth.",
+    "exZh": "鲸鱼是地球上最大的哺乳动物。"
+  },
+  {
+    "en": "merit",
+    "zh": "优点",
+    "pos": "n.",
+    "ipa": "/ˈmerɪt/",
+    "ex": "The plan has both merits and faults.",
+    "exZh": "这个方案既有优点也有缺点。"
+  },
+  {
+    "en": "moisture",
+    "zh": "湿气",
+    "pos": "n.",
+    "ipa": "/ˈmɔɪstʃə/",
+    "ex": "Plants take in moisture through their roots.",
+    "exZh": "植物通过根部吸收湿气。"
+  },
+  {
+    "en": "narrate",
+    "zh": "叙述",
+    "pos": "v.",
+    "ipa": "/nəˈreɪt/",
+    "ex": "He narrated the story in a calm voice.",
+    "exZh": "他用平静的声音叙述了这个故事。"
+  },
+  {
+    "en": "nasty",
+    "zh": "讨厌的",
+    "pos": "adj.",
+    "ipa": "/ˈnɑːsti/",
+    "ex": "She had a nasty cold last week.",
+    "exZh": "她上周得了讨厌的感冒。"
+  },
+  {
+    "en": "naval",
+    "zh": "海军的",
+    "pos": "adj.",
+    "ipa": "/ˈneɪvl/",
+    "ex": "He served in the naval forces for ten years.",
+    "exZh": "他在海军部队服役了十年。"
+  },
+  {
+    "en": "negotiate",
+    "zh": "谈判",
+    "pos": "v.",
+    "ipa": "/nɪˈɡəʊʃieɪt/",
+    "ex": "The two sides are trying to negotiate a deal.",
+    "exZh": "双方正在努力谈判达成协议。"
+  },
+  {
+    "en": "notion",
+    "zh": "观念",
+    "pos": "n.",
+    "ipa": "/ˈnəʊʃn/",
+    "ex": "I have no notion of what he means.",
+    "exZh": "我对他的意思毫无观念。"
+  },
+  {
+    "en": "oath",
+    "zh": "誓言",
+    "pos": "n.",
+    "ipa": "/əʊθ/",
+    "ex": "The witness took an oath to tell the truth.",
+    "exZh": "证人立下誓言要说真话。"
+  },
+  {
+    "en": "obligation",
+    "zh": "义务",
+    "pos": "n.",
+    "ipa": "/ˌɒblɪˈɡeɪʃn/",
+    "ex": "Parents have an obligation to care for their children.",
+    "exZh": "父母有义务照顾自己的孩子。"
+  },
+  {
+    "en": "obstacle",
+    "zh": "障碍",
+    "pos": "n.",
+    "ipa": "/ˈɒbstəkl/",
+    "ex": "Lack of money is the biggest obstacle.",
+    "exZh": "缺乏资金是最大的障碍。"
+  },
+  {
+    "en": "occupation",
+    "zh": "职业",
+    "pos": "n.",
+    "ipa": "/ˌɒkjuˈpeɪʃn/",
+    "ex": "Teaching is a noble occupation.",
+    "exZh": "教书是一种高尚的职业。"
+  },
+  {
+    "en": "omit",
+    "zh": "省略",
+    "pos": "v.",
+    "ipa": "/əˈmɪt/",
+    "ex": "Don't omit any details in your report.",
+    "exZh": "报告中不要省略任何细节。"
+  },
+  {
+    "en": "parallel",
+    "zh": "平行的",
+    "pos": "adj.",
+    "ipa": "/ˈpærəlel/",
+    "ex": "The two roads run parallel to each other.",
+    "exZh": "这两条路彼此平行。"
+  },
+  {
+    "en": "parcel",
+    "zh": "包裹",
+    "pos": "n.",
+    "ipa": "/ˈpɑːsl/",
+    "ex": "A parcel arrived for you this morning.",
+    "exZh": "今天早上有你的一个包裹到了。"
+  },
+  {
+    "en": "passive",
+    "zh": "被动的",
+    "pos": "adj.",
+    "ipa": "/ˈpæsɪv/",
+    "ex": "He is too passive in class.",
+    "exZh": "他在课堂上太被动了。"
+  },
+  {
+    "en": "pension",
+    "zh": "养老金",
+    "pos": "n.",
+    "ipa": "/ˈpenʃn/",
+    "ex": "He lives on a small pension.",
+    "exZh": "他靠微薄的养老金生活。"
+  },
+  {
+    "en": "philosophy",
+    "zh": "哲学",
+    "pos": "n.",
+    "ipa": "/fəˈlɒsəfi/",
+    "ex": "She studies philosophy at university.",
+    "exZh": "她在大学学习哲学。"
+  },
+  {
+    "en": "qualification",
+    "zh": "资格",
+    "pos": "n.",
+    "ipa": "/ˌkwɒlɪfɪˈkeɪʃn/",
+    "ex": "He has the qualifications for the job.",
+    "exZh": "他具备这份工作的资格。"
+  },
+  {
+    "en": "quest",
+    "zh": "探索",
+    "pos": "n.",
+    "ipa": "/kwest/",
+    "ex": "Their quest for the lost city lasted for years.",
+    "exZh": "他们对失落之城的探索持续了多年。"
+  },
+  {
+    "en": "questionnaire",
+    "zh": "问卷",
+    "pos": "n.",
+    "ipa": "/ˌkwestʃəˈneə/",
+    "ex": "Please fill in this questionnaire carefully.",
+    "exZh": "请仔细填写这份问卷。"
+  },
+  {
+    "en": "quota",
+    "zh": "配额",
+    "pos": "n.",
+    "ipa": "/ˈkwəʊtə/",
+    "ex": "Each factory must meet its production quota.",
+    "exZh": "每个工厂都必须完成生产配额。"
+  },
+  {
+    "en": "radar",
+    "zh": "雷达",
+    "pos": "n.",
+    "ipa": "/ˈreɪdɑː/",
+    "ex": "The ship was detected by radar.",
+    "exZh": "这艘船被雷达探测到了。"
+  },
+  {
+    "en": "reasonable",
+    "zh": "合理的",
+    "pos": "adj.",
+    "ipa": "/ˈriːznəbl/",
+    "ex": "The price seems reasonable to me.",
+    "exZh": "这个价格在我看来是合理的。"
+  },
+  {
+    "en": "reckon",
+    "zh": "认为",
+    "pos": "v.",
+    "ipa": "/ˈrekən/",
+    "ex": "I reckon it will rain this afternoon.",
+    "exZh": "我认为今天下午会下雨。"
+  },
+  {
+    "en": "recruit",
+    "zh": "招募",
+    "pos": "v.",
+    "ipa": "/rɪˈkruːt/",
+    "ex": "The company will recruit ten new engineers.",
+    "exZh": "公司将招募十名新工程师。"
+  },
+  {
+    "en": "reputation",
+    "zh": "名声",
+    "pos": "n.",
+    "ipa": "/ˌrepjuˈteɪʃn/",
+    "ex": "The school has a good reputation in the city.",
+    "exZh": "这所学校在城里名声很好。"
+  },
+  {
+    "en": "resign",
+    "zh": "辞职",
+    "pos": "v.",
+    "ipa": "/rɪˈzaɪn/",
+    "ex": "He resigned from his job last month.",
+    "exZh": "他上个月辞职了。"
+  },
+  {
+    "en": "sacred",
+    "zh": "神圣的",
+    "pos": "adj.",
+    "ipa": "/ˈseɪkrɪd/",
+    "ex": "This mountain is sacred to the local people.",
+    "exZh": "这座山对当地人来说是神圣的。"
+  },
+  {
+    "en": "scarce",
+    "zh": "稀少的",
+    "pos": "adj.",
+    "ipa": "/skeəs/",
+    "ex": "Fresh water is scarce in the desert.",
+    "exZh": "沙漠里淡水很稀少。"
+  },
+  {
+    "en": "scatter",
+    "zh": "散开",
+    "pos": "v.",
+    "ipa": "/ˈskætə/",
+    "ex": "The wind scattered the papers across the room.",
+    "exZh": "风把纸张散落到整个房间。"
+  },
+  {
+    "en": "scheme",
+    "zh": "方案",
+    "pos": "n.",
+    "ipa": "/skiːm/",
+    "ex": "The government announced a new housing scheme.",
+    "exZh": "政府宣布了一项新的住房方案。"
+  },
+  {
+    "en": "sensible",
+    "zh": "明智的",
+    "pos": "adj.",
+    "ipa": "/ˈsensəbl/",
+    "ex": "It was sensible of you to bring an umbrella.",
+    "exZh": "你带伞是很明智的。"
+  },
+  {
+    "en": "shrink",
+    "zh": "收缩",
+    "pos": "v.",
+    "ipa": "/ʃrɪŋk/",
+    "ex": "Woollen clothes shrink in hot water.",
+    "exZh": "羊毛衣物在热水中会收缩。"
+  },
+  {
+    "en": "tactics",
+    "zh": "战术",
+    "pos": "n.",
+    "ipa": "/ˈtæktɪks/",
+    "ex": "The coach changed his tactics at half time.",
+    "exZh": "教练在中场时改变了战术。"
+  },
+  {
+    "en": "tedious",
+    "zh": "冗长的",
+    "pos": "adj.",
+    "ipa": "/ˈtiːdiəs/",
+    "ex": "The lecture was long and tedious.",
+    "exZh": "那场讲座又长又冗长。"
+  },
+  {
+    "en": "telescope",
+    "zh": "望远镜",
+    "pos": "n.",
+    "ipa": "/ˈtelɪskəʊp/",
+    "ex": "We watched the stars through a telescope.",
+    "exZh": "我们用望远镜看星星。"
+  },
+  {
+    "en": "tendency",
+    "zh": "倾向",
+    "pos": "n.",
+    "ipa": "/ˈtendənsi/",
+    "ex": "He has a tendency to talk too much.",
+    "exZh": "他有说话太多的倾向。"
+  },
+  {
+    "en": "therapy",
+    "zh": "治疗",
+    "pos": "n.",
+    "ipa": "/ˈθerəpi/",
+    "ex": "She is receiving therapy for her back pain.",
+    "exZh": "她正在接受背痛的治疗。"
+  },
+  {
+    "en": "thesis",
+    "zh": "论文",
+    "pos": "n.",
+    "ipa": "/ˈθiːsɪs/",
+    "ex": "He is writing his thesis on climate change.",
+    "exZh": "他正在写关于气候变化的论文。"
+  },
+  {
+    "en": "ultimate",
+    "zh": "最终的",
+    "pos": "adj.",
+    "ipa": "/ˈʌltɪmət/",
+    "ex": "Our ultimate goal is world peace.",
+    "exZh": "我们最终的目标是世界和平。"
+  },
+  {
+    "en": "undermine",
+    "zh": "削弱",
+    "pos": "v.",
+    "ipa": "/ˌʌndəˈmaɪn/",
+    "ex": "Constant criticism can undermine a child's confidence.",
+    "exZh": "不断的批评会削弱孩子的自信心。"
+  },
+  {
+    "en": "universal",
+    "zh": "普遍的",
+    "pos": "adj.",
+    "ipa": "/ˌjuːnɪˈvɜːsl/",
+    "ex": "Music is a universal language.",
+    "exZh": "音乐是一种普遍的语言。"
+  },
+  {
+    "en": "vacant",
+    "zh": "空的",
+    "pos": "adj.",
+    "ipa": "/ˈveɪkənt/",
+    "ex": "There is a vacant seat near the window.",
+    "exZh": "窗边有一个空座位。"
+  },
+  {
+    "en": "vaccine",
+    "zh": "疫苗",
+    "pos": "n.",
+    "ipa": "/ˈvæksiːn/",
+    "ex": "The vaccine protects children from the disease.",
+    "exZh": "疫苗保护儿童免受这种疾病的侵害。"
+  },
+  {
+    "en": "vague",
+    "zh": "模糊的",
+    "pos": "adj.",
+    "ipa": "/veɪɡ/",
+    "ex": "He gave a vague answer to my question.",
+    "exZh": "他对我的问题给出了模糊的回答。"
+  },
+  {
+    "en": "vanish",
+    "zh": "消失",
+    "pos": "v.",
+    "ipa": "/ˈvænɪʃ/",
+    "ex": "The ship vanished into the fog.",
+    "exZh": "那艘船消失在雾中。"
+  },
+  {
+    "en": "warehouse",
+    "zh": "仓库",
+    "pos": "n.",
+    "ipa": "/ˈweəhaʊs/",
+    "ex": "The goods are stored in a warehouse near the port.",
+    "exZh": "货物存放在港口附近的一个仓库里。"
+  },
+  {
+    "en": "weary",
+    "zh": "疲倦的",
+    "pos": "adj.",
+    "ipa": "/ˈwɪəri/",
+    "ex": "The travellers were weary after the long journey.",
+    "exZh": "长途旅行后旅客们十分疲倦。"
+  },
+  {
+    "en": "whereas",
+    "zh": "然而",
+    "pos": "conj.",
+    "ipa": "/ˌweərˈæz/",
+    "ex": "He is careful, whereas his brother is careless.",
+    "exZh": "他很细心，然而他弟弟却很粗心。"
+  },
+  {
+    "en": "withdraw",
+    "zh": "撤回",
+    "pos": "v.",
+    "ipa": "/wɪðˈdrɔː/",
+    "ex": "He decided to withdraw from the competition.",
+    "exZh": "他决定撤回参赛申请。"
+  },
+  {
+    "en": "x-ray",
+    "zh": "X光",
+    "pos": "n.",
+    "ipa": "/ˈeks reɪ/",
+    "ex": "The doctor took an X-ray of his arm.",
+    "exZh": "医生给他的手臂拍了X光片。"
+  },
+  {
+    "en": "yacht",
+    "zh": "游艇",
+    "pos": "n.",
+    "ipa": "/jɒt/",
+    "ex": "They sailed their yacht along the coast.",
+    "exZh": "他们驾着游艇沿着海岸航行。"
+  },
+  {
+    "en": "youngster",
+    "zh": "年轻人",
+    "pos": "n.",
+    "ipa": "/ˈjʌŋstə/",
+    "ex": "Several youngsters were playing basketball on the court.",
+    "exZh": "几个年轻人正在球场上打篮球。"
+  },
+  {
+    "en": "zebra",
+    "zh": "斑马",
+    "pos": "n.",
+    "ipa": "/ˈzebrə/",
+    "ex": "A zebra has black and white stripes.",
+    "exZh": "斑马有黑白相间的条纹。"
+  },
+  {
+    "en": "zinc",
+    "zh": "锌",
+    "pos": "n.",
+    "ipa": "/zɪŋk/",
+    "ex": "Zinc is used to protect iron from rust.",
+    "exZh": "锌被用来保护铁不生锈。"
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "en": "abiotic",
+    "zh": "非生物的",
+    "pos": "adj.",
+    "ipa": "/ˌeɪbaɪˈɒtɪk/",
+    "ex": "Abiotic factors such as temperature and rainfall decide which plants can survive in a desert.",
+    "exZh": "温度和降水等非生物因素决定哪些植物能在沙漠中存活。"
+  },
+  {
+    "en": "amplitude",
+    "zh": "振幅",
+    "pos": "n.",
+    "ipa": "/ˈæmplɪtjuːd/",
+    "ex": "The amplitude of a wave shows how much energy it carries.",
+    "exZh": "波的振幅显示它携带多少能量。"
+  },
+  {
+    "en": "arctic",
+    "zh": "北极的",
+    "pos": "adj.",
+    "ipa": "/ˈɑːktɪk/",
+    "ex": "Arctic ice reflects sunlight back into space and helps to cool the planet.",
+    "exZh": "北极的冰把阳光反射回太空，有助于给地球降温。"
+  },
+  {
+    "en": "asymmetry",
+    "zh": "不对称",
+    "pos": "n.",
+    "ipa": "/ˌeɪˈsɪmətri/",
+    "ex": "The slight asymmetry of the two halves of the skull puzzled anatomists.",
+    "exZh": "头骨两半轻微的不对称让解剖学家感到困惑。"
+  },
+  {
+    "en": "assumption",
+    "zh": "假设",
+    "pos": "n.",
+    "ipa": "/əˈsʌmpʃn/",
+    "ex": "The model rests on the assumption that the climate changed very slowly.",
+    "exZh": "这个模型建立在气候变化非常缓慢的假设之上。"
+  },
+  {
+    "en": "audible",
+    "zh": "听得见的",
+    "pos": "adj.",
+    "ipa": "/ˈɔːdəbl/",
+    "ex": "The call of a bat lies far above the range audible to human ears.",
+    "exZh": "蝙蝠的叫声远高于人耳能听见的范围。"
+  },
+  {
+    "en": "augment",
+    "zh": "增加",
+    "pos": "v.",
+    "ipa": "/ɔːɡˈment/",
+    "ex": "Farmers augmented the poor soil with ash and animal manure.",
+    "exZh": "农民用草木灰和牲畜粪肥来增加贫瘠土壤的肥力。"
+  },
+  {
+    "en": "archive",
+    "zh": "档案",
+    "pos": "n.",
+    "ipa": "/ˈɑːkaɪv/",
+    "ex": "Historians studied the letters preserved in the city archive.",
+    "exZh": "历史学家研究了保存在市档案馆里的信件。"
+  },
+  {
+    "en": "boreal",
+    "zh": "北方的",
+    "pos": "adj.",
+    "ipa": "/ˈbɔːriəl/",
+    "ex": "Boreal forests stretch across northern Canada and Siberia.",
+    "exZh": "北方针叶林横跨加拿大北部和西伯利亚。"
+  },
+  {
+    "en": "brood",
+    "zh": "孵卵",
+    "pos": "v.",
+    "ipa": "/bruːd/",
+    "ex": "Emperor penguins brood their single egg through the Antarctic winter.",
+    "exZh": "帝企鹅在南极的整个冬季里孵自己那枚蛋。"
+  },
+  {
+    "en": "cartography",
+    "zh": "制图学",
+    "pos": "n.",
+    "ipa": "/kɑːˈtɒɡrəfi/",
+    "ex": "Advances in cartography let sailors plot far more accurate routes.",
+    "exZh": "制图学的进步使水手能画出准确得多的航线。"
+  },
+  {
+    "en": "colonize",
+    "zh": "殖民",
+    "pos": "v.",
+    "ipa": "/ˈkɒlənaɪz/",
+    "ex": "Settlers began to colonize the coastal plain in the seventeenth century.",
+    "exZh": "定居者在十七世纪开始殖民沿海平原。"
+  },
+  {
+    "en": "concurrent",
+    "zh": "同时的",
+    "pos": "adj.",
+    "ipa": "/kənˈkʌrənt/",
+    "ex": "Two concurrent volcanic episodes produced the thick layers of ash.",
+    "exZh": "两次同时发生的火山活动形成了厚厚的火山灰层。"
+  },
+  {
+    "en": "conifer",
+    "zh": "针叶树",
+    "pos": "n.",
+    "ipa": "/ˈkɒnɪfə(r)/",
+    "ex": "Conifer needles stay green through the coldest months of the year.",
+    "exZh": "针叶树在一年中最冷的几个月里依然保持绿色。"
+  },
+  {
+    "en": "conspicuous",
+    "zh": "显眼的",
+    "pos": "adj.",
+    "ipa": "/kənˈspɪkjuəs/",
+    "ex": "The conspicuous plumage of the male bird attracts mates as well as predators.",
+    "exZh": "雄鸟显眼的羽毛既吸引配偶，也吸引捕食者。"
+  },
+  {
+    "en": "constitute",
+    "zh": "构成",
+    "pos": "v.",
+    "ipa": "/ˈkɒnstɪtjuːt/",
+    "ex": "Water and dissolved salts constitute most of the fluid inside a cell.",
+    "exZh": "水和溶解的盐构成了细胞内部液体的大部分。"
+  },
+  {
+    "en": "curator",
+    "zh": "馆长",
+    "pos": "n.",
+    "ipa": "/kjʊəˈreɪtə(r)/",
+    "ex": "The curator arranged the pottery in the museum by date.",
+    "exZh": "馆长按年代把博物馆里的陶器排列起来。"
+  },
+  {
+    "en": "desalination",
+    "zh": "海水淡化",
+    "pos": "n.",
+    "ipa": "/ˌdiːsælɪˈneɪʃn/",
+    "ex": "Desalination plants supply drinking water to dry coastal cities.",
+    "exZh": "海水淡化厂为干旱的沿海城市提供饮用水。"
+  },
+  {
+    "en": "devastate",
+    "zh": "摧毁",
+    "pos": "v.",
+    "ipa": "/ˈdevəsteɪt/",
+    "ex": "A single wildfire can devastate thousands of hectares of forest.",
+    "exZh": "一场野火就能摧毁数千公顷的森林。"
+  },
+  {
+    "en": "dialect",
+    "zh": "方言",
+    "pos": "n.",
+    "ipa": "/ˈdaɪəlekt/",
+    "ex": "A regional dialect often preserves older forms of a language.",
+    "exZh": "地方方言常常保留一种语言较古老的形态。"
+  },
+  {
+    "en": "diffusion",
+    "zh": "扩散",
+    "pos": "n.",
+    "ipa": "/dɪˈfjuːʒn/",
+    "ex": "Diffusion carries oxygen from the lungs into the bloodstream.",
+    "exZh": "扩散作用把氧气从肺输送到血液中。"
+  },
+  {
+    "en": "dissipate",
+    "zh": "消散",
+    "pos": "v.",
+    "ipa": "/ˈdɪsɪpeɪt/",
+    "ex": "Morning fog dissipates quickly once the ground begins to warm.",
+    "exZh": "地面一变暖，晨雾就迅速消散。"
+  },
+  {
+    "en": "doctrine",
+    "zh": "教义",
+    "pos": "n.",
+    "ipa": "/ˈdɒktrɪn/",
+    "ex": "The new doctrine spread quickly through the medieval universities.",
+    "exZh": "这一新教义在中世纪大学里迅速传播。"
+  },
+  {
+    "en": "drainage",
+    "zh": "排水",
+    "pos": "n.",
+    "ipa": "/ˈdreɪnɪdʒ/",
+    "ex": "Poor drainage turned the low fields into permanent marshland.",
+    "exZh": "排水不良使低洼的田地变成了长年沼泽。"
+  },
+  {
+    "en": "dune",
+    "zh": "沙丘",
+    "pos": "n.",
+    "ipa": "/djuːn/",
+    "ex": "Wind slowly pushes the crest of each dune across the desert.",
+    "exZh": "风慢慢地推动每座沙丘的丘顶横穿沙漠。"
+  },
+  {
+    "en": "engrave",
+    "zh": "雕刻",
+    "pos": "v.",
+    "ipa": "/ɪnˈɡreɪv/",
+    "ex": "Craftsmen engrave names and symbols on the stone tablets.",
+    "exZh": "工匠在石板上雕刻名字和符号。"
+  },
+  {
+    "en": "equator",
+    "zh": "赤道",
+    "pos": "n.",
+    "ipa": "/ɪˈkweɪtə(r)/",
+    "ex": "Near the equator, day length changes very little through the year.",
+    "exZh": "在赤道附近，一年中白昼的长度变化很小。"
+  },
+  {
+    "en": "evaporation",
+    "zh": "蒸发",
+    "pos": "n.",
+    "ipa": "/ɪˌvæpəˈreɪʃn/",
+    "ex": "Evaporation from the shallow lake leaves dissolved salts behind.",
+    "exZh": "浅湖水的蒸发留下了溶解的盐分。"
+  },
+  {
+    "en": "foothills",
+    "zh": "山麓",
+    "pos": "n.",
+    "ipa": "/ˈfʊthɪlz/",
+    "ex": "Vineyards flourish in the foothills just below the snow line.",
+    "exZh": "葡萄园在雪线下的山麓地带长势旺盛。"
+  },
+  {
+    "en": "fresco",
+    "zh": "湿壁画",
+    "pos": "n.",
+    "ipa": "/ˈfreskəʊ/",
+    "ex": "The fresco on the chapel wall shows a scene of the harvest.",
+    "exZh": "礼拜堂墙上的湿壁画描绘了一幅收获的场景。"
+  },
+  {
+    "en": "frigid",
+    "zh": "严寒的",
+    "pos": "adj.",
+    "ipa": "/ˈfrɪdʒɪd/",
+    "ex": "Frigid winters limit farming in the far north.",
+    "exZh": "严寒的冬季限制了极北地区的农业。"
+  },
+  {
+    "en": "fungus",
+    "zh": "真菌",
+    "pos": "n.",
+    "ipa": "/ˈfʌŋɡəs/",
+    "ex": "A fungus slowly breaks down the fallen leaves on the forest floor.",
+    "exZh": "一种真菌慢慢分解森林地面上落下的树叶。"
+  },
+  {
+    "en": "geyser",
+    "zh": "间歇泉",
+    "pos": "n.",
+    "ipa": "/ˈɡiːzə(r)/",
+    "ex": "The geyser erupts every ninety minutes, throwing steam high into the air.",
+    "exZh": "这眼间歇泉每九十分钟喷发一次，把蒸汽高高喷向空中。"
+  },
+  {
+    "en": "grassland",
+    "zh": "草原",
+    "pos": "n.",
+    "ipa": "/ˈɡrɑːslænd/",
+    "ex": "Herds of bison once grazed the open grassland of the plains.",
+    "exZh": "成群的野牛曾在平原开阔的草原上吃草。"
+  },
+  {
+    "en": "hatch",
+    "zh": "孵化",
+    "pos": "v.",
+    "ipa": "/hætʃ/",
+    "ex": "The eggs hatch after about three weeks inside the warm nest.",
+    "exZh": "这些蛋在温暖的巢里大约三周后孵化。"
+  },
+  {
+    "en": "hominid",
+    "zh": "原始人类",
+    "pos": "n.",
+    "ipa": "/ˈhɒmɪnɪd/",
+    "ex": "Fossil hominid remains were found in the East African rift valley.",
+    "exZh": "原始人类的化石遗骸在东非大裂谷被发现。"
+  },
+  {
+    "en": "humidity",
+    "zh": "湿度",
+    "pos": "n.",
+    "ipa": "/hjuːˈmɪdəti/",
+    "ex": "High humidity slows the evaporation of water from the leaves.",
+    "exZh": "高湿度会减缓叶片中水分的蒸发。"
+  },
+  {
+    "en": "husbandry",
+    "zh": "农牧业",
+    "pos": "n.",
+    "ipa": "/ˈhʌzbəndri/",
+    "ex": "Better animal husbandry allowed villages to keep more cattle.",
+    "exZh": "更好的畜牧业使村庄能饲养更多的牛。"
+  },
+  {
+    "en": "immunity",
+    "zh": "免疫力",
+    "pos": "n.",
+    "ipa": "/ɪˈmjuːnəti/",
+    "ex": "People who survived the disease developed lasting immunity.",
+    "exZh": "得过这种病并痊愈的人获得了持久的免疫力。"
+  },
+  {
+    "en": "interdependent",
+    "zh": "相互依存的",
+    "pos": "adj.",
+    "ipa": "/ˌɪntədɪˈpendənt/",
+    "ex": "Plants and their pollinators are often interdependent.",
+    "exZh": "植物和它们的传粉者常常相互依存。"
+  },
+  {
+    "en": "isotope",
+    "zh": "同位素",
+    "pos": "n.",
+    "ipa": "/ˈaɪsətəʊp/",
+    "ex": "Each isotope of carbon decays at a fixed and measurable rate.",
+    "exZh": "碳的每一种同位素都以固定且可测量的速率衰变。"
+  },
+  {
+    "en": "jurisdiction",
+    "zh": "管辖权",
+    "pos": "n.",
+    "ipa": "/ˌdʒʊərɪsˈdɪkʃn/",
+    "ex": "Disputes over water rights lay outside the jurisdiction of the town.",
+    "exZh": "关于水权的争端不属于该镇的管辖范围。"
+  },
+  {
+    "en": "kiln",
+    "zh": "窑",
+    "pos": "n.",
+    "ipa": "/kɪln/",
+    "ex": "Potters fired the clay jars in a wood-burning kiln.",
+    "exZh": "陶工在烧木柴的窑里烧制陶罐。"
+  },
+  {
+    "en": "locomotion",
+    "zh": "运动能力",
+    "pos": "n.",
+    "ipa": "/ˌləʊkəˈməʊʃn/",
+    "ex": "Bipedal locomotion freed the hands for carrying tools and food.",
+    "exZh": "两足行走使双手解放出来，可以携带工具和食物。"
+  },
+  {
+    "en": "magnetism",
+    "zh": "磁性",
+    "pos": "n.",
+    "ipa": "/ˈmæɡnətɪzəm/",
+    "ex": "Early navigators relied on the magnetism of the Earth to find north.",
+    "exZh": "早期的航海者依靠地球的磁性来寻找北方。"
+  },
+  {
+    "en": "marsh",
+    "zh": "沼泽",
+    "pos": "n.",
+    "ipa": "/mɑːʃ/",
+    "ex": "Migrating ducks rest in the coastal marsh each autumn.",
+    "exZh": "迁徙的野鸭每年秋天都在这片沿海沼泽休息。"
+  },
+  {
+    "en": "marsupial",
+    "zh": "有袋动物",
+    "pos": "n.",
+    "ipa": "/mɑːˈsuːpiəl/",
+    "ex": "The kangaroo is the best known marsupial in the world.",
+    "exZh": "袋鼠是世界上最著名的有袋动物。"
+  },
+  {
+    "en": "mythology",
+    "zh": "神话",
+    "pos": "n.",
+    "ipa": "/mɪˈθɒlədʒi/",
+    "ex": "Ancient mythology often tried to explain the movements of the sun.",
+    "exZh": "古代神话常常试图解释太阳的运行。"
+  },
+  {
+    "en": "nectar",
+    "zh": "花蜜",
+    "pos": "n.",
+    "ipa": "/ˈnektə(r)/",
+    "ex": "Hummingbirds drink nectar from deep inside the flower.",
+    "exZh": "蜂鸟从花朵深处吸取花蜜。"
+  },
+  {
+    "en": "neolithic",
+    "zh": "新石器的",
+    "pos": "adj.",
+    "ipa": "/ˌniːəˈlɪθɪk/",
+    "ex": "Neolithic farmers cleared woodland and sowed wheat and barley.",
+    "exZh": "新石器时代的农民清理林地，播种小麦和大麦。"
+  },
+  {
+    "en": "ore",
+    "zh": "矿石",
+    "pos": "n.",
+    "ipa": "/ɔː(r)/",
+    "ex": "Workers crushed the ore to release the metal trapped inside.",
+    "exZh": "工人把矿石打碎，取出其中所含的金属。"
+  },
+  {
+    "en": "outcrop",
+    "zh": "岩石露头",
+    "pos": "n.",
+    "ipa": "/ˈaʊtkrɒp/",
+    "ex": "The geologists sampled the rock at a roadside outcrop.",
+    "exZh": "地质学家在路边一处岩石露头采样。"
+  },
+  {
+    "en": "permafrost",
+    "zh": "永冻层",
+    "pos": "n.",
+    "ipa": "/ˈpɜːməfrɒst/",
+    "ex": "Melted permafrost makes buildings in the far north sink and crack.",
+    "exZh": "融化的永冻层使极北地区的建筑下沉开裂。"
+  },
+  {
+    "en": "petroleum",
+    "zh": "石油",
+    "pos": "n.",
+    "ipa": "/pəˈtrəʊliəm/",
+    "ex": "Petroleum formed from marine organisms buried under layers of sediment.",
+    "exZh": "石油是由埋在沉积层下的海洋生物形成的。"
+  },
+  {
+    "en": "porcelain",
+    "zh": "瓷器",
+    "pos": "n.",
+    "ipa": "/ˈpɔːsəlɪn/",
+    "ex": "Chinese porcelain was traded as far away as East Africa.",
+    "exZh": "中国瓷器远销到东非。"
+  },
+  {
+    "en": "propagate",
+    "zh": "繁殖",
+    "pos": "v.",
+    "ipa": "/ˈprɒpəɡeɪt/",
+    "ex": "Many plants propagate by sending out stems just below the surface.",
+    "exZh": "许多植物通过在地表下伸出茎来繁殖。"
+  },
+  {
+    "en": "propel",
+    "zh": "推进",
+    "pos": "v.",
+    "ipa": "/prəˈpel/",
+    "ex": "The tail fin propels the fish forward through the water.",
+    "exZh": "尾鳍推动鱼在水中前进。"
+  },
+  {
+    "en": "proximity",
+    "zh": "邻近",
+    "pos": "n.",
+    "ipa": "/prɒkˈsɪməti/",
+    "ex": "Proximity to the sea moderates the temperature of the region.",
+    "exZh": "靠近海洋使该地区的气温变得温和。"
+  },
+  {
+    "en": "quartz",
+    "zh": "石英",
+    "pos": "n.",
+    "ipa": "/kwɔːts/",
+    "ex": "Quartz is one of the hardest minerals found in granite.",
+    "exZh": "石英是花岗岩中最坚硬的矿物之一。"
+  },
+  {
+    "en": "quota",
+    "zh": "配额",
+    "pos": "n.",
+    "ipa": "/ˈkwəʊtə/",
+    "ex": "The government set a quota on the fish each boat could land.",
+    "exZh": "政府为每条船可卸下的鱼规定了配额。"
+  },
+  {
+    "en": "rainfall",
+    "zh": "降雨量",
+    "pos": "n.",
+    "ipa": "/ˈreɪnfɔːl/",
+    "ex": "Annual rainfall in the basin averages only ten centimetres.",
+    "exZh": "该盆地的年降雨量平均只有十厘米。"
+  },
+  {
+    "en": "rainforest",
+    "zh": "雨林",
+    "pos": "n.",
+    "ipa": "/ˈreɪnfɒrɪst/",
+    "ex": "The rainforest canopy blocks most sunlight from reaching the forest floor.",
+    "exZh": "雨林的树冠遮挡了大部分射向林地的阳光。"
+  },
+  {
+    "en": "rotation",
+    "zh": "旋转",
+    "pos": "n.",
+    "ipa": "/rəʊˈteɪʃn/",
+    "ex": "The rotation of the Earth produces the daily cycle of light and dark.",
+    "exZh": "地球的自转产生了昼夜明暗的循环。"
+  },
+  {
+    "en": "rudimentary",
+    "zh": "初步的",
+    "pos": "adj.",
+    "ipa": "/ˌruːdɪˈmentri/",
+    "ex": "The earliest boats were rudimentary rafts of bundled reeds.",
+    "exZh": "最早的船是用芦苇捆成的简陋筏子。"
+  },
+  {
+    "en": "sedimentary",
+    "zh": "沉积的",
+    "pos": "adj.",
+    "ipa": "/ˌsedɪˈmentri/",
+    "ex": "Sedimentary rock preserves fossils far better than hardened lava does.",
+    "exZh": "沉积岩保存化石的效果远好于凝固的熔岩。"
+  },
+  {
+    "en": "shrub",
+    "zh": "灌木",
+    "pos": "n.",
+    "ipa": "/ʃrʌb/",
+    "ex": "Goats strip the leaves from every low shrub on the hillside.",
+    "exZh": "山羊把山坡上每一丛低矮灌木的叶子都啃光。"
+  },
+  {
+    "en": "silt",
+    "zh": "淤泥",
+    "pos": "n.",
+    "ipa": "/sɪlt/",
+    "ex": "The flood left a thin layer of silt across the fields.",
+    "exZh": "洪水在田野上留下一层薄薄的淤泥。"
+  },
+  {
+    "en": "solstice",
+    "zh": "至日",
+    "pos": "n.",
+    "ipa": "/ˈsɒlstɪs/",
+    "ex": "At the summer solstice the northern day is at its longest.",
+    "exZh": "夏至时北方的白昼最长。"
+  },
+  {
+    "en": "sonar",
+    "zh": "声呐",
+    "pos": "n.",
+    "ipa": "/ˈsəʊnɑː(r)/",
+    "ex": "Sonar revealed the shape of the sea floor beneath the ship.",
+    "exZh": "声呐显示了船下海底的形状。"
+  },
+  {
+    "en": "steppe",
+    "zh": "干草原",
+    "pos": "n.",
+    "ipa": "/step/",
+    "ex": "Nomadic herders moved their animals across the open steppe.",
+    "exZh": "游牧者赶着牲畜穿越开阔的干草原。"
+  },
+  {
+    "en": "submerge",
+    "zh": "淹没",
+    "pos": "v.",
+    "ipa": "/səbˈmɜːdʒ/",
+    "ex": "Rising seas could submerge the lowest islands within a century.",
+    "exZh": "海平面上升可能在一个世纪内淹没那些最低的岛屿。"
+  },
+  {
+    "en": "subsistence",
+    "zh": "生计",
+    "pos": "n.",
+    "ipa": "/səbˈsɪstəns/",
+    "ex": "Most families in the valley lived by subsistence farming.",
+    "exZh": "山谷里大多数家庭靠自给性农业维持生计。"
+  },
+  {
+    "en": "succession",
+    "zh": "演替",
+    "pos": "n.",
+    "ipa": "/səkˈseʃn/",
+    "ex": "Ecological succession turns bare rock into forest over many centuries.",
+    "exZh": "生态演替经过许多世纪把裸露的岩石变成森林。"
+  },
+  {
+    "en": "suppress",
+    "zh": "抑制",
+    "pos": "v.",
+    "ipa": "/səˈpres/",
+    "ex": "The drug suppresses the immune response of the patient.",
+    "exZh": "这种药抑制病人的免疫反应。"
+  },
+  {
+    "en": "symmetry",
+    "zh": "对称",
+    "pos": "n.",
+    "ipa": "/ˈsɪmətri/",
+    "ex": "The symmetry of the crystal reflects its orderly internal structure.",
+    "exZh": "晶体的对称反映了它内部有序的结构。"
+  },
+  {
+    "en": "telescope",
+    "zh": "望远镜",
+    "pos": "n.",
+    "ipa": "/ˈtelɪskəʊp/",
+    "ex": "The new telescope detected faint light from extremely distant galaxies.",
+    "exZh": "这台新望远镜探测到了来自极遥远星系的微弱光。"
+  },
+  {
+    "en": "terrace",
+    "zh": "梯田",
+    "pos": "n.",
+    "ipa": "/ˈterəs/",
+    "ex": "Farmers cut terraces into the hillside to hold water and soil.",
+    "exZh": "农民在山坡上开出梯田来保住水和土壤。"
+  },
+  {
+    "en": "thermometer",
+    "zh": "温度计",
+    "pos": "n.",
+    "ipa": "/θəˈmɒmɪtə(r)/",
+    "ex": "A thermometer buried in the soil records the temperature every hour.",
+    "exZh": "埋在土里的温度计每小时记录一次温度。"
+  },
+  {
+    "en": "turbine",
+    "zh": "涡轮机",
+    "pos": "n.",
+    "ipa": "/ˈtɜːbaɪn/",
+    "ex": "Water released from the dam spins the turbines that make electricity.",
+    "exZh": "从大坝放出的水推动涡轮机发电。"
+  },
+  {
+    "en": "urbanization",
+    "zh": "城市化",
+    "pos": "n.",
+    "ipa": "/ˌɜːbənaɪˈzeɪʃn/",
+    "ex": "Rapid urbanization swallowed the farmland around the old city.",
+    "exZh": "快速的城市化吞没了老城周围的农田。"
+  },
+  {
+    "en": "variation",
+    "zh": "变异",
+    "pos": "n.",
+    "ipa": "/ˌveəriˈeɪʃn/",
+    "ex": "Genetic variation allows a species to adapt to changing conditions.",
+    "exZh": "遗传变异使物种能适应不断变化的环境。"
+  },
+  {
+    "en": "vertical",
+    "zh": "垂直的",
+    "pos": "adj.",
+    "ipa": "/ˈvɜːtɪkl/",
+    "ex": "The cliff rises in a nearly vertical wall above the river.",
+    "exZh": "悬崖在河上几乎垂直地耸立着。"
+  },
+  {
+    "en": "viscosity",
+    "zh": "黏度",
+    "pos": "n.",
+    "ipa": "/vɪˈskɒsəti/",
+    "ex": "Cold lava has a higher viscosity and therefore flows more slowly.",
+    "exZh": "冷的熔岩黏度更高，因此流动得更慢。"
+  },
+  {
+    "en": "volatile",
+    "zh": "易挥发的",
+    "pos": "adj.",
+    "ipa": "/ˈvɒlətaɪl/",
+    "ex": "Volatile compounds evaporate as soon as the container is opened.",
+    "exZh": "易挥发的化合物一打开容器就会蒸发。"
+  },
+  {
+    "en": "wane",
+    "zh": "减弱",
+    "pos": "v.",
+    "ipa": "/weɪn/",
+    "ex": "The light of the moon wanes over the two weeks after it is full.",
+    "exZh": "月光在满月之后的两个星期里逐渐减弱。"
+  },
+  {
+    "en": "weave",
+    "zh": "编织",
+    "pos": "v.",
+    "ipa": "/wiːv/",
+    "ex": "Villagers weave baskets from reeds cut along the river bank.",
+    "exZh": "村民用河岸边割来的芦苇编织篮子。"
+  },
+  {
+    "en": "withstand",
+    "zh": "承受",
+    "pos": "v.",
+    "ipa": "/wɪðˈstænd/",
+    "ex": "The new dome is designed to withstand very strong earthquakes.",
+    "exZh": "新穹顶的设计能够承受极强的地震。"
+  },
+  {
+    "en": "xenon",
+    "zh": "氙元素",
+    "pos": "n.",
+    "ipa": "/ˈzenɒn/",
+    "ex": "Xenon gas fills lamps that are meant to imitate sunlight.",
+    "exZh": "氙气填充在用来模拟日光的灯里。"
+  },
+  {
+    "en": "yolk",
+    "zh": "蛋黄",
+    "pos": "n.",
+    "ipa": "/jəʊk/",
+    "ex": "The yolk of the egg supplies food for the growing embryo.",
+    "exZh": "蛋里的蛋黄为发育中的胚胎提供营养。"
+  },
+  {
+    "en": "zonal",
+    "zh": "地带的",
+    "pos": "adj.",
+    "ipa": "/ˈzəʊnl/",
+    "ex": "Zonal soils change with latitude and with the amount of rainfall.",
+    "exZh": "地带性土壤随纬度和降雨量而变化。"
+  }
+]

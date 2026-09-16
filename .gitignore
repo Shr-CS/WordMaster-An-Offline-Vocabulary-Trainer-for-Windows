@@ -23,6 +23,11 @@ yarn-error.log*
 *.tmp
 *.bak
 
+# ---------- 词库扩容的中间产物 ----------
+# src/data/parts/*.json 是要提交的（新词分片与补丁，记录了词库是怎么长出来的），
+# 但 _used/ 是 mk-used-list.js / list-dup-zh.js 生成的派生清单，随时可重新生成。
+src/data/parts/_used/
+
 # ---------- 编辑器 / IDE ----------
 .idea/
 .vscode/*
