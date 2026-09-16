@@ -58,7 +58,7 @@
 
 ## 二、快速开始
 
-### 方式一：直接运行绿色版（推荐，无需安装）
+### 方式一：直接运行绿色版（最省事）
 
 ```
 release\WordMaster\背单词 WordMaster.exe
@@ -66,9 +66,17 @@ release\WordMaster\背单词 WordMaster.exe
 
 双击即可。想放桌面就双击同目录下的 `创建桌面快捷方式.bat`。整个文件夹可以拷到 U 盘。
 
-### 方式二：安装包
+### 方式二：装到本机（等价于安装包，推荐给不想每次进 release 目录的人）
 
-运行 `release\installer\WordMaster-Setup-1.0.0.exe`，可自选安装目录，会创建桌面和开始菜单快捷方式。
+双击仓库根目录的 **`安装到本机.bat`**，它会：
+
+1. 把程序复制到 `%LOCALAPPDATA%\Programs\WordMaster`
+2. 创建桌面快捷方式和开始菜单快捷方式
+3. 在「设置 → 应用 → 已安装的应用」里登记（含图标、版本、占用大小），可正常卸载
+
+卸载用「设置 → 应用」，或双击根目录的 `卸载 WordMaster.bat`。学习记录不会被删。
+
+> 脚本支持传参，方便自定义：`安装到本机.bat -Dest D:\Apps\WordMaster`。
 
 ### 方式三：从源码运行
 
@@ -77,7 +85,26 @@ npm install          # 安装 Electron
 npm start            # 启动应用
 ```
 
-### ⚠️ 绿色版和安装包是「打包那一刻的源码快照」
+### 为什么这里没有 `Setup.exe` 安装包
+
+electron-builder 打 NSIS 安装包的流程是：先编译一个中间安装包 → **运行它**提取卸载程序 → 签名 → 再编译最终安装包。
+第二步要求系统肯执行那个刚编译出来、没有数字签名的 exe。
+
+**而开启了 Smart App Control 的 Windows 会拒绝执行它**（`HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy`
+里 `VerifiedAndReputablePolicyState = 1`），系统日志会记下：
+
+```
+Code Integrity determined that a process ... attempted to load
+...\WordMaster-Setup-1.0.0.exe that did not meet the Enterprise signing level requirements
+```
+
+所以在这类机器上，安装包**既编不出来，编出来也点不开**。绿色版之所以没问题，是因为它复用的是有信誉的
+`electron.exe`，能通过校验。
+
+想在别的机器上编安装包：把仓库拷过去，在**没有**开启 Smart App Control 的 Windows 上双击 `制作安装包.bat`；
+或者用代码签名证书给产物签名（OV 证书还需要攒信誉，EV 证书即时生效）。
+
+### ⚠️ 绿色版是「打包那一刻的源码快照」
 
 `release/` 里的产物**不会**自动跟着 `src/` 更新，而且它们不入版本库。所以改完词库或界面后：
 
@@ -85,8 +112,7 @@ npm start            # 启动应用
 npm run build:portable     # 重新生成绿色版（纯 Node 复制，离线可跑，约 10 秒）
 ```
 
-安装包用 electron-builder + NSIS，需要启动子进程给卸载程序签名，在受限环境里可能报 `spawn UNKNOWN`；
-这种情况下直接双击仓库根目录的 `制作安装包.bat`，它会用普通命令行环境重新打包。
+装到本机同理——重新打包后再跑一次 `安装到本机.bat` 覆盖即可。
 
 > 判断手里的 exe 是不是新版：看 `release\WordMaster\resources\app\src\data\words.js` 的大小，
 > 含例句的 5572 词版本约 1.1 MB，旧版只有 100 多 KB。
@@ -125,6 +151,7 @@ WordMaster/
 │  ├─ check-part.js           校验单个增量分片（字段、重复、释义长度、例句）
 │  ├─ mk-used-list.js         导出各等级「已用词表」，供增量生成时排除
 │  ├─ list-dup-zh.js          找出同一等级里释义完全相同的词条组
+│  ├─ install-local.ps1       把绿色版装到本机（快捷方式 + 卸载登记）
 │  ├─ make-icon.js            用纯 Node 生成 PNG/ICO 图标
 │  ├─ capture.js              自动截图各页面（视觉验证用）
 │  └─ build-portable.js       生成免安装绿色版

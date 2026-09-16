@@ -4,14 +4,35 @@ setlocal
 cd /d "%~dp0"
 
 echo ============================================================
-echo   重新生成 WordMaster 安装包
+echo   重新生成 WordMaster 安装包（Setup.exe）
 echo ============================================================
 echo.
-echo 说明：安装包用 electron-builder + NSIS 打包。
-echo       它需要启动子进程来给卸载程序做签名，所以在某些
-echo       受限的运行环境里会失败（报 spawn UNKNOWN）。
-echo       在一个普通的命令行窗口里双击本文件即可正常打包。
+echo 【重要】本机很可能打不出安装包，也跑不了安装包。
 echo.
+echo   开启 Smart App Control 的 Windows 只放行有数字签名或有信誉的 exe。
+echo   electron-builder 打 NSIS 安装包时，必须先运行一个刚编译出来、
+echo   没有签名的中间安装包来提取卸载程序 —— 这一步会被系统拒绝，
+echo   报 spawn UNKNOWN；系统日志里能查到 Code Integrity 3033/3077：
+echo     "...WordMaster-Setup-1.0.0.exe that did not meet the
+echo      Enterprise signing level requirements"
+echo.
+echo   本机状态可以用这条命令确认：
+echo     reg query "HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy" /v VerifiedAndReputablePolicyState
+echo     值为 1 表示 Smart App Control 正在强制执行。
+echo.
+echo   替代方案：直接双击仓库根目录的「安装到本机.bat」，
+echo   它把绿色版装到 %LOCALAPPDATA%\Programs\WordMaster，
+echo   一样有桌面/开始菜单快捷方式和「应用和功能」里的卸载项。
+echo.
+echo   确实要 Setup.exe：请在另一台没有开启 Smart App Control 的
+echo   Windows 上运行本脚本，或用代码签名证书给产物签名。
+echo.
+set /p CONFIRM=仍要尝试打包吗？(Y/N)
+if /i not "%CONFIRM%"=="Y" (
+  echo 已取消。
+  pause
+  exit /b 0
+)
 
 set CSC_IDENTITY_AUTO_DISCOVERY=false
 
@@ -32,7 +53,11 @@ exit /b 0
 
 :fail
 echo.
-echo 打包失败，请把上面的错误信息截图反馈。
+echo ------------------------------------------------------------------
+echo 打包失败。如果是 spawn UNKNOWN，且上面提到了 Code Integrity /
+echo Application Control，那就是 Smart App Control 拦的，不是项目的问题。
+echo 请改用「安装到本机.bat」，或换一台机器打包。
+echo ------------------------------------------------------------------
 echo.
 pause
 exit /b 1
