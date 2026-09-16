@@ -25,8 +25,43 @@ const APP_DIRS = ['src', 'tools'];
 const VERSION = require(path.join(ROOT, 'package.json')).version;
 
 const EXCLUDE = new Set(['node_modules', 'release', '.git']);
-/** 不需要塞进程序里的目录（截图、图标源文件等） */
-const APP_EXCLUDE_DIRS = new Set(['shots']);
+/** 不需要塞进程序里的目录（截图、词库扩容的中间产物） */
+const APP_EXCLUDE_DIRS = new Set(['shots', 'parts', '_used']);
+
+const LEVEL_LABELS = [
+  ['primary', '小学'],
+  ['junior', '初中'],
+  ['senior', '高中'],
+  ['cet4', '四级'],
+  ['cet6', '六级'],
+  ['ielts', '雅思'],
+  ['toefl', '托福'],
+];
+
+/**
+ * 直接数一遍词库源文件，生成「内置词库」那几行。
+ * 之前这里是写死的字符串，词库扩容后就对不上了——改成现算，永远不会过期。
+ */
+function bankSummary() {
+  const parts = [];
+  let total = 0;
+  let withEx = 0;
+  for (const [id, label] of LEVEL_LABELS) {
+    const file = path.join(ROOT, 'src', 'data', `${id}.json`);
+    let rows = [];
+    try {
+      rows = JSON.parse(fs.readFileSync(file, 'utf8'));
+    } catch (err) {
+      console.warn(`  ⚠ 读不到 ${id}.json，使用说明里会跳过这一级：${err.message}`);
+      continue;
+    }
+    total += rows.length;
+    withEx += rows.filter((r) => r && r.ex).length;
+    parts.push(`${label} ${rows.length}`);
+  }
+  return { line: parts.join(' / '), total, withEx };
+}
+
 
 let copiedFiles = 0;
 let copiedBytes = 0;
@@ -123,6 +158,7 @@ function main() {
   // Windows PowerShell 5.1 读 UTF-8 需要 BOM，否则中文会乱码
   fs.writeFileSync(path.join(OUT, 'create-shortcut.ps1'), '\uFEFF' + psLines.join('\r\n'), 'utf8');
 
+  const bank = bankSummary();
   const readme = [
     `${APP_NAME} v${VERSION} —— 免安装绿色版`,
     '='.repeat(46),
@@ -137,13 +173,15 @@ function main() {
     '  换电脑时在「设置 → 数据管理」里导出备份，另一台导入即可继续。',
     '',
     '【内置词库】',
-    '  小学 200 / 初中 220 / 高中 240 / 四级 250 / 六级 250 / 雅思 250 / 托福 250',
-    '  合计 1660 词，全部离线内置，无需联网。',
+    `  ${bank.line}`,
+    `  合计 ${bank.total} 词，其中 ${bank.withEx} 词带例句与例句翻译，全部离线内置，无需联网。`,
     '',
     '【主要功能】',
     '  · 7 个词库等级可自由多选组合',
     '  · 英译中 / 中译英 / 中英混合三种出题方向',
     '  · 每天背诵数量可调（5~200）',
+    '  · 答对后弹出详细词条卡（音标、词性、释义、例句、所属词库、复习进度、朗读）',
+    '    不想看可以在「设置 → 答对后展开详细词条」里关掉',
     '  · 答对、答错各有一套音效；英文可用系统语音朗读',
     '  · 白色 / 黑色主题一键切换',
     '  · 今天学的新词，明天自动进入复习；答对间隔 1→2→4→7→15→30 天',

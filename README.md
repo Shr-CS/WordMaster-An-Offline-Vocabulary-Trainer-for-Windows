@@ -77,6 +77,20 @@ npm install          # 安装 Electron
 npm start            # 启动应用
 ```
 
+### ⚠️ 绿色版和安装包是「打包那一刻的源码快照」
+
+`release/` 里的产物**不会**自动跟着 `src/` 更新，而且它们不入版本库。所以改完词库或界面后：
+
+```bash
+npm run build:portable     # 重新生成绿色版（纯 Node 复制，离线可跑，约 10 秒）
+```
+
+安装包用 electron-builder + NSIS，需要启动子进程给卸载程序签名，在受限环境里可能报 `spawn UNKNOWN`；
+这种情况下直接双击仓库根目录的 `制作安装包.bat`，它会用普通命令行环境重新打包。
+
+> 判断手里的 exe 是不是新版：看 `release\WordMaster\resources\app\src\data\words.js` 的大小，
+> 含例句的 5572 词版本约 1.1 MB，旧版只有 100 多 KB。
+
 ---
 
 ## 三、目录结构
