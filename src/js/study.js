@@ -534,6 +534,8 @@ window.WM = window.WM || {};
       }
 
       if (key === 'Enter' || key === ' ') {
+        // 保留原生按钮的键盘激活。已锁定的选项允许回车继续。
+        if (target.closest?.('button:not(.opt.locked)')) return;
         if (session.answered) {
           event.preventDefault();
           next();

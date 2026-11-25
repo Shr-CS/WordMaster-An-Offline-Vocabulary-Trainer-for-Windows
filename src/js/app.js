@@ -94,7 +94,10 @@ window.WM = window.WM || {};
     }
 
     document.querySelectorAll('.nav-item').forEach((node) => {
-      node.classList.toggle('active', node.dataset.route === app.route);
+      const selected = node.dataset.route === app.route;
+      node.classList.toggle('active', selected);
+      if (selected) node.setAttribute('aria-current', 'page');
+      else node.removeAttribute('aria-current');
     });
   }
 

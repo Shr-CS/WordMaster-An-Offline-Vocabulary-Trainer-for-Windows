@@ -14,8 +14,8 @@ app.setName('WordMaster');
 
 /** 标题栏覆盖层配色，跟随应用内黑白主题切换 */
 const TITLEBAR = {
-  dark: { color: '#12141c', symbolColor: '#c8cee0' },
-  light: { color: '#ffffff', symbolColor: '#3b4257' },
+  dark: { color: '#1b2924', symbolColor: '#f5f4e9' },
+  light: { color: '#fffef9', symbolColor: '#1a3027' },
 };
 
 /** @type {BrowserWindow | null} */
@@ -43,7 +43,7 @@ function createWindow() {
     minWidth: 1040,
     minHeight: 700,
     show: false,
-    backgroundColor: '#0f1117',
+    backgroundColor: '#121d1a',
     title: '背单词 WordMaster',
     titleBarStyle: 'hidden',
     titleBarOverlay: { ...TITLEBAR.dark, height: 48 },

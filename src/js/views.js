@@ -90,15 +90,6 @@ window.WM = window.WM || {};
       right || null);
   }
 
-  function greeting() {
-    const hour = new Date().getHours();
-    if (hour < 5) return '夜深了，别熬太晚';
-    if (hour < 11) return '早上好，今天也要加油';
-    if (hour < 14) return '中午好，来记几个单词吧';
-    if (hour < 18) return '下午好，保持节奏';
-    return '晚上好，睡前复习效果更好';
-  }
-
   function todayLabel() {
     const d = new Date();
     return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日 ${weekdayOf(dayStr(d))}`;
@@ -149,17 +140,17 @@ window.WM = window.WM || {};
     }
 
     /* ---------- 主视觉 ---------- */
-    const hero = h('div', { class: 'hero' },
-      h('h1', { text: greeting() }),
-      h('div', { class: 'sub' }, todayLabel(),
-        h('span', { text: ' · ' }),
-        streak.current > 0
-          ? h('span', {}, '已连续打卡 ', h('b', { text: String(streak.current) }), ' 天')
-          : h('span', { text: '今天开始你的第一个打卡日' })),
-
-      h('div', { class: 'today-line' }, icon('i-target'),
-        '今日计划：新词 ', h('b', { text: String(prog.newTotal) }), ' 个 · 复习 ', h('b', { text: String(prog.reviewTotal) }), ' 个'),
-
+    const hero = h('section', { class: 'hero' },
+      h('div', { class: 'lesson-intro' },
+        h('div', { class: 'lesson-date', text: todayLabel() }),
+        h('h1', { text: '今日学习计划' }),
+        h('p', { class: 'lesson-progress', text: `已完成 ${doneToday} / ${plannedToday} 题` }),
+        h('button', {
+          class: 'btn primary lg', type: 'button', disabled: prog.totalLeft === 0,
+          onclick: () => WM.app.startStudy('mixed'),
+        }, icon('i-play'), prog.totalLeft ? '开始今日学习' : '今日任务已完成')),
+      h('div', { class: 'lesson-art', 'aria-hidden': 'true' },
+        h('div', { class: 'book-cover' }, h('i', { class: 'book-ribbon' }), h('span', { text: 'Ww' }))),
       h('div', { class: 'plan-cards' },
         planCard({
           kind: 'new',
@@ -167,7 +158,7 @@ window.WM = window.WM || {};
           label: '今日新词',
           left: prog.newLeft,
           total: prog.newTotal,
-          hint: prog.newLeft ? `还有 ${prog.newLeft} 个没学` : (prog.newTotal ? '今天的新词已完成' : '暂无新词'),
+          hint: prog.newLeft ? '进入新词练习 →' : (prog.newTotal ? '今天的新词已完成' : '暂无新词'),
         }),
         planCard({
           kind: 'review',
@@ -175,28 +166,8 @@ window.WM = window.WM || {};
           label: '今日复习',
           left: prog.reviewLeft,
           total: prog.reviewTotal,
-          hint: prog.reviewLeft ? `还有 ${prog.reviewLeft} 个待复习` : (prog.reviewTotal ? '复习任务已清空' : '今天没有到期的单词'),
-        })),
-
-      h('div', { class: 'btn-row', style: { marginTop: '20px' } },
-        h('button', {
-          class: 'btn primary lg',
-          type: 'button',
-          disabled: prog.totalLeft === 0,
-          onclick: () => WM.app.startStudy('mixed'),
-        }, icon('i-play'), prog.totalLeft ? `开始今日学习（${prog.totalLeft} 题）` : '今日任务已完成'),
-        h('button', {
-          class: 'btn lg',
-          type: 'button',
-          disabled: prog.newLeft === 0,
-          onclick: () => WM.app.startStudy('new'),
-        }, icon('i-bolt'), '只学新词'),
-        h('button', {
-          class: 'btn lg',
-          type: 'button',
-          disabled: prog.reviewLeft === 0,
-          onclick: () => WM.app.startStudy('review'),
-        }, icon('i-review'), '只做复习')));
+          hint: prog.reviewLeft ? '进入复习 →' : (prog.reviewTotal ? '复习任务已清空' : '今天没有到期的单词'),
+        })));
 
     /* ---------- 今日概览 ---------- */
     const overview = h('div', { class: 'card' },
@@ -234,14 +205,13 @@ window.WM = window.WM || {};
         h('span', { class: 'num', text: `${lv.learned} / ${lv.total}` })),
       h('div', { class: 'bar thin' }, h('i', { style: { width: `${lv.percent}%` } }))));
 
-    const scopeCard = h('div', { class: 'card' },
-      h('div', { class: 'card-title' }, icon('i-book'), '词库进度'),
+    const scopeCard = h('div', { class: 'card library-progress' },
+      h('div', { class: 'card-title' }, icon('i-book'), '词库进度', h('small', { class: 'library-total', text: `共 ${bank.totalWords()} 词` })),
       h('div', { class: 'level-list' }, levelLines));
 
     mount(view,
-      pageHead('首页', `词库共 ${bank.totalWords()} 个单词`),
       hero,
-      h('div', { class: 'grid side' }, scopeCard, h('div', { class: 'grid', style: { gap: '16px' } }, overview, upcomingCard)));
+      h('div', { class: 'home-details' }, overview, upcomingCard), scopeCard);
   }
 
   function planCard({ kind, iconName, label, left, total, hint }) {
@@ -254,7 +224,7 @@ window.WM = window.WM || {};
     },
       h('div', { class: 'pc-top' }, icon(iconName), label,
         done ? h('span', { class: 'tag', style: { marginLeft: 'auto' } }, icon('i-check'), '已完成') : null),
-      h('div', { class: 'pc-num' }, String(left), h('small', { text: ` / ${total} 待完成` })),
+      h('div', { class: 'pc-num' }, String(left), h('small', { text: ' 词' })),
       h('div', { class: 'pc-foot', text: hint }));
   }
 
@@ -763,22 +733,17 @@ window.WM = window.WM || {};
   }
 
   function themePreview(id, name, active, view) {
-    const isDark = id === 'dark';
-    const bg = isDark ? '#0e1016' : '#f2f5fb';
-    const side = isDark ? '#161923' : '#ffffff';
-    const line1 = isDark ? '#2b3244' : '#dfe5f1';
-    const line2 = isDark ? '#39415a' : '#c9d3e6';
     return h('button', {
       class: `theme-card ${active ? 'on' : ''}`,
       type: 'button',
       onclick: () => { applySettings({ theme: id }); renderSettings(view); },
     },
-      h('div', { class: 'theme-preview', style: { background: bg } },
-        h('div', { class: 'tp-side', style: { background: side } }),
+      h('div', { class: 'theme-preview', dataset: { theme: id }, style: { background: 'var(--bg)' } },
+        h('div', { class: 'tp-side', style: { background: 'var(--surface)' } }),
         h('div', { class: 'tp-body' },
-          h('div', { class: 'tp-line', style: { background: isDark ? '#6d8bff' : '#4864f0', width: '62%' } }),
-          h('div', { class: 'tp-line', style: { background: line1, width: '100%' } }),
-          h('div', { class: 'tp-line', style: { background: line2, width: '78%' } }))),
+          h('div', { class: 'tp-line', style: { background: 'var(--accent)', width: '62%' } }),
+          h('div', { class: 'tp-line', style: { background: 'var(--border)', width: '100%' } }),
+          h('div', { class: 'tp-line', style: { background: 'var(--border-strong)', width: '78%' } }))),
       h('div', { class: 'tc-name' }, name, active ? icon('i-check') : null));
   }
 

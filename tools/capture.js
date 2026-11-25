@@ -261,7 +261,7 @@ async function main() {
   /* -------------------- 1. 首页（深色） -------------------- */
   await shot('home-dark');
   await shotRegion('hero', '.hero');
-  await shotRegion('home-levels', '.grid.side');
+  await shotRegion('home-levels', '.library-progress');
 
   /* ------------- 2. 真实鼠标点击导航，验证界面可交互 ------------- */
   await realClick('.nav-item[data-route="settings"]', '侧栏 → 设置');
