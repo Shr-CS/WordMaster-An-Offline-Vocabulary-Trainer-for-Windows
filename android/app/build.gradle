@@ -1,0 +1,49 @@
+plugins { id 'com.android.application' }
+
+def signingProperties = new Properties()
+def signingFile = rootProject.file('.signing/signing.properties')
+if (signingFile.exists()) {
+    signingFile.withInputStream { signingProperties.load(it) }
+}
+
+android {
+    namespace 'cn.shrcs.wordmaster'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'cn.shrcs.wordmaster'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    signingConfigs {
+        if (signingFile.exists()) {
+            release {
+                storeFile rootProject.file(signingProperties['storeFile'])
+                storePassword signingProperties['storePassword']
+                keyAlias signingProperties['keyAlias']
+                keyPassword signingProperties['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            if (signingFile.exists()) signingConfig signingConfigs.release
+        }
+    }
+    sourceSets.main.assets.srcDir layout.buildDirectory.dir('webAssets')
+}
+
+def syncWebAssets = tasks.register('syncWebAssets', Sync) {
+    from('../../src') {
+        include 'index.html', '*.css', 'js/**', 'data/words.js'
+    }
+    into layout.buildDirectory.dir('webAssets/www')
+}
+tasks.named('preBuild').configure { dependsOn syncWebAssets }
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.12.1'
+}

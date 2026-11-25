@@ -51,3 +51,9 @@ Desktop.ini
 #                          不必先构建。改完 JSON 记得跑 npm run build:data
 #  · package-lock.json  —— 锁定依赖版本，保证任何机器上装出来都一样
 # ============================================================
+
+# Android builds and private signing material
+android/.gradle/
+android/**/build/
+android/local.properties
+android/.signing/

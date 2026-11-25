@@ -2,10 +2,12 @@
 <html lang="zh-CN" data-theme="dark">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'" />
   <title>背单词 WordMaster</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
 </head>
 <body>
   <!-- ============================ 图标精灵 ============================ -->
@@ -48,13 +50,13 @@
       <div class="titlebar-center" id="titlebar-center"></div>
 
       <div class="titlebar-actions">
-        <button class="icon-btn" id="btn-sound" type="button" title="开关音效">
+        <button class="icon-btn" id="btn-sound" aria-label="开关音效" type="button" title="开关音效">
           <svg class="ico"><use href="#i-volume" /></svg>
         </button>
-        <button class="icon-btn" id="btn-theme" type="button" title="切换黑白主题">
+        <button class="icon-btn" id="btn-theme" aria-label="切换主题" type="button" title="切换黑白主题">
           <svg class="ico"><use href="#i-moon" /></svg>
         </button>
-        <button class="icon-btn" id="btn-settings" type="button" title="设置">
+        <button class="icon-btn" id="btn-settings" aria-label="设置" type="button" title="设置">
           <svg class="ico"><use href="#i-gear" /></svg>
         </button>
         <div class="winctrl-space"></div>
@@ -96,6 +98,7 @@
   <div class="toast-host" id="toast-host" aria-live="polite"></div>
   <div class="modal-host" id="modal-host" hidden></div>
 
+  <script src="js/android.js"></script>
   <script src="data/words.js"></script>
   <script src="js/util.js"></script>
   <script src="js/sound.js"></script>

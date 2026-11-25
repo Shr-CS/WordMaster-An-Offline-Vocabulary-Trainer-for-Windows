@@ -311,6 +311,9 @@ window.WM = window.WM || {};
     // 退出前立即落盘
     window.addEventListener('beforeunload', () => store.flush());
     window.addEventListener('blur', () => store.flush());
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) store.flush();
+    });
 
     // 主进程菜单触发的导入导出
     if (window.desktop && window.desktop.onMenu) {

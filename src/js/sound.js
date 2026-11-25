@@ -238,7 +238,9 @@ window.WM = window.WM || {};
    * @returns {boolean} 是否成功发起朗读
    */
   function speak(text, { rate = 0.92, pitch = 1, lang = 'en-US' } = {}) {
-    if (!text || !('speechSynthesis' in window)) return false;
+    if (!text) return false;
+    if (window.WordMasterAndroid) return window.WordMasterAndroid.speak(String(text), rate, pitch);
+    if (!('speechSynthesis' in window)) return false;
     try {
       window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(String(text));
@@ -255,6 +257,10 @@ window.WM = window.WM || {};
   }
 
   function stopSpeak() {
+    if (window.WordMasterAndroid) {
+      window.WordMasterAndroid.stopSpeak();
+      return;
+    }
     try {
       window.speechSynthesis.cancel();
     } catch {

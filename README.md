@@ -8,6 +8,16 @@
 
 ---
 
+## Android 版
+
+[下载 WordMaster-Android.apk](./WordMaster-Android.apk)，适用于 Android 8.0 及以上版本。安装时按系统提示允许当前浏览器或文件管理器安装应用。
+
+APK 内置完整的 5572 词，支持离线答题、复习、生词本、统计和明暗主题。手机版使用底部导航，可在首页进入新词学习与复习。英语朗读使用 Android 系统的文字转语音服务，离线朗读需先在系统设置中安装英语语音包。
+
+在 Windows 版设置里导出 JSON 备份，再在 Android 版设置中导入，即可转移学习记录。设备之间也可按同样方式迁移。
+
+Android 工程与构建说明见 [android/README.md](android/README.md)。
+
 ## 界面预览
 
 ![首页（黑色主题）](docs/screenshots/01-home-dark.png)
