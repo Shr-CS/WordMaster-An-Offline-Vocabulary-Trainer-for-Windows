@@ -147,9 +147,9 @@ window.WM = window.WM || {};
     return state;
   }
 
-  function persistNow() {
+  function persistNow(nextState = state) {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(nextState));
       return true;
     } catch (err) {
       console.error('[store] 保存失败：', err);
@@ -235,12 +235,23 @@ window.WM = window.WM || {};
     } catch {
       return { ok: false, message: '文件不是合法的 JSON' };
     }
-    const payload = parsed && parsed.data ? parsed.data : parsed;
-    if (!payload || typeof payload !== 'object' || (!payload.words && !payload.settings)) {
+    const isRecord = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
+    const payload = isRecord(parsed) && Object.hasOwn(parsed, 'data') ? parsed.data : parsed;
+    if (!isRecord(payload) || (!isRecord(payload.words) && !isRecord(payload.settings))
+      || (payload.words !== undefined && !isRecord(payload.words))
+      || (payload.settings !== undefined && !isRecord(payload.settings))) {
       return { ok: false, message: '文件内容不像 WordMaster 的备份' };
     }
-    state = sanitize(payload);
-    persistNow();
+    // 先持久化候选状态。磁盘已满时保留当前记录和待保存的修改。
+    const nextState = sanitize(payload);
+    if (!persistNow(nextState)) {
+      return { ok: false, message: '备份未能保存，当前学习记录已保留，请检查磁盘空间后重试' };
+    }
+    if (saveTimer) {
+      clearTimeout(saveTimer);
+      saveTimer = null;
+    }
+    state = nextState;
     emit();
     return { ok: true, message: `已恢复 ${Object.keys(state.words).length} 个单词的学习记录` };
   }
