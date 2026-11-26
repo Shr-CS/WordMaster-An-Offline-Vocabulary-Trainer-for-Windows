@@ -68,6 +68,22 @@ test('reopening or changing settings keeps completed work and daily limits', () 
   assert.equal(bank.buildQueue(state, 'new').length, 10);
 });
 
+test('Chinese prompts never include another English answer with the same meaning', () => {
+  const { bank, quiz, util } = loadApp();
+  const study = bank.get('primary:study');
+  const learn = bank.get('primary:learn');
+  assert.equal(study.zh, learn.zh);
+  const pool = [study, learn, ...bank.list('primary').filter(word => word.zh !== study.zh).slice(0, 3)];
+  for (const entry of [study, learn]) {
+    for (let seed = 1; seed <= 20; seed++) {
+      const q = quiz.makeQuestion(entry, { direction: 'zh2en', pool, random: util.rng(seed) });
+      assert.equal(q.options.length, 4);
+      assert.equal(q.options.filter(option => bank.get(option.entryId).zh === entry.zh).length, 1);
+      assert.equal(q.options[q.answerIndex].entryId, entry.id);
+    }
+  }
+});
+
 test('reopening never replenishes the daily review budget', () => {
   const { bank, store, util } = loadApp();
   const state = store.defaultState();

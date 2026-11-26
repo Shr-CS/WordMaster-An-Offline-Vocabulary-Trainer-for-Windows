@@ -8246,5 +8246,213 @@
     "ipa": "/zɪŋk/",
     "ex": "Zinc is used to protect iron from rust.",
     "exZh": "锌被用来保护铁不生锈。"
+  },
+  {
+    "en": "look after",
+    "zh": "照顾",
+    "pos": "phr.",
+    "ipa": "/lʊk ˈɑːftə/",
+    "ex": "Can you look after my cat this weekend?",
+    "exZh": "这个周末你能帮我照顾猫吗？"
+  },
+  {
+    "en": "look for",
+    "zh": "寻找",
+    "pos": "phr.",
+    "ipa": "/lʊk fɔː/",
+    "ex": "We need to look for the missing keys.",
+    "exZh": "我们需要找丢失的钥匙。"
+  },
+  {
+    "en": "get up",
+    "zh": "起床",
+    "pos": "phr.",
+    "ipa": "/ɡet ʌp/",
+    "ex": "I get up at seven on school days.",
+    "exZh": "上学的日子我七点起床。"
+  },
+  {
+    "en": "wake up",
+    "zh": "醒来，叫醒",
+    "pos": "phr.",
+    "ipa": "/weɪk ʌp/",
+    "ex": "I wake up early when the sun shines through the window.",
+    "exZh": "阳光照进窗户时，我会很早醒来。"
+  },
+  {
+    "en": "turn on",
+    "zh": "打开开关",
+    "pos": "phr.",
+    "ipa": "/tɜːn ɒn/",
+    "ex": "Please turn on the light before you read.",
+    "exZh": "看书前请打开灯。"
+  },
+  {
+    "en": "turn off",
+    "zh": "关闭开关",
+    "pos": "phr.",
+    "ipa": "/tɜːn ɒf/",
+    "ex": "Turn off the computer when you finish.",
+    "exZh": "用完后关掉电脑。"
+  },
+  {
+    "en": "put on",
+    "zh": "穿上",
+    "pos": "phr.",
+    "ipa": "/pʊt ɒn/",
+    "ex": "Put on your coat before going outside.",
+    "exZh": "出门前穿上外套。"
+  },
+  {
+    "en": "take off",
+    "zh": "脱下，起飞",
+    "pos": "phr.",
+    "ipa": "/teɪk ɒf/",
+    "ex": "Please take off your shoes at the door.",
+    "exZh": "请在门口脱鞋。"
+  },
+  {
+    "en": "give up",
+    "zh": "放弃，坚持不下去",
+    "pos": "phr.",
+    "ipa": "/ɡɪv ʌp/",
+    "ex": "Do not give up when the work becomes difficult.",
+    "exZh": "工作变难时不要放弃。"
+  },
+  {
+    "en": "find out",
+    "zh": "查明，弄清",
+    "pos": "phr.",
+    "ipa": "/faɪnd aʊt/",
+    "ex": "We need to find out why the machine stopped.",
+    "exZh": "我们需要查明机器停下的原因。"
+  },
+  {
+    "en": "take part in",
+    "zh": "参加活动",
+    "pos": "phr.",
+    "ipa": "/teɪk pɑːt ɪn/",
+    "ex": "Many students take part in the school concert.",
+    "exZh": "许多学生参加学校音乐会。"
+  },
+  {
+    "en": "be good at",
+    "zh": "擅长",
+    "pos": "phr.",
+    "ipa": "/bi ɡʊd æt/",
+    "ex": "You do not have to be good at drawing to join the club.",
+    "exZh": "加入俱乐部不要求你擅长画画。"
+  },
+  {
+    "en": "be interested in",
+    "zh": "对某事感兴趣",
+    "pos": "phr.",
+    "ipa": "/bi ˈɪntrəstɪd ɪn/",
+    "ex": "She seems to be interested in space science.",
+    "exZh": "她似乎对空间科学感兴趣。"
+  },
+  {
+    "en": "look forward to",
+    "zh": "期待",
+    "pos": "phr.",
+    "ipa": "/lʊk ˈfɔːwəd tuː/",
+    "ex": "I look forward to seeing you again.",
+    "exZh": "我期待再次见到你。"
+  },
+  {
+    "en": "on time",
+    "zh": "准时",
+    "pos": "phr.",
+    "ipa": "/ɒn taɪm/",
+    "ex": "The bus arrived on time this morning.",
+    "exZh": "今天早上公交车准时到了。"
+  },
+  {
+    "en": "in time",
+    "zh": "及时",
+    "pos": "phr.",
+    "ipa": "/ɪn taɪm/",
+    "ex": "We reached the station in time to catch the train.",
+    "exZh": "我们及时赶到车站，赶上了火车。"
+  },
+  {
+    "en": "take advantage of",
+    "zh": "利用有利条件",
+    "pos": "phr.",
+    "ipa": "/teɪk ədˈvɑːntɪdʒ əv/",
+    "ex": "Students can take advantage of the free online library.",
+    "exZh": "学生可以利用免费的网上图书馆。"
+  },
+  {
+    "en": "make a difference",
+    "zh": "产生影响",
+    "pos": "phr.",
+    "ipa": "/meɪk ə ˈdɪfrəns/",
+    "ex": "A small change can make a difference to your daily routine.",
+    "exZh": "一个小改变就能影响你的日常生活。"
+  },
+  {
+    "en": "pay attention to",
+    "zh": "注意",
+    "pos": "phr.",
+    "ipa": "/peɪ əˈtenʃən tuː/",
+    "ex": "Pay attention to the instructions before you start.",
+    "exZh": "开始之前注意看说明。"
+  },
+  {
+    "en": "keep in touch",
+    "zh": "保持联系",
+    "pos": "phr.",
+    "ipa": "/kiːp ɪn tʌtʃ/",
+    "ex": "We keep in touch by email after graduation.",
+    "exZh": "毕业后我们通过电子邮件保持联系。"
+  },
+  {
+    "en": "come up with",
+    "zh": "想出办法",
+    "pos": "phr.",
+    "ipa": "/kʌm ʌp wɪð/",
+    "ex": "The team must come up with a better solution.",
+    "exZh": "团队必须想出更好的解决办法。"
+  },
+  {
+    "en": "run out of",
+    "zh": "用完，耗尽",
+    "pos": "phr.",
+    "ipa": "/rʌn aʊt əv/",
+    "ex": "We may run out of water before we reach the village.",
+    "exZh": "到达村庄前，我们可能就把水喝完了。"
+  },
+  {
+    "en": "put off",
+    "zh": "推迟",
+    "pos": "phr.",
+    "ipa": "/pʊt ɒf/",
+    "ex": "They decided to put off the meeting until Friday.",
+    "exZh": "他们决定把会议推迟到星期五。"
+  },
+  {
+    "en": "carry out",
+    "zh": "执行，实施",
+    "pos": "phr.",
+    "ipa": "/ˈkæri aʊt/",
+    "ex": "The students will carry out a simple experiment.",
+    "exZh": "学生们将进行一个简单实验。"
+  },
+  {
+    "en": "deal with",
+    "zh": "处理，应对",
+    "pos": "phr.",
+    "ipa": "/diːl wɪð/",
+    "ex": "We need more time to deal with this problem.",
+    "exZh": "我们需要更多时间处理这个问题。"
+  },
+  {
+    "en": "as a result",
+    "zh": "因此，结果",
+    "pos": "phr.",
+    "ipa": "/æz ə rɪˈzʌlt/",
+    "ex": "The road was closed; as a result, we arrived late.",
+    "exZh": "道路封闭了，因此我们迟到了。"
   }
 ]

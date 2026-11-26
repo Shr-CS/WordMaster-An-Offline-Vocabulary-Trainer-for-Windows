@@ -2,7 +2,7 @@
 
 # WordMaster — An Offline Vocabulary Trainer for Windows
 
-WordMaster is a desktop app built with Electron for learners who want one tool covering every stage of English study. It runs entirely offline, stores all data locally, and ships with 5,572 curated words across seven levels — every one of them with a worked example sentence and its Chinese translation.
+WordMaster is a desktop app built with Electron for learners who want one tool covering every stage of English study. It runs entirely offline, stores all data locally, and ships with 6,250 curated words across seven levels — every one of them with a worked example sentence and its Chinese translation.
 
 ![Home screen (dark theme)](docs/screenshots/01-home-dark.png)
 
@@ -19,7 +19,7 @@ WordMaster is a desktop app built with Electron for learners who want one tool c
 
 ## Features
 
-**Study scope, your choice.** Enable any combination of seven word banks — Primary (200), Junior High (220), Senior High (1,031), CET-4 (1,027), CET-6 (1,032), IELTS (1,030), TOEFL (1,032) — or use one-click presets for domestic curricula versus overseas exams. When several levels are active, new words are drawn from each in turn, so a session never drifts into a single bank.
+**Study scope, your choice.** Enable any combination of seven word banks — Primary (478), Junior High (514), Senior High (1,057), CET-4 (1,047), CET-6 (1,048), IELTS (1,052), TOEFL (1,054) — or use one-click presets for domestic curricula versus overseas exams. When several levels are active, new words are drawn from each in turn, so a session never drifts into a single bank.
 
 **Both directions.** Words can be tested English-to-Chinese, Chinese-to-English, or a random mix. Chinese-to-English questions reveal the spelling and phonetic transcription after you answer, so sound and meaning are learned together. Any word can also be read aloud by the system's speech engine.
 
@@ -55,7 +55,7 @@ npm test            # 36 assertions covering the review scheduler
 npm run capture     # renders the app, screenshots every screen, audits interactivity
 ```
 
-The scheduling logic carries 36 automated assertions, all 5,572 words are verified to yield four distinct options, and the interface is validated with real simulated mouse input — not scripted clicks that bypass hit testing.
+The scheduling logic carries 36 automated assertions, all 6,250 words are verified to yield four distinct options, and the interface is validated with real simulated mouse input — not scripted clicks that bypass hit testing.
 
 ## License
 
@@ -68,3 +68,9 @@ The Android APK and desktop app share spelling practice, groups of 5/10/20 words
 Learning progress is saved after each answer. Restarting or rebuilding a plan counts completed work toward the daily new-word and review limits. Wordbook search preserves focus and input composition.
 
 Download [WordMaster for Android](WordMaster-Android.apk), requiring Android 8.0 or newer.
+
+## Version 1.2
+
+The banks now contain 6,250 level-specific entries, including 678 new records covering 336 distinct words and phrases. This update fills everyday vocabulary gaps and adds study, environmental and academic expressions, each with phonetics, a part of speech and an original bilingual example. Existing entry IDs and learning progress are preserved. Words can appear in more than one level; these curated banks are not exhaustive official exam lists.
+
+Android hides desktop keyboard hints at every screen size, including landscape and tablets. Choice questions exclude distractors with the same Chinese meaning as the answer.

@@ -8214,5 +8214,165 @@
     "ipa": "/ˈzebrə/",
     "ex": "A zebra has black and white stripes.",
     "exZh": "斑马有黑白相间的条纹。"
+  },
+  {
+    "en": "take advantage of",
+    "zh": "利用有利条件",
+    "pos": "phr.",
+    "ipa": "/teɪk ədˈvɑːntɪdʒ əv/",
+    "ex": "Students can take advantage of the free online library.",
+    "exZh": "学生可以利用免费的网上图书馆。"
+  },
+  {
+    "en": "make a difference",
+    "zh": "产生影响",
+    "pos": "phr.",
+    "ipa": "/meɪk ə ˈdɪfrəns/",
+    "ex": "A small change can make a difference to your daily routine.",
+    "exZh": "一个小改变就能影响你的日常生活。"
+  },
+  {
+    "en": "pay attention to",
+    "zh": "注意",
+    "pos": "phr.",
+    "ipa": "/peɪ əˈtenʃən tuː/",
+    "ex": "Pay attention to the instructions before you start.",
+    "exZh": "开始之前注意看说明。"
+  },
+  {
+    "en": "keep in touch",
+    "zh": "保持联系",
+    "pos": "phr.",
+    "ipa": "/kiːp ɪn tʌtʃ/",
+    "ex": "We keep in touch by email after graduation.",
+    "exZh": "毕业后我们通过电子邮件保持联系。"
+  },
+  {
+    "en": "come up with",
+    "zh": "想出办法",
+    "pos": "phr.",
+    "ipa": "/kʌm ʌp wɪð/",
+    "ex": "The team must come up with a better solution.",
+    "exZh": "团队必须想出更好的解决办法。"
+  },
+  {
+    "en": "run out of",
+    "zh": "用完，耗尽",
+    "pos": "phr.",
+    "ipa": "/rʌn aʊt əv/",
+    "ex": "We may run out of water before we reach the village.",
+    "exZh": "到达村庄前，我们可能就把水喝完了。"
+  },
+  {
+    "en": "put off",
+    "zh": "推迟",
+    "pos": "phr.",
+    "ipa": "/pʊt ɒf/",
+    "ex": "They decided to put off the meeting until Friday.",
+    "exZh": "他们决定把会议推迟到星期五。"
+  },
+  {
+    "en": "carry out",
+    "zh": "执行，实施",
+    "pos": "phr.",
+    "ipa": "/ˈkæri aʊt/",
+    "ex": "The students will carry out a simple experiment.",
+    "exZh": "学生们将进行一个简单实验。"
+  },
+  {
+    "en": "deal with",
+    "zh": "处理，应对",
+    "pos": "phr.",
+    "ipa": "/diːl wɪð/",
+    "ex": "We need more time to deal with this problem.",
+    "exZh": "我们需要更多时间处理这个问题。"
+  },
+  {
+    "en": "as a result",
+    "zh": "因此，结果",
+    "pos": "phr.",
+    "ipa": "/æz ə rɪˈzʌlt/",
+    "ex": "The road was closed; as a result, we arrived late.",
+    "exZh": "道路封闭了，因此我们迟到了。"
+  },
+  {
+    "en": "in addition",
+    "zh": "此外",
+    "pos": "phr.",
+    "ipa": "/ɪn əˈdɪʃən/",
+    "ex": "The flat has two bedrooms; in addition, there is a small study.",
+    "exZh": "这套公寓有两间卧室，此外还有一间小书房。"
+  },
+  {
+    "en": "in contrast",
+    "zh": "相比之下",
+    "pos": "phr.",
+    "ipa": "/ɪn ˈkɒntrɑːst/",
+    "ex": "The first room was dark; in contrast, the second was full of light.",
+    "exZh": "第一个房间很暗，相比之下，第二个房间光线充足。"
+  },
+  {
+    "en": "in terms of",
+    "zh": "在某方面",
+    "pos": "phr.",
+    "ipa": "/ɪn tɜːmz əv/",
+    "ex": "The two plans differ in terms of cost.",
+    "exZh": "这两个计划在成本方面有所不同。"
+  },
+  {
+    "en": "on the contrary",
+    "zh": "恰恰相反",
+    "pos": "phr.",
+    "ipa": "/ɒn ðə ˈkɒntrəri/",
+    "ex": "The task is not easy; on the contrary, it requires careful preparation.",
+    "exZh": "这项任务并不容易，恰恰相反，它需要认真准备。"
+  },
+  {
+    "en": "regardless of",
+    "zh": "不管，不顾",
+    "pos": "phr.",
+    "ipa": "/rɪˈɡɑːdləs əv/",
+    "ex": "The service is available to everyone regardless of age.",
+    "exZh": "这项服务向所有人开放，不限年龄。"
+  },
+  {
+    "en": "in accordance with",
+    "zh": "按照，依照",
+    "pos": "phr.",
+    "ipa": "/ɪn əˈkɔːdəns wɪð/",
+    "ex": "The samples were stored in accordance with the safety rules.",
+    "exZh": "样品按照安全规定储存。"
+  },
+  {
+    "en": "give rise to",
+    "zh": "引发，导致",
+    "pos": "phr.",
+    "ipa": "/ɡɪv raɪz tuː/",
+    "ex": "Rapid growth can give rise to new housing problems.",
+    "exZh": "快速增长可能引发新的住房问题。"
+  },
+  {
+    "en": "take into account",
+    "zh": "将某事考虑在内",
+    "pos": "phr.",
+    "ipa": "/teɪk ˈɪntuː əˈkaʊnt/",
+    "ex": "The plan must take into account the needs of older residents.",
+    "exZh": "这项计划必须考虑老年居民的需求。"
+  },
+  {
+    "en": "keep pace with",
+    "zh": "跟上步伐",
+    "pos": "phr.",
+    "ipa": "/kiːp peɪs wɪð/",
+    "ex": "Schools need resources to keep pace with technological change.",
+    "exZh": "学校需要资源来跟上技术变化。"
+  },
+  {
+    "en": "in the long run",
+    "zh": "从长远来看",
+    "pos": "phr.",
+    "ipa": "/ɪn ðə lɒŋ rʌn/",
+    "ex": "Regular maintenance saves money in the long run.",
+    "exZh": "定期维护从长远来看能省钱。"
   }
 ]

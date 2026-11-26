@@ -750,7 +750,7 @@ window.WM = window.WM || {};
     const aboutCard = h('div', { class: 'card' },
       h('div', { class: 'card-title' }, icon('i-bolt'), '关于'),
       h('div', { class: 'kv' },
-        kvItem('应用版本', '1.1.0'),
+        kvItem('应用版本', '1.2.0'),
         kvItem('内置词库', `${bank.totalWords()} 词 / ${levels.length} 个等级`),
         kvItem('运行环境', WM.app.info ? `${WM.app.info.platform === 'Android' ? 'Android' : WM.app.info.electron ? 'Electron ' + WM.app.info.electron : '浏览器'} ${WM.app.info.chrome ? '· Chromium ' + WM.app.info.chrome : ''}` : '-')),
       h('p', { class: 'hint', style: { marginTop: '14px' }, text: '背单词 WordMaster · 离线可用，学习数据保存在当前设备上。' }));

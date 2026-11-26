@@ -1,0 +1,2226 @@
+[
+  {
+    "en": "afternoon",
+    "zh": "下午",
+    "pos": "n.",
+    "ipa": "/ˌɑːftəˈnuːn/",
+    "ex": "We play football in the afternoon.",
+    "exZh": "我们下午踢足球。"
+  },
+  {
+    "en": "evening",
+    "zh": "傍晚，晚上",
+    "pos": "n.",
+    "ipa": "/ˈiːvnɪŋ/",
+    "ex": "She reads a book every evening.",
+    "exZh": "她每天晚上看书。"
+  },
+  {
+    "en": "morning",
+    "zh": "早晨",
+    "pos": "n.",
+    "ipa": "/ˈmɔːnɪŋ/",
+    "ex": "I drink milk every morning.",
+    "exZh": "我每天早晨喝牛奶。"
+  },
+  {
+    "en": "night",
+    "zh": "夜晚",
+    "pos": "n.",
+    "ipa": "/naɪt/",
+    "ex": "We can see stars at night.",
+    "exZh": "我们晚上能看到星星。"
+  },
+  {
+    "en": "minute",
+    "zh": "分钟",
+    "pos": "n.",
+    "ipa": "/ˈmɪnɪt/",
+    "ex": "Please wait for one minute.",
+    "exZh": "请等一分钟。"
+  },
+  {
+    "en": "hour",
+    "zh": "小时",
+    "pos": "n.",
+    "ipa": "/ˈaʊə/",
+    "ex": "The lesson lasts for an hour.",
+    "exZh": "这节课持续一个小时。"
+  },
+  {
+    "en": "week",
+    "zh": "星期，周",
+    "pos": "n.",
+    "ipa": "/wiːk/",
+    "ex": "There are seven days in a week.",
+    "exZh": "一周有七天。"
+  },
+  {
+    "en": "month",
+    "zh": "月份",
+    "pos": "n.",
+    "ipa": "/mʌnθ/",
+    "ex": "My birthday is next month.",
+    "exZh": "我的生日在下个月。"
+  },
+  {
+    "en": "year",
+    "zh": "年",
+    "pos": "n.",
+    "ipa": "/jɪə/",
+    "ex": "We visit our cousins every year.",
+    "exZh": "我们每年都看望表兄弟姐妹。"
+  },
+  {
+    "en": "Monday",
+    "zh": "星期一",
+    "pos": "n.",
+    "ipa": "/ˈmʌndeɪ/",
+    "ex": "We have a music lesson on Monday.",
+    "exZh": "我们星期一有音乐课。"
+  },
+  {
+    "en": "Tuesday",
+    "zh": "星期二",
+    "pos": "n.",
+    "ipa": "/ˈtjuːzdeɪ/",
+    "ex": "I go swimming on Tuesday.",
+    "exZh": "我星期二去游泳。"
+  },
+  {
+    "en": "Wednesday",
+    "zh": "星期三",
+    "pos": "n.",
+    "ipa": "/ˈwenzdeɪ/",
+    "ex": "The library closes early on Wednesday.",
+    "exZh": "图书馆星期三提早关门。"
+  },
+  {
+    "en": "Thursday",
+    "zh": "星期四",
+    "pos": "n.",
+    "ipa": "/ˈθɜːzdeɪ/",
+    "ex": "Our class has a test on Thursday.",
+    "exZh": "我们班星期四有测验。"
+  },
+  {
+    "en": "Friday",
+    "zh": "星期五",
+    "pos": "n.",
+    "ipa": "/ˈfraɪdeɪ/",
+    "ex": "We clean the classroom every Friday.",
+    "exZh": "我们每个星期五打扫教室。"
+  },
+  {
+    "en": "Saturday",
+    "zh": "星期六",
+    "pos": "n.",
+    "ipa": "/ˈsætədeɪ/",
+    "ex": "My family goes shopping on Saturday.",
+    "exZh": "我家星期六去购物。"
+  },
+  {
+    "en": "Sunday",
+    "zh": "星期日",
+    "pos": "n.",
+    "ipa": "/ˈsʌndeɪ/",
+    "ex": "We visit Grandma on Sunday.",
+    "exZh": "我们星期日去看望奶奶。"
+  },
+  {
+    "en": "January",
+    "zh": "一月",
+    "pos": "n.",
+    "ipa": "/ˈdʒænjuəri/",
+    "ex": "January is the first month of the year.",
+    "exZh": "一月是一年的第一个月。"
+  },
+  {
+    "en": "February",
+    "zh": "二月",
+    "pos": "n.",
+    "ipa": "/ˈfebruəri/",
+    "ex": "My sister was born in February.",
+    "exZh": "我妹妹出生于二月。"
+  },
+  {
+    "en": "March",
+    "zh": "三月",
+    "pos": "n.",
+    "ipa": "/mɑːtʃ/",
+    "ex": "The new library opens in March.",
+    "exZh": "新图书馆三月开放。"
+  },
+  {
+    "en": "April",
+    "zh": "四月",
+    "pos": "n.",
+    "ipa": "/ˈeɪprəl/",
+    "ex": "We plant flowers in April.",
+    "exZh": "我们四月种花。"
+  },
+  {
+    "en": "May",
+    "zh": "五月",
+    "pos": "n.",
+    "ipa": "/meɪ/",
+    "ex": "Our school trip is in May.",
+    "exZh": "我们学校的郊游在五月。"
+  },
+  {
+    "en": "June",
+    "zh": "六月",
+    "pos": "n.",
+    "ipa": "/dʒuːn/",
+    "ex": "The swimming pool opens in June.",
+    "exZh": "游泳池六月开放。"
+  },
+  {
+    "en": "July",
+    "zh": "七月",
+    "pos": "n.",
+    "ipa": "/dʒuˈlaɪ/",
+    "ex": "We are going to the beach in July.",
+    "exZh": "我们打算七月去海边。"
+  },
+  {
+    "en": "August",
+    "zh": "八月",
+    "pos": "n.",
+    "ipa": "/ˈɔːɡəst/",
+    "ex": "My grandparents visit us in August.",
+    "exZh": "我祖父母八月来看我们。"
+  },
+  {
+    "en": "September",
+    "zh": "九月",
+    "pos": "n.",
+    "ipa": "/sepˈtembə/",
+    "ex": "Our new school year begins in September.",
+    "exZh": "我们的新学年九月开始。"
+  },
+  {
+    "en": "October",
+    "zh": "十月",
+    "pos": "n.",
+    "ipa": "/ɒkˈtəʊbə/",
+    "ex": "The leaves turn yellow in October.",
+    "exZh": "树叶十月变黄。"
+  },
+  {
+    "en": "November",
+    "zh": "十一月",
+    "pos": "n.",
+    "ipa": "/nəʊˈvembə/",
+    "ex": "It often gets cold here in November.",
+    "exZh": "这里十一月通常会变冷。"
+  },
+  {
+    "en": "December",
+    "zh": "十二月",
+    "pos": "n.",
+    "ipa": "/dɪˈsembə/",
+    "ex": "December is the last month of the year.",
+    "exZh": "十二月是一年的最后一个月。"
+  },
+  {
+    "en": "spring",
+    "zh": "春天",
+    "pos": "n.",
+    "ipa": "/sprɪŋ/",
+    "ex": "Many flowers open in spring.",
+    "exZh": "许多花在春天开放。"
+  },
+  {
+    "en": "summer",
+    "zh": "夏天",
+    "pos": "n.",
+    "ipa": "/ˈsʌmə/",
+    "ex": "We eat cold fruit in summer.",
+    "exZh": "我们夏天吃冰凉的水果。"
+  },
+  {
+    "en": "autumn",
+    "zh": "秋天",
+    "pos": "n.",
+    "ipa": "/ˈɔːtəm/",
+    "ex": "The air feels cool in autumn.",
+    "exZh": "秋天空气凉爽。"
+  },
+  {
+    "en": "winter",
+    "zh": "冬天",
+    "pos": "n.",
+    "ipa": "/ˈwɪntə/",
+    "ex": "I wear a warm coat in winter.",
+    "exZh": "我冬天穿暖和的外套。"
+  },
+  {
+    "en": "season",
+    "zh": "季节",
+    "pos": "n.",
+    "ipa": "/ˈsiːzən/",
+    "ex": "Which season do you like best?",
+    "exZh": "你最喜欢哪个季节？"
+  },
+  {
+    "en": "day",
+    "zh": "一天，白天",
+    "pos": "n.",
+    "ipa": "/deɪ/",
+    "ex": "We spend one day in the city.",
+    "exZh": "我们在这座城市待一天。"
+  },
+  {
+    "en": "time",
+    "zh": "时间",
+    "pos": "n.",
+    "ipa": "/taɪm/",
+    "ex": "What time does the lesson start?",
+    "exZh": "这节课几点开始？"
+  },
+  {
+    "en": "clock",
+    "zh": "时钟",
+    "pos": "n.",
+    "ipa": "/klɒk/",
+    "ex": "There is a clock on the wall.",
+    "exZh": "墙上有一个时钟。"
+  },
+  {
+    "en": "watch",
+    "zh": "手表",
+    "pos": "n.",
+    "ipa": "/wɒtʃ/",
+    "ex": "My watch is ten minutes slow.",
+    "exZh": "我的手表慢了十分钟。"
+  },
+  {
+    "en": "early",
+    "zh": "提早",
+    "pos": "adv.",
+    "ipa": "/ˈɜːli/",
+    "ex": "We arrive early for the concert.",
+    "exZh": "我们提早到达音乐会现场。"
+  },
+  {
+    "en": "late",
+    "zh": "迟到的，晚的",
+    "pos": "adj.",
+    "ipa": "/leɪt/",
+    "ex": "He is late for school today.",
+    "exZh": "他今天上学迟到了。"
+  },
+  {
+    "en": "yesterday",
+    "zh": "昨天",
+    "pos": "adv.",
+    "ipa": "/ˈjestədeɪ/",
+    "ex": "I met your brother yesterday.",
+    "exZh": "我昨天遇见了你哥哥。"
+  },
+  {
+    "en": "tonight",
+    "zh": "今晚",
+    "pos": "adv.",
+    "ipa": "/təˈnaɪt/",
+    "ex": "We are having noodles tonight.",
+    "exZh": "我们今晚吃面条。"
+  },
+  {
+    "en": "thirteen",
+    "zh": "十三",
+    "pos": "num.",
+    "ipa": "/ˌθɜːˈtiːn/",
+    "ex": "There are thirteen books on the shelf.",
+    "exZh": "书架上有十三本书。"
+  },
+  {
+    "en": "fourteen",
+    "zh": "十四",
+    "pos": "num.",
+    "ipa": "/ˌfɔːˈtiːn/",
+    "ex": "My brother is fourteen years old.",
+    "exZh": "我哥哥十四岁。"
+  },
+  {
+    "en": "fifteen",
+    "zh": "十五",
+    "pos": "num.",
+    "ipa": "/ˌfɪfˈtiːn/",
+    "ex": "We need fifteen chairs for the meeting.",
+    "exZh": "我们开会需要十五把椅子。"
+  },
+  {
+    "en": "sixteen",
+    "zh": "十六",
+    "pos": "num.",
+    "ipa": "/ˌsɪkˈstiːn/",
+    "ex": "She bought sixteen apples.",
+    "exZh": "她买了十六个苹果。"
+  },
+  {
+    "en": "seventeen",
+    "zh": "十七",
+    "pos": "num.",
+    "ipa": "/ˌsevənˈtiːn/",
+    "ex": "Seventeen students joined the club.",
+    "exZh": "十七名学生加入了俱乐部。"
+  },
+  {
+    "en": "eighteen",
+    "zh": "十八",
+    "pos": "num.",
+    "ipa": "/ˌeɪˈtiːn/",
+    "ex": "The box holds eighteen eggs.",
+    "exZh": "这个盒子能装十八个鸡蛋。"
+  },
+  {
+    "en": "nineteen",
+    "zh": "十九",
+    "pos": "num.",
+    "ipa": "/ˌnaɪnˈtiːn/",
+    "ex": "We counted nineteen birds in the tree.",
+    "exZh": "我们数了树上的十九只鸟。"
+  },
+  {
+    "en": "thirty",
+    "zh": "三十",
+    "pos": "num.",
+    "ipa": "/ˈθɜːti/",
+    "ex": "The journey takes thirty minutes.",
+    "exZh": "这段路程需要三十分钟。"
+  },
+  {
+    "en": "forty",
+    "zh": "四十",
+    "pos": "num.",
+    "ipa": "/ˈfɔːti/",
+    "ex": "There are forty children in the room.",
+    "exZh": "房间里有四十个孩子。"
+  },
+  {
+    "en": "fifty",
+    "zh": "五十",
+    "pos": "num.",
+    "ipa": "/ˈfɪfti/",
+    "ex": "This bag costs fifty yuan.",
+    "exZh": "这个包五十元。"
+  },
+  {
+    "en": "sixty",
+    "zh": "六十",
+    "pos": "num.",
+    "ipa": "/ˈsɪksti/",
+    "ex": "There are sixty seconds in a minute.",
+    "exZh": "一分钟有六十秒。"
+  },
+  {
+    "en": "seventy",
+    "zh": "七十",
+    "pos": "num.",
+    "ipa": "/ˈsevənti/",
+    "ex": "My grandfather is seventy years old.",
+    "exZh": "我爷爷七十岁。"
+  },
+  {
+    "en": "eighty",
+    "zh": "八十",
+    "pos": "num.",
+    "ipa": "/ˈeɪti/",
+    "ex": "The bus can carry eighty people.",
+    "exZh": "这辆公交车能载八十个人。"
+  },
+  {
+    "en": "ninety",
+    "zh": "九十",
+    "pos": "num.",
+    "ipa": "/ˈnaɪnti/",
+    "ex": "The film lasts ninety minutes.",
+    "exZh": "这部电影时长九十分钟。"
+  },
+  {
+    "en": "thousand",
+    "zh": "一千",
+    "pos": "num.",
+    "ipa": "/ˈθaʊzənd/",
+    "ex": "The school has a thousand students.",
+    "exZh": "这所学校有一千名学生。"
+  },
+  {
+    "en": "first",
+    "zh": "第一",
+    "pos": "num.",
+    "ipa": "/fɜːst/",
+    "ex": "This is my first visit to Beijing.",
+    "exZh": "这是我第一次来北京。"
+  },
+  {
+    "en": "second",
+    "zh": "第二",
+    "pos": "num.",
+    "ipa": "/ˈsekənd/",
+    "ex": "Our classroom is on the second floor.",
+    "exZh": "我们的教室在二楼。"
+  },
+  {
+    "en": "third",
+    "zh": "第三",
+    "pos": "num.",
+    "ipa": "/θɜːd/",
+    "ex": "Take the third turning on the left.",
+    "exZh": "在第三个路口左转。"
+  },
+  {
+    "en": "number",
+    "zh": "数字，号码",
+    "pos": "n.",
+    "ipa": "/ˈnʌmbə/",
+    "ex": "Please write your phone number here.",
+    "exZh": "请在这里写下你的电话号码。"
+  },
+  {
+    "en": "bag",
+    "zh": "包，袋子",
+    "pos": "n.",
+    "ipa": "/bæɡ/",
+    "ex": "Put your books in the bag.",
+    "exZh": "把你的书放进包里。"
+  },
+  {
+    "en": "box",
+    "zh": "盒子",
+    "pos": "n.",
+    "ipa": "/bɒks/",
+    "ex": "The shoes are in a blue box.",
+    "exZh": "鞋子在一个蓝色盒子里。"
+  },
+  {
+    "en": "bottle",
+    "zh": "瓶子",
+    "pos": "n.",
+    "ipa": "/ˈbɒtəl/",
+    "ex": "Take a bottle of water with you.",
+    "exZh": "带上一瓶水。"
+  },
+  {
+    "en": "cup",
+    "zh": "杯子",
+    "pos": "n.",
+    "ipa": "/kʌp/",
+    "ex": "Would you like a cup of tea?",
+    "exZh": "你想喝杯茶吗？"
+  },
+  {
+    "en": "plate",
+    "zh": "盘子",
+    "pos": "n.",
+    "ipa": "/pleɪt/",
+    "ex": "Put the cake on a clean plate.",
+    "exZh": "把蛋糕放在干净的盘子里。"
+  },
+  {
+    "en": "bowl",
+    "zh": "碗",
+    "pos": "n.",
+    "ipa": "/bəʊl/",
+    "ex": "She ate a bowl of soup.",
+    "exZh": "她喝了一碗汤。"
+  },
+  {
+    "en": "spoon",
+    "zh": "勺子",
+    "pos": "n.",
+    "ipa": "/spuːn/",
+    "ex": "Use a spoon to eat the soup.",
+    "exZh": "用勺子喝汤。"
+  },
+  {
+    "en": "fork",
+    "zh": "叉子",
+    "pos": "n.",
+    "ipa": "/fɔːk/",
+    "ex": "I need a fork for my salad.",
+    "exZh": "我吃沙拉需要一把叉子。"
+  },
+  {
+    "en": "knife",
+    "zh": "刀",
+    "pos": "n.",
+    "ipa": "/naɪf/",
+    "ex": "This knife is too sharp for a child.",
+    "exZh": "这把刀对孩子来说太锋利了。"
+  },
+  {
+    "en": "chopsticks",
+    "zh": "筷子",
+    "pos": "n.",
+    "ipa": "/ˈtʃɒpstɪks/",
+    "ex": "She can eat rice with chopsticks.",
+    "exZh": "她会用筷子吃米饭。"
+  },
+  {
+    "en": "kitchen",
+    "zh": "厨房",
+    "pos": "n.",
+    "ipa": "/ˈkɪtʃɪn/",
+    "ex": "Dad is cooking in the kitchen.",
+    "exZh": "爸爸正在厨房做饭。"
+  },
+  {
+    "en": "bedroom",
+    "zh": "卧室",
+    "pos": "n.",
+    "ipa": "/ˈbedruːm/",
+    "ex": "My bedroom has a small window.",
+    "exZh": "我的卧室有一扇小窗。"
+  },
+  {
+    "en": "bathroom",
+    "zh": "浴室，卫生间",
+    "pos": "n.",
+    "ipa": "/ˈbɑːθruːm/",
+    "ex": "Wash your hands in the bathroom.",
+    "exZh": "去卫生间洗手。"
+  },
+  {
+    "en": "door",
+    "zh": "门",
+    "pos": "n.",
+    "ipa": "/dɔː/",
+    "ex": "Please close the door quietly.",
+    "exZh": "请轻轻关门。"
+  },
+  {
+    "en": "window",
+    "zh": "窗户",
+    "pos": "n.",
+    "ipa": "/ˈwɪndəʊ/",
+    "ex": "Open the window for some fresh air.",
+    "exZh": "打开窗户透透气。"
+  },
+  {
+    "en": "wall",
+    "zh": "墙",
+    "pos": "n.",
+    "ipa": "/wɔːl/",
+    "ex": "She hung a picture on the wall.",
+    "exZh": "她在墙上挂了一幅画。"
+  },
+  {
+    "en": "floor",
+    "zh": "地板，楼层",
+    "pos": "n.",
+    "ipa": "/flɔː/",
+    "ex": "The children are sitting on the floor.",
+    "exZh": "孩子们坐在地板上。"
+  },
+  {
+    "en": "house",
+    "zh": "房屋",
+    "pos": "n.",
+    "ipa": "/haʊs/",
+    "ex": "They live in a small house near the river.",
+    "exZh": "他们住在河边的一座小房子里。"
+  },
+  {
+    "en": "home",
+    "zh": "家",
+    "pos": "n.",
+    "ipa": "/həʊm/",
+    "ex": "Their home is near the school.",
+    "exZh": "他们的家在学校附近。"
+  },
+  {
+    "en": "bed",
+    "zh": "床",
+    "pos": "n.",
+    "ipa": "/bed/",
+    "ex": "The cat is sleeping on my bed.",
+    "exZh": "猫正睡在我的床上。"
+  },
+  {
+    "en": "sofa",
+    "zh": "沙发",
+    "pos": "n.",
+    "ipa": "/ˈsəʊfə/",
+    "ex": "Grandma is sitting on the sofa.",
+    "exZh": "奶奶坐在沙发上。"
+  },
+  {
+    "en": "lamp",
+    "zh": "灯",
+    "pos": "n.",
+    "ipa": "/læmp/",
+    "ex": "Turn on the lamp so we can read.",
+    "exZh": "把灯打开，我们好看书。"
+  },
+  {
+    "en": "mirror",
+    "zh": "镜子",
+    "pos": "n.",
+    "ipa": "/ˈmɪrə/",
+    "ex": "He looked at his face in the mirror.",
+    "exZh": "他看着镜子里的脸。"
+  },
+  {
+    "en": "television",
+    "zh": "电视机",
+    "pos": "n.",
+    "ipa": "/ˈtelɪvɪʒən/",
+    "ex": "There is a television in the living room.",
+    "exZh": "客厅里有一台电视机。"
+  },
+  {
+    "en": "phone",
+    "zh": "电话",
+    "pos": "n.",
+    "ipa": "/fəʊn/",
+    "ex": "My phone is in my bag.",
+    "exZh": "我的电话在包里。"
+  },
+  {
+    "en": "toy",
+    "zh": "玩具",
+    "pos": "n.",
+    "ipa": "/tɔɪ/",
+    "ex": "The baby is playing with a soft toy.",
+    "exZh": "宝宝正在玩一个软玩具。"
+  },
+  {
+    "en": "ball",
+    "zh": "球",
+    "pos": "n.",
+    "ipa": "/bɔːl/",
+    "ex": "Throw the ball to me.",
+    "exZh": "把球扔给我。"
+  },
+  {
+    "en": "balloon",
+    "zh": "气球",
+    "pos": "n.",
+    "ipa": "/bəˈluːn/",
+    "ex": "The red balloon flew into the sky.",
+    "exZh": "红气球飞上了天空。"
+  },
+  {
+    "en": "kite",
+    "zh": "风筝",
+    "pos": "n.",
+    "ipa": "/kaɪt/",
+    "ex": "We fly a kite in the park.",
+    "exZh": "我们在公园放风筝。"
+  },
+  {
+    "en": "bicycle",
+    "zh": "自行车",
+    "pos": "n.",
+    "ipa": "/ˈbaɪsɪkəl/",
+    "ex": "I ride my bicycle to school.",
+    "exZh": "我骑自行车上学。"
+  },
+  {
+    "en": "bus",
+    "zh": "公共汽车",
+    "pos": "n.",
+    "ipa": "/bʌs/",
+    "ex": "The bus stops outside our school.",
+    "exZh": "公交车停在我们学校外面。"
+  },
+  {
+    "en": "car",
+    "zh": "汽车",
+    "pos": "n.",
+    "ipa": "/kɑː/",
+    "ex": "Our car is parked under the tree.",
+    "exZh": "我们的汽车停在树下。"
+  },
+  {
+    "en": "train",
+    "zh": "火车",
+    "pos": "n.",
+    "ipa": "/treɪn/",
+    "ex": "We took a train to Shanghai.",
+    "exZh": "我们乘火车去了上海。"
+  },
+  {
+    "en": "plane",
+    "zh": "飞机",
+    "pos": "n.",
+    "ipa": "/pleɪn/",
+    "ex": "The plane leaves at nine in the morning.",
+    "exZh": "飞机早上九点起飞。"
+  },
+  {
+    "en": "boat",
+    "zh": "小船",
+    "pos": "n.",
+    "ipa": "/bəʊt/",
+    "ex": "They crossed the lake in a small boat.",
+    "exZh": "他们乘小船穿过了湖。"
+  },
+  {
+    "en": "ship",
+    "zh": "轮船",
+    "pos": "n.",
+    "ipa": "/ʃɪp/",
+    "ex": "The ship carries goods across the ocean.",
+    "exZh": "这艘轮船运货穿越海洋。"
+  },
+  {
+    "en": "taxi",
+    "zh": "出租车",
+    "pos": "n.",
+    "ipa": "/ˈtæksi/",
+    "ex": "We took a taxi to the hospital.",
+    "exZh": "我们乘出租车去了医院。"
+  },
+  {
+    "en": "subway",
+    "zh": "地铁",
+    "pos": "n.",
+    "ipa": "/ˈsʌbweɪ/",
+    "ex": "The subway is faster than the bus.",
+    "exZh": "地铁比公交车快。"
+  },
+  {
+    "en": "station",
+    "zh": "车站",
+    "pos": "n.",
+    "ipa": "/ˈsteɪʃən/",
+    "ex": "I will meet you at the station.",
+    "exZh": "我会在车站接你。"
+  },
+  {
+    "en": "airport",
+    "zh": "机场",
+    "pos": "n.",
+    "ipa": "/ˈeəpɔːt/",
+    "ex": "We arrived at the airport two hours early.",
+    "exZh": "我们提前两小时到达了机场。"
+  },
+  {
+    "en": "street",
+    "zh": "街道",
+    "pos": "n.",
+    "ipa": "/striːt/",
+    "ex": "There is a bakery on this street.",
+    "exZh": "这条街上有一家面包店。"
+  },
+  {
+    "en": "left",
+    "zh": "左边",
+    "pos": "n.",
+    "ipa": "/left/",
+    "ex": "The library is on your left.",
+    "exZh": "图书馆在你的左边。"
+  },
+  {
+    "en": "right",
+    "zh": "右边",
+    "pos": "n.",
+    "ipa": "/raɪt/",
+    "ex": "Look to your right before you cross.",
+    "exZh": "过马路前向右看。"
+  },
+  {
+    "en": "behind",
+    "zh": "在后面",
+    "pos": "prep.",
+    "ipa": "/bɪˈhaɪnd/",
+    "ex": "The dog is hiding behind the door.",
+    "exZh": "狗躲在门后。"
+  },
+  {
+    "en": "between",
+    "zh": "在两者之间",
+    "pos": "prep.",
+    "ipa": "/bɪˈtwiːn/",
+    "ex": "The bank is between the shop and the school.",
+    "exZh": "银行在商店和学校之间。"
+  },
+  {
+    "en": "before",
+    "zh": "在之前",
+    "pos": "prep.",
+    "ipa": "/bɪˈfɔː/",
+    "ex": "Wash your hands before lunch.",
+    "exZh": "午饭前洗手。"
+  },
+  {
+    "en": "after",
+    "zh": "在之后",
+    "pos": "prep.",
+    "ipa": "/ˈɑːftə/",
+    "ex": "We play outside after school.",
+    "exZh": "我们放学后在外面玩。"
+  },
+  {
+    "en": "without",
+    "zh": "没有，不带",
+    "pos": "prep.",
+    "ipa": "/wɪˈðaʊt/",
+    "ex": "He left without his coat.",
+    "exZh": "他没带外套就走了。"
+  },
+  {
+    "en": "because",
+    "zh": "因为",
+    "pos": "conj.",
+    "ipa": "/bɪˈkɒz/",
+    "ex": "We stayed inside because it was raining.",
+    "exZh": "因为下雨，我们待在屋里。"
+  },
+  {
+    "en": "but",
+    "zh": "但是",
+    "pos": "conj.",
+    "ipa": "/bʌt/",
+    "ex": "The bag is small but heavy.",
+    "exZh": "这个包小，但是很重。"
+  },
+  {
+    "en": "never",
+    "zh": "从不",
+    "pos": "adv.",
+    "ipa": "/ˈnevə/",
+    "ex": "She never eats breakfast in a hurry.",
+    "exZh": "她吃早饭从不匆忙。"
+  },
+  {
+    "en": "again",
+    "zh": "再次",
+    "pos": "adv.",
+    "ipa": "/əˈɡen/",
+    "ex": "Please read the sentence again.",
+    "exZh": "请再读一遍这个句子。"
+  },
+  {
+    "en": "cousin",
+    "zh": "堂或表兄弟姐妹",
+    "pos": "n.",
+    "ipa": "/ˈkʌzən/",
+    "ex": "My cousin is the same age as me.",
+    "exZh": "我的表弟和我同岁。"
+  },
+  {
+    "en": "parent",
+    "zh": "父亲或母亲",
+    "pos": "n.",
+    "ipa": "/ˈpeərənt/",
+    "ex": "Each child must come with a parent.",
+    "exZh": "每个孩子都必须由一位家长陪同。"
+  },
+  {
+    "en": "son",
+    "zh": "儿子",
+    "pos": "n.",
+    "ipa": "/sʌn/",
+    "ex": "Their son is learning to swim.",
+    "exZh": "他们的儿子正在学游泳。"
+  },
+  {
+    "en": "daughter",
+    "zh": "女儿",
+    "pos": "n.",
+    "ipa": "/ˈdɔːtə/",
+    "ex": "Her daughter likes drawing animals.",
+    "exZh": "她女儿喜欢画动物。"
+  },
+  {
+    "en": "wife",
+    "zh": "妻子",
+    "pos": "n.",
+    "ipa": "/waɪf/",
+    "ex": "His wife works at the local hospital.",
+    "exZh": "他妻子在当地医院工作。"
+  },
+  {
+    "en": "man",
+    "zh": "成年男子",
+    "pos": "n.",
+    "ipa": "/mæn/",
+    "ex": "The man in the blue coat is my uncle.",
+    "exZh": "穿蓝外套的男子是我叔叔。"
+  },
+  {
+    "en": "woman",
+    "zh": "成年女子",
+    "pos": "n.",
+    "ipa": "/ˈwʊmən/",
+    "ex": "The woman at the door is our new teacher.",
+    "exZh": "门口的女士是我们的新老师。"
+  },
+  {
+    "en": "people",
+    "zh": "人们",
+    "pos": "n.",
+    "ipa": "/ˈpiːpəl/",
+    "ex": "Many people are waiting for the bus.",
+    "exZh": "许多人在等公交车。"
+  },
+  {
+    "en": "person",
+    "zh": "人，个人",
+    "pos": "n.",
+    "ipa": "/ˈpɜːsən/",
+    "ex": "Only one person can enter at a time.",
+    "exZh": "每次只能进一个人。"
+  },
+  {
+    "en": "nurse",
+    "zh": "护士",
+    "pos": "n.",
+    "ipa": "/nɜːs/",
+    "ex": "The nurse helped the boy sit down.",
+    "exZh": "护士帮助男孩坐下。"
+  },
+  {
+    "en": "farmer",
+    "zh": "农民",
+    "pos": "n.",
+    "ipa": "/ˈfɑːmə/",
+    "ex": "The farmer grows rice and vegetables.",
+    "exZh": "这位农民种水稻和蔬菜。"
+  },
+  {
+    "en": "driver",
+    "zh": "司机",
+    "pos": "n.",
+    "ipa": "/ˈdraɪvə/",
+    "ex": "The driver stopped at the red light.",
+    "exZh": "司机在红灯前停了下来。"
+  },
+  {
+    "en": "worker",
+    "zh": "工人",
+    "pos": "n.",
+    "ipa": "/ˈwɜːkə/",
+    "ex": "The worker wears a helmet at the factory.",
+    "exZh": "这名工人在工厂戴着安全帽。"
+  },
+  {
+    "en": "artist",
+    "zh": "艺术家",
+    "pos": "n.",
+    "ipa": "/ˈɑːtɪst/",
+    "ex": "The artist painted a picture of the sea.",
+    "exZh": "这位艺术家画了一幅海景画。"
+  },
+  {
+    "en": "singer",
+    "zh": "歌手",
+    "pos": "n.",
+    "ipa": "/ˈsɪŋə/",
+    "ex": "The singer thanked everyone after the show.",
+    "exZh": "演出后歌手感谢了大家。"
+  },
+  {
+    "en": "dancer",
+    "zh": "舞者",
+    "pos": "n.",
+    "ipa": "/ˈdɑːnsə/",
+    "ex": "The dancer moved across the stage.",
+    "exZh": "舞者在舞台上移动。"
+  },
+  {
+    "en": "actor",
+    "zh": "演员",
+    "pos": "n.",
+    "ipa": "/ˈæktə/",
+    "ex": "He wants to become an actor.",
+    "exZh": "他想成为一名演员。"
+  },
+  {
+    "en": "dentist",
+    "zh": "牙医",
+    "pos": "n.",
+    "ipa": "/ˈdentɪst/",
+    "ex": "I visit the dentist twice a year.",
+    "exZh": "我每年看两次牙医。"
+  },
+  {
+    "en": "engineer",
+    "zh": "工程师",
+    "pos": "n.",
+    "ipa": "/ˌendʒɪˈnɪə/",
+    "ex": "The engineer checked the new bridge.",
+    "exZh": "工程师检查了新桥。"
+  },
+  {
+    "en": "pilot",
+    "zh": "飞行员",
+    "pos": "n.",
+    "ipa": "/ˈpaɪlət/",
+    "ex": "The pilot landed the plane safely.",
+    "exZh": "飞行员让飞机安全着陆。"
+  },
+  {
+    "en": "scientist",
+    "zh": "科学家",
+    "pos": "n.",
+    "ipa": "/ˈsaɪəntɪst/",
+    "ex": "The scientist studies how plants grow.",
+    "exZh": "这位科学家研究植物如何生长。"
+  },
+  {
+    "en": "animal",
+    "zh": "动物",
+    "pos": "n.",
+    "ipa": "/ˈænɪməl/",
+    "ex": "A panda is my favourite animal.",
+    "exZh": "熊猫是我最喜欢的动物。"
+  },
+  {
+    "en": "pet",
+    "zh": "宠物",
+    "pos": "n.",
+    "ipa": "/pet/",
+    "ex": "Do you have a pet at home?",
+    "exZh": "你家养宠物吗？"
+  },
+  {
+    "en": "butterfly",
+    "zh": "蝴蝶",
+    "pos": "n.",
+    "ipa": "/ˈbʌtəflaɪ/",
+    "ex": "A butterfly landed on the flower.",
+    "exZh": "一只蝴蝶落在了花上。"
+  },
+  {
+    "en": "spider",
+    "zh": "蜘蛛",
+    "pos": "n.",
+    "ipa": "/ˈspaɪdə/",
+    "ex": "The spider made a web in the corner.",
+    "exZh": "蜘蛛在角落里结了一张网。"
+  },
+  {
+    "en": "snake",
+    "zh": "蛇",
+    "pos": "n.",
+    "ipa": "/sneɪk/",
+    "ex": "We saw a snake near the river.",
+    "exZh": "我们在河边看到了一条蛇。"
+  },
+  {
+    "en": "turtle",
+    "zh": "龟",
+    "pos": "n.",
+    "ipa": "/ˈtɜːtəl/",
+    "ex": "A turtle was swimming in the pond.",
+    "exZh": "一只龟正在池塘里游泳。"
+  },
+  {
+    "en": "giraffe",
+    "zh": "长颈鹿",
+    "pos": "n.",
+    "ipa": "/dʒɪˈrɑːf/",
+    "ex": "The giraffe eats leaves from tall trees.",
+    "exZh": "长颈鹿吃高处树上的叶子。"
+  },
+  {
+    "en": "kangaroo",
+    "zh": "袋鼠",
+    "pos": "n.",
+    "ipa": "/ˌkæŋɡəˈruː/",
+    "ex": "A kangaroo carries its baby in a pouch.",
+    "exZh": "袋鼠把幼崽放在育儿袋里。"
+  },
+  {
+    "en": "wolf",
+    "zh": "狼",
+    "pos": "n.",
+    "ipa": "/wʊlf/",
+    "ex": "We heard a wolf in the forest.",
+    "exZh": "我们听见了森林里狼的叫声。"
+  },
+  {
+    "en": "fox",
+    "zh": "狐狸",
+    "pos": "n.",
+    "ipa": "/fɒks/",
+    "ex": "A fox ran across the field.",
+    "exZh": "一只狐狸跑过田野。"
+  },
+  {
+    "en": "deer",
+    "zh": "鹿",
+    "pos": "n.",
+    "ipa": "/dɪə/",
+    "ex": "Two deer stood beside the trees.",
+    "exZh": "两只鹿站在树旁。"
+  },
+  {
+    "en": "goat",
+    "zh": "山羊",
+    "pos": "n.",
+    "ipa": "/ɡəʊt/",
+    "ex": "The goat climbed onto a rock.",
+    "exZh": "山羊爬上了一块岩石。"
+  },
+  {
+    "en": "mouse",
+    "zh": "老鼠",
+    "pos": "n.",
+    "ipa": "/maʊs/",
+    "ex": "A mouse ran under the cupboard.",
+    "exZh": "一只老鼠跑到了橱柜下面。"
+  },
+  {
+    "en": "whale",
+    "zh": "鲸",
+    "pos": "n.",
+    "ipa": "/weɪl/",
+    "ex": "A whale came to the surface to breathe.",
+    "exZh": "一头鲸浮上水面呼吸。"
+  },
+  {
+    "en": "dolphin",
+    "zh": "海豚",
+    "pos": "n.",
+    "ipa": "/ˈdɒlfɪn/",
+    "ex": "The dolphin jumped out of the water.",
+    "exZh": "海豚跃出了水面。"
+  },
+  {
+    "en": "shark",
+    "zh": "鲨鱼",
+    "pos": "n.",
+    "ipa": "/ʃɑːk/",
+    "ex": "Some sharks live in deep water.",
+    "exZh": "一些鲨鱼生活在深水中。"
+  },
+  {
+    "en": "tail",
+    "zh": "尾巴",
+    "pos": "n.",
+    "ipa": "/teɪl/",
+    "ex": "The dog moved its tail from side to side.",
+    "exZh": "狗左右摇动尾巴。"
+  },
+  {
+    "en": "wing",
+    "zh": "翅膀",
+    "pos": "n.",
+    "ipa": "/wɪŋ/",
+    "ex": "The bird has a broken wing.",
+    "exZh": "这只鸟的一侧翅膀受伤了。"
+  },
+  {
+    "en": "meat",
+    "zh": "肉",
+    "pos": "n.",
+    "ipa": "/miːt/",
+    "ex": "Would you like meat or fish for dinner?",
+    "exZh": "晚饭你想吃肉还是鱼？"
+  },
+  {
+    "en": "beef",
+    "zh": "牛肉",
+    "pos": "n.",
+    "ipa": "/biːf/",
+    "ex": "We are having beef with potatoes.",
+    "exZh": "我们吃牛肉配土豆。"
+  },
+  {
+    "en": "pork",
+    "zh": "猪肉",
+    "pos": "n.",
+    "ipa": "/pɔːk/",
+    "ex": "She bought some pork at the market.",
+    "exZh": "她在市场买了一些猪肉。"
+  },
+  {
+    "en": "sandwich",
+    "zh": "三明治",
+    "pos": "n.",
+    "ipa": "/ˈsænwɪdʒ/",
+    "ex": "I made a cheese sandwich for lunch.",
+    "exZh": "我做了一个奶酪三明治当午饭。"
+  },
+  {
+    "en": "pizza",
+    "zh": "比萨饼",
+    "pos": "n.",
+    "ipa": "/ˈpiːtsə/",
+    "ex": "We shared a large pizza.",
+    "exZh": "我们分吃了一个大比萨饼。"
+  },
+  {
+    "en": "biscuit",
+    "zh": "饼干",
+    "pos": "n.",
+    "ipa": "/ˈbɪskɪt/",
+    "ex": "Would you like a biscuit with your tea?",
+    "exZh": "你喝茶时想吃块饼干吗？"
+  },
+  {
+    "en": "chocolate",
+    "zh": "巧克力",
+    "pos": "n.",
+    "ipa": "/ˈtʃɒklət/",
+    "ex": "She gave me a small piece of chocolate.",
+    "exZh": "她给了我一小块巧克力。"
+  },
+  {
+    "en": "sugar",
+    "zh": "糖",
+    "pos": "n.",
+    "ipa": "/ˈʃʊɡə/",
+    "ex": "I do not put sugar in my tea.",
+    "exZh": "我喝茶不加糖。"
+  },
+  {
+    "en": "salt",
+    "zh": "盐",
+    "pos": "n.",
+    "ipa": "/sɔːlt/",
+    "ex": "Add a little salt to the soup.",
+    "exZh": "往汤里加一点盐。"
+  },
+  {
+    "en": "butter",
+    "zh": "黄油",
+    "pos": "n.",
+    "ipa": "/ˈbʌtə/",
+    "ex": "Spread some butter on the bread.",
+    "exZh": "在面包上涂一些黄油。"
+  },
+  {
+    "en": "cheese",
+    "zh": "奶酪",
+    "pos": "n.",
+    "ipa": "/tʃiːz/",
+    "ex": "This cheese comes from a small farm.",
+    "exZh": "这块奶酪来自一个小农场。"
+  },
+  {
+    "en": "soup",
+    "zh": "汤",
+    "pos": "n.",
+    "ipa": "/suːp/",
+    "ex": "The soup is too hot to drink.",
+    "exZh": "汤太烫了，不能喝。"
+  },
+  {
+    "en": "salad",
+    "zh": "沙拉",
+    "pos": "n.",
+    "ipa": "/ˈsæləd/",
+    "ex": "I put tomatoes in the salad.",
+    "exZh": "我在沙拉里放了番茄。"
+  },
+  {
+    "en": "fruit",
+    "zh": "水果",
+    "pos": "n.",
+    "ipa": "/fruːt/",
+    "ex": "Fresh fruit is part of my breakfast.",
+    "exZh": "新鲜水果是我早餐的一部分。"
+  },
+  {
+    "en": "carrot",
+    "zh": "胡萝卜",
+    "pos": "n.",
+    "ipa": "/ˈkærət/",
+    "ex": "The rabbit is eating a carrot.",
+    "exZh": "兔子正在吃一根胡萝卜。"
+  },
+  {
+    "en": "tomato",
+    "zh": "番茄",
+    "pos": "n.",
+    "ipa": "/təˈmɑːtəʊ/",
+    "ex": "Cut the tomato into small pieces.",
+    "exZh": "把番茄切成小块。"
+  },
+  {
+    "en": "onion",
+    "zh": "洋葱",
+    "pos": "n.",
+    "ipa": "/ˈʌnjən/",
+    "ex": "She added an onion to the soup.",
+    "exZh": "她往汤里加了一个洋葱。"
+  },
+  {
+    "en": "corn",
+    "zh": "玉米",
+    "pos": "n.",
+    "ipa": "/kɔːn/",
+    "ex": "The farmer grows corn in this field.",
+    "exZh": "农民在这块田里种玉米。"
+  },
+  {
+    "en": "cabbage",
+    "zh": "卷心菜",
+    "pos": "n.",
+    "ipa": "/ˈkæbɪdʒ/",
+    "ex": "We need a cabbage for dinner.",
+    "exZh": "晚饭我们需要一颗卷心菜。"
+  },
+  {
+    "en": "watermelon",
+    "zh": "西瓜",
+    "pos": "n.",
+    "ipa": "/ˈwɔːtəmelən/",
+    "ex": "A cold watermelon is perfect on a hot day.",
+    "exZh": "热天吃一个冰凉的西瓜正合适。"
+  },
+  {
+    "en": "peach",
+    "zh": "桃子",
+    "pos": "n.",
+    "ipa": "/piːtʃ/",
+    "ex": "The peach is sweet and juicy.",
+    "exZh": "这个桃子又甜又多汁。"
+  },
+  {
+    "en": "strawberry",
+    "zh": "草莓",
+    "pos": "n.",
+    "ipa": "/ˈstrɔːbəri/",
+    "ex": "There is a strawberry on top of the cake.",
+    "exZh": "蛋糕上面有一颗草莓。"
+  },
+  {
+    "en": "lemon",
+    "zh": "柠檬",
+    "pos": "n.",
+    "ipa": "/ˈlemən/",
+    "ex": "Put a slice of lemon in the water.",
+    "exZh": "往水里放一片柠檬。"
+  },
+  {
+    "en": "pineapple",
+    "zh": "菠萝",
+    "pos": "n.",
+    "ipa": "/ˈpaɪnæpəl/",
+    "ex": "He cut the pineapple into rings.",
+    "exZh": "他把菠萝切成圆环。"
+  },
+  {
+    "en": "mango",
+    "zh": "芒果",
+    "pos": "n.",
+    "ipa": "/ˈmæŋɡəʊ/",
+    "ex": "I had a ripe mango after lunch.",
+    "exZh": "我午饭后吃了一个熟芒果。"
+  },
+  {
+    "en": "coffee",
+    "zh": "咖啡",
+    "pos": "n.",
+    "ipa": "/ˈkɒfi/",
+    "ex": "My father drinks coffee in the morning.",
+    "exZh": "我爸爸早上喝咖啡。"
+  },
+  {
+    "en": "honey",
+    "zh": "蜂蜜",
+    "pos": "n.",
+    "ipa": "/ˈhʌni/",
+    "ex": "She put honey on her toast.",
+    "exZh": "她在吐司上涂了蜂蜜。"
+  },
+  {
+    "en": "dumpling",
+    "zh": "饺子",
+    "pos": "n.",
+    "ipa": "/ˈdʌmplɪŋ/",
+    "ex": "This dumpling has vegetables inside.",
+    "exZh": "这个饺子里面包着蔬菜。"
+  },
+  {
+    "en": "money",
+    "zh": "钱",
+    "pos": "n.",
+    "ipa": "/ˈmʌni/",
+    "ex": "I am saving money for a bicycle.",
+    "exZh": "我正在存钱买自行车。"
+  },
+  {
+    "en": "buy",
+    "zh": "购买",
+    "pos": "v.",
+    "ipa": "/baɪ/",
+    "ex": "We need to buy some milk.",
+    "exZh": "我们需要买一些牛奶。"
+  },
+  {
+    "en": "sell",
+    "zh": "出售",
+    "pos": "v.",
+    "ipa": "/sel/",
+    "ex": "They sell fruit at the market.",
+    "exZh": "他们在市场卖水果。"
+  },
+  {
+    "en": "shop",
+    "zh": "商店",
+    "pos": "n.",
+    "ipa": "/ʃɒp/",
+    "ex": "The shop opens at eight.",
+    "exZh": "这家商店八点开门。"
+  },
+  {
+    "en": "supermarket",
+    "zh": "超市",
+    "pos": "n.",
+    "ipa": "/ˈsuːpəmɑːkɪt/",
+    "ex": "We buy food at the supermarket.",
+    "exZh": "我们在超市买食物。"
+  },
+  {
+    "en": "expensive",
+    "zh": "昂贵的",
+    "pos": "adj.",
+    "ipa": "/ɪkˈspensɪv/",
+    "ex": "This computer is too expensive for me.",
+    "exZh": "这台电脑对我来说太贵了。"
+  },
+  {
+    "en": "ticket",
+    "zh": "票",
+    "pos": "n.",
+    "ipa": "/ˈtɪkɪt/",
+    "ex": "Keep your ticket until you leave the train.",
+    "exZh": "下火车之前保管好你的车票。"
+  },
+  {
+    "en": "pay",
+    "zh": "支付",
+    "pos": "v.",
+    "ipa": "/peɪ/",
+    "ex": "You can pay by card here.",
+    "exZh": "这里可以刷卡付款。"
+  },
+  {
+    "en": "spend",
+    "zh": "花费，度过",
+    "pos": "v.",
+    "ipa": "/spend/",
+    "ex": "We spend two hours reading every day.",
+    "exZh": "我们每天花两小时阅读。"
+  },
+  {
+    "en": "wallet",
+    "zh": "钱包",
+    "pos": "n.",
+    "ipa": "/ˈwɒlɪt/",
+    "ex": "He found his wallet under the seat.",
+    "exZh": "他在座位下面找到了钱包。"
+  },
+  {
+    "en": "go",
+    "zh": "去",
+    "pos": "v.",
+    "ipa": "/ɡəʊ/",
+    "ex": "We go to school by bus.",
+    "exZh": "我们乘公交车上学。"
+  },
+  {
+    "en": "come",
+    "zh": "来",
+    "pos": "v.",
+    "ipa": "/kʌm/",
+    "ex": "Please come to my birthday party.",
+    "exZh": "请来参加我的生日聚会。"
+  },
+  {
+    "en": "give",
+    "zh": "给",
+    "pos": "v.",
+    "ipa": "/ɡɪv/",
+    "ex": "Can you give me a pencil?",
+    "exZh": "你能给我一支铅笔吗？"
+  },
+  {
+    "en": "take",
+    "zh": "拿，带走",
+    "pos": "v.",
+    "ipa": "/teɪk/",
+    "ex": "Please take your bag with you.",
+    "exZh": "请带上你的包。"
+  },
+  {
+    "en": "make",
+    "zh": "制作",
+    "pos": "v.",
+    "ipa": "/meɪk/",
+    "ex": "We can make a kite together.",
+    "exZh": "我们可以一起做风筝。"
+  },
+  {
+    "en": "put",
+    "zh": "放置",
+    "pos": "v.",
+    "ipa": "/pʊt/",
+    "ex": "Put the cups on the table.",
+    "exZh": "把杯子放在桌上。"
+  },
+  {
+    "en": "find",
+    "zh": "找到",
+    "pos": "v.",
+    "ipa": "/faɪnd/",
+    "ex": "I cannot find my keys.",
+    "exZh": "我找不到钥匙。"
+  },
+  {
+    "en": "see",
+    "zh": "看见",
+    "pos": "v.",
+    "ipa": "/siː/",
+    "ex": "Can you see the bird in the tree?",
+    "exZh": "你能看见树上的鸟吗？"
+  },
+  {
+    "en": "look",
+    "zh": "看",
+    "pos": "v.",
+    "ipa": "/lʊk/",
+    "ex": "Look at the picture on the wall.",
+    "exZh": "看看墙上的画。"
+  },
+  {
+    "en": "think",
+    "zh": "思考，认为",
+    "pos": "v.",
+    "ipa": "/θɪŋk/",
+    "ex": "I think this answer is correct.",
+    "exZh": "我认为这个答案是正确的。"
+  },
+  {
+    "en": "feel",
+    "zh": "感觉",
+    "pos": "v.",
+    "ipa": "/fiːl/",
+    "ex": "I feel tired after the long walk.",
+    "exZh": "走了很远后我感到累了。"
+  },
+  {
+    "en": "say",
+    "zh": "说，讲",
+    "pos": "v.",
+    "ipa": "/seɪ/",
+    "ex": "Please say that word again.",
+    "exZh": "请再说一遍那个单词。"
+  },
+  {
+    "en": "tell",
+    "zh": "告诉",
+    "pos": "v.",
+    "ipa": "/tel/",
+    "ex": "Can you tell me your name?",
+    "exZh": "你能告诉我你的名字吗？"
+  },
+  {
+    "en": "ask",
+    "zh": "询问",
+    "pos": "v.",
+    "ipa": "/ɑːsk/",
+    "ex": "Ask your teacher if you need help.",
+    "exZh": "如果需要帮助，就问问老师。"
+  },
+  {
+    "en": "call",
+    "zh": "打电话，呼叫",
+    "pos": "v.",
+    "ipa": "/kɔːl/",
+    "ex": "I will call you after dinner.",
+    "exZh": "我晚饭后给你打电话。"
+  },
+  {
+    "en": "meet",
+    "zh": "见面，遇见",
+    "pos": "v.",
+    "ipa": "/miːt/",
+    "ex": "Let's meet outside the library.",
+    "exZh": "我们在图书馆外见面吧。"
+  },
+  {
+    "en": "love",
+    "zh": "爱，喜爱",
+    "pos": "v.",
+    "ipa": "/lʌv/",
+    "ex": "I love spending time with my family.",
+    "exZh": "我喜欢和家人在一起。"
+  },
+  {
+    "en": "enjoy",
+    "zh": "享受，喜欢",
+    "pos": "v.",
+    "ipa": "/ɪnˈdʒɔɪ/",
+    "ex": "We enjoy reading stories together.",
+    "exZh": "我们喜欢一起读故事。"
+  },
+  {
+    "en": "need",
+    "zh": "需要",
+    "pos": "v.",
+    "ipa": "/niːd/",
+    "ex": "You need a warm coat today.",
+    "exZh": "你今天需要一件暖和的外套。"
+  },
+  {
+    "en": "use",
+    "zh": "使用",
+    "pos": "v.",
+    "ipa": "/juːz/",
+    "ex": "May I use your ruler?",
+    "exZh": "我可以用你的尺子吗？"
+  },
+  {
+    "en": "try",
+    "zh": "尝试",
+    "pos": "v.",
+    "ipa": "/traɪ/",
+    "ex": "Try to answer the question yourself.",
+    "exZh": "试着自己回答这个问题。"
+  },
+  {
+    "en": "work",
+    "zh": "工作",
+    "pos": "v.",
+    "ipa": "/wɜːk/",
+    "ex": "My parents work at a hospital.",
+    "exZh": "我父母在医院工作。"
+  },
+  {
+    "en": "live",
+    "zh": "居住",
+    "pos": "v.",
+    "ipa": "/lɪv/",
+    "ex": "We live near the sea.",
+    "exZh": "我们住在海边。"
+  },
+  {
+    "en": "sit",
+    "zh": "坐",
+    "pos": "v.",
+    "ipa": "/sɪt/",
+    "ex": "Please sit next to me.",
+    "exZh": "请坐在我旁边。"
+  },
+  {
+    "en": "stand",
+    "zh": "站立",
+    "pos": "v.",
+    "ipa": "/stænd/",
+    "ex": "We stand in a line outside the classroom.",
+    "exZh": "我们在教室外站成一排。"
+  },
+  {
+    "en": "turn",
+    "zh": "转动，转弯",
+    "pos": "v.",
+    "ipa": "/tɜːn/",
+    "ex": "Turn left at the next street.",
+    "exZh": "在下一条街左转。"
+  },
+  {
+    "en": "stop",
+    "zh": "停止",
+    "pos": "v.",
+    "ipa": "/stɒp/",
+    "ex": "The bus will stop here.",
+    "exZh": "公交车会停在这里。"
+  },
+  {
+    "en": "wait",
+    "zh": "等待",
+    "pos": "v.",
+    "ipa": "/weɪt/",
+    "ex": "Please wait for me at the gate.",
+    "exZh": "请在大门口等我。"
+  },
+  {
+    "en": "learn",
+    "zh": "学习",
+    "pos": "v.",
+    "ipa": "/lɜːn/",
+    "ex": "I want to learn how to cook.",
+    "exZh": "我想学做饭。"
+  },
+  {
+    "en": "teach",
+    "zh": "教，教授",
+    "pos": "v.",
+    "ipa": "/tiːtʃ/",
+    "ex": "Can you teach me this song?",
+    "exZh": "你能教我这首歌吗？"
+  },
+  {
+    "en": "begin",
+    "zh": "开始",
+    "pos": "v.",
+    "ipa": "/bɪˈɡɪn/",
+    "ex": "The lesson will begin in five minutes.",
+    "exZh": "这节课五分钟后开始。"
+  },
+  {
+    "en": "keep",
+    "zh": "保留，保持",
+    "pos": "v.",
+    "ipa": "/kiːp/",
+    "ex": "Keep the classroom clean.",
+    "exZh": "保持教室整洁。"
+  },
+  {
+    "en": "show",
+    "zh": "展示",
+    "pos": "v.",
+    "ipa": "/ʃəʊ/",
+    "ex": "Please show me your drawing.",
+    "exZh": "请给我看看你的画。"
+  },
+  {
+    "en": "cut",
+    "zh": "切，剪",
+    "pos": "v.",
+    "ipa": "/kʌt/",
+    "ex": "Cut the paper into two pieces.",
+    "exZh": "把纸剪成两片。"
+  },
+  {
+    "en": "send",
+    "zh": "发送，寄",
+    "pos": "v.",
+    "ipa": "/send/",
+    "ex": "I will send you a postcard.",
+    "exZh": "我会寄给你一张明信片。"
+  },
+  {
+    "en": "return",
+    "zh": "返回，归还",
+    "pos": "v.",
+    "ipa": "/rɪˈtɜːn/",
+    "ex": "Please return the book tomorrow.",
+    "exZh": "请明天归还这本书。"
+  },
+  {
+    "en": "visit",
+    "zh": "参观，拜访",
+    "pos": "v.",
+    "ipa": "/ˈvɪzɪt/",
+    "ex": "We visit the museum every summer.",
+    "exZh": "我们每年夏天都参观博物馆。"
+  },
+  {
+    "en": "smile",
+    "zh": "微笑",
+    "pos": "v.",
+    "ipa": "/smaɪl/",
+    "ex": "She smiled when she saw the flowers.",
+    "exZh": "她看到花时笑了。"
+  },
+  {
+    "en": "cry",
+    "zh": "哭",
+    "pos": "v.",
+    "ipa": "/kraɪ/",
+    "ex": "The baby began to cry.",
+    "exZh": "宝宝开始哭了。"
+  },
+  {
+    "en": "spell",
+    "zh": "拼写",
+    "pos": "v.",
+    "ipa": "/spel/",
+    "ex": "Can you spell your name for me?",
+    "exZh": "你能为我拼写一下你的名字吗？"
+  },
+  {
+    "en": "face",
+    "zh": "脸",
+    "pos": "n.",
+    "ipa": "/feɪs/",
+    "ex": "Wash your face before breakfast.",
+    "exZh": "早饭前洗脸。"
+  },
+  {
+    "en": "shoulder",
+    "zh": "肩膀",
+    "pos": "n.",
+    "ipa": "/ˈʃəʊldə/",
+    "ex": "She carried the bag on her shoulder.",
+    "exZh": "她把包背在肩上。"
+  },
+  {
+    "en": "knee",
+    "zh": "膝盖",
+    "pos": "n.",
+    "ipa": "/niː/",
+    "ex": "He hurt his knee while running.",
+    "exZh": "他跑步时伤了膝盖。"
+  },
+  {
+    "en": "toe",
+    "zh": "脚趾",
+    "pos": "n.",
+    "ipa": "/təʊ/",
+    "ex": "I hurt my toe on the chair.",
+    "exZh": "我的脚趾撞到椅子上了。"
+  },
+  {
+    "en": "finger",
+    "zh": "手指",
+    "pos": "n.",
+    "ipa": "/ˈfɪŋɡə/",
+    "ex": "She pointed at the map with her finger.",
+    "exZh": "她用手指指着地图。"
+  },
+  {
+    "en": "leg",
+    "zh": "腿",
+    "pos": "n.",
+    "ipa": "/leɡ/",
+    "ex": "The table has four legs.",
+    "exZh": "这张桌子有四条腿。"
+  },
+  {
+    "en": "neck",
+    "zh": "脖子",
+    "pos": "n.",
+    "ipa": "/nek/",
+    "ex": "He wore a scarf around his neck.",
+    "exZh": "他在脖子上围了一条围巾。"
+  },
+  {
+    "en": "tooth",
+    "zh": "牙齿",
+    "pos": "n.",
+    "ipa": "/tuːθ/",
+    "ex": "My little brother lost a tooth today.",
+    "exZh": "我的弟弟今天掉了一颗牙。"
+  },
+  {
+    "en": "stomach",
+    "zh": "胃，腹部",
+    "pos": "n.",
+    "ipa": "/ˈstʌmək/",
+    "ex": "My stomach hurts after eating too much.",
+    "exZh": "吃得太多后，我肚子疼。"
+  },
+  {
+    "en": "heart",
+    "zh": "心脏",
+    "pos": "n.",
+    "ipa": "/hɑːt/",
+    "ex": "My heart beats faster when I run.",
+    "exZh": "跑步时我的心跳会加快。"
+  },
+  {
+    "en": "body",
+    "zh": "身体",
+    "pos": "n.",
+    "ipa": "/ˈbɒdi/",
+    "ex": "Exercise helps keep your body strong.",
+    "exZh": "锻炼有助于保持身体强壮。"
+  },
+  {
+    "en": "skirt",
+    "zh": "裙子",
+    "pos": "n.",
+    "ipa": "/skɜːt/",
+    "ex": "She is wearing a blue skirt.",
+    "exZh": "她穿着一条蓝色裙子。"
+  },
+  {
+    "en": "shorts",
+    "zh": "短裤",
+    "pos": "n.",
+    "ipa": "/ʃɔːts/",
+    "ex": "I wear shorts when I play basketball.",
+    "exZh": "我打篮球时穿短裤。"
+  },
+  {
+    "en": "trousers",
+    "zh": "长裤",
+    "pos": "n.",
+    "ipa": "/ˈtraʊzəz/",
+    "ex": "These trousers are too long for me.",
+    "exZh": "这条长裤对我来说太长了。"
+  },
+  {
+    "en": "sock",
+    "zh": "短袜",
+    "pos": "n.",
+    "ipa": "/sɒk/",
+    "ex": "I found a sock under the bed.",
+    "exZh": "我在床下找到了一只短袜。"
+  },
+  {
+    "en": "scarf",
+    "zh": "围巾",
+    "pos": "n.",
+    "ipa": "/skɑːf/",
+    "ex": "This scarf keeps my neck warm.",
+    "exZh": "这条围巾能让我的脖子保持温暖。"
+  },
+  {
+    "en": "glove",
+    "zh": "手套",
+    "pos": "n.",
+    "ipa": "/ɡlʌv/",
+    "ex": "He dropped one glove in the snow.",
+    "exZh": "他把一只手套掉在了雪地里。"
+  },
+  {
+    "en": "umbrella",
+    "zh": "雨伞",
+    "pos": "n.",
+    "ipa": "/ʌmˈbrelə/",
+    "ex": "Take an umbrella because it may rain.",
+    "exZh": "带把伞，因为可能会下雨。"
+  },
+  {
+    "en": "toothbrush",
+    "zh": "牙刷",
+    "pos": "n.",
+    "ipa": "/ˈtuːθbrʌʃ/",
+    "ex": "Put your toothbrush beside the sink.",
+    "exZh": "把牙刷放在水槽旁边。"
+  },
+  {
+    "en": "soap",
+    "zh": "肥皂",
+    "pos": "n.",
+    "ipa": "/səʊp/",
+    "ex": "Wash your hands with soap.",
+    "exZh": "用肥皂洗手。"
+  },
+  {
+    "en": "towel",
+    "zh": "毛巾",
+    "pos": "n.",
+    "ipa": "/ˈtaʊəl/",
+    "ex": "Dry your hands with this towel.",
+    "exZh": "用这条毛巾擦干双手。"
+  },
+  {
+    "en": "football",
+    "zh": "足球",
+    "pos": "n.",
+    "ipa": "/ˈfʊtbɔːl/",
+    "ex": "We play football after school.",
+    "exZh": "我们放学后踢足球。"
+  },
+  {
+    "en": "basketball",
+    "zh": "篮球",
+    "pos": "n.",
+    "ipa": "/ˈbɑːskɪtbɔːl/",
+    "ex": "My brother plays basketball every weekend.",
+    "exZh": "我哥哥每个周末都打篮球。"
+  },
+  {
+    "en": "tennis",
+    "zh": "网球",
+    "pos": "n.",
+    "ipa": "/ˈtenɪs/",
+    "ex": "She is learning to play tennis.",
+    "exZh": "她正在学打网球。"
+  },
+  {
+    "en": "badminton",
+    "zh": "羽毛球",
+    "pos": "n.",
+    "ipa": "/ˈbædmɪntən/",
+    "ex": "We play badminton in the sports hall.",
+    "exZh": "我们在体育馆打羽毛球。"
+  },
+  {
+    "en": "game",
+    "zh": "游戏，比赛",
+    "pos": "n.",
+    "ipa": "/ɡeɪm/",
+    "ex": "Let's play a game before dinner.",
+    "exZh": "我们晚饭前玩个游戏吧。"
+  },
+  {
+    "en": "team",
+    "zh": "队伍",
+    "pos": "n.",
+    "ipa": "/tiːm/",
+    "ex": "Our team won the match.",
+    "exZh": "我们队赢得了比赛。"
+  },
+  {
+    "en": "win",
+    "zh": "赢得",
+    "pos": "v.",
+    "ipa": "/wɪn/",
+    "ex": "She hopes to win the race.",
+    "exZh": "她希望赢得比赛。"
+  },
+  {
+    "en": "lose",
+    "zh": "失去，输掉",
+    "pos": "v.",
+    "ipa": "/luːz/",
+    "ex": "Do not lose your ticket.",
+    "exZh": "别弄丢你的票。"
+  },
+  {
+    "en": "kick",
+    "zh": "踢",
+    "pos": "v.",
+    "ipa": "/kɪk/",
+    "ex": "He can kick the ball very far.",
+    "exZh": "他能把球踢得很远。"
+  },
+  {
+    "en": "push",
+    "zh": "推",
+    "pos": "v.",
+    "ipa": "/pʊʃ/",
+    "ex": "Push the door to open it.",
+    "exZh": "推门就能打开。"
+  },
+  {
+    "en": "pull",
+    "zh": "拉",
+    "pos": "v.",
+    "ipa": "/pʊl/",
+    "ex": "Pull the rope with both hands.",
+    "exZh": "用双手拉绳子。"
+  },
+  {
+    "en": "strong",
+    "zh": "强壮的",
+    "pos": "adj.",
+    "ipa": "/strɒŋ/",
+    "ex": "The horse is big and strong.",
+    "exZh": "这匹马又大又强壮。"
+  },
+  {
+    "en": "weak",
+    "zh": "虚弱的",
+    "pos": "adj.",
+    "ipa": "/wiːk/",
+    "ex": "He felt weak after being ill.",
+    "exZh": "他生病后感到虚弱。"
+  },
+  {
+    "en": "easy",
+    "zh": "容易的",
+    "pos": "adj.",
+    "ipa": "/ˈiːzi/",
+    "ex": "This question is easy to answer.",
+    "exZh": "这个问题很容易回答。"
+  },
+  {
+    "en": "hard",
+    "zh": "困难的，硬的",
+    "pos": "adj.",
+    "ipa": "/hɑːd/",
+    "ex": "The bread is too hard to eat.",
+    "exZh": "面包太硬了，吃不动。"
+  },
+  {
+    "en": "interesting",
+    "zh": "有趣的",
+    "pos": "adj.",
+    "ipa": "/ˈɪntrəstɪŋ/",
+    "ex": "This is an interesting story about space.",
+    "exZh": "这是一个关于太空的有趣故事。"
+  },
+  {
+    "en": "boring",
+    "zh": "无聊的",
+    "pos": "adj.",
+    "ipa": "/ˈbɔːrɪŋ/",
+    "ex": "He thinks waiting in a long line is boring.",
+    "exZh": "他觉得排长队很无聊。"
+  },
+  {
+    "en": "different",
+    "zh": "不同的",
+    "pos": "adj.",
+    "ipa": "/ˈdɪfrənt/",
+    "ex": "We chose different colours for our pictures.",
+    "exZh": "我们为图画选了不同的颜色。"
+  },
+  {
+    "en": "same",
+    "zh": "相同的",
+    "pos": "adj.",
+    "ipa": "/seɪm/",
+    "ex": "We are in the same class.",
+    "exZh": "我们在同一个班。"
+  },
+  {
+    "en": "wrong",
+    "zh": "错误的",
+    "pos": "adj.",
+    "ipa": "/rɒŋ/",
+    "ex": "I wrote the wrong answer.",
+    "exZh": "我写了错误的答案。"
+  },
+  {
+    "en": "correct",
+    "zh": "正确的",
+    "pos": "adj.",
+    "ipa": "/kəˈrekt/",
+    "ex": "Please choose the correct picture.",
+    "exZh": "请选择正确的图片。"
+  },
+  {
+    "en": "slow",
+    "zh": "缓慢的",
+    "pos": "adj.",
+    "ipa": "/sləʊ/",
+    "ex": "The train is slow today.",
+    "exZh": "火车今天开得很慢。"
+  },
+  {
+    "en": "fast",
+    "zh": "快速的",
+    "pos": "adj.",
+    "ipa": "/fɑːst/",
+    "ex": "That is a very fast horse.",
+    "exZh": "那是一匹跑得很快的马。"
+  },
+  {
+    "en": "wet",
+    "zh": "湿的",
+    "pos": "adj.",
+    "ipa": "/wet/",
+    "ex": "My shoes are wet from the rain.",
+    "exZh": "我的鞋被雨淋湿了。"
+  },
+  {
+    "en": "dry",
+    "zh": "干燥的",
+    "pos": "adj.",
+    "ipa": "/draɪ/",
+    "ex": "Put on a dry shirt.",
+    "exZh": "换上一件干衬衫。"
+  },
+  {
+    "en": "dirty",
+    "zh": "脏的",
+    "pos": "adj.",
+    "ipa": "/ˈdɜːti/",
+    "ex": "Your hands are dirty after playing outside.",
+    "exZh": "在外面玩过后，你的手脏了。"
+  },
+  {
+    "en": "full",
+    "zh": "满的，饱的",
+    "pos": "adj.",
+    "ipa": "/fʊl/",
+    "ex": "The glass is full of water.",
+    "exZh": "杯子里装满了水。"
+  },
+  {
+    "en": "fresh",
+    "zh": "新鲜的",
+    "pos": "adj.",
+    "ipa": "/freʃ/",
+    "ex": "We buy fresh bread every morning.",
+    "exZh": "我们每天早上买新鲜面包。"
+  }
+]

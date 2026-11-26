@@ -14,6 +14,12 @@ window.WM = window.WM || {};
   const quiz = WM.quiz;
   const sound = WM.sound;
 
+  function showKeyboardHints() {
+    // Android tablets may have desktop-sized viewports or a connected mouse.
+    return !window.WordMasterAndroid &&
+      window.matchMedia('(min-width: 761px) and (hover: hover) and (pointer: fine)').matches;
+  }
+
   /** @type {null | object} */
   let session = null;
   let nextTimer = null;
@@ -114,7 +120,7 @@ window.WM = window.WM || {};
       topEl,
       cardEl,
       h('div', { class: 'study-foot' },
-        state.settings.trainingMode === 'spelling' ? null : h('div', { class: 'kbd-tip' },
+        state.settings.trainingMode === 'spelling' || !showKeyboardHints() ? null : h('div', { class: 'kbd-tip' },
           h('span', { class: 'kbd', text: '1' }), '~', h('span', { class: 'kbd', text: '4' }), ' 选择',
           ' · ', h('span', { class: 'kbd', text: 'Enter' }), ' 继续',
           ' · ', h('span', { class: 'kbd', text: 'S' }), ' 发音',
@@ -182,7 +188,8 @@ window.WM = window.WM || {};
     const speakBtn = h('button', {
       class: 'speak-btn',
       type: 'button',
-      title: '朗读单词（S）',
+      title: showKeyboardHints() ? '朗读单词（S）' : '朗读单词',
+      'aria-label': '朗读单词',
       onclick: (e) => {
         e.stopPropagation();
         speakCurrent();
@@ -205,7 +212,7 @@ window.WM = window.WM || {};
         style: { animationDelay: `${i * 45}ms` },
         onclick: () => answer(i),
       },
-        h('span', { class: 'key', text: String(i + 1) }),
+        showKeyboardHints() ? h('span', { class: 'key', text: String(i + 1) }) : null,
         h('span', { class: `txt ${isEn ? 'zh' : 'en'}`, text: opt.text }),
         h('span', { class: 'mark' }, icon('i-check'))));
     });

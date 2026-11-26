@@ -60,9 +60,16 @@ function check(level) {
 
   rows.forEach((row, i) => {
     const at = `[${level.id}#${i}]`;
-    if (!row || typeof row !== 'object') {
+    if (!row || typeof row !== 'object' || Array.isArray(row)) {
       errors.push(`${at} 不是对象`);
       return;
+    }
+    for (const field of ['en', 'zh', 'pos', 'ipa', 'ex', 'exZh']) {
+      if (typeof row[field] !== 'string' || !row[field].trim()) {
+        errors.push(`${at} 缺少非空文本字段：${field}`);
+      } else if (row[field] !== row[field].trim() || row[field].includes('\uFFFD')) {
+        errors.push(`${at} ${field} 含首尾空白或损坏字符`);
+      }
     }
     const en = String(row.en || '').trim();
     const zh = String(row.zh || '').trim();
@@ -76,18 +83,24 @@ function check(level) {
     if (enSet.has(en.toLowerCase())) errors.push(`${at} 英文重复：${en}（首次出现于 #${enSet.get(en.toLowerCase())}）`);
     else enSet.set(en.toLowerCase(), i);
 
-    if (zhSet.has(zh)) errors.push(`${at} 中文释义重复：${zh}（首次出现于 #${zhSet.get(zh)}）`);
+    // 同义词允许共用释义；出题器会排除含相同释义的干扰项。
+    if (zhSet.has(zh)) warnings.push(`${at} 共用释义：${zh}（首次出现于 #${zhSet.get(zh)}）`);
     else zhSet.set(zh, i);
 
-    if (zh.length < 2 || zh.length > 12) warnings.push(`${at} 释义长度异常（${zh.length} 字）：${zh}`);
+    if (zh.length > 12) warnings.push(`${at} 释义偏长（${zh.length} 字）：${zh}`);
     if (/[;；]/.test(zh)) warnings.push(`${at} 释义含分号，可能影响选择题可读性：${zh}`);
     if (/^(n|v|adj|adv)\./.test(zh)) warnings.push(`${at} 释义里混入了词性：${zh}`);
 
-    if (!pos) badPos += 1;
-    else if (!POS_OK.has(pos)) badPos += 1;
+    if (!POS_OK.has(pos)) {
+      badPos += 1;
+      errors.push(`${at} 词性无效：${pos}`);
+    }
 
     if (!ipa) missingIpa += 1;
-    else if (!/^\/.+\/$/.test(ipa)) badIpa += 1;
+    else if (!/^\/.+\/$/.test(ipa)) {
+      badIpa += 1;
+      errors.push(`${at} 音标格式无效：${ipa}`);
+    }
   });
 
   return {

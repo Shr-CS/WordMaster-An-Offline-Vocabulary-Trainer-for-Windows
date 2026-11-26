@@ -45,8 +45,8 @@ window.WM = window.WM || {};
         const value = valueOf(cand, direction);
         const key = util.norm(value);
         if (!key || used.has(key)) continue;
-        // 中文题干时，干扰项英文不能是题干的答案本身
-        if (direction === 'zh2en' && util.norm(cand.en) === util.norm(valueOf(entry, 'zh2en'))) continue;
+        // 同一中文释义可能对应多个英文词，不能把同义答案作为干扰项。
+        if (direction === 'zh2en' && util.norm(cand.zh) === util.norm(entry.zh)) continue;
         used.add(key);
         chosen.push(cand);
       }

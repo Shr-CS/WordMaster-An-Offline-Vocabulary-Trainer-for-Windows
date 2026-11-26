@@ -9,7 +9,7 @@
  *   - zh 释义长度 ≤ 8 个汉字（避免两个义项粘在一起）
  *   - en 不与正式词库、也不与 parts/_used/<level>.txt 中已用词重复
  *   - ex 例句中确实包含 en（大小写不敏感，允许词形变化时需人工确认——此处只做提示）
- *   - 文件内 en / zh 各自唯一
+ *   - 文件内 en 唯一；同义词共用 zh 仅提示，出题时排除歧义选项
  */
 const fs = require('fs');
 const path = require('path');
@@ -61,7 +61,7 @@ arr.forEach((w, i) => {
   if (typeof w.zh === 'string') {
     const z = w.zh.trim();
     const k = z.toLowerCase();
-    if (seenZh.has(k)) errors.push(at + ' 文件内 zh 重复，首次出现在 #' + seenZh.get(k));
+    if (seenZh.has(k)) warnings.push(at + ' 共用 zh 释义，首次出现在 #' + seenZh.get(k));
     else seenZh.set(k, i);
     const han = (z.match(/[\u4e00-\u9fa5]/g) || []).length;
     if (han > 8) warnings.push(at + ' zh 释义偏长（' + han + ' 字）: ' + z);
