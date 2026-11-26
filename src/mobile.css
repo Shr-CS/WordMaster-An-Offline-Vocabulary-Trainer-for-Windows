@@ -98,3 +98,19 @@
   .view { padding-inline: 12px; }
   .home-details .ring-wrap { flex-wrap: wrap; }
 }
+
+@media (max-width: 760px), (max-height: 500px) and (max-width: 1000px) {
+  .lesson-mode { min-height: 48px; }
+  .study-foot .kbd-tip { display: none; }
+  .detail-foot { gap: 12px; }
+  .detail-foot .btn { min-height: 48px; }
+  .mini-btn { min-width: 48px; min-height: 48px; }
+  .theme-picker { flex-wrap: wrap; }
+  .theme-card { min-width: 130px; }
+  .feedback:not(.detail) { flex-wrap: wrap; }
+  .spelling-form .btn { width: 100%; }
+}
+
+@media (max-width: 760px), (max-height: 500px) and (max-width: 1000px) {
+  .wb-toolbar .search-wrap { flex: 1 0 100%; }
+}

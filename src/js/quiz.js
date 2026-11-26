@@ -63,7 +63,14 @@ window.WM = window.WM || {};
    * @param {Function} options.random  可复现随机源
    * @param {string} options.mode      'new' | 'review'
    */
-  function makeQuestion(entry, { direction = 'mixed', pool = [], random = Math.random, mode = 'new' } = {}) {
+  function makeQuestion(entry, { trainingMode = 'choice', direction = 'mixed', pool = [], random = Math.random, mode = 'new' } = {}) {
+    if (trainingMode === 'spelling') {
+      return {
+        id: entry.id, entry, mode, trainingMode, direction: 'zh2en',
+        prompt: { text: entry.zh, sub: entry.pos, label: '根据释义拼写英文' },
+        options: [], answerIndex: -1,
+      };
+    }
     const dir = direction === 'mixed' ? (random() < 0.5 ? 'en2zh' : 'zh2en') : direction;
     const distractors = pickDistractors(entry, dir, random, pool);
 
@@ -96,13 +103,13 @@ window.WM = window.WM || {};
    * @param {Array<{id:string, mode:string}>} items
    * @param {object} config { direction, pool, seed }
    */
-  function buildQuestions(items, { direction = 'mixed', pool = [], seed = Date.now() } = {}) {
+  function buildQuestions(items, { trainingMode = 'choice', direction = 'mixed', pool = [], seed = Date.now() } = {}) {
     const random = util.rng(seed >>> 0);
     const questions = [];
     for (const item of items) {
       const entry = bank.get(item.id);
       if (!entry) continue;
-      questions.push(makeQuestion(entry, { direction, pool, random, mode: item.mode || 'new' }));
+      questions.push(makeQuestion(entry, { trainingMode, direction, pool, random, mode: item.mode || 'new' }));
     }
     return questions;
   }
@@ -120,7 +127,14 @@ window.WM = window.WM || {};
     return Array.from(merged.values());
   }
 
+  function spellingMatches(input, expected) {
+    const normalize = (text) => String(text).normalize('NFKC').trim().toLowerCase()
+      .replace(/[‘’]/g, "'").replace(/[‐‑–—]/g, '-').replace(/\s+/g, ' ');
+    return normalize(input) === normalize(expected);
+  }
+
   WM.quiz = {
+    spellingMatches,
     OPTION_COUNT,
     makeQuestion,
     buildQuestions,

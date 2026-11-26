@@ -32,7 +32,8 @@ window.WM = window.WM || {};
 
   function start(kind = 'mixed', { silent = false } = {}) {
     const state = store.get();
-    const items = bank.buildQueue(state, kind);
+    const queue = bank.buildQueue(state, kind);
+    const items = state.settings.sessionSize ? queue.slice(0, state.settings.sessionSize) : queue;
 
     if (!items.length) {
       const msg = kind === 'review'
@@ -46,6 +47,7 @@ window.WM = window.WM || {};
 
     const pool = quiz.poolForSession(state);
     const questions = quiz.buildQuestions(items, {
+      trainingMode: state.settings.trainingMode,
       direction: state.settings.direction,
       pool,
       seed: (Math.random() * 0xffffffff) >>> 0,
@@ -53,6 +55,7 @@ window.WM = window.WM || {};
 
     session = {
       kind,
+      trainingMode: state.settings.trainingMode,
       questions,
       index: -1,
       correct: 0,
@@ -103,13 +106,15 @@ window.WM = window.WM || {};
         onclick: () => requestExit(),
       }, icon('i-arrow-left'), '退出'));
 
-    cardEl = h('div', { class: 'qcard' });
+    cardEl = h('div', { class: 'qcard', onpointerdown: () => {
+      if (session?.answered) clearTimer();
+    } });
 
     viewEl = h('div', { class: 'study narrow' },
       topEl,
       cardEl,
       h('div', { class: 'study-foot' },
-        h('div', { class: 'kbd-tip' },
+        state.settings.trainingMode === 'spelling' ? null : h('div', { class: 'kbd-tip' },
           h('span', { class: 'kbd', text: '1' }), '~', h('span', { class: 'kbd', text: '4' }), ' 选择',
           ' · ', h('span', { class: 'kbd', text: 'Enter' }), ' 继续',
           ' · ', h('span', { class: 'kbd', text: 'S' }), ' 发音',
@@ -121,6 +126,7 @@ window.WM = window.WM || {};
 
   function describeScope(state) {
     const names = state.settings.levels.map((id) => bank.levelMeta(id).name);
+    if (state.settings.trainingMode === 'spelling') return '拼写训练 · 输入英文后提交';
     const dirText = { en2zh: '英译中', zh2en: '中译英', mixed: '英中混合' }[state.settings.direction] || '混合';
     return `范围：${names.length ? names.join(' / ') : '全部'} · 方向：${dirText}`;
   }
@@ -148,6 +154,7 @@ window.WM = window.WM || {};
     }
     session.current = session.questions[session.index];
     session.answered = false;
+    session.spelling = '';
     renderQuestion();
     syncTop();
   }
@@ -160,6 +167,7 @@ window.WM = window.WM || {};
 
     const isEn = q.direction === 'en2zh';
 
+    document.getElementById('view').scrollTop = 0;
     const metas = [
       q.mode === 'review'
         ? h('span', { class: 'tag review' }, icon('i-review'), '复习')
@@ -169,7 +177,7 @@ window.WM = window.WM || {};
         level.name),
     ];
     if (attempt > 0) metas.push(h('span', { class: 'tag err' }, icon('i-review'), `第 ${attempt + 1} 次作答`));
-    if (q.entry.starred) metas.push(h('span', { class: 'tag' }, icon('i-star'), '生词'));
+    if (state.words[q.id]?.starred) metas.push(h('span', { class: 'tag' }, icon('i-star'), '生词'));
 
     const speakBtn = h('button', {
       class: 'speak-btn',
@@ -202,7 +210,35 @@ window.WM = window.WM || {};
         h('span', { class: 'mark' }, icon('i-check'))));
     });
 
-    mount(cardEl, h('div', { class: 'q-meta' }, metas), prompt, opts);
+    let response = opts;
+    if (q.trainingMode === 'spelling') {
+      const input = h('input', {
+        id: 'spelling-answer', class: 'input spelling-input', type: 'text',
+        autocomplete: 'off', autocapitalize: 'none', spellcheck: 'false',
+        inputmode: 'text', enterkeyhint: 'done', lang: 'en',
+        placeholder: '输入英文单词或词组',
+      });
+      response = h('form', {
+        class: 'spelling-form',
+        onsubmit: (event) => {
+          event.preventDefault();
+          if (session.answered) return;
+          if (!input.value.trim()) {
+            toast('先输入拼写，或点击「不认识」', 'warn');
+            input.focus();
+            return;
+          }
+          session.spelling = input.value;
+          submitAnswer(quiz.spellingMatches(input.value, q.entry.en));
+        },
+      }, h('label', { for: 'spelling-answer', text: '你的拼写' }), input,
+      h('button', { class: 'btn primary', type: 'submit' }, '检查拼写'));
+    }
+    mount(cardEl, h('div', { class: 'q-meta' }, metas), prompt, response,
+      h('button', {
+        class: 'btn ghost unknown-btn', type: 'button',
+        onclick: () => submitAnswer(false),
+      }, '不认识，查看答案'));
 
     // 英文题面出现时自动朗读
     if (isEn && state.settings.autoPronounce) {
@@ -220,10 +256,14 @@ window.WM = window.WM || {};
   /* ------------------------------- 判定与反馈 ------------------------------- */
 
   function answer(index) {
+    if (!session || session.current.trainingMode === 'spelling') return;
+    submitAnswer(index === session.current.answerIndex, index);
+  }
+
+  function submitAnswer(ok, index = -1) {
     if (!session || session.answered) return;
     const q = session.current;
     const state = store.get();
-    const ok = index === q.answerIndex;
     const isRetry = (session.attempts[q.id] || 0) > 0;
 
     session.answered = true;
@@ -243,6 +283,12 @@ window.WM = window.WM || {};
       if (!isRetry) session.firstWrong.push(q.entry);
     }
 
+    store.flush();
+    WM.app.refreshChrome();
+    cardEl.querySelectorAll('.spelling-form input, .spelling-form button, .unknown-btn').forEach((node) => {
+      node.disabled = true;
+    });
+
     // 3) 选项视觉反馈
     Array.from(cardEl.querySelectorAll('.opt')).forEach((node, i) => {
       node.classList.add('locked');
@@ -261,6 +307,7 @@ window.WM = window.WM || {};
     // 5) 首次答错 → 追加到队尾重练（只重练一次）
     if (!ok && !isRetry) {
       const again = quiz.makeQuestion(q.entry, {
+        trainingMode: session.trainingMode,
         direction: state.settings.direction,
         pool: quiz.poolForSession(state),
         random: Math.random,
@@ -275,9 +322,13 @@ window.WM = window.WM || {};
     }
 
     syncTop();
+    const feedback = cardEl.querySelector('.feedback');
+    feedback.setAttribute('tabindex', '-1');
+    feedback.focus({ preventScroll: true });
+    feedback.scrollIntoView({ block: 'nearest', behavior: 'auto' });
 
     // 7) 答对自动进入下一题；答错停下来看清楚
-    if (ok && state.settings.autoNext) {
+    if (ok && q.trainingMode !== 'spelling' && state.settings.autoNext) {
       const base = state.settings.autoNextDelay || 1100;
       // 展开详细词条时留更长时间——卡片上有例句和翻译两行要读
       const delay = state.settings.showDetail ? Math.max(base, 3200) : base;
@@ -285,13 +336,8 @@ window.WM = window.WM || {};
     }
   }
 
-  /**
-   * 答对后的「详细词条卡」。
-   *
-   * 只在设置里打开 showDetail 且**答对**时用它。答错时不展开：
-   * 那时用户更需要尽快看清正确答案，一屏信息反而碍事。
-   */
-  function buildDetailCard(q) {
+  /** 展示词义、语境和实际复习安排，答错时也能查阅。 */
+  function buildDetailCard(q, ok, isRetry) {
     const entry = q.entry;
     const level = bank.levelMeta(entry.level);
     const state = store.get();
@@ -307,11 +353,15 @@ window.WM = window.WM || {};
       title,
       onclick: (e) => {
         e.stopPropagation();
+        clearTimer();
         sound.speak(text);
       },
     }, icon('i-speaker'));
 
-    return h('div', { class: 'feedback ok detail' },
+    return h('div', { class: `feedback ${ok ? 'ok' : 'no'} detail` },
+      h('div', { class: 'fb-title', role: 'status', text: ok ? '回答正确' : '正确答案 · ' + entry.en }),
+      session.spelling && !ok ? h('p', { class: 'spelling-error', text: '你的拼写 · ' + session.spelling }) : null,
+      !ok ? h('p', { class: 'hint', text: isRetry ? '本组重练完成，明天继续巩固' : '已加入本组重练，明天再次复习' }) : null,
       h('div', { class: 'detail-head' },
         h('div', { class: 'detail-word' },
           h('span', { class: 'dw-en', text: entry.en }),
@@ -329,7 +379,17 @@ window.WM = window.WM || {};
         : null,
 
       h('div', { class: 'detail-foot' },
-        h('span', { class: 'tag ok-tag' }, icon('i-check'), '答对了'),
+        h('button', {
+          class: 'btn sm', type: 'button', 'aria-pressed': String(!!record?.starred),
+          onclick: (event) => {
+            clearTimer();
+            if (!record) return;
+            record.starred = !record.starred;
+            store.flush();
+            event.currentTarget.setAttribute('aria-pressed', String(record.starred));
+            event.currentTarget.replaceChildren(icon('i-star'), record.starred ? '已收藏' : '收藏生词');
+          },
+        }, icon('i-star'), record?.starred ? '已收藏' : '收藏生词'),
         h('span', { class: 'tag' },
           h('span', { style: { width: '8px', height: '8px', borderRadius: '50%', background: level.color, display: 'inline-block' } }),
           level.name),
@@ -342,8 +402,9 @@ window.WM = window.WM || {};
   }
 
   function buildFeedback(ok, q, isRetry) {
-    // 答对 + 开关打开 → 用详细词条卡（其余情况走下面的精简反馈条）
-    if (ok && store.get().settings.showDetail) return buildDetailCard(q);
+    if (!ok || store.get().settings.showDetail || q.trainingMode === 'spelling') {
+      return buildDetailCard(q, ok, isRetry);
+    }
 
     const entry = q.entry;
     const level = bank.levelMeta(entry.level);
@@ -383,7 +444,7 @@ window.WM = window.WM || {};
     clearTimer();
     nextTimer = setTimeout(() => {
       nextTimer = null;
-      if (session && session.answered) next();
+      if (session && session.answered && document.getElementById('modal-host').hidden) next();
     }, Math.max(200, ms));
   }
 
@@ -449,9 +510,10 @@ window.WM = window.WM || {};
           type: 'button',
           onclick: () => {
             destroy();
-            WM.app.resume();
+            WM.app.startStudy(s.kind);
           },
-        }, icon('i-play'), '再来一组'),
+          disabled: bank.buildQueue(state, s.kind).length === 0,
+        }, icon('i-play'), bank.buildQueue(state, s.kind).length ? '继续下一组' : '今日该类任务已完成'),
         h('button', {
           class: 'btn lg',
           type: 'button',
@@ -521,7 +583,7 @@ window.WM = window.WM || {};
   function attachKeys() {
     detachKeys();
     keyHandler = (event) => {
-      if (!session) return;
+      if (!session || !document.getElementById('modal-host').hidden) return;
       const target = event.target;
       if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) return;
 
@@ -578,6 +640,7 @@ window.WM = window.WM || {};
   /* ------------------------------- 对外接口 ------------------------------- */
 
   function renderInto() {
+    if (viewEl?.isConnected) return;
     renderShell();
     if (session) {
       renderQuestion();

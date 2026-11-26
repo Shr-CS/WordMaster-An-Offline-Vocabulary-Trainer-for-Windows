@@ -163,12 +163,16 @@ window.WM = window.WM || {};
         seenReview.add(rec.id);
       }
     }
-    const limitedReview = reviewIds.slice(0, settings.reviewLimit);
+    const doneReview = keep ? { ...keep.doneReview } : {};
+    const completedReview = Object.keys(doneReview).filter((id) => byId.has(id));
+    const reviewBudget = Math.max(0, settings.reviewLimit - historyOf(state, day).reviewCount);
+    const limitedReview = [...completedReview, ...reviewIds.filter((id) => !doneReview[id]).slice(0, reviewBudget)];
 
     /* ------------------ 新词队列：未学过的词，各等级均匀轮取 ------------------ */
     const pool = poolFor(settings.levels).filter((entry) => !state.words[entry.id]);
     const poolIds = new Set(pool.map((entry) => entry.id));
 
+    const newBudget = Math.max(0, settings.dailyCount - historyOf(state, day).newCount);
     const newIds = [];
     const seenNew = new Set();
     for (const id of keep ? keep.newIds : []) {
@@ -178,7 +182,7 @@ window.WM = window.WM || {};
       }
     }
 
-    if (newIds.length < settings.dailyCount) {
+    if (newIds.length < newBudget) {
       // 每个等级内部先打乱，再按等级轮流取词，保证多等级混合时分布均匀
       const buckets = settings.levels
         .map((levelId) => util.shuffle(
@@ -187,7 +191,7 @@ window.WM = window.WM || {};
         ))
         .filter((bucket) => bucket.length);
       let cursor = 0;
-      while (newIds.length < settings.dailyCount && buckets.some((b) => b.length)) {
+      while (newIds.length < newBudget && buckets.some((b) => b.length)) {
         const bucket = buckets[cursor % buckets.length];
         cursor++;
         if (!bucket.length) continue;
@@ -201,10 +205,10 @@ window.WM = window.WM || {};
     return {
       date: day,
       sig,
-      newIds: newIds.slice(0, settings.dailyCount),
+      newIds: [...Object.keys(keep ? keep.doneNew : {}).filter((id) => byId.has(id)), ...newIds.slice(0, newBudget)],
       reviewIds: limitedReview,
       doneNew: keep ? { ...keep.doneNew } : {},
-      doneReview: keep ? { ...keep.doneReview } : {},
+      doneReview,
     };
   }
 

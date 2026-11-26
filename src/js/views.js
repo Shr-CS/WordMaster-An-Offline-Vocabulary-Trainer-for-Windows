@@ -144,6 +144,9 @@ window.WM = window.WM || {};
       h('div', { class: 'lesson-intro' },
         h('div', { class: 'lesson-date', text: todayLabel() }),
         h('h1', { text: '今日学习计划' }),
+        h('button', {
+          class: 'lesson-mode', type: 'button', onclick: () => WM.app.navigate('settings'),
+        }, `${state.settings.trainingMode === 'spelling' ? '拼写训练' : '选择题'} · ${state.settings.sessionSize ? '每组 ' + state.settings.sessionSize + ' 词' : '全部任务'} · 调整`),
         h('p', { class: 'lesson-progress', text: `已完成 ${doneToday} / ${plannedToday} 题` }),
         h('button', {
           class: 'btn primary lg', type: 'button', disabled: prog.totalLeft === 0,
@@ -236,7 +239,7 @@ window.WM = window.WM || {};
   let wbQuery = '';
   let wbLimit = 200;
 
-  function renderWordbook(view) {
+  function renderWordbook(view, { filterOnly = false } = {}) {
     const state = store.get();
     const records = Object.values(state.words);
 
@@ -268,14 +271,15 @@ window.WM = window.WM || {};
     const visible = rows.slice(0, wbLimit);
 
     const search = h('input', {
-      class: 'input',
+      class: 'input wordbook-search',
+      'aria-label': '搜索英文或中文释义',
       type: 'search',
       placeholder: '搜索英文或中文释义…',
       value: wbQuery,
       oninput: (e) => {
         wbQuery = e.target.value;
         wbLimit = 200;
-        renderWordbook(view);
+        renderWordbook(view, { filterOnly: true });
       },
     });
 
@@ -293,7 +297,7 @@ window.WM = window.WM || {};
       segmented,
       h('div', { class: 'search-wrap' }, icon('i-search'), search),
       h('div', { style: { marginLeft: 'auto', display: 'flex', gap: '10px' } },
-        h('span', { class: 'hint', style: { alignSelf: 'center' }, text: `共 ${rows.length} 个` }),
+        h('span', { id: 'wordbook-count', class: 'hint', style: { alignSelf: 'center' }, text: `共 ${rows.length} 个` }),
         h('button', {
           class: 'btn sm',
           type: 'button',
@@ -305,7 +309,7 @@ window.WM = window.WM || {};
         h('span', { text: '单词' }),
         h('span', { text: '释义' }),
         h('span', { class: 'cell-ipa', text: '音标' }),
-        h('span', { text: '词库 / 掌握' }),
+        h('span', { class: 'cell-mastery', text: '词库 / 掌握' }),
         h('span', { class: 'cell-box', text: '复习日期' }),
         h('span', { style: { textAlign: 'right' }, text: '操作' })),
       visible.map((rec) => letRow(rec, view)));
@@ -323,7 +327,14 @@ window.WM = window.WM || {};
         }, '显示更多'))
       : h('div', { class: 'wb-foot' }, h('span', { text: `共 ${rows.length} 条记录` }));
 
-    mount(view, pageHead('生词本', '学过的单词都会在这里，可标记生词或移除'), toolbar, table, foot);
+    const results = rows.length ? table : emptyState('i-search', '没有匹配的单词', '试试其他拼写、中文释义或筛选条件。');
+    if (filterOnly) {
+      mount(view.querySelector('.wordbook-results'), results, foot);
+      document.getElementById('wordbook-count').textContent = `共 ${rows.length} 个`;
+      return;
+    }
+    mount(view, pageHead('生词本', '学过的单词都会在这里，可标记生词或移除'), toolbar,
+      h('div', { class: 'wordbook-results' }, results, foot));
   }
 
   function letRow(rec, view) {
@@ -335,7 +346,7 @@ window.WM = window.WM || {};
         h('button', { class: 'mini-btn', type: 'button', title: '朗读', onclick: () => sound.speak(rec.en) }, icon('i-speaker'))),
       h('div', { class: 'cell-zh', text: rec.zh }),
       h('div', { class: 'cell-ipa', text: rec.ipa }),
-      h('div', {},
+      h('div', { class: 'cell-mastery' },
         h('span', { class: 'box-pill' },
           h('span', { style: { width: '7px', height: '7px', borderRadius: '50%', background: level.color, display: 'inline-block' } }),
           level.name),
@@ -569,6 +580,26 @@ window.WM = window.WM || {};
             onchange: (e) => { applySettings({ reviewLimit: Number(e.target.value) }); renderSettings(view); },
           }))));
 
+    const trainingCard = h('div', { class: 'card' },
+      h('div', { class: 'card-title' }, icon('i-target'), '训练方式'),
+      h('div', { class: 'theme-picker' }, [
+        { id: 'choice', name: '选择题', desc: '通过四个选项辨认词义' },
+        { id: 'spelling', name: '拼写训练', desc: '根据释义输入英文，答后查看例句' },
+      ].map((mode) => h('button', {
+        class: `theme-card ${s.trainingMode === mode.id ? 'on' : ''}`, type: 'button',
+        'aria-pressed': String(s.trainingMode === mode.id),
+        onclick: () => { applySettings({ trainingMode: mode.id }); renderSettings(view); },
+      }, h('div', { class: 'tc-name', text: mode.name }), h('p', { class: 'hint', text: mode.desc })))),
+      h('div', { class: 'row', style: { marginTop: '16px' } },
+        h('div', { class: 'row-main' },
+          h('div', { class: 'row-title', text: '每组单词数' }),
+          h('p', { class: 'row-desc', text: '一组学完再继续，错词会在本组末尾重练' })),
+        h('div', { class: 'number-pick' }, [5, 10, 20, 0].map((size) => h('button', {
+          type: 'button', class: s.sessionSize === size ? 'on' : '',
+          'aria-pressed': String(s.sessionSize === size),
+          onclick: () => { applySettings({ sessionSize: size }); renderSettings(view); },
+        }, size ? String(size) : '全部')))));
+
     /* ---------- 出题方向 ---------- */
     const dirs = [
       { id: 'en2zh', name: '英译中', desc: '看英文选中文' },
@@ -719,7 +750,7 @@ window.WM = window.WM || {};
     const aboutCard = h('div', { class: 'card' },
       h('div', { class: 'card-title' }, icon('i-bolt'), '关于'),
       h('div', { class: 'kv' },
-        kvItem('应用版本', '1.0.0'),
+        kvItem('应用版本', '1.1.0'),
         kvItem('内置词库', `${bank.totalWords()} 词 / ${levels.length} 个等级`),
         kvItem('运行环境', WM.app.info ? `${WM.app.info.platform === 'Android' ? 'Android' : WM.app.info.electron ? 'Electron ' + WM.app.info.electron : '浏览器'} ${WM.app.info.chrome ? '· Chromium ' + WM.app.info.chrome : ''}` : '-')),
       h('p', { class: 'hint', style: { marginTop: '14px' }, text: '背单词 WordMaster · 离线可用，学习数据保存在当前设备上。' }));
@@ -727,7 +758,8 @@ window.WM = window.WM || {};
     mount(view,
       pageHead('设置', '调整词库范围、每日数量、主题与音效'),
       scopeCard,
-      h('div', { class: 'grid c2' }, countCard, dirCard),
+      trainingCard,
+      h('div', { class: 'grid c2' }, countCard, s.trainingMode === 'choice' ? dirCard : null),
       h('div', { class: 'grid c2' }, themeCard, soundCard),
       h('div', { class: 'grid c2' }, dataCard, aboutCard));
   }

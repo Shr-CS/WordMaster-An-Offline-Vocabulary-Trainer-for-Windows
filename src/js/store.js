@@ -19,6 +19,8 @@ window.WM = window.WM || {};
   const DEFAULT_SETTINGS = {
     levels: ['junior'],        // 词库范围（可多选）
     dailyCount: 20,            // 每天新词数量
+    trainingMode: 'choice',    // choice 四选一 / spelling 拼写
+    sessionSize: 10,           // 每组单词数，0 表示全部
     direction: 'mixed',        // en2zh | zh2en | mixed
     theme: 'dark',             // dark | light
     sound: true,               // 音效开关
@@ -56,6 +58,8 @@ window.WM = window.WM || {};
       s.levels = valid.length ? valid : [...DEFAULT_SETTINGS.levels];
     }
     s.dailyCount = WM.util.clamp(Math.round(Number(src.dailyCount)) || DEFAULT_SETTINGS.dailyCount, 5, 200);
+    s.trainingMode = src.trainingMode === 'spelling' ? 'spelling' : 'choice';
+    s.sessionSize = [0, 5, 10, 20].includes(src.sessionSize) ? src.sessionSize : 10;
     s.direction = DIRECTIONS.includes(src.direction) ? src.direction : DEFAULT_SETTINGS.direction;
     s.theme = src.theme === 'light' ? 'light' : 'dark';
     s.sound = src.sound !== false;

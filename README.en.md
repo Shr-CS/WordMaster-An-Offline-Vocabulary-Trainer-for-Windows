@@ -60,3 +60,11 @@ The scheduling logic carries 36 automated assertions, all 5,572 words are verifi
 ## License
 
 [MIT](LICENSE) © 2026 Shr.CS
+
+## Version 1.1
+
+The Android APK and desktop app share spelling practice, groups of 5/10/20 words or all remaining tasks, example sentences after incorrect answers, and bookmarking from answer feedback. Groups default to 10 words. Select the training mode and group size in Settings.
+
+Learning progress is saved after each answer. Restarting or rebuilding a plan counts completed work toward the daily new-word and review limits. Wordbook search preserves focus and input composition.
+
+Download [WordMaster for Android](WordMaster-Android.apk), requiring Android 8.0 or newer.

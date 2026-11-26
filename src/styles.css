@@ -1227,3 +1227,29 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.12); }
   .lesson-art { display: none; }
   .hero { grid-template-columns: 1fr; }
 }
+
+/* Learning controls share the study page's colors and focus treatment. */
+.lesson-mode {
+  display: block;
+  min-height: 40px;
+  color: var(--accent);
+  font-size: 13px;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-bottom: 8px;
+}
+.spelling-form { display: grid; gap: 12px; }
+.spelling-form label { font-size: 14px; color: var(--text-2); }
+.spelling-input { width: 100%; min-height: 56px; font-size: 22px; font-family: var(--font-en); }
+.spelling-form .btn { min-height: 48px; justify-self: start; }
+.unknown-btn { align-self: center; min-height: 44px; }
+.unknown-btn:disabled { display: none; }
+.spelling-error { color: var(--bad); overflow-wrap: anywhere; }
+.feedback.detail.no { border-color: var(--bad); background: var(--bad-soft); }
+.detail-foot .btn { margin-left: 0; }
+.detail-foot > .btn:last-child { margin-left: auto; }
+@media (max-width: 1040px) {
+  .trow .cell-mastery { display: none; }
+}
+.view > .card + .card, .view > .card + .grid { margin-top: 16px; }

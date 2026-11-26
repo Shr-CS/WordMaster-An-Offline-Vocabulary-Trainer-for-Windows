@@ -379,7 +379,7 @@ async function main() {
       (() => {
         const s = window.WM.study.session;
         if (!s) return true;
-        if (s.answered) { const c = document.querySelector('.feedback .btn'); if (c) c.click(); }
+        if (s.answered) { const c = document.querySelector('.feedback .btn.primary'); if (c) c.click(); }
         return true;
       })()
     `);
@@ -401,7 +401,7 @@ async function main() {
   await guard('advance', `
     (() => {
       const s = window.WM.study.session;
-      if (s && s.answered) { const c = document.querySelector('.feedback .btn'); if (c) c.click(); }
+      if (s && s.answered) { const c = document.querySelector('.feedback .btn.primary'); if (c) c.click(); }
       return true;
     })()
   `);

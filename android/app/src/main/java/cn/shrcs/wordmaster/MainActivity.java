@@ -117,7 +117,7 @@ public final class MainActivity extends Activity {
 
     public final class Bridge {
         @JavascriptInterface public String getInfo() {
-            return "{\"platform\":\"Android\",\"version\":\"1.0.0\"}";
+            return "{\"platform\":\"Android\",\"version\":\"1.1.0\"}";
         }
         @JavascriptInterface public void setTheme(String theme) {
             runOnUiThread(() -> {
