@@ -209,7 +209,7 @@ window.WM = window.WM || {};
       h('div', { class: 'bar thin' }, h('i', { style: { width: `${lv.percent}%` } }))));
 
     const scopeCard = h('div', { class: 'card library-progress' },
-      h('div', { class: 'card-title' }, icon('i-book'), '词库进度', h('small', { class: 'library-total', text: `共 ${bank.totalWords()} 词` })),
+      h('div', { class: 'card-title' }, icon('i-book'), '词库进度', h('small', { class: 'library-total', text: `${bank.totalWords()} 条分级收录` })),
       h('div', { class: 'level-list' }, levelLines));
 
     mount(view,
@@ -750,10 +750,15 @@ window.WM = window.WM || {};
     const aboutCard = h('div', { class: 'card' },
       h('div', { class: 'card-title' }, icon('i-bolt'), '关于'),
       h('div', { class: 'kv' },
-        kvItem('应用版本', '1.2.0'),
-        kvItem('内置词库', `${bank.totalWords()} 词 / ${levels.length} 个等级`),
+        kvItem('应用版本', '2.0.0'),
+        kvItem('独立词条', `${window.WM_LEXICON?.length || bank.totalWords()} 词`),
+        kvItem('分级收录', `${bank.totalWords()} 条 / ${levels.length} 个等级`),
         kvItem('运行环境', WM.app.info ? `${WM.app.info.platform === 'Android' ? 'Android' : WM.app.info.electron ? 'Electron ' + WM.app.info.electron : '浏览器'} ${WM.app.info.chrome ? '· Chromium ' + WM.app.info.chrome : ''}` : '-')),
-      h('p', { class: 'hint', style: { marginTop: '14px' }, text: '背单词 WordMaster · 离线可用，学习数据保存在当前设备上。' }));
+      h('p', { class: 'hint', style: { marginTop: '14px' }, text: '背单词 WordMaster · 离线可用，学习数据保存在当前设备上。' }),
+      h('p', { class: 'hint', text: '小学以 CEFR-J A1 为参考；考试词库依据 ECDICT 标签并包含基础词。各级有重复词，参考范围不等同于官方完整考纲。例句按语料实际收录。' }),
+      h('details', { class: 'data-notices hint' },
+        h('summary', { text: '词库来源与许可' }),
+        h('pre', { text: window.WM_DATA_NOTICES || '' })));
 
     mount(view,
       pageHead('设置', '调整词库范围、每日数量、主题与音效'),

@@ -43,21 +43,16 @@ const LEVEL_LABELS = [
  * 之前这里是写死的字符串，词库扩容后就对不上了——改成现算，永远不会过期。
  */
 function bankSummary() {
+  const data = path.join(ROOT, 'src', 'data');
+  const catalog = JSON.parse(fs.readFileSync(path.join(data, 'catalog.json'), 'utf8'));
+  const lexicon = JSON.parse(fs.readFileSync(path.join(data, 'lexicon.json'), 'utf8'));
   const parts = [];
-  let total = 0;
-  let withEx = 0;
+  let total = 0, withEx = 0;
   for (const [id, label] of LEVEL_LABELS) {
-    const file = path.join(ROOT, 'src', 'data', `${id}.json`);
-    let rows = [];
-    try {
-      rows = JSON.parse(fs.readFileSync(file, 'utf8'));
-    } catch (err) {
-      console.warn(`  ⚠ 读不到 ${id}.json，使用说明里会跳过这一级：${err.message}`);
-      continue;
-    }
-    total += rows.length;
-    withEx += rows.filter((r) => r && r.ex).length;
-    parts.push(`${label} ${rows.length}`);
+    const words = catalog.levels[id].words;
+    total += words.length;
+    withEx += words.filter(key => lexicon[key].exampleId).length;
+    parts.push(`${label} ${words.length}`);
   }
   return { line: parts.join(' / '), total, withEx };
 }

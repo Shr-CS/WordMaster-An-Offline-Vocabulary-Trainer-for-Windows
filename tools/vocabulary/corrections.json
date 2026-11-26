@@ -1,0 +1,1728 @@
+{
+  "exclude": [
+    "cance",
+    "attent",
+    "F",
+    "f",
+    "wollongong",
+    "vcd",
+    "mathematic"
+  ],
+  "entries": {
+    "a": {
+      "pos": "art.",
+      "senses": [
+        {
+          "pos": "art.",
+          "zh": "一个；一（用于辅音音素前）"
+        }
+      ],
+      "ipa": "/ə/"
+    },
+    "an": {
+      "pos": "art.",
+      "senses": [
+        {
+          "pos": "art.",
+          "zh": "一个；一（用于元音音素前）"
+        }
+      ],
+      "ipa": "/ən/"
+    },
+    "the": {
+      "pos": "art.",
+      "senses": [
+        {
+          "pos": "art.",
+          "zh": "这；那（表示特指）"
+        }
+      ],
+      "ipa": "/ðə/"
+    },
+    "am": {
+      "en": "am",
+      "senses": [
+        {
+          "pos": "v.",
+          "zh": "是（be 的第一人称单数现在式）"
+        }
+      ],
+      "ipa": "/æm/"
+    },
+    "are": {
+      "senses": [
+        {
+          "pos": "v.",
+          "zh": "是（be 的复数及第二人称现在式）"
+        }
+      ],
+      "ipa": "/ɑr/"
+    },
+    "is": {
+      "senses": [
+        {
+          "pos": "v.",
+          "zh": "是（be 的第三人称单数现在式）"
+        }
+      ],
+      "ipa": "/ɪz/"
+    },
+    "be": {
+      "senses": [
+        {
+          "pos": "v.",
+          "zh": "是；存在；处于某种状态"
+        }
+      ],
+      "ipa": "/bi/"
+    },
+    "have": {
+      "pos": "v.",
+      "senses": [
+        {
+          "pos": "v.",
+          "zh": "有；拥有；经历"
+        },
+        {
+          "pos": "aux.",
+          "zh": "与过去分词连用构成完成时"
+        }
+      ]
+    },
+    "do": {
+      "pos": "v.",
+      "senses": [
+        {
+          "pos": "v.",
+          "zh": "做；进行；完成"
+        },
+        {
+          "pos": "aux.",
+          "zh": "用于构成疑问句、否定句或加强语气"
+        }
+      ],
+      "ipa": "/du/"
+    },
+    "can": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "能；会；可以"
+        },
+        {
+          "pos": "n.",
+          "zh": "罐；罐头"
+        }
+      ],
+      "ipa": "/kæn/"
+    },
+    "may": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "可能；可以（表示可能性或许可）"
+        }
+      ],
+      "ipa": "/meɪ/"
+    },
+    "will": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "将；会（表示将来或意愿）"
+        },
+        {
+          "pos": "n.",
+          "zh": "意志；意愿；遗嘱"
+        }
+      ],
+      "ipa": "/wɪl/"
+    },
+    "would": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "将会；愿意（用于假设或委婉表达）"
+        }
+      ]
+    },
+    "must": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "必须；一定（表示必要或推测）"
+        }
+      ]
+    },
+    "should": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "应该；应当"
+        }
+      ]
+    },
+    "shall": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "将要；好吗（用于征求意见）"
+        }
+      ]
+    },
+    "could": {
+      "pos": "aux.",
+      "senses": [
+        {
+          "pos": "aux.",
+          "zh": "能够；可以（can 的过去式或委婉形式）"
+        }
+      ]
+    },
+    "i": {
+      "en": "I",
+      "senses": [
+        {
+          "pos": "pron.",
+          "zh": "我"
+        }
+      ],
+      "ipa": "/aɪ/"
+    },
+    "one": {
+      "pos": "num.",
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "一；一个"
+        },
+        {
+          "pos": "pron.",
+          "zh": "一个人；一个事物"
+        }
+      ]
+    },
+    "two": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "二；两个"
+        }
+      ]
+    },
+    "three": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "三；三个"
+        }
+      ]
+    },
+    "four": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "四；四个"
+        }
+      ]
+    },
+    "five": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "五；五个"
+        }
+      ]
+    },
+    "six": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "六；六个"
+        }
+      ]
+    },
+    "seven": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "七；七个"
+        }
+      ]
+    },
+    "eight": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "八；八个"
+        }
+      ]
+    },
+    "nine": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "九；九个"
+        }
+      ]
+    },
+    "ten": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十"
+        }
+      ]
+    },
+    "eleven": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十一"
+        }
+      ]
+    },
+    "twelve": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十二"
+        }
+      ]
+    },
+    "thirteen": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十三"
+        }
+      ]
+    },
+    "fourteen": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十四"
+        }
+      ]
+    },
+    "fifteen": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十五"
+        }
+      ]
+    },
+    "sixteen": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十六"
+        }
+      ]
+    },
+    "seventeen": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十七"
+        }
+      ]
+    },
+    "eighteen": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十八"
+        }
+      ]
+    },
+    "nineteen": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "十九"
+        }
+      ]
+    },
+    "twenty": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "二十"
+        }
+      ]
+    },
+    "thirty": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "三十"
+        }
+      ]
+    },
+    "forty": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "四十"
+        }
+      ]
+    },
+    "fifty": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "五十"
+        }
+      ]
+    },
+    "sixty": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "六十"
+        }
+      ]
+    },
+    "seventy": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "七十"
+        }
+      ]
+    },
+    "eighty": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "八十"
+        }
+      ]
+    },
+    "ninety": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "九十"
+        }
+      ]
+    },
+    "hundred": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "一百"
+        }
+      ]
+    },
+    "thousand": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "一千"
+        }
+      ]
+    },
+    "zero": {
+      "senses": [
+        {
+          "pos": "num.",
+          "zh": "零"
+        },
+        {
+          "pos": "n.",
+          "zh": "零点；最低点"
+        }
+      ]
+    },
+    "apple": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "苹果"
+        }
+      ]
+    },
+    "orange": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "橙子；橙色"
+        },
+        {
+          "pos": "adj.",
+          "zh": "橙色的"
+        }
+      ],
+      "pos": "n.",
+      "zh": "橙子；橙色"
+    },
+    "pen": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "钢笔；笔"
+        },
+        {
+          "pos": "v.",
+          "zh": "写；撰写"
+        }
+      ]
+    },
+    "hello": {
+      "senses": [
+        {
+          "pos": "int.",
+          "zh": "你好；喂（打招呼或接电话）"
+        }
+      ]
+    },
+    "grandpa": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "爷爷；外公"
+        }
+      ]
+    },
+    "grandma": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "奶奶；外婆"
+        }
+      ]
+    },
+    "cola": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "可乐"
+        }
+      ],
+      "ipa": "/ˈkoʊlə/"
+    },
+    "download": {
+      "senses": [
+        {
+          "pos": "v.",
+          "zh": "下载"
+        },
+        {
+          "pos": "n.",
+          "zh": "下载；下载的文件"
+        }
+      ],
+      "ipa": "/ˈdaʊnloʊd/"
+    },
+    "online": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "zh": "在线的；联网的"
+        },
+        {
+          "pos": "adv.",
+          "zh": "在线；在网上"
+        }
+      ]
+    },
+    "internet": {
+      "en": "internet",
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "互联网"
+        }
+      ]
+    },
+    "affordable": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "zh": "负担得起的；价格合理的"
+        }
+      ]
+    },
+    "funding": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "资金；经费"
+        }
+      ]
+    },
+    "account for": {
+      "senses": [
+        {
+          "pos": "phr.",
+          "zh": "解释；占（一定比例）"
+        }
+      ],
+      "ipa": "/əˈkaʊnt fɔr/"
+    },
+    "bring about": {
+      "senses": [
+        {
+          "pos": "phr.",
+          "zh": "导致；引起"
+        }
+      ],
+      "ipa": "/brɪŋ əˈbaʊt/"
+    },
+    "ice cream": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "冰淇淋"
+        }
+      ],
+      "ipa": "/ˈaɪs krim/"
+    },
+    "in spite of": {
+      "senses": [
+        {
+          "pos": "phr.",
+          "zh": "尽管；不顾"
+        }
+      ],
+      "ipa": "/ɪn spaɪt əv/"
+    },
+    "space shuttle": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "航天飞机"
+        }
+      ],
+      "ipa": "/speɪs ˈʃʌtəl/"
+    },
+    "per capita": {
+      "senses": [
+        {
+          "pos": "adv.",
+          "zh": "按人头；人均"
+        }
+      ],
+      "ipa": "/pɝ ˈkæpɪtə/"
+    },
+    "tv": {
+      "en": "TV",
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "电视；电视机"
+        }
+      ],
+      "ipa": "/ˌtiˈvi/"
+    },
+    "mr.": {
+      "en": "Mr.",
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "先生（用于男子姓氏前）"
+        }
+      ],
+      "ipa": "/ˈmɪstər/"
+    },
+    "ms.": {
+      "en": "Ms.",
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "女士（用于女子姓氏前）"
+        }
+      ],
+      "ipa": "/mɪz/"
+    },
+    "mrs.": {
+      "en": "Mrs.",
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "夫人；太太"
+        }
+      ],
+      "ipa": "/ˈmɪsɪz/"
+    },
+    "b.c.": {
+      "en": "B.C.",
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "公元前"
+        }
+      ],
+      "ipa": "/ˌbiˈsi/"
+    },
+    "p.m.": {
+      "en": "p.m.",
+      "senses": [
+        {
+          "pos": "adv.",
+          "zh": "下午；午后"
+        }
+      ],
+      "ipa": "/ˌpiˈɛm/"
+    },
+    "a.m.": {
+      "en": "a.m.",
+      "senses": [
+        {
+          "pos": "adv.",
+          "zh": "上午；午前"
+        }
+      ],
+      "ipa": "/ˌeɪˈɛm/"
+    },
+    "i.e.": {
+      "en": "i.e.",
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "即；也就是说"
+        }
+      ],
+      "ipa": "/ˌaɪˈi/"
+    },
+    "no.": {
+      "en": "No.",
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "号码（number 的缩写）"
+        }
+      ],
+      "ipa": "/ˈnʌmbər/"
+    },
+    "mm": {
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "毫米"
+        }
+      ],
+      "ipa": "/ˈmɪləˌmitər/"
+    },
+    "read": {
+      "pos": "v.",
+      "ipa": "/rid/"
+    },
+    "live": {
+      "pos": "v.",
+      "ipa": "/lɪv/",
+      "zh": "居住；生活"
+    },
+    "record": {
+      "pos": "n.",
+      "ipa": "/ˈrɛkərd/"
+    },
+    "object": {
+      "pos": "n.",
+      "ipa": "/ˈɑbdʒɛkt/"
+    },
+    "minute": {
+      "pos": "n.",
+      "ipa": "/ˈmɪnɪt/",
+      "zh": "分钟"
+    },
+    "wind": {
+      "pos": "n.",
+      "ipa": "/wɪnd/"
+    },
+    "close": {
+      "pos": "v.",
+      "ipa": "/kloʊz/",
+      "zh": "关闭"
+    },
+    "use": {
+      "pos": "v.",
+      "ipa": "/juz/"
+    },
+    "lead": {
+      "pos": "v.",
+      "ipa": "/lid/"
+    },
+    "tear": {
+      "pos": "n.",
+      "ipa": "/tɪr/"
+    },
+    "bow": {
+      "pos": "v.",
+      "ipa": "/baʊ/"
+    },
+    "row": {
+      "pos": "n.",
+      "ipa": "/roʊ/"
+    },
+    "house": {
+      "pos": "n.",
+      "ipa": "/haʊs/"
+    },
+    "in": {
+      "pos": "prep.",
+      "zh": "在……里面"
+    },
+    "on": {
+      "pos": "prep.",
+      "zh": "在……上面"
+    },
+    "at": {
+      "pos": "prep.",
+      "zh": "在（某处或某时）"
+    },
+    "for": {
+      "pos": "prep.",
+      "zh": "为了；给"
+    },
+    "with": {
+      "pos": "prep.",
+      "zh": "和……一起；带有"
+    },
+    "by": {
+      "pos": "prep.",
+      "zh": "在……旁边；通过"
+    },
+    "to": {
+      "pos": "prep.",
+      "zh": "向；到"
+    },
+    "as": {
+      "pos": "prep.",
+      "zh": "作为；像"
+    },
+    "that": {
+      "pos": "pron.",
+      "zh": "那；那个"
+    },
+    "this": {
+      "pos": "pron.",
+      "zh": "这；这个"
+    },
+    "about": {
+      "pos": "prep.",
+      "zh": "关于；大约"
+    },
+    "like": {
+      "pos": "v.",
+      "zh": "喜欢"
+    },
+    "more": {
+      "pos": "det.",
+      "zh": "更多的"
+    },
+    "many": {
+      "pos": "det.",
+      "zh": "许多的"
+    },
+    "much": {
+      "pos": "det.",
+      "zh": "许多的；大量的"
+    },
+    "most": {
+      "pos": "det.",
+      "zh": "大多数的"
+    },
+    "all": {
+      "pos": "det.",
+      "zh": "所有的；全部的"
+    },
+    "any": {
+      "pos": "det.",
+      "zh": "任何的"
+    },
+    "some": {
+      "pos": "det.",
+      "zh": "一些；若干"
+    },
+    "each": {
+      "pos": "det.",
+      "zh": "每个"
+    },
+    "every": {
+      "pos": "det.",
+      "zh": "每一个"
+    },
+    "other": {
+      "pos": "det.",
+      "zh": "其他的"
+    },
+    "another": {
+      "pos": "det.",
+      "zh": "另一个"
+    },
+    "both": {
+      "pos": "det.",
+      "zh": "两者都"
+    },
+    "first": {
+      "pos": "num.",
+      "zh": "第一"
+    },
+    "second": {
+      "pos": "num.",
+      "zh": "第二"
+    },
+    "third": {
+      "pos": "num.",
+      "zh": "第三"
+    },
+    "fourth": {
+      "pos": "num.",
+      "zh": "第四"
+    },
+    "fifth": {
+      "pos": "num.",
+      "zh": "第五"
+    },
+    "sixth": {
+      "pos": "num.",
+      "zh": "第六"
+    },
+    "seventh": {
+      "pos": "num.",
+      "zh": "第七"
+    },
+    "eighth": {
+      "pos": "num.",
+      "zh": "第八"
+    },
+    "ninth": {
+      "pos": "num.",
+      "zh": "第九"
+    },
+    "tenth": {
+      "pos": "num.",
+      "zh": "第十"
+    },
+    "look": {
+      "pos": "v.",
+      "zh": "看；看起来"
+    },
+    "run": {
+      "pos": "v.",
+      "zh": "跑；奔跑"
+    },
+    "play": {
+      "pos": "v.",
+      "zh": "玩；演奏"
+    },
+    "need": {
+      "pos": "v.",
+      "zh": "需要"
+    },
+    "call": {
+      "pos": "v.",
+      "zh": "打电话；叫"
+    },
+    "try": {
+      "pos": "v.",
+      "zh": "尝试；试图"
+    },
+    "hold": {
+      "pos": "v.",
+      "zh": "拿着；握住"
+    },
+    "start": {
+      "pos": "v.",
+      "zh": "开始"
+    },
+    "turn": {
+      "pos": "v.",
+      "zh": "转动；转弯"
+    },
+    "move": {
+      "pos": "v.",
+      "zh": "移动；搬家"
+    },
+    "pay": {
+      "pos": "v.",
+      "zh": "支付；付款"
+    },
+    "stand": {
+      "pos": "v.",
+      "zh": "站；站立"
+    },
+    "stop": {
+      "pos": "v.",
+      "zh": "停止"
+    },
+    "walk": {
+      "pos": "v.",
+      "zh": "走路；散步"
+    },
+    "watch": {
+      "pos": "v.",
+      "zh": "观看；注视"
+    },
+    "miss": {
+      "pos": "v.",
+      "zh": "错过；想念"
+    },
+    "finish": {
+      "pos": "v.",
+      "zh": "完成；结束"
+    },
+    "visit": {
+      "pos": "v.",
+      "zh": "参观；拜访"
+    },
+    "smile": {
+      "pos": "v.",
+      "zh": "微笑"
+    },
+    "fly": {
+      "pos": "v.",
+      "zh": "飞；乘飞机"
+    },
+    "cry": {
+      "pos": "v.",
+      "zh": "哭；喊叫"
+    },
+    "ride": {
+      "pos": "v.",
+      "zh": "骑；乘坐"
+    },
+    "ring": {
+      "pos": "v.",
+      "zh": "响铃；打电话"
+    },
+    "wake": {
+      "pos": "v.",
+      "zh": "醒来；叫醒"
+    },
+    "climb": {
+      "pos": "v.",
+      "zh": "爬；攀登"
+    },
+    "dance": {
+      "pos": "v.",
+      "zh": "跳舞"
+    },
+    "drink": {
+      "pos": "v.",
+      "zh": "喝"
+    },
+    "cook": {
+      "pos": "v.",
+      "zh": "烹饪；做饭"
+    },
+    "exercise": {
+      "pos": "n.",
+      "zh": "锻炼；练习"
+    },
+    "grow": {
+      "pos": "v.",
+      "zh": "生长；种植"
+    },
+    "find": {
+      "pos": "v.",
+      "zh": "找到；发现"
+    },
+    "spend": {
+      "pos": "v.",
+      "zh": "花费；度过"
+    },
+    "make": {
+      "pos": "v.",
+      "zh": "制作；使得"
+    },
+    "meet": {
+      "pos": "v.",
+      "zh": "遇见；见面"
+    },
+    "mean": {
+      "pos": "v.",
+      "zh": "意思是；意味着"
+    },
+    "save": {
+      "pos": "v.",
+      "zh": "节省；拯救"
+    },
+    "review": {
+      "pos": "v.",
+      "zh": "复习；回顾"
+    },
+    "feed": {
+      "pos": "v.",
+      "zh": "喂养"
+    },
+    "school": {
+      "pos": "n.",
+      "zh": "学校"
+    },
+    "kid": {
+      "pos": "n.",
+      "zh": "孩子"
+    },
+    "mum": {
+      "pos": "n.",
+      "zh": "妈妈"
+    },
+    "lot": {
+      "pos": "n.",
+      "zh": "许多；大量"
+    },
+    "plane": {
+      "pos": "n.",
+      "zh": "飞机"
+    },
+    "word": {
+      "pos": "n.",
+      "zh": "单词；话语"
+    },
+    "home": {
+      "pos": "n.",
+      "zh": "家"
+    },
+    "mother": {
+      "pos": "n.",
+      "zh": "母亲；妈妈"
+    },
+    "father": {
+      "pos": "n.",
+      "zh": "父亲；爸爸"
+    },
+    "child": {
+      "pos": "n.",
+      "zh": "孩子"
+    },
+    "person": {
+      "pos": "n.",
+      "zh": "人"
+    },
+    "man": {
+      "pos": "n.",
+      "zh": "男人；男子"
+    },
+    "woman": {
+      "pos": "n.",
+      "zh": "女人；女子"
+    },
+    "student": {
+      "pos": "n.",
+      "zh": "学生"
+    },
+    "hand": {
+      "pos": "n.",
+      "zh": "手"
+    },
+    "mouth": {
+      "pos": "n.",
+      "zh": "嘴"
+    },
+    "leg": {
+      "pos": "n.",
+      "zh": "腿"
+    },
+    "ear": {
+      "pos": "n.",
+      "zh": "耳朵"
+    },
+    "eye": {
+      "pos": "n.",
+      "zh": "眼睛"
+    },
+    "body": {
+      "pos": "n.",
+      "zh": "身体"
+    },
+    "neck": {
+      "pos": "n.",
+      "zh": "脖子"
+    },
+    "head": {
+      "pos": "n.",
+      "zh": "头；头部"
+    },
+    "bird": {
+      "pos": "n.",
+      "zh": "鸟"
+    },
+    "dog": {
+      "pos": "n.",
+      "zh": "狗"
+    },
+    "cat": {
+      "pos": "n.",
+      "zh": "猫"
+    },
+    "horse": {
+      "pos": "n.",
+      "zh": "马"
+    },
+    "cow": {
+      "pos": "n.",
+      "zh": "奶牛；母牛"
+    },
+    "sheep": {
+      "pos": "n.",
+      "zh": "绵羊"
+    },
+    "chicken": {
+      "pos": "n.",
+      "zh": "鸡；鸡肉"
+    },
+    "meat": {
+      "pos": "n.",
+      "zh": "肉"
+    },
+    "water": {
+      "pos": "n.",
+      "zh": "水"
+    },
+    "ice": {
+      "pos": "n.",
+      "zh": "冰"
+    },
+    "blue": {
+      "pos": "adj.",
+      "zh": "蓝色的"
+    },
+    "green": {
+      "pos": "adj.",
+      "zh": "绿色的"
+    },
+    "black": {
+      "pos": "adj.",
+      "zh": "黑色的"
+    },
+    "white": {
+      "pos": "adj.",
+      "zh": "白色的"
+    },
+    "red": {
+      "pos": "adj.",
+      "zh": "红色的"
+    },
+    "pink": {
+      "pos": "adj.",
+      "zh": "粉红色的"
+    },
+    "brown": {
+      "pos": "adj.",
+      "zh": "棕色的"
+    },
+    "purple": {
+      "pos": "adj.",
+      "zh": "紫色的"
+    },
+    "yellow": {
+      "pos": "adj.",
+      "zh": "黄色的"
+    },
+    "dress": {
+      "pos": "n.",
+      "zh": "连衣裙；服装"
+    },
+    "flat": {
+      "pos": "n.",
+      "zh": "公寓"
+    },
+    "coach": {
+      "pos": "n.",
+      "zh": "教练；长途客车"
+    },
+    "feeling": {
+      "pos": "n.",
+      "zh": "感觉；感受"
+    },
+    "magazine": {
+      "pos": "n.",
+      "zh": "杂志"
+    },
+    "address": {
+      "pos": "n.",
+      "zh": "地址；住址"
+    },
+    "information": {
+      "pos": "n.",
+      "zh": "信息；资料"
+    },
+    "news": {
+      "pos": "n.",
+      "zh": "新闻；消息"
+    },
+    "message": {
+      "pos": "n.",
+      "zh": "信息；口信"
+    },
+    "class": {
+      "pos": "n.",
+      "zh": "班级；课"
+    },
+    "party": {
+      "pos": "n.",
+      "zh": "聚会；政党"
+    },
+    "hour": {
+      "pos": "n.",
+      "zh": "小时"
+    },
+    "month": {
+      "pos": "n.",
+      "zh": "月；月份"
+    },
+    "winter": {
+      "pos": "n.",
+      "zh": "冬天"
+    },
+    "summer": {
+      "pos": "n.",
+      "zh": "夏天"
+    },
+    "spring": {
+      "pos": "n.",
+      "zh": "春天"
+    },
+    "train": {
+      "pos": "n.",
+      "zh": "火车"
+    },
+    "driver": {
+      "pos": "n.",
+      "zh": "司机"
+    },
+    "actor": {
+      "pos": "n.",
+      "zh": "演员"
+    },
+    "bridge": {
+      "pos": "n.",
+      "zh": "桥"
+    },
+    "circle": {
+      "pos": "n.",
+      "zh": "圆；圆圈"
+    },
+    "sentence": {
+      "pos": "n.",
+      "zh": "句子"
+    },
+    "office": {
+      "pos": "n.",
+      "zh": "办公室"
+    },
+    "job": {
+      "pos": "n.",
+      "zh": "工作；职业"
+    },
+    "skill": {
+      "pos": "n.",
+      "zh": "技能；技巧"
+    },
+    "course": {
+      "pos": "n.",
+      "zh": "课程"
+    },
+    "subject": {
+      "pos": "n.",
+      "zh": "学科；主题"
+    },
+    "love": {
+      "pos": "v.",
+      "zh": "爱；喜爱"
+    },
+    "worry": {
+      "pos": "v.",
+      "zh": "担心"
+    },
+    "hurt": {
+      "pos": "v.",
+      "zh": "受伤；伤害"
+    },
+    "change": {
+      "pos": "v.",
+      "zh": "改变；变化"
+    },
+    "open": {
+      "pos": "v.",
+      "zh": "打开"
+    },
+    "sleep": {
+      "pos": "v.",
+      "zh": "睡觉"
+    },
+    "paint": {
+      "pos": "v.",
+      "zh": "绘画；给……刷漆"
+    },
+    "check": {
+      "pos": "v.",
+      "zh": "检查；核对"
+    },
+    "copy": {
+      "pos": "v.",
+      "zh": "抄写；复制"
+    },
+    "touch": {
+      "pos": "v.",
+      "zh": "触摸；碰"
+    },
+    "shake": {
+      "pos": "v.",
+      "zh": "摇动；握手"
+    },
+    "point": {
+      "pos": "v.",
+      "zh": "指；指向"
+    },
+    "post": {
+      "pos": "v.",
+      "zh": "邮寄；发布"
+    },
+    "order": {
+      "pos": "n.",
+      "zh": "顺序；订单"
+    },
+    "form": {
+      "pos": "n.",
+      "zh": "表格；形式"
+    },
+    "character": {
+      "pos": "n.",
+      "zh": "性格；人物"
+    },
+    "case": {
+      "pos": "n.",
+      "zh": "情况；箱子"
+    },
+    "own": {
+      "pos": "adj.",
+      "zh": "自己的"
+    },
+    "nothing": {
+      "pos": "pron.",
+      "zh": "没有什么"
+    },
+    "well": {
+      "pos": "adv.",
+      "zh": "好；顺利地"
+    },
+    "still": {
+      "pos": "adv.",
+      "zh": "仍然；还是"
+    },
+    "too": {
+      "pos": "adv.",
+      "zh": "也；太"
+    },
+    "really": {
+      "pos": "adv.",
+      "zh": "真正地；很"
+    },
+    "early": {
+      "pos": "adv.",
+      "zh": "提早；在早期"
+    },
+    "yes": {
+      "pos": "int.",
+      "zh": "是；对"
+    },
+    "sorry": {
+      "pos": "adj.",
+      "zh": "抱歉的；难过的"
+    },
+    "sure": {
+      "pos": "adj.",
+      "zh": "确信的；肯定的"
+    },
+    "sick": {
+      "pos": "adj.",
+      "zh": "生病的"
+    },
+    "famous": {
+      "pos": "adj.",
+      "zh": "著名的"
+    },
+    "nice": {
+      "pos": "adj.",
+      "zh": "令人愉快的；友好的"
+    },
+    "funny": {
+      "pos": "adj.",
+      "zh": "有趣的；滑稽的"
+    },
+    "wonderful": {
+      "pos": "adj.",
+      "zh": "精彩的；极好的"
+    },
+    "dry": {
+      "pos": "adj.",
+      "zh": "干燥的"
+    },
+    "expensive": {
+      "pos": "adj.",
+      "zh": "昂贵的"
+    },
+    "clean": {
+      "pos": "adj.",
+      "zh": "干净的"
+    },
+    "cold": {
+      "pos": "adj.",
+      "zh": "寒冷的"
+    },
+    "warm": {
+      "pos": "adj.",
+      "zh": "温暖的"
+    },
+    "cool": {
+      "pos": "adj.",
+      "zh": "凉爽的"
+    },
+    "quiet": {
+      "pos": "adj.",
+      "zh": "安静的"
+    },
+    "tall": {
+      "pos": "adj.",
+      "zh": "高的（指人或物）"
+    },
+    "small": {
+      "pos": "adj.",
+      "zh": "小的"
+    },
+    "little": {
+      "pos": "adj.",
+      "zh": "小的；少的"
+    },
+    "ready": {
+      "pos": "adj.",
+      "zh": "准备好的"
+    },
+    "left": {
+      "pos": "adj.",
+      "zh": "左边的"
+    },
+    "right": {
+      "pos": "adj.",
+      "zh": "正确的；右边的"
+    },
+    "great": {
+      "pos": "adj.",
+      "zh": "很棒的；伟大的"
+    },
+    "real": {
+      "pos": "adj.",
+      "zh": "真实的"
+    },
+    "important": {
+      "pos": "adj.",
+      "zh": "重要的"
+    },
+    "long": {
+      "pos": "adj.",
+      "zh": "长的"
+    },
+    "full": {
+      "pos": "adj.",
+      "zh": "满的；饱的"
+    },
+    "kind": {
+      "pos": "adj.",
+      "zh": "友善的"
+    },
+    "happy": {
+      "pos": "adj.",
+      "zh": "快乐的；幸福的"
+    },
+    "article": {
+      "pos": "n.",
+      "zh": "文章；冠词"
+    },
+    "period": {
+      "pos": "n.",
+      "zh": "时期；一段时间"
+    },
+    "bar": {
+      "pos": "n.",
+      "zh": "酒吧；条"
+    },
+    "band": {
+      "pos": "n.",
+      "zh": "乐队；带子"
+    },
+    "match": {
+      "pos": "n.",
+      "zh": "比赛；火柴"
+    },
+    "file": {
+      "pos": "n.",
+      "zh": "文件"
+    },
+    "spot": {
+      "pos": "n.",
+      "zh": "地点；斑点"
+    },
+    "pool": {
+      "pos": "n.",
+      "zh": "游泳池；水池"
+    },
+    "bill": {
+      "pos": "n.",
+      "zh": "账单；钞票"
+    },
+    "round": {
+      "pos": "adj.",
+      "zh": "圆的"
+    },
+    "correct": {
+      "pos": "adj.",
+      "zh": "正确的"
+    },
+    "pretty": {
+      "pos": "adj.",
+      "zh": "漂亮的"
+    },
+    "main": {
+      "pos": "adj.",
+      "zh": "主要的"
+    },
+    "cheap": {
+      "pos": "adj.",
+      "zh": "便宜的"
+    },
+    "trainers": {
+      "pos": "n.",
+      "zh": "运动鞋"
+    },
+    "all right": {
+      "senses": [
+        {
+          "pos": "adj.",
+          "zh": "令人满意的；可以的"
+        }
+      ],
+      "ipa": "/ɔl raɪt/"
+    },
+    "good morning": {
+      "senses": [
+        {
+          "pos": "int.",
+          "zh": "早上好"
+        }
+      ],
+      "ipa": "/ɡʊd ˈmɔrnɪŋ/"
+    },
+    "good afternoon": {
+      "senses": [
+        {
+          "pos": "int.",
+          "zh": "下午好"
+        }
+      ],
+      "ipa": "/ɡʊd ˌæftərˈnun/"
+    },
+    "good night": {
+      "senses": [
+        {
+          "pos": "int.",
+          "zh": "晚安"
+        }
+      ],
+      "ipa": "/ɡʊd naɪt/"
+    },
+    "each other": {
+      "senses": [
+        {
+          "pos": "pron.",
+          "zh": "互相；彼此"
+        }
+      ],
+      "ipa": "/itʃ ˈʌðər/"
+    },
+    "last name": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "姓氏"
+        }
+      ],
+      "ipa": "/læst neɪm/"
+    },
+    "have to": {
+      "senses": [
+        {
+          "pos": "phr.",
+          "zh": "不得不；必须"
+        }
+      ],
+      "ipa": "/hæv tə/"
+    },
+    "dining room": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "餐厅；饭厅"
+        }
+      ],
+      "ipa": "/ˈdaɪnɪŋ rum/"
+    },
+    "living room": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "客厅"
+        }
+      ],
+      "ipa": "/ˈlɪvɪŋ rum/"
+    },
+    "credit card": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "信用卡"
+        }
+      ],
+      "ipa": "/ˈkrɛdɪt kɑrd/"
+    },
+    "cd player": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "光盘播放器"
+        }
+      ],
+      "ipa": "/ˌsiˈdi ˌpleɪər/"
+    },
+    "e-mail": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "电子邮件"
+        }
+      ],
+      "ipa": "/ˈiˌmeɪl/"
+    },
+    "dr.": {
+      "senses": [
+        {
+          "pos": "abbr.",
+          "zh": "博士；医生"
+        }
+      ],
+      "ipa": "/ˈdɑktər/"
+    },
+    "rainforest": {
+      "senses": [
+        {
+          "pos": "n.",
+          "zh": "雨林"
+        }
+      ],
+      "ipa": "/ˈreɪnˌfɔrɪst/"
+    }
+  }
+}

@@ -23,11 +23,6 @@ yarn-error.log*
 *.tmp
 *.bak
 
-# ---------- 词库扩容的中间产物 ----------
-# src/data/parts/*.json 是要提交的（新词分片与补丁，记录了词库是怎么长出来的），
-# 但 _used/ 是 mk-used-list.js / list-dup-zh.js 生成的派生清单，随时可重新生成。
-src/data/parts/_used/
-
 # ---------- 编辑器 / IDE ----------
 .idea/
 .vscode/*
@@ -44,8 +39,8 @@ Desktop.ini
 # ============================================================
 #  以下文件是「故意提交」的，请勿加入忽略：
 #
-#  · src/data/*.json    —— 7 份词库源文件，手工维护的内容
-#  · src/data/words.js  —— 由 build:data 从上面的 JSON 汇总生成，
+#  · src/data/*.json    —— 统一词典、分级目录与例句
+#  · src/data/words.js  —— 由 build:data 从统一词典与分级目录生成，
 #                          但它是应用运行时真正加载的数据。
 #                          提交它，clone 下来直接 npm start 就能跑，
 #                          不必先构建。改完 JSON 记得跑 npm run build:data

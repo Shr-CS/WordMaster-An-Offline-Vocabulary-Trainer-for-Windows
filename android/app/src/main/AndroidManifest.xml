@@ -5,7 +5,8 @@
     </queries>
     <application
         android:label="背单词 WordMaster"
-        android:icon="@drawable/icon"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme"
         android:allowBackup="false"
         android:fullBackupContent="false"

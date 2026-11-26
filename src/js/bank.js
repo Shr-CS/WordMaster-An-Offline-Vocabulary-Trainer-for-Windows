@@ -18,9 +18,9 @@ window.WM = window.WM || {};
 
   /** 词库等级注册表 */
   const LEVELS = [
-    { id: 'primary', name: '小学', desc: '小学英语核心词', color: '#f59e0b' },
-    { id: 'junior', name: '初中', desc: '中考大纲高频词', color: '#10b981' },
-    { id: 'senior', name: '高中', desc: '高考高频词', color: '#3b82f6' },
+    { id: 'primary', name: '小学', desc: 'CEFR-J A1 基础参考词', color: '#f59e0b' },
+    { id: 'junior', name: '初中', desc: '中考标签词 + 基础词', color: '#10b981' },
+    { id: 'senior', name: '高中', desc: '高考标签词 + 基础词', color: '#3b82f6' },
     { id: 'cet4', name: '四级', desc: 'CET-4 核心词', color: '#8b5cf6' },
     { id: 'cet6', name: '六级', desc: 'CET-6 核心词', color: '#ec4899' },
     { id: 'ielts', name: '雅思', desc: 'IELTS 话题词', color: '#06b6d4' },
@@ -36,6 +36,7 @@ window.WM = window.WM || {};
   const byLevel = new Map();
   /** id -> entry */
   const byId = new Map();
+  const historicalById = new Map();
 
   function buildIndex() {
     byLevel.clear();
@@ -52,9 +53,17 @@ window.WM = window.WM || {};
           zh: String(row.zh),
           pos: String(row.pos || ''),
           ipa: String(row.ipa || ''),
+          senses: row.senses || [],
+          pronunciations: row.pronunciations || [],
+          forms: row.forms || {},
+          variants: row.variants || [],
+          accent: row.accent || '',
+          cefr: row.cefr || '',
+          source: row.source || '',
+          example: window.WM_EXAMPLES?.[row.exampleId] || null,
           // 例句用于答对后的详细词条卡；老词库没有这两个字段时留空
-          ex: String(row.ex || ''),
-          exZh: String(row.exZh || ''),
+          ex: String(window.WM_EXAMPLES?.[row.exampleId]?.en || row.ex || ''),
+          exZh: String(window.WM_EXAMPLES?.[row.exampleId]?.zh || row.exZh || ''),
         };
         if (byId.has(entry.id)) continue;
         byId.set(entry.id, entry);
@@ -80,7 +89,33 @@ window.WM = window.WM || {};
   }
 
   function get(id) {
-    return byId.get(id) || null;
+    return byId.get(id) || historicalById.get(id) || null;
+  }
+
+  // Refresh dictionary metadata without discarding scheduling or old, retired words.
+  function syncRecords(state) {
+    historicalById.clear();
+    const aliases = new Map();
+    for (const [id, record] of Object.entries(state.words)) {
+      const entry = byId.get(id) || list(record.level).find(word => word.en.toLowerCase() === record.en.toLowerCase());
+      if (entry) {
+        Object.assign(record, { en: entry.en, zh: entry.zh, pos: entry.pos, ipa: entry.ipa });
+        if (entry.id !== id && !state.words[entry.id]) {
+          record.id = entry.id;
+          state.words[entry.id] = record;
+          delete state.words[id];
+          aliases.set(id, entry.id);
+        }
+      } else {
+        historicalById.set(id, { ...record, senses: [{ pos: record.pos, zh: record.zh }],
+          forms: {}, variants: [], pronunciations: [], source: 'legacy', accent: '', cefr: '', ex: '', exZh: '' });
+      }
+    }
+    if (state.plan) {
+      for (const key of ['newIds', 'reviewIds']) state.plan[key] = state.plan[key].map(id => aliases.get(id) || id);
+      for (const key of ['doneNew', 'doneReview']) state.plan[key] = Object.fromEntries(
+        Object.entries(state.plan[key]).map(([id, value]) => [aliases.get(id) || id, value]));
+    }
   }
 
   function all() {
@@ -127,7 +162,7 @@ window.WM = window.WM || {};
   function ensurePlan(state, { rebuild = false } = {}) {
     const day = today();
     const s = state.settings;
-    const sig = [s.levels.slice().sort().join(','), s.dailyCount, s.reviewLimit].join('|');
+    const sig = [s.levels.slice().sort().join(','), s.dailyCount, s.reviewLimit, window.WM_DATA_META?.version || 'legacy'].join('|');
     const plan = state.plan;
     if (!rebuild && plan && plan.date === day && plan.sig === sig) return plan;
     state.plan = buildPlan(state, day, sig, plan);
@@ -164,7 +199,7 @@ window.WM = window.WM || {};
       }
     }
     const doneReview = keep ? { ...keep.doneReview } : {};
-    const completedReview = Object.keys(doneReview).filter((id) => byId.has(id));
+    const completedReview = Object.keys(doneReview).filter((id) => get(id));
     const reviewBudget = Math.max(0, settings.reviewLimit - historyOf(state, day).reviewCount);
     const limitedReview = [...completedReview, ...reviewIds.filter((id) => !doneReview[id]).slice(0, reviewBudget)];
 
@@ -205,7 +240,7 @@ window.WM = window.WM || {};
     return {
       date: day,
       sig,
-      newIds: [...Object.keys(keep ? keep.doneNew : {}).filter((id) => byId.has(id)), ...newIds.slice(0, newBudget)],
+      newIds: [...Object.keys(keep ? keep.doneNew : {}).filter((id) => get(id)), ...newIds.slice(0, newBudget)],
       reviewIds: limitedReview,
       doneNew: keep ? { ...keep.doneNew } : {},
       doneReview,
@@ -234,7 +269,7 @@ window.WM = window.WM || {};
     const plan = ensurePlan(state);
     const items = [];
     const push = (id, mode) => {
-      if (!byId.has(id)) return;
+      if (!get(id)) return;
       items.push({ id, mode });
     };
 
@@ -328,7 +363,7 @@ window.WM = window.WM || {};
    * @param {boolean} first  是否是该词今天第一次作答（重练不计入计划与调度）
    */
   function recordAnswer(state, id, ok, mode, first) {
-    const entry = byId.get(id);
+    const entry = get(id);
     if (!entry) return;
 
     const day = today();
@@ -384,7 +419,7 @@ window.WM = window.WM || {};
     return levels().map((lv) => {
       const total = lv.total;
       let learned = 0;
-      for (const rec of Object.values(state.words)) if (rec.level === lv.id) learned += 1;
+      for (const rec of Object.values(state.words)) if (rec.level === lv.id && byId.has(rec.id)) learned += 1;
       return { ...lv, learned, percent: util.pct(learned, total) };
     });
   }
@@ -427,7 +462,7 @@ window.WM = window.WM || {};
 
   WM.bank = {
     LEVELS, INTERVALS, MASTER_BOX,
-    levels, levelMeta, list, get, all, poolFor, totalWords, dataReady,
+    levels, levelMeta, list, get, all, poolFor, totalWords, dataReady, syncRecords,
     today, isDue, dueRecords, historyOf,
     ensurePlan, planProgress, buildQueue,
     registerNewWord, gradeWord, recordAnswer, addStudySeconds, touchStreak,

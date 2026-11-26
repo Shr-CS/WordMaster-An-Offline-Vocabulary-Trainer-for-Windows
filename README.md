@@ -1,355 +1,83 @@
-# 背单词 WordMaster
-
 [English](README.en.md) | **中文**
 
-一个支持 Windows 与 Android 的离线背单词应用。7 个词库等级自由组合、**共 6250 词且每词都带例句**、中英双向选择题与拼写训练、对错音效、答后例句与详细词条卡、明暗主题切换，并内置艾宾浩斯式复习调度——**今天背的单词，明天一定会重新考你**。
+# 背单词 WordMaster
 
-<!-- 界面截图见 build/shots/ 目录（由 npm run capture 自动生成） -->
+支持 Windows 与 Android 的离线背单词应用：选择题、拼写训练、生词本、复习计划、明暗主题和本地 JSON 备份。
 
----
+![首页](docs/screenshots/01-home-dark.png)
 
-## 1.1 学习体验更新
+## Android 2.0.0
 
-- **拼写训练**在「设置 → 训练方式」开启，看中文释义输入英文。支持大小写、全角字母和常见弯引号的归一化，答后显示正确拼写和双语例句。
-- **分组学习**默认每组 10 词，可选 5、10、20 或全部。完成一组后可直接继续下一组，错词在当前组末尾重练。
-- **错词巩固**增加「不认识，查看答案」入口，答错后也能查看例句、朗读、收藏生词和确认下次复习日期。
-- **进度稳定性**每次作答立即保存。重启、导入备份或调整设置后，当天已完成的数量会计入任务额度。
-- **生词本**搜索时保留输入焦点和输入法组合状态，空搜索结果有明确提示，手机列表和操作按钮更易使用。
+[下载 WordMaster-Android.apk](WordMaster-Android.apk)，适用于 Android 8.0 及以上版本。
 
-本轮训练方式参考了不背单词的拼写与语境学习介绍，以及墨墨的回忆反馈和学习量安排。相关产品说明见 [不背单词官网](https://www.bbdc.cn/) 和 [墨墨使用帮助](https://www.maimemo.com/help30)。
+使用与 1.x 相同的签名，版本号 2.0.0 / versionCode 4，可以覆盖安装。学习进度、收藏和复习日期保留；换库后仍有学习记录的旧词可继续复习。请使用覆盖安装，卸载应用会清除本地数据。
 
-## Android 版
+新的桌面图标使用森林绿底色、书页与 W 标记，包含自适应前景/背景和 Android 13 单色主题图层。手机、横屏和平板不显示桌面快捷键提示。
 
-[下载 WordMaster-Android.apk](./WordMaster-Android.apk)，适用于 Android 8.0 及以上版本。安装时按系统提示允许当前浏览器或文件管理器安装应用。
+<img src="docs/brand/android-launcher.svg" width="128" alt="新版 Android 图标">
+<img src="docs/screenshots/12-choice-mobile.png" width="300" alt="手机版选择题，无桌面快捷键提示">
 
-APK 版本为 1.2.0，可直接覆盖安装上一版并保留学习记录，内置完整的 6250 词，支持离线选择题、拼写、复习、生词本、统计和明暗主题。手机版使用底部导航，可在首页进入新词学习与复习；手机、横屏和平板均不显示桌面快捷键说明、选项数字键标签及发音键提示。英语朗读使用 Android 系统的文字转语音服务，离线朗读需先在系统设置中安装英语语音包。
+英语朗读使用 Android 系统 TTS；离线发音需安装英语语音包。导入导出使用系统文件选择器，备份与 Windows 版互通。构建与签名说明见 [android/README.md](android/README.md)。当前环境未连接 Android 真机，完成的是浏览器操作检查、构建、Lint、资源及签名校验。
 
-在 Windows 版设置里导出 JSON 备份，再在 Android 版设置中导入，即可转移学习记录。设备之间也可按同样方式迁移。
+## 词库重构
 
-Android 工程与构建说明见 [android/README.md](android/README.md)。
+2.0 采用**统一词典＋分级目录**，共 **11100 个不同词条、33366 条分级收录**。同一单词出现在多个等级时共享释义与音标，不再分别维护互相冲突的版本。
 
-<img src="docs/screenshots/12-choice-mobile.png" width="320" alt="Android 选择题界面，无桌面键盘提示">
+| 词库 | 收录数 | 范围依据 |
+| --- | ---: | --- |
+| 小学 | 1068 | CEFR-J A1 基础参考 |
+| 初中 | 1773 | ECDICT 中考标签＋A1 基础 |
+| 高中 | 3790 | ECDICT 高考标签＋前级基础 |
+| 四级 | 5388 | ECDICT CET-4 标签＋前级基础 |
+| 六级 | 7133 | ECDICT CET-6 标签＋四级基础 |
+| 雅思 | 5919 | ECDICT IELTS 标签＋基础词 |
+| 托福 | 8295 | ECDICT TOEFL 标签＋基础词 |
 
-<img src="docs/screenshots/11-spelling-mobile.png" alt="Android 拼写训练" width="320">
+这是分级学习参考范围，不等同于中国小学课程或官方完整考试词表。各级包含基础词，因此有重叠，收录数不能当作不同单词总数。
 
-## 界面预览
+- 词条包含简明学习释义、按词性拆分的完整释义、音标及来源，部分词条有词形变化和 CEFR 标注。
+- 音标优先采用独立美式 IPA 数据，缺失时保留并标明英式音标。人工修订记录位于 [corrections.json](tools/vocabulary/corrections.json)。
+- 例句改用 Tatoeba / ManyThings 的英中语料，按词义相关性和句子长度筛选，保留原句、作者和来源。当前收录 **1648 组不同例句**，并非每个词条都有例句；词条卡可展开署名信息。
+- 选择题过滤与答案任一释义重叠的干扰项；拼写训练提供首字母提示，并接受词条列出的英美拼写变体。
+- 合并明确的复数/变形记录，剔除缺少可靠音标、词性或需要进一步核查的记录。数量、例句覆盖和剔除理由见 [质量报告](docs/vocabulary-audit.json)。
 
-![首页（黑色主题）](docs/screenshots/01-home-dark.png)
+来源： [ECDICT](https://github.com/skywind3000/ECDICT)、[CEFR-J / Open Language Profiles](https://github.com/openlanguageprofiles/olp-en-cefrj)、[ipa-dict](https://github.com/open-dict-data/ipa-dict)、[Tatoeba 例句](https://www.manythings.org/anki/)。完整署名和许可见 [THIRD_PARTY_NOTICES.txt](docs/THIRD_PARTY_NOTICES.txt)，应用内也可在「设置 → 词库来源与许可」查阅。
 
-<table>
-<tr>
-<td width="50%"><img src="docs/screenshots/02-study-question.png" alt="答题界面"><br><sub>中译英选择题 · 四选一</sub></td>
-<td width="50%"><img src="docs/screenshots/03-answer-correct.png" alt="答对反馈"><br><sub>答对：绿色高亮 + 上行音效 + 详细词条卡</sub></td>
-</tr>
-<tr>
-<td><img src="docs/screenshots/04-answer-wrong.png" alt="答错反馈"><br><sub>答错：标出正确答案，并稍后重考</sub></td>
-<td><img src="docs/screenshots/06-stats.png" alt="数据统计"><br><sub>学习曲线与正确率统计</sub></td>
-</tr>
-<tr>
-<td><img src="docs/screenshots/05-wordbook.png" alt="生词本"><br><sub>生词本：可搜索、标记、移除</sub></td>
-<td><img src="docs/screenshots/07-home-light.png" alt="白色主题"><br><sub>白色主题（一键切换）</sub></td>
-</tr>
-</table>
+## 学习方式
 
-**答后的详细词条卡**（选择题答对时可关闭）：音标、词性、释义、例句＋翻译、所属词库、复习进度，单词和例句都能点喇叭朗读。
+在设置中选择词库、每日新词数、选择题或拼写模式，以及每组 5 / 10 / 20 词或全部任务。默认每组 10 词。
 
-<img src="docs/screenshots/09-detail-card.png" alt="详细词条卡" width="620">
+今天学的新词会在次日进入复习。答对按 1、2、4、7、15、30 天延长间隔；答错从次日重新开始。每次答题立即保存，重新打开或调整计划不会补充当天已经完成的新词、复习配额。
 
-设置页里对应的一行（`答对后展开详细词条`）：
+答对、答错均可查看详细释义、例句和词形，收藏生词或点击朗读；错词会在组内重练。生词本支持搜索、筛选、收藏和掌握进度。电脑端可使用 `1~4` / `A~D` 作答、`Enter` 继续、`S` 朗读、`Esc` 退出。
 
-<img src="docs/screenshots/10-detail-toggle.png" alt="详细词条开关" width="620">
+## 开发与数据维护
 
-![设置页](docs/screenshots/08-settings-light.png)
-
----
-
-## 一、需求对照
-
-| 你的要求 | 实现方式 |
-| --- | --- |
-| 可自由选择范围：小学 / 初中 / 高中 / 雅思 / 托福 / 四六级 | 「设置 → 词库范围」7 个词库卡片**多选**，另有「全选 / 只选国内学段 / 只选留学考试」快捷按钮。共 **6250 词**（高中及以上 5 个等级各 1000+ 词） |
-| 同时涵盖中英文的背诵 | 三种出题方向：**英译中**、**中译英**、**中英混合**。中译英题目答完后自动朗读英文，音形义一起记 |
-| UI 整体可自由选择白色和黑色 | 标题栏一键切换，设置页有带预览图的主题卡片。切换即时生效，**连系统标题栏按钮配色一起变** |
-| 采用选择题方式 | 四选一，键盘 `1~4` / `A~D` 直接作答；干扰项优先取同等级同词性，难度不跳档 |
-| 答对、答错都有相应音效 | 用 Web Audio 实时合成：答对是清脆的上行双音，答错是低沉的下行滑音。另有「一组学完」「全对」的收尾音 |
-| 可选择一天背诵的单词数量 | 滑块 5~200，另有 10/15/20/30/50/80 快捷档 |
-| 第二天复习第一天背的单词 | 学完即排入次日复习；答对间隔按 **1→2→4→7→15→30 天**递增，答错直接退回明天重来 |
-| 答对时也能看到详细词条介绍，且可自主开关 | 答对后弹出**详细词条卡**：音标、词性、释义、英文例句＋中文翻译、所属词库、复习等级与下次复习日期，单词/例句均可朗读。设置在「界面」卡片里的 `答对后展开详细词条`，关掉就退回原来那条精简反馈；展开时自动跳题会延后到至少 3.2 秒，留出阅读时间 |
-
-额外附带：全部词条都配了例句与例句翻译、生词本、数据统计与学习曲线、连续打卡、系统语音朗读、数据导出/导入备份、错题自动重练。
-
----
-
-## 二、快速开始
-
-### 方式一：直接运行绿色版（最省事）
-
-```
-release\WordMaster\背单词 WordMaster.exe
+```sh
+npm install
+npm start
+npm run check
+npm run build:portable
 ```
 
-双击即可。想放桌面就双击同目录下的 `创建桌面快捷方式.bat`。整个文件夹可以拷到 U 盘。
+维护数据时使用新的来源流程，不再合并旧版的零散词库分片：
 
-### 方式二：装到本机（等价于安装包，推荐给不想每次进 release 目录的人）
-
-双击仓库根目录的 **`安装到本机.bat`**，它会：
-
-1. 把程序复制到 `%LOCALAPPDATA%\Programs\WordMaster`
-2. 创建桌面快捷方式和开始菜单快捷方式
-3. 在「设置 → 应用 → 已安装的应用」里登记（含图标、版本、占用大小），可正常卸载
-
-卸载用「设置 → 应用」，或双击根目录的 `卸载 WordMaster.bat`。学习记录不会被删。
-
-> 脚本支持传参，方便自定义：`安装到本机.bat -Dest D:\Apps\WordMaster`。
-
-### 方式三：从源码运行
-
-```bash
-npm install          # 安装 Electron
-npm start            # 启动应用
+```sh
+npm run rebuild:vocabulary
 ```
 
-### 为什么这里没有 `Setup.exe` 安装包
+命令离线读取固定版本的数据快照，验证 SHA-256，重建词库、生成运行脚本并完成检查。Python 3 仅使用标准库。来源版本与校验和保存在 [manifest.json](src/data/sources/manifest.json)。
 
-electron-builder 打 NSIS 安装包的流程是：先编译一个中间安装包 → **运行它**提取卸载程序 → 签名 → 再编译最终安装包。
-第二步要求系统肯执行那个刚编译出来、没有数字签名的 exe。
-
-**而开启了 Smart App Control 的 Windows 会拒绝执行它**（`HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy`
-里 `VerifiedAndReputablePolicyState = 1`），系统日志会记下：
-
-```
-Code Integrity determined that a process ... attempted to load
-...\WordMaster-Setup-1.0.0.exe that did not meet the Enterprise signing level requirements
-```
-
-所以在这类机器上，安装包**既编不出来，编出来也点不开**。绿色版之所以没问题，是因为它复用的是有信誉的
-`electron.exe`，能通过校验。
-
-想在别的机器上编安装包：把仓库拷过去，在**没有**开启 Smart App Control 的 Windows 上双击 `制作安装包.bat`；
-或者用代码签名证书给产物签名（OV 证书还需要攒信誉，EV 证书即时生效）。
-
-### ⚠️ 绿色版是「打包那一刻的源码快照」
-
-`release/` 里的产物**不会**自动跟着 `src/` 更新，而且它们不入版本库。所以改完词库或界面后：
-
-```bash
-npm run build:portable     # 重新生成绿色版（纯 Node 复制，离线可跑，约 10 秒）
+```text
+src/data/lexicon.json       单一词典，每个词条维护一次
+src/data/catalog.json       七个等级的词条引用
+src/data/examples.json      例句与逐句作者署名
+src/data/sources/           固定版本、压缩后的来源快照
+src/data/words.js           自动生成，随应用离线分发
+tools/vocabulary/           清洗、修订和可重复构建脚本
+docs/vocabulary-audit.json  数量、覆盖率与剔除记录
 ```
 
-装到本机同理——重新打包后再跑一次 `安装到本机.bat` 覆盖即可。
+`npm run check` 检查词库结构、来源引用和分级完整性，使用真实出题器为全部 33366 条分级记录生成双向题目并排除歧义选项，再运行备份、迁移、拼写与复习调度回归测试。
 
-> 新版词库脚本 `release\WordMaster\resources\app\src\data\words.js` 约 1.2 MB，包含全部音标、词性和双语例句。
-
----
-
-## 三、目录结构
-
-```
-WordMaster/
-├─ main.js                    Electron 主进程：窗口、主题化标题栏、菜单、导入导出
-├─ preload.js                 上下文隔离桥，只暴露白名单能力
-├─ electron-builder.yml       安装包打包配置
-├─ src/
-│  ├─ index.html              页面骨架 + SVG 图标精灵
-│  ├─ styles.css              设计令牌与全部样式（明暗双主题）
-│  ├─ js/
-│  │  ├─ util.js              DOM 构建、日期、可复现随机数、提示条、模态框
-│  │  ├─ sound.js             Web Audio 音效合成 + 系统语音朗读
-│  │  ├─ store.js             状态持久化与数据校验、导入导出
-│  │  ├─ bank.js              词库索引、学习计划、复习调度（核心算法）
-│  │  ├─ quiz.js              选择题生成与干扰项筛选
-│  │  ├─ study.js             学习会话控制器：答题流程、音效、错题重练、结算
-│  │  ├─ views.js             首页 / 生词本 / 统计 / 设置 四个页面
-│  │  └─ app.js               引导、路由、主题、跨天检测、全局快捷键
-│  └─ data/
-│     ├─ *.json               7 份词库源文件（可自行增删改）
-│     ├─ parts/               词库分批增量（新词分片 / 例句补丁 / 释义更正），合并后即失效
-│     └─ words.js             由 JSON 自动汇总生成，应用实际加载它
-├─ tools/
-│  ├─ build-data.js           汇总词库 → words.js
-│  ├─ verify-words.js         词库质量校验
-│  ├─ selfcheck.js            词库完整性 + 出题可行性自检
-│  ├─ test-scheduling.js      复习调度无头测试（36 项断言）
-│  ├─ merge-parts.js          把 parts/ 下的分批增量合并进各等级词库
-│  ├─ check-part.js           校验单个增量分片（字段、重复、释义长度、例句）
-│  ├─ mk-used-list.js         导出各等级「已用词表」，供增量生成时排除
-│  ├─ list-dup-zh.js          找出同一等级里释义完全相同的词条组
-│  ├─ install-local.ps1       把绿色版装到本机（快捷方式 + 卸载登记）
-│  ├─ make-icon.js            用纯 Node 生成 PNG/ICO 图标
-│  ├─ capture.js              自动截图各页面（视觉验证用）
-│  └─ build-portable.js       生成免安装绿色版
-├─ docs/screenshots/          README 用的界面截图
-├─ build/                     图标与截图产物（截图不入版本库，图标入）
-├─ release/                   打包输出（体积大，不入版本库）
-└─ LICENSE                    MIT 许可证
-```
-
----
-
-## 四、复习算法
-
-采用简化的 Leitner 盒子模型：
-
-```
-新词学完            → 等级 0，次日复习
-复习答对            → 等级 +1，间隔 1 → 2 → 4 → 7 → 15 → 30 天
-复习答错            → 回到等级 0，明天重来
-等级到达 5          → 标记「已掌握」，不再进入复习队列
-```
-
-几个刻意设计的行为：
-
-- **次日必复习**：新词无论当天答对与否，都排进第二天，这是需求的核心。
-- **错题重练不干扰计划**：同一单词当天第二次作答只累计对错，不改复习日期，避免"多试几次就跳过了"。
-- **计划当天稳定**：一天之内刷新、重启、来回切页面，队列顺序都不会变；只有改词库范围或数量才会重排。
-- **复习上限**：默认每天最多 60 个，积压太多时可在设置里调高。
-- **多词库均衡**：同时选多个等级时，新词按等级轮流取，不会一整组都是同一个词库。
-
-这些行为全部有自动化测试覆盖，见 `tools/test-scheduling.js`（36 项断言，包含"第二天队列正好是第一天那 20 个词"）。
-
----
-
-## 五、词库与自定义
-
-| 等级 | 词数 | 侧重 |
-| --- | --- | --- |
-| 小学 | 478 | 日常基础词，涵盖日期、数字、家庭、交通与动作 |
-| 初中 | 514 | 基础词汇与常用动词词组 |
-| 高中 | 1057 | 高中词汇与学习搭配 |
-| 四级 | 1047 | CET-4 词汇与常用表达 |
-| 六级 | 1048 | CET-6 词汇与学术表达 |
-| 雅思 | 1052 | IELTS 学术与话题词组 |
-| 托福 | 1054 | TOEFL 学术与研究词组 |
-
-合计 **6250 条分级词条**，不同等级有重复词，每一条都带音标、词性、英文例句和中文翻译。
-
-1.2.0 新增 678 条分级记录（336 个不同的英文单词和词组），保留已有词条 ID 和学习进度。基础词重点补齐月份、星期、数字、日常物品与动作；进阶词补充学习搭配、环境和学术研究表达。这是项目自编的分级学习词库，不是考试大纲全量词表。
-
-内置词库每条都必须包含以下六个非空字段（质量检查会验证）：
-
-```json
-{
-  "en": "across",
-  "zh": "横过",
-  "pos": "prep.",
-  "ipa": "/əˈkrɒs/",
-  "ex": "We walked across the bridge to the other side.",
-  "exZh": "我们走过桥到另一边去。"
-}
-```
-
-**自己加词**：编辑 `src/data/<等级>.json`，然后执行
-
-```bash
-npm run verify      # 校验格式（重复、缺字段、词性、音标格式）
-npm run build:data  # 重新生成 words.js
-```
-
-校验会拦住同一文件内英文或中文释义重复的情况——那会让选择题出现两个正确答案。
-
-### 分批扩容流程（`src/data/parts/`）
-
-一个等级要几千词时，一次性生成质量不可控，所以扩容是「**分批产出 → 逐个校验 → 统一合并**」：
-
-```
-# 1) 导出该等级已经用过的词，生成新分片时必须排除，否则会被去重丢掉
-node tools/mk-used-list.js
-
-# 2) 写新分片 src/data/parts/<等级>.newNN.json，然后校验它
-node tools/check-part.js senior src/data/parts/senior.new04.json
-
-# 3) 合并所有分片进 src/data/<等级>.json（--dry-run 只看结果不写文件）
-node tools/merge-parts.js --dry-run
-node tools/merge-parts.js
-
-# 4) 消除「同等级里两条词释义一模一样」——否则选择题会出现两个正确答案
-node tools/list-dup-zh.js
-#    把要改的词写进 src/data/parts/<等级>.zhfix.json 再跑一次 merge-parts.js
-
-# 5) 重新生成 words.js 并全量校验
-npm run build:data && npm run check
-```
-
-三种分片文件（文件名前缀决定类型）：
-
-| 分片 | 内容 | 行为 |
-| --- | --- | --- |
-| `<等级>.newNN.json` | `{en, zh, pos, ipa, ex, exZh}` | 新增词条；与已有词重复的 `en` 会被丢弃（已有词优先） |
-| `<等级>.exNN.json` | `{en, ex, exZh}` | 例句补丁，只补已有词条，补不上就忽略 |
-| `<等级>.zhfix.json` | `{en, zh}` | 释义更正，按 `en` 覆盖释义 |
-
-> ⚠️ `parts/` 里的分片是**一次性增量**，合并进 `<等级>.json` 之后它们就不再是"未合并"状态了。
-> 重复执行 `merge-parts.js` 是幂等的（已存在的词会被当成重复丢掉），但如果你**从 `<等级>.json` 里删词**，
-> 下次合并会把它从分片里加回来。确认不再需要增量后，直接删掉 `src/data/parts/` 即可，工具本身留着不影响。
-
-
----
-
-## 六、验证与测试
-
-```bash
-npm run check       # 一键跑完：词库校验 → 构建 → 自检 → 调度测试
-npm test            # 复习调度无头测试（36 项，含 6250 词 × 2 方向出题可行性）
-npm run selfcheck   # 词库完整性 + 出题可行性自检
-npm run capture     # 自动截图到 build/shots/，并做可交互性审计
-```
-
-`npm run capture` 除了截图，还会顺带断言详细词条卡的七个要素（音标 / 词性 / 释义 / 例句 / 例句翻译 / 所属词库 / 复习进度）一个不少，
-并且用真实鼠标点击设置里的「答对后展开详细词条」开关，确认它真的能拨动、能复位。
-
-### 关于 `npm run capture` 的可交互性审计
-
-这个工具会用 Electron 真实渲染应用，模拟操作走完答题流程，并且**点击一律使用真实的鼠标输入事件**
-（`webContents.sendInputEvent`），而不是 `element.click()`。
-
-这一点很关键：`element.click()` 会绕过浏览器的命中测试，即使界面上盖了一层全屏遮罩、鼠标根本点不到，
-它依然"点得动"。开发期就因此漏掉过一个严重 bug —— `.modal-host { display: grid }` 覆盖了浏览器默认的
-`[hidden] { display: none }`，导致模态遮罩从启动第一帧就铺满全屏，既挡住所有鼠标点击，又给整个界面
-蒙上 58% 黑幕和 4px 高斯模糊。
-
-所以审计包含两部分：
-
-1. **全屏浮层扫描**：找出所有铺满视口、又没有 `pointer-events: none` 的定位元素。
-2. **命中测试**：对关键控件用 `document.elementFromPoint()` 确认鼠标真能点到它。
-
-并且带一个**自检金丝雀**：先故意注入一个全屏遮罩，确认检测器能把它报出来——否则"0 个问题"这个结论
-本身就没有意义。改动界面后建议跑一次。
-
-```bash
-# 也可以指向已打包的目录，验证发布产物本身
-set WM_APP_DIR=release\WordMaster\resources\app
-set WM_SHOT_DIR=build\shots-packaged
-npx electron tools\capture.js
-```
-
----
-
-## 七、快捷键
-
-| 按键 | 作用 |
-| --- | --- |
-| `1~4` / `A~D` | 选择答案 |
-| `Enter` / `空格` | 继续下一题 |
-| `S` | 朗读当前单词 |
-| `Esc` | 退出学习（会确认） |
-| `1~6`（非学习页） | 依次切换：首页 / 学习 / 复习 / 生词本 / 统计 / 设置 |
-| `Ctrl+E` / `Ctrl+I` | 导出 / 导入备份 |
-| `F11` / `F12` | 全屏 / 开发者工具 |
-
----
-
-## 八、数据存储
-
-- 学习记录保存在 `%APPDATA%\WordMaster\`，纯本地，不联网、不上传。
-- 「设置 → 数据管理」可导出 JSON 备份，换电脑时导入即可继续。
-- 卸载时不会删除数据；需要彻底清空就用设置里的「清空数据」。
-
----
-
-## 九、技术选型说明
-
-- **Electron + 原生 HTML/CSS/JS**：不用任何前端框架和打包器，源码即产物，改一行刷新就生效，也方便你以后自己改。
-- **音效用 Web Audio 实时合成**：不依赖任何音频文件，所以永远不会出现"打包后音效丢失"的问题。
-- **词库编译成 `words.js`**：页面以 `file://` 加载，浏览器安全策略禁止 `fetch` 读本地 JSON、也禁止 ES module 跨文件导入，把词库汇总成普通脚本是最稳的做法。
-- **图标用纯 Node 生成**：自己实现了 PNG 编码（zlib + CRC32）和 ICO 封装，不引入第三方图形库。
-- **手动便携版打包**：不依赖 electron-builder 下载额外二进制，`tools/build-portable.js` 直接把 Electron 运行时改名复用，全程离线可复现。
+代码采用 [MIT License](LICENSE)；第三方数据各自保留原许可。

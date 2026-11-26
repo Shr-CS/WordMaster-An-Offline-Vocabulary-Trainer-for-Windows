@@ -1,0 +1,104 @@
+WordMaster vocabulary data — sources and attribution
+
+1. ECDICT — https://github.com/skywind3000/ECDICT
+Revision 39cfb9672c0906b63569e0453c2e6abfb9ab182a. English-Chinese senses, word forms,
+frequency references and exam tags. Adapted: specialist markup removed, glosses split
+by part of speech, inflected entries merged where appropriate, reviewed corrections.
+MIT License. Copyright (c) 2025 Linwei. Full license follows below.
+
+2. ipa-dict — https://github.com/open-dict-data/ipa-dict
+Revision 972cd67dd5f96bc5660e28070cde26e3928abcd7, en_US only.
+English US IPA based on cmudict-ipa by @lingz and syllabify by @kylebgorman.
+Copyright (c) 2016 dohliam, MIT. Converted /ɹ/ and /ɫ/ to dictionary /r/ and /l/.
+ECDICT pronunciation is used as a labeled British fallback; editorial corrections
+are recorded separately. No UK ipa-dict data is included.
+
+3. CEFR-J Wordlist Version 1.5 — compiled by Yukio Tono,
+Tokyo University of Foreign Studies (Tono Laboratory).
+https://github.com/openlanguageprofiles/olp-en-cefrj
+Revision d4e45b75b38f27b30dfc5c44d8c571aec7e7092f.
+Retrieved by Open Language Profiles from http://www.cefr-j.org/download.html
+on 2020-01-20. Used as a reference for the A1 bank and CEFR/part-of-speech metadata.
+Copyright belongs to Tono Laboratory, TUFS. Research and commercial use is free
+with proper citation. Neither CEFR-J nor Open Language Profiles warrants accuracy.
+The A1 reference bank is an adaptation and is not a Chinese school curriculum.
+No Octanove C1/C2 data is included.
+
+4. Tatoeba contributors — https://tatoeba.org
+Sentence pair selection by Charles Kelly at https://www.manythings.org/anki/
+Snapshot 2026-02-13, cmn-eng.zip. CC BY 2.0 France:
+https://creativecommons.org/licenses/by/2.0/fr/
+Sentences are selected by length and lexical alignment, retained verbatim.
+Each included pair carries its English/Chinese sentence IDs, contributor names,
+original attribution and source URL in src/data/examples.json and in the app.
+Not every word has a corpus example. No audio data is redistributed.
+
+MIT LICENSE — ECDICT
+MIT License
+
+Copyright (c) 2025 Linwei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+MIT LICENSE — ipa-dict / English-US data
+The MIT License (MIT)
+
+Copyright (c) 2016 dohliam
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+MIT LICENSE — cmudict-ipa
+The MIT License (MIT)
+
+Copyright (c) 2016 Lingliang Zhang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+

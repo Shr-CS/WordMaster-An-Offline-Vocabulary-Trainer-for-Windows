@@ -18,6 +18,32 @@ window.WM = window.WM || {};
   /** 取用于比对的值：en2zh 比中文，zh2en 比英文 */
   const valueOf = (entry, direction) => (direction === 'en2zh' ? entry.zh : entry.en);
 
+  const meaningCache = new WeakMap();
+  function meaningKeys(entry) {
+    if (meaningCache.has(entry)) return meaningCache.get(entry);
+    const senses = [entry.zh, ...(entry.senses || []).map(sense => sense.zh)];
+    const keys = new Set(senses.flatMap(text => String(text).replace(/[（(][^）)]*[）)]/g, '')
+      .split(/[，,；;、]/).map(util.norm).filter(Boolean)));
+    meaningCache.set(entry, keys);
+    return keys;
+  }
+
+  function meaningsOverlap(left, right) {
+    const keys = meaningKeys(left);
+    return [...meaningKeys(right)].some(key => keys.has(key));
+  }
+
+  function spellingCue(entry) {
+    return entry.en.split(' ').map(word => {
+      let first = true;
+      return [...word].map(letter => {
+        if (!/[A-Za-z]/.test(letter)) return letter;
+        if (first) { first = false; return letter; }
+        return '＿';
+      }).join('');
+    }).join(' ');
+  }
+
   /**
    * 挑 3 个干扰项。
    * 逐级放宽候选池，任一选项的「文字」都不允许与已选选项重复（归一化后比较）。
@@ -46,7 +72,7 @@ window.WM = window.WM || {};
         const key = util.norm(value);
         if (!key || used.has(key)) continue;
         // 同一中文释义可能对应多个英文词，不能把同义答案作为干扰项。
-        if (direction === 'zh2en' && util.norm(cand.zh) === util.norm(entry.zh)) continue;
+        if (meaningsOverlap(cand, entry)) continue;
         used.add(key);
         chosen.push(cand);
       }
@@ -67,7 +93,7 @@ window.WM = window.WM || {};
     if (trainingMode === 'spelling') {
       return {
         id: entry.id, entry, mode, trainingMode, direction: 'zh2en',
-        prompt: { text: entry.zh, sub: entry.pos, label: '根据释义拼写英文' },
+        prompt: { text: entry.zh, sub: `${entry.pos} · ${spellingCue(entry)}`, label: '根据释义和首字母拼写英文' },
         options: [], answerIndex: -1,
       };
     }
@@ -130,11 +156,14 @@ window.WM = window.WM || {};
   function spellingMatches(input, expected) {
     const normalize = (text) => String(text).normalize('NFKC').trim().toLowerCase()
       .replace(/[‘’]/g, "'").replace(/[‐‑–—]/g, '-').replace(/\s+/g, ' ');
-    return normalize(input) === normalize(expected);
+    const answers = typeof expected === 'object' ? [expected.en, ...(expected.variants || [])] : [expected];
+    return answers.some(answer => normalize(input) === normalize(answer));
   }
 
   WM.quiz = {
     spellingMatches,
+    spellingCue,
+    meaningsOverlap,
     OPTION_COUNT,
     makeQuestion,
     buildQuestions,

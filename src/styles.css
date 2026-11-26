@@ -1253,3 +1253,15 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.12); }
   .trow .cell-mastery { display: none; }
 }
 .view > .card + .card, .view > .card + .grid { margin-top: 16px; }
+
+/* Dictionary senses remain readable on narrow screens. */
+.detail-senses { display: grid; gap: 8px; }
+.detail-sense { display: flex; align-items: baseline; gap: 9px; line-height: 1.7; font-size: 14px; }
+.detail-sense .dw-pos { flex: none; }
+.detail-sense > span:last-child, .detail-forms, .example-credit { overflow-wrap: anywhere; }
+.detail-forms { line-height: 1.8; }
+.example-credit summary { cursor: pointer; padding-block: 8px; }
+.example-credit p { margin: 4px 0; font-size: 11px; }
+.data-notices { margin-top: 16px; }
+.data-notices summary { cursor: pointer; padding-block: 10px; }
+.data-notices pre { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.7; font: inherit; font-size: 12px; }

@@ -222,6 +222,7 @@ window.WM = window.WM || {};
       return;
     }
     setTheme(store.get().settings.theme);
+    bank.syncRecords(store.get());
     sound.setEnabled(store.get().settings.sound);
     sound.setVolume(store.get().settings.volume);
     bank.ensurePlan(store.get(), { rebuild: true });
@@ -333,6 +334,7 @@ window.WM = window.WM || {};
   async function init() {
     // 1) 读取本地数据
     const state = store.load();
+    bank.syncRecords(state);
 
     // 2) 应用主题与音效
     setTheme(state.settings.theme);

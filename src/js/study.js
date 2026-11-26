@@ -236,7 +236,7 @@ window.WM = window.WM || {};
             return;
           }
           session.spelling = input.value;
-          submitAnswer(quiz.spellingMatches(input.value, q.entry.en));
+          submitAnswer(quiz.spellingMatches(input.value, q.entry));
         },
       }, h('label', { for: 'spelling-answer', text: '你的拼写' }), input,
       h('button', { class: 'btn primary', type: 'submit' }, '检查拼写'));
@@ -376,13 +376,23 @@ window.WM = window.WM || {};
           entry.pos ? h('span', { class: 'dw-pos', text: entry.pos }) : null,
           speakBtn(entry.en, '朗读单词')),
         h('div', { class: 'detail-zh', text: entry.zh })),
+      h('div', { class: 'detail-senses' }, (entry.senses || []).map(sense =>
+        h('div', { class: 'detail-sense' }, h('span', { class: 'dw-pos', text: sense.pos }), h('span', { text: sense.zh })))),
+      Object.keys(entry.forms || {}).length ? h('div', { class: 'detail-forms hint', text:
+        Object.entries(entry.forms).map(([label, form]) => `${label} ${form}`).join(' · ') }) : null,
+      entry.accent || entry.cefr ? h('div', { class: 'hint', text: [entry.accent ? entry.accent + '音标' : '', entry.cefr].filter(Boolean).join(' · ') }) : null,
 
       entry.ex
         ? h('div', { class: 'detail-ex' },
           h('div', { class: 'ex-en' },
             h('span', { text: entry.ex }),
             speakBtn(entry.ex, '朗读例句', 'speak-btn sm')),
-          entry.exZh ? h('div', { class: 'ex-zh', text: entry.exZh }) : null)
+          entry.exZh ? h('div', { class: 'ex-zh', text: entry.exZh }) : null,
+          entry.example ? h('details', { class: 'example-credit hint' },
+            h('summary', { text: '例句来源 · Tatoeba' }),
+            h('p', { text: entry.example.attribution }),
+            h('p', { text: entry.example.url }),
+            h('p', { text: 'CC BY 2.0 FR · https://creativecommons.org/licenses/by/2.0/fr/' })) : null)
         : null,
 
       h('div', { class: 'detail-foot' },
