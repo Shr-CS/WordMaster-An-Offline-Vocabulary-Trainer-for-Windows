@@ -140,6 +140,7 @@ window.WM = window.WM || {};
 
   async function navigate(route) {
     if (study.isActive() && route !== 'study' && route !== 'review') {
+      study.pauseAutoAdvance();
       const ok = await confirmDialog({
         title: '离开当前学习？',
         message: '本次已作答的记录已经保存，离开不会丢失成绩。',

@@ -210,14 +210,49 @@ window.WM = window.WM || {};
   function completeSpeech(task, status, stop = false) {
     if (activeSpeech !== task) return;
     clearTimeout(task.watchdog);
+    clearTimeout(task.poll);
     activeSpeech = null;
     if (stop) stopEngine();
     if (task.onComplete) task.onComplete(status);
   }
 
   window.WMAndroidSpeechComplete = (id, status) => {
-    if (activeSpeech && activeSpeech.id === id) completeSpeech(activeSpeech, status);
+    if (activeSpeech && activeSpeech.id === id) {
+      completeSpeech(activeSpeech, status === 'canceled' ? 'interrupted' : status);
+    }
   };
+
+  // Completion callbacks can be lost by a TTS engine or the WebView bridge.
+  // Check retained native state (or Web Speech playback) as an independent path.
+  function watchSpeech(task) {
+    if (activeSpeech !== task) return;
+    try {
+      if (window.WordMasterAndroid?.getSpeechState) {
+        const state = window.WordMasterAndroid.getSpeechState(task.id);
+        if (['done', 'error', 'unavailable', 'canceled'].includes(state)) {
+          completeSpeech(task, state === 'canceled' ? 'interrupted' : state);
+          return;
+        }
+      } else if (!window.WordMasterAndroid && 'speechSynthesis' in window) {
+        const engine = window.speechSynthesis;
+        if (engine.speaking || engine.pending) {
+          task.observedPlayback = true;
+          task.idleSince = null;
+        } else if (engine.speaking === false && engine.pending === false) {
+          if (task.idleSince == null) task.idleSince = Date.now();
+          if (task.observedPlayback && Date.now() - task.idleSince >= 320) {
+            completeSpeech(task, 'done');
+            return;
+          }
+          if (!task.observedPlayback && Date.now() - task.createdAt >= 1800) {
+            completeSpeech(task, 'unavailable', true);
+            return;
+          }
+        }
+      }
+    } catch { /* The deadline still covers engines without status support. */ }
+    if (activeSpeech === task) task.poll = setTimeout(() => watchSpeech(task), 160);
+  }
 
   function pickVoice() {
     if (!('speechSynthesis' in window)) return null;
@@ -249,12 +284,13 @@ window.WM = window.WM || {};
 
   /**
    * 用系统 TTS 朗读英文单词。
-   * onComplete 接收 done / canceled / error / unavailable / timeout，且只通知一次。
+   * onComplete 接收 done / canceled / interrupted / error / unavailable / timeout。
+   * canceled 仅表示本应用主动停止；引擎意外停止用 interrupted，避免切题卡住。
    * @returns {boolean} 是否成功发起朗读
    */
   function speak(text, { rate = 0.92, pitch = 1, lang = 'en-US', onComplete } = {}) {
     stopSpeak();
-    const task = { id: `wordmaster-${++speechSequence}`, onComplete };
+    const task = { id: `wordmaster-${++speechSequence}`, onComplete, createdAt: Date.now() };
     activeSpeech = task;
     if (!text || (!window.WordMasterAndroid && !('speechSynthesis' in window))) {
       completeSpeech(task, 'unavailable');
@@ -264,11 +300,12 @@ window.WM = window.WM || {};
     if (onComplete) task.watchdog = setTimeout(() => {
       if (activeSpeech !== task) return;
       completeSpeech(task, 'timeout', true);
-    }, 15000);
+    }, Math.min(20000, Math.max(5000, String(text).trim().split(/\s+/).length * 700 + 2000)));
     try {
       if (window.WordMasterAndroid) {
         const started = window.WordMasterAndroid.speak(String(text), rate, pitch, task.id);
         if (!started) completeSpeech(task, 'unavailable');
+        else if (onComplete) watchSpeech(task);
         return started;
       }
       const utter = new SpeechSynthesisUtterance(String(text));
@@ -278,10 +315,12 @@ window.WM = window.WM || {};
       const voice = pickVoice();
       if (voice) utter.voice = voice;
       utter.onend = () => completeSpeech(task, 'done');
+      utter.onstart = () => { task.observedPlayback = true; };
       utter.onerror = event => completeSpeech(task,
-        ['canceled', 'interrupted'].includes(event.error) ? 'canceled' : 'error');
+        ['canceled', 'interrupted'].includes(event.error) ? 'interrupted' : 'error');
       task.utterance = utter; // Keep a strong reference until the engine finishes.
       window.speechSynthesis.speak(utter);
+      if (onComplete) watchSpeech(task);
       return true;
     } catch {
       completeSpeech(task, 'error');

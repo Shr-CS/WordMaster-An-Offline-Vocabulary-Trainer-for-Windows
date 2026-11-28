@@ -25,6 +25,10 @@ window.WM = window.WM || {};
   let nextTimer = null;
   let advanceToken = 0;
   let keyHandler = null;
+  let flowStatus = null;
+  let pauseButton = null;
+  let autoButton = null;
+  let answerArea = null;
 
   const isActive = () => !!session;
 
@@ -75,6 +79,7 @@ window.WM = window.WM || {};
       current: null,
       finished: false,
     };
+    document.documentElement.dataset.studying = 'true';
 
     renderShell(); // 必须先建好骨架，renderQuestion 才有容器可用
     attachKeys();
@@ -114,9 +119,29 @@ window.WM = window.WM || {};
         onclick: () => requestExit(),
       }, icon('i-arrow-left'), '退出'));
 
-    cardEl = h('div', { class: 'qcard', onpointerdown: () => {
-      if (session?.answered) clearTimer();
-    } });
+    // A touch/scroll on the card must never silently cancel automatic progress.
+    cardEl = h('div', { class: 'qcard' });
+    autoButton = h('button', {
+      class: 'btn ghost sm auto-next-toggle', type: 'button',
+      'aria-pressed': String(state.settings.autoNext),
+      text: state.settings.autoNext ? '自动切题：开' : '自动切题：关',
+      onclick: () => {
+        const enabled = !store.get().settings.autoNext;
+        store.setSettings({ autoNext: enabled });
+        store.flush();
+        autoButton.textContent = enabled ? '自动切题：开' : '自动切题：关';
+        autoButton.setAttribute('aria-pressed', String(enabled));
+        if (session?.answered && session.lastCorrect) {
+          pauseAutoAdvance();
+          flowStatus = null;
+          pauseButton = null;
+          cardEl.querySelector('.answer-details')?.remove();
+          mount(answerArea, buildFeedback(true, session.current, session.attempts[session.current.id] > 1));
+          if (enabled) readAnswerAndAdvance(session.current);
+        }
+      },
+    });
+    topEl.insertBefore(autoButton, topEl.lastChild);
 
     viewEl = h('div', { class: 'study narrow' },
       topEl,
@@ -142,7 +167,7 @@ window.WM = window.WM || {};
   function syncTop() {
     if (!session) return;
     const total = session.questions.length;
-    const done = session.index;
+    const done = session.index + (session.answered ? 1 : 0);
     if (metaLeft) metaLeft.textContent = `第 ${clamp(session.index + 1, 1, total)} / ${total} 题`;
     if (metaRight) metaRight.textContent = `${session.correct} 对 · ${session.wrong} 错`;
     if (barFill) barFill.style.width = `${total ? (done / total) * 100 : 0}%`;
@@ -163,6 +188,10 @@ window.WM = window.WM || {};
     }
     session.current = session.questions[session.index];
     session.answered = false;
+    session.lastCorrect = false;
+    session.autoPhase = null;
+    flowStatus = null;
+    pauseButton = null;
     session.spelling = '';
     renderQuestion();
     syncTop();
@@ -212,7 +241,6 @@ window.WM = window.WM || {};
         class: `opt${isEn ? '' : ' zh-opt'}`,
         type: 'button',
         dataset: { index: String(i) },
-        style: { animationDelay: `${i * 45}ms` },
         onclick: () => answer(i),
       },
         showKeyboardHints() ? h('span', { class: 'key', text: String(i + 1) }) : null,
@@ -232,7 +260,7 @@ window.WM = window.WM || {};
         class: 'spelling-form',
         onsubmit: (event) => {
           event.preventDefault();
-          if (session.answered) return;
+          if (session.answered || event.isComposing || input.dataset.composing === 'true') return;
           if (!input.value.trim()) {
             toast('先输入拼写，或点击「不认识」', 'warn');
             input.focus();
@@ -243,12 +271,18 @@ window.WM = window.WM || {};
         },
       }, h('label', { for: 'spelling-answer', text: '你的拼写' }), input,
       h('button', { class: 'btn primary', type: 'submit' }, '检查拼写'));
+      input.addEventListener('compositionstart', () => { input.dataset.composing = 'true'; });
+      input.addEventListener('compositionend', () => { input.dataset.composing = 'false'; });
     }
-    mount(cardEl, h('div', { class: 'q-meta' }, metas), prompt, response,
+    answerArea = h('div', { class: 'answer-area' },
       h('button', {
         class: 'btn ghost unknown-btn', type: 'button',
         onclick: () => submitAnswer(false),
       }, '不认识，查看答案'));
+    mount(cardEl, h('div', { class: 'q-meta' }, metas), prompt, response, answerArea);
+    if (q.trainingMode === 'spelling' && session.index > 0) {
+      cardEl.querySelector('.spelling-input').focus({ preventScroll: true });
+    }
 
     // 英文题面出现时自动朗读
     if (isEn && state.settings.autoPronounce) {
@@ -260,6 +294,10 @@ window.WM = window.WM || {};
 
   function speakCurrent() {
     if (!session || !session.current) return;
+    if (session.answered && session.lastCorrect && ['speaking', 'waiting'].includes(session.autoPhase)) {
+      readAnswerAndAdvance(session.current);
+      return;
+    }
     if (session.answered) clearTimer();
     sound.speak(session.current.entry.en);
   }
@@ -279,6 +317,7 @@ window.WM = window.WM || {};
     sound.stopSpeak();
 
     session.answered = true;
+    session.lastCorrect = ok;
     session.attempts[q.id] = (session.attempts[q.id] || 0) + 1;
 
     // 1) 音效：答对/答错各有专属音色
@@ -297,13 +336,19 @@ window.WM = window.WM || {};
 
     store.flush();
     WM.app.refreshChrome();
-    cardEl.querySelectorAll('.spelling-form input, .spelling-form button, .unknown-btn').forEach((node) => {
-      node.disabled = true;
-    });
+    const spellingInput = cardEl.querySelector('.spelling-input');
+    if (spellingInput) {
+      spellingInput.readOnly = true;
+      spellingInput.classList.add(ok ? 'is-correct' : 'is-wrong');
+      spellingInput.blur();
+    }
+    cardEl.querySelectorAll('.spelling-form button, .unknown-btn').forEach(node => { node.disabled = true; });
+    cardEl.querySelector('.unknown-btn')?.remove();
 
     // 3) 选项视觉反馈
     Array.from(cardEl.querySelectorAll('.opt')).forEach((node, i) => {
       node.classList.add('locked');
+      node.setAttribute('aria-disabled', 'true');
       if (i === q.answerIndex) node.classList.add('correct');
       else if (i === index) node.classList.add('wrong');
       else node.classList.add('dim');
@@ -314,7 +359,7 @@ window.WM = window.WM || {};
     });
 
     // 4) 反馈条
-    cardEl.appendChild(buildFeedback(ok, q, isRetry));
+    mount(answerArea, buildFeedback(ok, q, isRetry));
 
     // 5) 首次答错 → 追加到队尾重练（只重练一次）
     if (!ok && !isRetry) {
@@ -364,7 +409,7 @@ window.WM = window.WM || {};
       title,
       onclick: (e) => {
         e.stopPropagation();
-        clearTimer();
+        pauseAutoAdvance();
         sound.speak(text);
       },
     }, icon('i-speaker'));
@@ -403,7 +448,7 @@ window.WM = window.WM || {};
         h('button', {
           class: 'btn sm', type: 'button', 'aria-pressed': String(!!record?.starred),
           onclick: (event) => {
-            clearTimer();
+            pauseAutoAdvance();
             if (!record) return;
             record.starred = !record.starred;
             store.flush();
@@ -423,6 +468,35 @@ window.WM = window.WM || {};
   }
 
   function buildFeedback(ok, q, isRetry) {
+    if (ok && store.get().settings.autoNext) {
+      flowStatus = h('div', { class: 'flow-status', role: 'status', 'aria-live': 'polite', text: '正在朗读，读完自动下一题' });
+      pauseButton = h('button', {
+        class: 'btn ghost sm', type: 'button', text: '暂停',
+        onclick: () => {
+          if (session?.autoPhase === 'paused') readAnswerAndAdvance(q);
+          else pauseAutoAdvance();
+        },
+      });
+      return h('div', { class: 'feedback ok auto-feedback' },
+        h('div', { class: 'auto-result' }, icon('i-check'),
+          h('div', { class: 'fb-body' },
+            h('div', { class: 'fb-title', text: isRetry ? '这次记住了' : '答对了' }),
+            h('div', { class: 'fb-detail', text: `${q.entry.en} · ${q.entry.zh}` }))),
+        flowStatus,
+        h('div', { class: 'flow-actions' }, pauseButton,
+          h('button', {
+            class: 'btn ghost sm', type: 'button', text: '查看词条',
+            onclick: () => {
+              pauseAutoAdvance();
+              if (cardEl.querySelector('.answer-details')) return;
+              const detail = buildDetailCard(q, true, isRetry);
+              detail.classList.add('answer-details');
+              cardEl.appendChild(detail);
+              detail.scrollIntoView({ block: 'nearest', behavior: 'auto' });
+            },
+          }),
+          h('button', { class: 'btn primary sm', type: 'button', onclick: () => next() }, '下一题')));
+    }
     if (!ok || store.get().settings.showDetail || q.trainingMode === 'spelling') {
       return buildDetailCard(q, ok, isRetry);
     }
@@ -451,7 +525,7 @@ window.WM = window.WM || {};
         title: '朗读',
         onclick: (e) => {
           e.stopPropagation();
-          clearTimer();
+          pauseAutoAdvance();
           sound.speak(entry.en);
         },
       }, icon('i-speaker')),
@@ -464,6 +538,8 @@ window.WM = window.WM || {};
 
   function readAnswerAndAdvance(q) {
     clearTimer();
+    sound.stopSpeak();
+    setFlow('speaking', '正在朗读，读完自动下一题');
     const token = advanceToken;
     const currentSession = session;
     const currentIndex = session.index;
@@ -473,19 +549,40 @@ window.WM = window.WM || {};
       nextTimer = null;
       if (!stillCurrent() || document.hidden) return;
       sound.speak(q.entry.en, { onComplete: status => {
-        if (!stillCurrent() || status === 'canceled') return;
+        if (!stillCurrent()) return;
+        if (status === 'canceled') {
+          pauseAutoAdvance();
+          return;
+        }
+        setFlow('waiting', status === 'done' ? '朗读完成，即将下一题' : '朗读暂不可用，即将下一题');
         nextTimer = setTimeout(() => {
           nextTimer = null;
           if (stillCurrent() && !document.hidden && document.getElementById('modal-host').hidden) next();
-        }, status === 'done' ? 160 : 450);
+          else if (stillCurrent()) pauseAutoAdvance();
+        }, status === 'done' ? 180 : 900);
       } });
-    }, 120);
+    }, 160);
+  }
+
+  function setFlow(phase, text) {
+    if (session) session.autoPhase = phase;
+    if (flowStatus) flowStatus.textContent = text;
+    if (pauseButton) pauseButton.textContent = phase === 'paused' ? '恢复自动' : '暂停';
+  }
+
+  function pauseAutoAdvance() {
+    clearTimer();
+    sound.stopSpeak();
+    if (session?.answered && session.lastCorrect && flowStatus) {
+      setFlow('paused', '已暂停，可以细看词条或继续');
+    }
   }
 
   /* ------------------------------- 结算页 ------------------------------- */
 
   function finish() {
     clearTimer();
+    delete document.documentElement.dataset.studying;
     const state = store.get();
     const s = session;
     const elapsed = Math.round((Date.now() - s.startedAt) / 1000);
@@ -581,8 +678,7 @@ window.WM = window.WM || {};
       WM.app.go('home');
       return;
     }
-    clearTimer();
-    sound.stopSpeak();
+    pauseAutoAdvance();
     const answered = session.correct + session.wrong;
     const ok = await confirmDialog({
       title: '退出本次学习？',
@@ -604,6 +700,11 @@ window.WM = window.WM || {};
     detachKeys();
     sound.stopSpeak();
     session = null;
+    delete document.documentElement.dataset.studying;
+    flowStatus = null;
+    pauseButton = null;
+    autoButton = null;
+    answerArea = null;
     viewEl = null;
     topEl = null;
     cardEl = null;
@@ -620,6 +721,7 @@ window.WM = window.WM || {};
     detachKeys();
     keyHandler = (event) => {
       if (!session || !document.getElementById('modal-host').hidden) return;
+      if (event.repeat || event.isComposing) return;
       const target = event.target;
       if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) return;
 
@@ -685,7 +787,7 @@ window.WM = window.WM || {};
   }
 
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden) clearTimer();
+    if (document.hidden) pauseAutoAdvance();
   });
 
   WM.study = {
@@ -693,7 +795,7 @@ window.WM = window.WM || {};
     destroy,
     isActive,
     renderInto,
-    pauseAutoAdvance: clearTimer,
+    pauseAutoAdvance,
     get session() { return session; },
   };
 })(window.WM);

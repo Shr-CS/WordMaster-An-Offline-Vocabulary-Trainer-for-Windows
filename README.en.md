@@ -6,15 +6,15 @@ An offline vocabulary trainer for Windows and Android, with multiple-choice ques
 
 ![Home](docs/screenshots/01-home-dark.png)
 
-## Android 2.0.1
+## Android 2.0.2
 
-[Download the APK](WordMaster-Android.apk), requiring Android 8.0 or later. It uses the same signing key as 1.x, with versionCode 5. Install over the previous version to retain progress. Uninstalling deletes local data.
+[Download the APK](WordMaster-Android.apk), requiring Android 8.0 or later. It uses the same signing key as 1.x, with versionCode 6. Install over the previous version to retain progress. Uninstalling deletes local data.
 
 The new adaptive launcher icon combines a forest-green background, open book and W monogram, including an Android 13 monochrome layer. Android hides desktop keyboard prompts at every screen size.
 
 <img src="docs/brand/android-launcher.svg" width="128" alt="Android launcher icon">
 
-Correct answers now read the word once and advance when the speech engine finishes, for both choice and spelling practice. Correct-answer feedback keeps the question position stable; incorrect answers pause for review. Touching the entry or replaying speech pauses automatic progression. The setting can be disabled for manual continuation.
+Correct answers read the word once and advance after playback, in both choice and spelling practice. Version 2.0.2 checks retained playback state as well as completion callbacks, recovering from missing events and engine interruptions. Compact feedback shows reading, advancing and paused states without moving the prompt. Incidental touches and scrolling never cancel progression. Pause, inspect the entry, resume or continue explicitly; a visible lesson toggle switches automatic progression. Incorrect answers keep the typed response and show details. Backgrounding and exit dialogs pause explicitly.
 
 ## Rebuilt vocabulary
 

@@ -114,3 +114,27 @@
 @media (max-width: 760px), (max-height: 500px) and (max-width: 1000px) {
   .wb-toolbar .search-wrap { flex: 1 0 100%; }
 }
+
+/* During a lesson, give the task the screen and keep an explicit Exit control. */
+@media (max-width: 760px), (max-height: 500px) and (max-width: 1000px) {
+  [data-studying="true"] { --titlebar-h: 56px; }
+  [data-studying="true"] .sidebar { display: none; }
+  [data-studying="true"] .view { padding: 12px; }
+  .study-top .tally { display: none; }
+  .study-top { gap: 8px; }
+  .study-top .progress-wrap { flex-basis: 120px; }
+  .study-top .auto-next-toggle { font-size: 12px; padding-inline: 8px; }
+  .study .qcard { padding: 16px 12px; gap: 12px; }
+  .study .q-prompt { padding-block: 12px; }
+  .study .q-label { margin-bottom: 8px; }
+  .study .q-sub { margin-top: 8px; }
+  .study .opts { gap: 8px; }
+  .study .opt { min-height: 52px; padding-block: 12px; }
+  .study .flow-actions .btn { min-height: 48px; padding-inline: 8px; }
+  .study .speak-btn, .study .speak-btn.sm { min-width: 48px; min-height: 48px; }
+  .study .answer-area { min-height: 160px; }
+  .study .feedback.auto-feedback { padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .study *, .study *::before, .study *::after { animation: none !important; transition: none !important; }
+}

@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.view.WindowInsets;
@@ -41,6 +42,8 @@ public final class MainActivity extends Activity {
     private FrameLayout root;
     private TextToSpeech speech;
     private volatile boolean speechReady;
+    private final SpeechTracker speechTracker = new SpeechTracker();
+    private boolean voiceWarningShown;
     private final ExecutorService files = Executors.newSingleThreadExecutor();
     private int pendingRequest;
     private String pendingBackup;
@@ -92,7 +95,7 @@ public final class MainActivity extends Activity {
             speechReady = language != TextToSpeech.LANG_MISSING_DATA && language != TextToSpeech.LANG_NOT_SUPPORTED;
         });
         speech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-            @Override public void onStart(String id) { }
+            @Override public void onStart(String id) { speechTracker.started(id); }
             @Override public void onDone(String id) { completeSpeech(id, "done"); }
             @Override public void onError(String id) { completeSpeech(id, "error"); }
             @Override public void onError(String id, int code) { completeSpeech(id, "error"); }
@@ -124,6 +127,7 @@ public final class MainActivity extends Activity {
     }
 
     private void completeSpeech(String id, String status) {
+        if (!speechTracker.complete(id, status)) return;
         runOnUiThread(() -> {
             if (isFinishing() || isDestroyed() || web == null) return;
             web.evaluateJavascript("window.WMAndroidSpeechComplete && window.WMAndroidSpeechComplete(" +
@@ -133,7 +137,7 @@ public final class MainActivity extends Activity {
 
     public final class Bridge {
         @JavascriptInterface public String getInfo() {
-            return "{\"platform\":\"Android\",\"version\":\"2.0.1\"}";
+            return "{\"platform\":\"Android\",\"version\":\"2.0.2\"}";
         }
         @JavascriptInterface public void setTheme(String theme) {
             runOnUiThread(() -> {
@@ -157,21 +161,39 @@ public final class MainActivity extends Activity {
             });
         }
         @JavascriptInterface public boolean speak(String text, float rate, float pitch, String id) {
-            if (!speechReady || text == null || text.length() > 4000) {
-                runOnUiThread(() -> Toast.makeText(MainActivity.this,
-                    "请在系统的文字转语音设置中安装英语语音包", Toast.LENGTH_LONG).show());
+            if (!speechReady || text == null || text.length() > 4000 || id == null) {
+                runOnUiThread(() -> {
+                    if (voiceWarningShown) return;
+                    voiceWarningShown = true;
+                    Toast.makeText(MainActivity.this, "请在系统的文字转语音设置中安装英语语音包", Toast.LENGTH_LONG).show();
+                });
                 return false;
             }
             runOnUiThread(() -> {
-                speech.setSpeechRate(Math.max(0.1f, Math.min(2f, rate)));
-                speech.setPitch(Math.max(0.5f, Math.min(2f, pitch)));
-                if (speech.speak(text, TextToSpeech.QUEUE_FLUSH, null, id) == TextToSpeech.ERROR) {
+                speechTracker.begin(id, SystemClock.elapsedRealtime());
+                try {
+                    speech.setSpeechRate(Math.max(0.1f, Math.min(2f, rate)));
+                    speech.setPitch(Math.max(0.5f, Math.min(2f, pitch)));
+                    if (speech.speak(text, TextToSpeech.QUEUE_FLUSH, null, id) == TextToSpeech.ERROR) {
+                        completeSpeech(id, "error");
+                    }
+                } catch (RuntimeException ex) {
                     completeSpeech(id, "error");
                 }
             });
             return true;
         }
-        @JavascriptInterface public void stopSpeak() { runOnUiThread(() -> speech.stop()); }
+        @JavascriptInterface public String getSpeechState(String id) {
+            try {
+                return speechTracker.poll(id, speech != null && speech.isSpeaking(), SystemClock.elapsedRealtime());
+            } catch (RuntimeException ex) { return "error"; }
+        }
+        @JavascriptInterface public void stopSpeak() {
+            runOnUiThread(() -> {
+                speechTracker.cancel();
+                if (speech != null) speech.stop();
+            });
+        }
 
         @JavascriptInterface public void request(int id, String action, String json) {
             runOnUiThread(() -> {
@@ -253,7 +275,8 @@ public final class MainActivity extends Activity {
     @Override protected void onPause() {
         web.evaluateJavascript("if (window.WM) { if (WM.study) WM.study.pauseAutoAdvance(); " +
             "if (WM.sound) WM.sound.stopSpeak(); if (WM.store) WM.store.flush(); }", null);
-        speech.stop();
+        speechTracker.cancel();
+        if (speech != null) speech.stop();
         web.onPause();
         super.onPause();
     }

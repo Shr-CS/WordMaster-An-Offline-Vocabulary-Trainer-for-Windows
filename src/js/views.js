@@ -678,7 +678,7 @@ window.WM = window.WM || {};
       h('div', { class: 'row' },
         h('div', { class: 'row-main' },
           h('div', { class: 'row-title', text: '答对后朗读并切题' }),
-          h('div', { class: 'row-desc', text: s.autoNext ? '单词朗读一遍后自动进入下一题，选择题和拼写训练都适用；点击词条可停下细看' : '答题后保留反馈，手动点击「继续」' })),
+          h('div', { class: 'row-desc', text: s.autoNext ? '单词读完自动下一题；轻触、滑动不会暂停。点击「暂停」或「查看词条」可停下，学习页也可直接开关' : '答题后保留反馈，手动点击「继续」；学习页可随时开启自动切题' })),
         h('div', { class: 'row-ctl' },
           h('button', {
             class: `switch ${s.autoNext ? 'on' : ''}`,
@@ -689,12 +689,12 @@ window.WM = window.WM || {};
 
       h('div', { class: 'row row-showdetail' },
         h('div', { class: 'row-main' },
-          h('div', { class: 'row-title', text: '答对后展开详细词条' }),
+          h('div', { class: 'row-title', text: '手动切题时展开词条' }),
           h('div', {
             class: 'row-desc',
             text: s.showDetail
-              ? '答对后显示音标、词性、释义、例句与复习进度；点击词条可暂停自动切题'
-              : '答对后只显示一条精简反馈，节奏更快',
+              ? '手动模式答对后展开词条；自动模式使用紧凑反馈，点击「查看词条」再展开。答错始终显示详解'
+              : '答对后显示精简反馈；自动模式仍可点击「查看词条」，答错始终显示详解',
           })),
         h('div', { class: 'row-ctl' },
           h('button', {
