@@ -666,7 +666,7 @@ window.WM = window.WM || {};
       h('div', { class: 'row' },
         h('div', { class: 'row-main' },
           h('div', { class: 'row-title', text: '英文自动朗读' }),
-          h('div', { class: 'row-desc', text: '英文出现在题面时自动用系统语音朗读（中译英题目会在作答后朗读）' })),
+          h('div', { class: 'row-desc', text: '英文出现在题面时自动朗读；中译英答错或手动切题时，在作答后朗读' })),
         h('div', { class: 'row-ctl' },
           h('button', {
             class: 'switch ' + (s.autoPronounce ? 'on' : ''),
@@ -677,20 +677,9 @@ window.WM = window.WM || {};
 
       h('div', { class: 'row' },
         h('div', { class: 'row-main' },
-          h('div', { class: 'row-title', text: '答对后自动进入下一题' }),
-          h('div', { class: 'row-desc', text: s.autoNext ? `答对后停留 ${(s.autoNextDelay / 1000).toFixed(1)} 秒再跳到下一题` : '关闭后每题都需要手动点击「继续」' })),
+          h('div', { class: 'row-title', text: '答对后朗读并切题' }),
+          h('div', { class: 'row-desc', text: s.autoNext ? '单词朗读一遍后自动进入下一题，选择题和拼写训练都适用；点击词条可停下细看' : '答题后保留反馈，手动点击「继续」' })),
         h('div', { class: 'row-ctl' },
-          s.autoNext
-            ? h('input', {
-              type: 'range',
-              min: '400',
-              max: '3000',
-              step: '100',
-              value: String(s.autoNextDelay),
-              style: { width: '150px' },
-              onchange: (e) => { applySettings({ autoNextDelay: Number(e.target.value) }); renderSettings(view); },
-            })
-            : null,
           h('button', {
             class: `switch ${s.autoNext ? 'on' : ''}`,
             type: 'button',
@@ -704,7 +693,7 @@ window.WM = window.WM || {};
           h('div', {
             class: 'row-desc',
             text: s.showDetail
-              ? '答对后显示单词的音标、词性、释义、例句与复习进度（此时自动跳题会延后到至少 3.2 秒）'
+              ? '答对后显示音标、词性、释义、例句与复习进度；点击词条可暂停自动切题'
               : '答对后只显示一条精简反馈，节奏更快',
           })),
         h('div', { class: 'row-ctl' },
@@ -750,7 +739,7 @@ window.WM = window.WM || {};
     const aboutCard = h('div', { class: 'card' },
       h('div', { class: 'card-title' }, icon('i-bolt'), '关于'),
       h('div', { class: 'kv' },
-        kvItem('应用版本', '2.0.0'),
+        kvItem('应用版本', '2.0.1'),
         kvItem('独立词条', `${window.WM_LEXICON?.length || bank.totalWords()} 词`),
         kvItem('分级收录', `${bank.totalWords()} 条 / ${levels.length} 个等级`),
         kvItem('运行环境', WM.app.info ? `${WM.app.info.platform === 'Android' ? 'Android' : WM.app.info.electron ? 'Electron ' + WM.app.info.electron : '浏览器'} ${WM.app.info.chrome ? '· Chromium ' + WM.app.info.chrome : ''}` : '-')),

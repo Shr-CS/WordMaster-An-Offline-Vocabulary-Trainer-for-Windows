@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
 import android.webkit.JavascriptInterface;
@@ -90,6 +91,13 @@ public final class MainActivity extends Activity {
             int language = speech.setLanguage(Locale.US);
             speechReady = language != TextToSpeech.LANG_MISSING_DATA && language != TextToSpeech.LANG_NOT_SUPPORTED;
         });
+        speech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+            @Override public void onStart(String id) { }
+            @Override public void onDone(String id) { completeSpeech(id, "done"); }
+            @Override public void onError(String id) { completeSpeech(id, "error"); }
+            @Override public void onError(String id, int code) { completeSpeech(id, "error"); }
+            @Override public void onStop(String id, boolean interrupted) { completeSpeech(id, "canceled"); }
+        });
         if (Build.VERSION.SDK_INT >= 33) {
             getOnBackInvokedDispatcher().registerOnBackInvokedCallback(0, this::handleBack);
         }
@@ -115,9 +123,17 @@ public final class MainActivity extends Activity {
         });
     }
 
+    private void completeSpeech(String id, String status) {
+        runOnUiThread(() -> {
+            if (isFinishing() || isDestroyed() || web == null) return;
+            web.evaluateJavascript("window.WMAndroidSpeechComplete && window.WMAndroidSpeechComplete(" +
+                JSONObject.quote(id) + "," + JSONObject.quote(status) + ")", null);
+        });
+    }
+
     public final class Bridge {
         @JavascriptInterface public String getInfo() {
-            return "{\"platform\":\"Android\",\"version\":\"2.0.0\"}";
+            return "{\"platform\":\"Android\",\"version\":\"2.0.1\"}";
         }
         @JavascriptInterface public void setTheme(String theme) {
             runOnUiThread(() -> {
@@ -140,7 +156,7 @@ public final class MainActivity extends Activity {
                 }
             });
         }
-        @JavascriptInterface public boolean speak(String text, float rate, float pitch) {
+        @JavascriptInterface public boolean speak(String text, float rate, float pitch, String id) {
             if (!speechReady || text == null || text.length() > 4000) {
                 runOnUiThread(() -> Toast.makeText(MainActivity.this,
                     "请在系统的文字转语音设置中安装英语语音包", Toast.LENGTH_LONG).show());
@@ -149,7 +165,9 @@ public final class MainActivity extends Activity {
             runOnUiThread(() -> {
                 speech.setSpeechRate(Math.max(0.1f, Math.min(2f, rate)));
                 speech.setPitch(Math.max(0.5f, Math.min(2f, pitch)));
-                speech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "wordmaster");
+                if (speech.speak(text, TextToSpeech.QUEUE_FLUSH, null, id) == TextToSpeech.ERROR) {
+                    completeSpeech(id, "error");
+                }
             });
             return true;
         }
@@ -233,7 +251,8 @@ public final class MainActivity extends Activity {
     }
 
     @Override protected void onPause() {
-        web.evaluateJavascript("window.WM && WM.store && WM.store.flush()", null);
+        web.evaluateJavascript("if (window.WM) { if (WM.study) WM.study.pauseAutoAdvance(); " +
+            "if (WM.sound) WM.sound.stopSpeak(); if (WM.store) WM.store.flush(); }", null);
         speech.stop();
         web.onPause();
         super.onPause();

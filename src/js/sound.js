@@ -204,6 +204,20 @@ window.WM = window.WM || {};
   /* -------------------------------- 朗读 -------------------------------- */
 
   let cachedVoice = null;
+  let speechSequence = 0;
+  let activeSpeech = null;
+
+  function completeSpeech(task, status, stop = false) {
+    if (activeSpeech !== task) return;
+    clearTimeout(task.watchdog);
+    activeSpeech = null;
+    if (stop) stopEngine();
+    if (task.onComplete) task.onComplete(status);
+  }
+
+  window.WMAndroidSpeechComplete = (id, status) => {
+    if (activeSpeech && activeSpeech.id === id) completeSpeech(activeSpeech, status);
+  };
 
   function pickVoice() {
     if (!('speechSynthesis' in window)) return null;
@@ -235,38 +249,63 @@ window.WM = window.WM || {};
 
   /**
    * 用系统 TTS 朗读英文单词。
+   * onComplete 接收 done / canceled / error / unavailable / timeout，且只通知一次。
    * @returns {boolean} 是否成功发起朗读
    */
-  function speak(text, { rate = 0.92, pitch = 1, lang = 'en-US' } = {}) {
-    if (!text) return false;
-    if (window.WordMasterAndroid) return window.WordMasterAndroid.speak(String(text), rate, pitch);
-    if (!('speechSynthesis' in window)) return false;
+  function speak(text, { rate = 0.92, pitch = 1, lang = 'en-US', onComplete } = {}) {
+    stopSpeak();
+    const task = { id: `wordmaster-${++speechSequence}`, onComplete };
+    activeSpeech = task;
+    if (!text || (!window.WordMasterAndroid && !('speechSynthesis' in window))) {
+      completeSpeech(task, 'unavailable');
+      return false;
+    }
+    // A broken TTS engine must not leave a correctly answered question stuck forever.
+    if (onComplete) task.watchdog = setTimeout(() => {
+      if (activeSpeech !== task) return;
+      completeSpeech(task, 'timeout', true);
+    }, 15000);
     try {
-      window.speechSynthesis.cancel();
+      if (window.WordMasterAndroid) {
+        const started = window.WordMasterAndroid.speak(String(text), rate, pitch, task.id);
+        if (!started) completeSpeech(task, 'unavailable');
+        return started;
+      }
       const utter = new SpeechSynthesisUtterance(String(text));
       utter.lang = lang;
       utter.rate = rate;
       utter.pitch = pitch;
       const voice = pickVoice();
       if (voice) utter.voice = voice;
+      utter.onend = () => completeSpeech(task, 'done');
+      utter.onerror = event => completeSpeech(task,
+        ['canceled', 'interrupted'].includes(event.error) ? 'canceled' : 'error');
+      task.utterance = utter; // Keep a strong reference until the engine finishes.
       window.speechSynthesis.speak(utter);
       return true;
     } catch {
+      completeSpeech(task, 'error');
       return false;
     }
   }
 
-  function stopSpeak() {
-    if (window.WordMasterAndroid) {
-      window.WordMasterAndroid.stopSpeak();
-      return;
-    }
+  function stopEngine() {
     try {
-      window.speechSynthesis.cancel();
+      if (window.WordMasterAndroid) window.WordMasterAndroid.stopSpeak();
+      else if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     } catch {
       /* 忽略 */
     }
   }
+
+  function stopSpeak() {
+    if (activeSpeech) completeSpeech(activeSpeech, 'canceled', true);
+    else stopEngine();
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopSpeak();
+  });
 
   // 首次交互解锁音频上下文
   const unlockOnce = () => {

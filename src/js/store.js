@@ -26,8 +26,8 @@ window.WM = window.WM || {};
     sound: true,               // 音效开关
     volume: 0.7,               // 音量 0~1
     autoPronounce: true,       // 出现英文题面时自动朗读
-    autoNext: true,            // 答对后自动进入下一题
-    autoNextDelay: 1100,       // 自动下一题延迟(ms)，留足看清释义的时间
+    autoNext: true,            // 答对后朗读一遍，读完切到下一题
+    autoNextDelay: 1100,       // 兼容旧备份；当前切题以朗读完成为准
     showDetail: true,          // 答对后展开详细词条（音标/词性/例句/复习进度）
     reviewLimit: 60,           // 每天复习上限
   };

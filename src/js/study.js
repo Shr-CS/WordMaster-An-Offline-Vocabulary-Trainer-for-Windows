@@ -23,11 +23,13 @@ window.WM = window.WM || {};
   /** @type {null | object} */
   let session = null;
   let nextTimer = null;
+  let advanceToken = 0;
   let keyHandler = null;
 
   const isActive = () => !!session;
 
   function clearTimer() {
+    advanceToken += 1;
     if (nextTimer) {
       clearTimeout(nextTimer);
       nextTimer = null;
@@ -152,6 +154,7 @@ window.WM = window.WM || {};
 
   function next() {
     clearTimer();
+    sound.stopSpeak();
     if (!session) return;
     session.index += 1;
     if (session.index >= session.questions.length) {
@@ -257,6 +260,7 @@ window.WM = window.WM || {};
 
   function speakCurrent() {
     if (!session || !session.current) return;
+    if (session.answered) clearTimer();
     sound.speak(session.current.entry.en);
   }
 
@@ -272,6 +276,7 @@ window.WM = window.WM || {};
     const q = session.current;
     const state = store.get();
     const isRetry = (session.attempts[q.id] || 0) > 0;
+    sound.stopSpeak();
 
     session.answered = true;
     session.attempts[q.id] = (session.attempts[q.id] || 0) + 1;
@@ -323,23 +328,22 @@ window.WM = window.WM || {};
       session.questions.push(again);
     }
 
-    // 6) 中译英答完后朗读，帮助建立音形义联系
-    if (q.direction === 'zh2en' && state.settings.autoPronounce) {
-      setTimeout(() => sound.speak(q.entry.en), 220);
-    }
-
     syncTop();
     const feedback = cardEl.querySelector('.feedback');
     feedback.setAttribute('tabindex', '-1');
-    feedback.focus({ preventScroll: true });
-    feedback.scrollIntoView({ block: 'nearest', behavior: 'auto' });
+    if (!ok || !state.settings.autoNext) {
+      feedback.focus({ preventScroll: true });
+      feedback.scrollIntoView({ block: 'nearest', behavior: 'auto' });
+    }
 
-    // 7) 答对自动进入下一题；答错停下来看清楚
-    if (ok && q.trainingMode !== 'spelling' && state.settings.autoNext) {
-      const base = state.settings.autoNextDelay || 1100;
-      // 展开详细词条时留更长时间——卡片上有例句和翻译两行要读
-      const delay = state.settings.showDetail ? Math.max(base, 3200) : base;
-      scheduleNext(delay);
+    // 答对后只朗读一次，等引擎报告完成再切题；两种训练模式一致。
+    if (ok && state.settings.autoNext) {
+      readAnswerAndAdvance(q);
+    } else if (q.direction === 'zh2en' && state.settings.autoPronounce) {
+      nextTimer = setTimeout(() => {
+        nextTimer = null;
+        if (session && session.current === q) sound.speak(q.entry.en);
+      }, 150);
     }
   }
 
@@ -447,6 +451,7 @@ window.WM = window.WM || {};
         title: '朗读',
         onclick: (e) => {
           e.stopPropagation();
+          clearTimer();
           sound.speak(entry.en);
         },
       }, icon('i-speaker')),
@@ -457,12 +462,24 @@ window.WM = window.WM || {};
       }, '继续'));
   }
 
-  function scheduleNext(ms) {
+  function readAnswerAndAdvance(q) {
     clearTimer();
+    const token = advanceToken;
+    const currentSession = session;
+    const currentIndex = session.index;
+    const stillCurrent = () => token === advanceToken && session === currentSession &&
+      session.current === q && session.index === currentIndex && session.answered;
     nextTimer = setTimeout(() => {
       nextTimer = null;
-      if (session && session.answered && document.getElementById('modal-host').hidden) next();
-    }, Math.max(200, ms));
+      if (!stillCurrent() || document.hidden) return;
+      sound.speak(q.entry.en, { onComplete: status => {
+        if (!stillCurrent() || status === 'canceled') return;
+        nextTimer = setTimeout(() => {
+          nextTimer = null;
+          if (stillCurrent() && !document.hidden && document.getElementById('modal-host').hidden) next();
+        }, status === 'done' ? 160 : 450);
+      } });
+    }, 120);
   }
 
   /* ------------------------------- 结算页 ------------------------------- */
@@ -564,6 +581,8 @@ window.WM = window.WM || {};
       WM.app.go('home');
       return;
     }
+    clearTimer();
+    sound.stopSpeak();
     const answered = session.correct + session.wrong;
     const ok = await confirmDialog({
       title: '退出本次学习？',
@@ -665,11 +684,16 @@ window.WM = window.WM || {};
     }
   }
 
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) clearTimer();
+  });
+
   WM.study = {
     start,
     destroy,
     isActive,
     renderInto,
+    pauseAutoAdvance: clearTimer,
     get session() { return session; },
   };
 })(window.WM);
